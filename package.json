@@ -1,0 +1,25 @@
+{
+  "name": "emaidalat-package",
+  "version": "1.0.0",
+  "description": "package for emaidalat.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jamestig/emaidalat.git"
+  },
+  "keywords": [
+    "emai"
+  ],
+  "author": "Mothy James <wallacebreen17@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jamestig/emaidalat/issues"
+  },
+  "homepage": "https://github.com/Jamestig/emaidalat#readme",
+  "dependencies": {
+    "imagemin": "^5.3.1"
+  }
+}

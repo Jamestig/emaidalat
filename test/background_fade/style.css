@@ -1,0 +1,51 @@
+header {
+	background-color: antiquewhite;
+	height: 100vh;
+	width: 300px;
+	position: fixed;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.active {
+	color: orange;
+}
+
+.content-left {
+	flex: 0 0 40%;
+	background: rgba(245,245,220,.5);
+}
+
+.content-left section {
+	height: 600px;
+}
+
+article h2 {
+	color: red;
+}
+
+#home-background {
+	background-image: url(/images/flowers/rose.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: right;
+  transition: background 0.5s ease-out;
+	margin-left: 300px;
+}
+
+.ruler {
+	flex: 0 0 5%;
+	background-color: red;
+	border-bottom: 2px solid black;
+	height: 618px;
+	
+}
