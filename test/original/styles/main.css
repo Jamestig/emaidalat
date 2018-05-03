@@ -83,21 +83,29 @@ p {
     COLOUR
 ////////////////////*/
 
-/*// COLOUR CLASSES //*/
-
-:root {
-  --lightest-grey: #f4f4f4;
-	--light-grey: #eaeaea;
-	--medium-grey: #777777;
-	--dark-font: #363636;
-}
-
 /*// BASE COLOURS //*/
 
 .header-nav-item a {
-  color: var(--light-font);
+  color: #777777;
 }
 
+/*// COLOUR CLASSES //*/
+
+.grey-f4 {
+  color: #f4f4f4;
+}
+
+.grey-ea {
+  color: #eaeaea;
+}
+
+.grey-77 {
+  color: #777777;
+}
+
+.grey-36 {
+  color: #363636;
+}
 
 /*////////////////////
     FRAMEWORK CLASSES

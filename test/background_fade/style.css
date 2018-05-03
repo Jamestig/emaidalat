@@ -25,27 +25,21 @@ a {
 }
 
 .content-left section {
-	height: 600px;
+	height: 100vh;
 }
 
 article h2 {
 	color: red;
 }
 
-#home-background {
-	background-image: url(/images/flowers/rose.jpg);
+.background {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: right;
-  transition: background 0.5s ease-out;
+  transition: background 1.5s ease-out;
 	margin-left: 300px;
 }
 
-.ruler {
-	flex: 0 0 5%;
-	background-color: red;
-	border-bottom: 2px solid black;
-	height: 618px;
-	
+#home-background {
+	background-image: url(/images/flowers/rose.jpg);
 }

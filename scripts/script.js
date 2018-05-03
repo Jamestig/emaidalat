@@ -50,3 +50,4 @@ $(document).ready(function () {
 });
 
 // FUTURE get page name and create section names by dividing client height by amount of sections on page
+// FUTURE use html images as backgrounds, fade in and out with Jquery

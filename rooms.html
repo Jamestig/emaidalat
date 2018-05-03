@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="/styles/normalize.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/styles/main.css">
 </head>
 
 <body>
@@ -13,9 +13,10 @@
 			<h1>emai dalat</h1>
 			<nav>
 
-				<button class="accordion">Home</button>
+				<a href="index.html"><button class="accordion">Home</button></a>
+				
 				<ul>
-					<li class="active">
+					<li>
 						<a href="#restaurant" class="scroll">Restaurant</a>
 					</li>
 					<li>
@@ -26,7 +27,8 @@
 					</li>
 				</ul>
 
-				<button class="accordion">Our Rooms</button>
+				<a href="/rooms.html"><button class="accordion">Our Rooms</button></a>
+				
 				<ul>
 					<li class="active">
 						<a href="#Clara" class="scroll">Clara</a>
@@ -38,6 +40,7 @@
 						<a href="#May" class="scroll">May</a>
 					</li>
 				</ul>
+				
 			</nav>
 		</header>
 
@@ -47,7 +50,7 @@
 
 				<section class="home-articles content-left">
 
-					<section id="restaurant">
+					<section id="Clara">
 						<article>
 							<h2>emai restaurant</h2>
 							<h3>welcome to emai restaurant we have very good food</h3>
@@ -55,7 +58,7 @@
 						</article>
 					</section>
 
-					<section id="cafe">
+					<section id="Ivy">
 						<article>
 							<h2>emai cafe</h2>
 							<h3>welcome to emai cafe we have very good food</h3>
@@ -63,7 +66,7 @@
 						</article>
 					</section>
 
-					<section id="bedBreakfast">
+					<section id="May">
 						<article>
 							<h2>Gallery</h2>
 							<h3>welcome to emai restaurant we have very good food</h3>
@@ -73,14 +76,12 @@
 
 				</section>
 
-				<div class="ruler"></div>
-
 			</div>
 
 		</main>
 
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-	<script src="script.js"></script>
+	<script src="scripts/script.js"></script>
 </body>
 </html>
