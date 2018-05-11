@@ -4,7 +4,7 @@
   "description": "package for emaidalat.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sync": "browser-sync start --server --config bs-config.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,5 @@
     "url": "https://github.com/Jamestig/emaidalat/issues"
   },
   "homepage": "https://github.com/Jamestig/emaidalat#readme",
-  "dependencies": {
-    "imagemin": "^5.3.1"
-  }
+  "dependencies": {}
 }
