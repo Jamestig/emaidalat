@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+}
+
+header {
+	background-color: antiquewhite;
+	width: 300px;
+	height: 100vh;
+	position: fixed;
+}
+
+main {
+	margin-left: 300px;
+	background-color: red;
+	height: 100vh;
+}
+
+.figure-wrapper {
+	overflow: hidden;
+	max-height: 100vh;
+}
+
+.figure-wrapper figure {
+	margin: 0;
+	max-height: inherit;
+	transform: translateY(50%);
+	
+	width: 100%;
+	height: 100vh;
+	line-height: 400px;
+	background-color: #cccccc;
+	vertical-align: middle;
+	position: relative;
+}
+
+.figure-wrapper img {
+	width: 100%;
+	display: block;
+	transform: translateY(-50%);
+
+	position: absolute;
+	display: block;
+	min-width: 100%;
+	min-height: 100%;
+	margin: auto;
+	vertical-align: middle;
+	width: auto;
+	height: auto;
+/*
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+}
+
