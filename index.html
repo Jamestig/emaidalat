@@ -35,13 +35,130 @@
 		</h1>
 
 		<div class="nav-overlay">
+<!--
 			<nav class="header-nav">
-				<a href="">Home</a>
-				<a href="">Our Story</a>
-				<a href="">Our Rooms</a>
-				<a href="">Reservations</a>
-				<a href="">Menu</a>
-				<a href="">Gallery</a>
+				<a class="navPageLink activePage" href="">Home</a>
+					<ul id="nav-list-home" class="nav-list">
+							<li>
+								<a href="#home-restaurant" class="scroll sectionLink">Restaurant</a>
+							</li>
+							<li>
+								<a href="#home-cafe" class="scroll sectionLink">Cafe</a>
+							</li>
+							<li>
+								<a href="#home-bnb" class="scroll sectionLink">Bed &amp; Breakfast</a>
+							</li>
+							<li>
+								<a href="#home-atmosphere" class="scroll sectionLink">Atmosphere</a>
+							</li>
+					</ul>
+				<a class="navPageLink" href="">Our Story</a>
+					<ul id="nav-list-story" class="nav-list">
+							<li>
+								<a href="#story-intro" class="scroll">About Us</a>
+							</li>
+							<li>
+								<a href="#story-dalat" class="scroll">Dalat</a>
+							</li>
+							<li>
+								<a href="#story-three" class="scroll">Three</a>
+							</li>
+					</ul>
+				<a class="navPageLink" href="">Our Rooms</a>
+					<ul id="nav-list-rooms" class="nav-list">
+							<li>
+								<a href="#rooms-ivy" class="scroll">Ivy</a>
+							</li>
+							<li>
+								<a href="#rooms-clara" class="scroll">Clara</a>
+							</li>
+							<li>
+								<a href="#rooms-may" class="scroll">Bed &amp; May</a>
+							</li>
+							<li>
+								<a href="#rooms-lila" class="scroll">Lila</a>
+							</li>
+							<li>
+								<a href="#rooms-jasmine" class="scroll">Jasmine</a>
+							</li>
+					</ul>
+				<a class="navPageLink" href="">Reservations</a>
+					<ul id="nav-list-reserve" class="nav-list">
+						<li>
+							<a href="#reserve-table">Reserve a table</a>
+						</li>
+						<li>
+							<a href="#reserve-room">Book your stay</a>
+						</li>
+					</ul>
+				<a class="navPageLink" href="">Menu</a>
+					<ul id="nav-list-menu" class="nav-list">
+						<li>
+							<a href="#menu-restaurant">Restaurant Menu</a>
+						</li>
+						<li>
+							<a href="#menu-cafe">Cafe Menu</a>
+						</li>
+					</ul>
+				<a class="navPageLink" href="">Gallery</a>
+			</nav>
+-->
+			<nav class="header-nav">
+				<ul class="accordion">
+					<li>
+						<a href="#page-home" class="toggle activePage">Home</a>
+						<ul class="accordionInner">
+							<li><a href="#home-restaurant" class="scroll activeSection">Restaurant</a></li>
+							<li><a href="#home-cafe" class="scroll">Cafe</a></li>
+							<li><a href="#home-bnb" class="scroll">Bed &amp; Breakfast</a></li>
+							<li><a href="#home-atmosphere" class="scroll">Atmosphere</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a class="toggle" href="">Our Story</a>
+						<ul class="accordionInner">
+							<li><a href="#story-about">About Us</a></li>
+							<li><a href="#story-dalat">Dalat</a></li>
+							<li><a href="#story-team">The Team</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a class="toggle" href="">Our Rooms</a>
+						<ul class="accordionInner">
+							<li><a href="#rooms-">Ivy</a></li>
+							<li><a href="#rooms-">Clara</a></li>
+							<li><a href="#rooms-">May</a></li>
+							<li><a href="#rooms-">Lila</a></li>
+							<li><a href="#rooms-">Jasmine</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a class="toggle" href="">Reservations</a>
+						<ul class="accordionInner">
+							<li><a href="">Reserve a table</a></li>
+							<li><a href="">Book your stay</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</li>
+
+
+					<li>
+						<a class="toggle" href="">Menu</a>
+						<ul class="accordionInner">
+							<li><a href="">Food</a></li>
+							<li><a href="">Dessert</a></li>
+							<li><a href="">Drinks </a></li>
+							<li><a href="">Coffee</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a class="toggle" href="">Gallery</a>
+					</li>
+				</ul>
 			</nav>
 
 			<ul class="sm-list">
@@ -58,7 +175,7 @@
 		<div class="main-container">
 
 			<section id="home-restaurant" class="section-full">
-				<figure class="first-image fixed-image mobile-image gradient-down">
+				<figure id="homeRestaurantBG" class="first-image fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
 						<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
@@ -81,7 +198,7 @@
 			</section>
 
 			<section id="home-cafe" class="section-spaced section-full">
-				<figure class="mobile-image fixed-image gradient-down">
+				<figure id="homeCafeBG" class="mobile-image fixed-image gradient-down">
 					<picture>
 						<source srcset="images/photos/hd/panna_1500_01.jpg" media="(min-width: 1600px)">
 						<source srcset="images/photos/tablet/panna_800_01.jpg" media="(min-width: 600px)">
@@ -103,8 +220,8 @@
 				</div>
 			</section>
 
-			<section id="home-rooms" class="section-full">
-				<figure class="mobile-image fixed-image gradient-down">
+			<section id="home-bnb" class="section-full">
+				<figure id="homeBnbBG" class="mobile-image fixed-image gradient-down">
 					<picture>
 						<source srcset="images/photos/hd/lila_1920_01.jpg" media="(min-width: 1600px)">
 						<source srcset="images/photos/tablet/lila_800_01.jpg" media="(min-width: 600px)">
@@ -125,7 +242,7 @@
 					</div>
 				</div>
 			</section>
-
+<!--
 			<section id="home-dalat" class="section-spaced">
 				<div class="position-underlay">
 
@@ -154,8 +271,8 @@
 				</div>
 
 			</section>
-
-			<section id="home-gallery" class="section-full">
+-->
+			<section id="home-atmosphere" class="section-full">
 				<div class="content-container">
 					<div class="content center">
 						<h3>A cosy nest, a joie de vivre.</h3>
@@ -168,7 +285,7 @@
 					</div>
 				</div>
 
-				<figure class="mobile-image fixed-image gradient-up">
+				<figure id="homeAtmosphereBG" class="mobile-image fixed-image gradient-up">
 					<picture>
 						<source srcset="images/photos/hd/table_1920_01.jpg" media="(min-width: 1600px)">
 						<source srcset="images/photos/tablet/table_800_01.jpg" media="(min-width: 600px)">
@@ -180,7 +297,7 @@
 			<section id="home-booking" class="">
 				<div class="position-underlay">
 
-					<figure class="image-tall fixed-image">
+					<figure id="homeBookingBG" class="image-tall fixed-image">
 						<picture>
 							<source srcset="images/photos/hd/flower_1920_01.jpg" media="(min-width: 1600px)">
 							<source srcset="images/photos/tablet/flower_800_01.jpg" media="(min-width: 600px)">
@@ -213,7 +330,7 @@
 		</div>
 	</main>
 
-	<footer>
+	<footer class="vertical-center">
 		<h2><a href="#">émai dalat</a></h2>
 
 		<ul class="sm-list">
