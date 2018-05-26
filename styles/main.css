@@ -479,6 +479,7 @@ html {
 }
 
 /* Header nav items hidden below widescreen */
+
 @media screen and (max-width:1279px) {
 
 	.nav-overlay {
@@ -500,8 +501,9 @@ html {
 }
 
 /* Header nav widescreen short response */
+
 @media screen and (min-width: 1280px) and (max-height: 1023px) {
-	.accordion>li>a {
+	.accordion > li > a {
 		padding: .7em;
 	}
 }
@@ -509,7 +511,6 @@ html {
 /* HEADER WIDESCREEN RESPONSE */
 
 @media screen and (min-width:1280px) {
-
 	header {
 		width: 20%;
 		height: 100vh;
@@ -528,22 +529,30 @@ html {
 
 	.main-logo {
 		width: 100%;
-		height: 25%;
+		height: 30%;
+	}
+
+	.main-logo a {
+		margin-top: 25%;
 	}
 
 	.nav-overlay {
 		background: none;
-		height: 60%;
+		height: 70%;
 		padding-top: 0;
 		display: flex;
 		flex-flow: column;
 		justify-content: space-around;
 	}
 
+	.header-nav {
+		height: 70%;
+	}
+
 	.accordion {
 		margin-left: 15%;
 		flex-flow: column;
-		justify-content: flex-start;
+		justify-content: center;
 		text-align: left;
 		padding-top: 0;
 	}
@@ -556,8 +565,6 @@ html {
 	.accordion > li > a {
 		padding: .5em;
 	}
-	
-	.accordionInner > li
 
 	.nav-overlay .sm-list {
 		display: flex;
@@ -565,6 +572,7 @@ html {
 		align-items: center;
 		justify-content: flex-start;
 		margin-left: 20%;
+		height: 30%;
 	}
 
 	.nav-overlay .sm-list a {
@@ -578,6 +586,20 @@ html {
 ////////////////////*/
 
 /* MOBILE FIRST */
+
+@media screen and (max-width: 1279px) {
+	main > section {
+		margin: 5% 0;
+	}
+
+	main > section:first-child {
+		margin-top: 0;
+	}
+
+	main > section:last-child {
+		margin-bottom: 0;
+	}
+}
 
 .sm-list {
 	text-align: center;
@@ -597,6 +619,10 @@ html {
 .content,
 .content-white {
 	padding: 1em 2em;
+}
+
+.content h3 {
+	margin-top: 0;
 }
 
 @media screen and (max-width:355px) {
@@ -653,10 +679,6 @@ html {
 	overflow: hidden;
 }
 
-.section-spaced {
-	margin: 4em 0;
-}
-
 .vertical-center {
 	display: flex;
 	flex-flow: column;
@@ -674,7 +696,7 @@ div[class^='link-button'] {
 
 @media screen and (max-width: 400px) {
 	div[class^='link-button'] {
-		margin: 1.5em 1em 1em 1em;
+		margin: 2em 1em 1em 1em;
 	}
 }
 
@@ -724,6 +746,11 @@ div[class^='link-button'] {
 		transform: translateX(-50%);
 		z-index: -100;
 	}
+	
+	.image-43 img {
+		height: auto;
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 1279px) {
@@ -764,6 +791,10 @@ div[class^='link-button'] {
 
 	main {
 		margin-left: 20%;
+	}
+	
+	main > section {
+		height: 100vh;
 	}
 
 	.content {
@@ -825,9 +856,27 @@ div[class^='link-button'] {
 		justify-content: center;
 	}
 
+	.content-container-card {
+		height: 90vh;
+		margin: 5vh;
+	}
+
 	.content-container-wide {
 		height: 100vh;
 		position: static;
+	}
+	
+	.section-room {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+	}
+	
+	.content-container-bottom {
+		flex: 0 0 30%;
+		background: rgba(0, 0, 0, .3);
+		align-items: flex-end;
+		justify-content: flex-end;
 	}
 
 	.section-spaced {
@@ -849,6 +898,77 @@ div[class^='link-button'] {
 	}
 }
 
+/*// ROOMS PAGE //*/
+
+
+.flex-container-room {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 1em;
+	transform: translateY(-2em);
+	z-index: 1000;
+}
+
+.room-logo {
+	flex: 0 0 30%;
+}
+
+.room-logo img {
+	width: 100%;
+}
+
+.link-button-airbnb {
+	margin: .5em!important;
+	flex: 0 0 60%;
+	align-self: center;
+}
+
+.link-button-airbnb a {
+	border: 1px solid var(--medium-grey);
+	padding: .5em 1em;
+	color: var(--medium-grey);
+	transition: border-color .3s linear, color .3s linear;
+}
+
+.link-button-airbnb img {
+	vertical-align: bottom;
+	height: 24px;
+}
+
+@media screen and (max-width: 350px) {
+
+}
+
+.room-info {
+	flex: 0 0 100%;
+}
+
+.room-info p {
+	text-align: right;
+}
+
+.room-description {
+	flex: 0 0 100%;
+}
+
+/* Rooms page extra small response */
+
+@media screen and (max-width: 420px) {
+	.flex-container-room {
+	}
+	.room-info {
+		font-size: .75em;
+	}
+	.room-logo {
+		flex: 0 0 40%;
+	}
+	.link-button-airbnb {
+		flex: 0 0 50%;
+	}
+	.airbnb-button-image {
+		display: none;
+	}
+}
 
 /*// FOOTER //*/
 

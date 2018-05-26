@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="icon" href="images/logo/favicon_flower.png">
 </head>
 
 <body>
@@ -35,83 +36,15 @@
 		</h1>
 
 		<div class="nav-overlay">
-<!--
-			<nav class="header-nav">
-				<a class="navPageLink activePage" href="">Home</a>
-					<ul id="nav-list-home" class="nav-list">
-							<li>
-								<a href="#home-restaurant" class="scroll sectionLink">Restaurant</a>
-							</li>
-							<li>
-								<a href="#home-cafe" class="scroll sectionLink">Cafe</a>
-							</li>
-							<li>
-								<a href="#home-bnb" class="scroll sectionLink">Bed &amp; Breakfast</a>
-							</li>
-							<li>
-								<a href="#home-atmosphere" class="scroll sectionLink">Atmosphere</a>
-							</li>
-					</ul>
-				<a class="navPageLink" href="">Our Story</a>
-					<ul id="nav-list-story" class="nav-list">
-							<li>
-								<a href="#story-intro" class="scroll">About Us</a>
-							</li>
-							<li>
-								<a href="#story-dalat" class="scroll">Dalat</a>
-							</li>
-							<li>
-								<a href="#story-three" class="scroll">Three</a>
-							</li>
-					</ul>
-				<a class="navPageLink" href="">Our Rooms</a>
-					<ul id="nav-list-rooms" class="nav-list">
-							<li>
-								<a href="#rooms-ivy" class="scroll">Ivy</a>
-							</li>
-							<li>
-								<a href="#rooms-clara" class="scroll">Clara</a>
-							</li>
-							<li>
-								<a href="#rooms-may" class="scroll">Bed &amp; May</a>
-							</li>
-							<li>
-								<a href="#rooms-lila" class="scroll">Lila</a>
-							</li>
-							<li>
-								<a href="#rooms-jasmine" class="scroll">Jasmine</a>
-							</li>
-					</ul>
-				<a class="navPageLink" href="">Reservations</a>
-					<ul id="nav-list-reserve" class="nav-list">
-						<li>
-							<a href="#reserve-table">Reserve a table</a>
-						</li>
-						<li>
-							<a href="#reserve-room">Book your stay</a>
-						</li>
-					</ul>
-				<a class="navPageLink" href="">Menu</a>
-					<ul id="nav-list-menu" class="nav-list">
-						<li>
-							<a href="#menu-restaurant">Restaurant Menu</a>
-						</li>
-						<li>
-							<a href="#menu-cafe">Cafe Menu</a>
-						</li>
-					</ul>
-				<a class="navPageLink" href="">Gallery</a>
-			</nav>
--->
 			<nav class="header-nav">
 				<ul class="accordion">
 					<li>
-						<a href="#page-home" class="toggle activePage">Home</a>
+						<a href="index.html" class="toggle activePage">Home</a>
 						<ul class="accordionInner">
-							<li><a href="#home-restaurant" class="scroll activeSection">Restaurant</a></li>
-							<li><a href="#home-cafe" class="scroll">Cafe</a></li>
-							<li><a href="#home-bnb" class="scroll">Bed &amp; Breakfast</a></li>
-							<li><a href="#home-atmosphere" class="scroll">Atmosphere</a></li>
+							<li><a href="index.html" class="scroll activeSection">Restaurant</a></li>
+							<li><a href="index.html#home-cafe" class="scroll">Cafe</a></li>
+							<li><a href="index.html#home-bnb" class="scroll">Bed &amp; Breakfast</a></li>
+							<li><a href="index.html#home-atmosphere" class="scroll">Atmosphere</a></li>
 						</ul>
 					</li>
 
@@ -125,13 +58,13 @@
 					</li>
 
 					<li>
-						<a class="toggle" href="">Our Rooms</a>
+						<a href="rooms.html" class="toggle">Our Rooms</a>
 						<ul class="accordionInner">
-							<li><a href="#rooms-">Ivy</a></li>
-							<li><a href="#rooms-">Clara</a></li>
-							<li><a href="#rooms-">May</a></li>
-							<li><a href="#rooms-">Lila</a></li>
-							<li><a href="#rooms-">Jasmine</a></li>
+							<li><a href="rooms.html">Ivy</a></li>
+							<li><a href="rooms.html">Clara</a></li>
+							<li><a href="rooms.html">May</a></li>
+							<li><a href="rooms.html">Lila</a></li>
+							<li><a href="rooms.html">Jasmine</a></li>
 						</ul>
 					</li>
 
@@ -171,9 +104,7 @@
 
 	</header>
 
-	<main>
-		<div class="main-container">
-
+	<main id="main-home">
 			<section id="home-restaurant" class="section-full">
 				<figure id="homeRestaurantBG" class="first-image fixed-image mobile-image gradient-down">
 					<picture>
@@ -197,7 +128,7 @@
 				</div>
 			</section>
 
-			<section id="home-cafe" class="section-spaced section-full">
+			<section id="home-cafe" class="section-full">
 				<figure id="homeCafeBG" class="mobile-image fixed-image gradient-down">
 					<picture>
 						<source srcset="images/photos/hd/panna_1500_01.jpg" media="(min-width: 1600px)">
@@ -243,7 +174,7 @@
 				</div>
 			</section>
 <!--
-			<section id="home-dalat" class="section-spaced">
+			<section id="home-dalat" class="">
 				<div class="position-underlay">
 
 					<figure class="image-tall fixed-image">
@@ -273,6 +204,15 @@
 			</section>
 -->
 			<section id="home-atmosphere" class="section-full">
+			
+				<figure id="homeAtmosphereBG" class="mobile-image fixed-image gradient-down">
+					<picture>
+						<source srcset="images/photos/hd/table_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="images/photos/tablet/table_800_01.jpg" media="(min-width: 600px)">
+						<img src="images/photos/mobile/table_480_01.jpg" alt="Dining Room Table Setting with Candles and Flowers">
+					</picture>
+				</figure>
+
 				<div class="content-container">
 					<div class="content center">
 						<h3>A cosy nest, a joie de vivre.</h3>
@@ -284,17 +224,9 @@
 						</div>
 					</div>
 				</div>
-
-				<figure id="homeAtmosphereBG" class="mobile-image fixed-image gradient-up">
-					<picture>
-						<source srcset="images/photos/hd/table_1920_01.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/table_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/table_480_01.jpg" alt="Dining Room Table Setting with Candles and Flowers">
-					</picture>
-				</figure>
 			</section>
 
-			<section id="home-booking" class="">
+			<section id="home-booking">
 				<div class="position-underlay">
 
 					<figure id="homeBookingBG" class="image-tall fixed-image">
@@ -326,8 +258,6 @@
 					</div>
 				</div>
 			</section>
-
-		</div>
 	</main>
 
 	<footer class="vertical-center">

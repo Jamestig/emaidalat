@@ -1,4 +1,13 @@
 $(document).ready(function () {
+	
+	// Global variables
+	var currentPage = $(location).attr('href');
+	
+	if (currentPage) {
+		console.log(currentPage);
+	} else {
+			console.log ('not current page');
+	}
 
 	// Burger button
 	$('#burger-icon').click(function () {
@@ -35,6 +44,15 @@ $(document).ready(function () {
 			};
 		};
 	});
+	
+	// Fixed image ratio change to fit container
+	var fixedWidth = $('.fixed-image').width();
+	var fixedHeight = $(window).height();
+	var fixedRatio = (fixedWidth / 4) - (fixedHeight / 3);
+	
+	if (fixedRatio >= 43) {
+		$('.fixed-image').addClass('image-43');
+	};
 
 	// Responsive header function
 	$(window).scroll(function () {
@@ -68,7 +86,6 @@ $(document).ready(function () {
 	}); // End smooth scrolling function
 
 	// Active link switching and background fading
-
 	var sectionOffset;
 
 	$(window).scroll(function () {
@@ -108,11 +125,11 @@ $(document).ready(function () {
 			});
 
 
-			console.log("scroll location = " + scrollbarLocation);
-			console.log("window height = " + windowHeight);
-			console.log("client height = " + clientHeight);
-			console.log("home height = " + homeHeight);
-			console.log(pageSection);
+			//console.log("scroll location = " + scrollbarLocation);
+			//console.log("window height = " + windowHeight);
+			//console.log("client height = " + clientHeight);
+			//console.log("home height = " + homeHeight);
+			//console.log(pageSection);
 		}; // Match query if statement
 	}); // End scroll function
 
