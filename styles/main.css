@@ -900,17 +900,37 @@ div[class^='link-button'] {
 
 /*// ROOMS PAGE //*/
 
+.content-container-bottom {
+	
+}
 
 .flex-container-room {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: flex-start;
 	margin: 0 1em;
-	transform: translateY(-2em);
 	z-index: 1000;
+	background-color: white;
+  border-bottom: 1px solid black;
+  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(transparent), to(#000));
+  background-image: -webkit-linear-gradient(transparent, #000);
+  background-image:
+      -moz-linear-gradient(transparent, #000),
+      -moz-linear-gradient(transparent, #000);
+  background-image:
+      -o-linear-gradient(transparent, #000),
+      -o-linear-gradient(transparent, #000);
+  background-image: 
+      linear-gradient(transparent, #000),
+      linear-gradient(transparent, #000);
+  -moz-background-size: px 100%;
+  background-size: 1px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat; 
 }
 
 .room-logo {
-	flex: 0 0 30%;
+	flex: 0 0 55%;
 }
 
 .room-logo img {
@@ -918,8 +938,8 @@ div[class^='link-button'] {
 }
 
 .link-button-airbnb {
-	margin: .5em!important;
-	flex: 0 0 60%;
+	margin: 0em!important;
+	flex: 0 0 45%;
 	align-self: center;
 }
 
@@ -935,10 +955,6 @@ div[class^='link-button'] {
 	height: 24px;
 }
 
-@media screen and (max-width: 350px) {
-
-}
-
 .room-info {
 	flex: 0 0 100%;
 }
@@ -951,7 +967,7 @@ div[class^='link-button'] {
 	flex: 0 0 100%;
 }
 
-/* Rooms page extra small response */
+/* BnB page extra small response */
 
 @media screen and (max-width: 420px) {
 	.flex-container-room {
@@ -960,10 +976,8 @@ div[class^='link-button'] {
 		font-size: .75em;
 	}
 	.room-logo {
-		flex: 0 0 40%;
 	}
 	.link-button-airbnb {
-		flex: 0 0 50%;
 	}
 	.airbnb-button-image {
 		display: none;
