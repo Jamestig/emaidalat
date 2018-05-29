@@ -43,6 +43,11 @@ html {
 	font-size: 16px;
 }
 
+main {
+	overflow: hidden;
+}
+
+/* FUTURE: find overflowing content */
 
 /*////////////////////
     TYPOGRAPHY
@@ -160,7 +165,7 @@ html {
 .gradient-down::after {
 	display: block;
 	position: relative;
-	margin-top: -19vh;
+	margin-top: -19.9vh;
 	height: 20vh;
 	width: 100%;
 	content: '';
@@ -178,7 +183,7 @@ html {
 .gradient-up::before {
 	display: block;
 	position: relative;
-	margin-bottom: -19vh;
+	margin-bottom: -19.9vh;
 	height: 20vh;
 	width: 100%;
 	content: '';
@@ -746,7 +751,7 @@ div[class^='link-button'] {
 		transform: translateX(-50%);
 		z-index: -100;
 	}
-	
+
 	.image-43 img {
 		height: auto;
 		width: 100%;
@@ -792,7 +797,7 @@ div[class^='link-button'] {
 	main {
 		margin-left: 20%;
 	}
-	
+
 	main > section {
 		height: 100vh;
 	}
@@ -823,11 +828,11 @@ div[class^='link-button'] {
 	.first-image {
 		margin: 0;
 	}
-
+/*
 	.fixed-image {
 		display: none;
 	}
-
+*/
 	#homeRestaurantBG {
 		display: block;
 	}
@@ -865,13 +870,13 @@ div[class^='link-button'] {
 		height: 100vh;
 		position: static;
 	}
-	
+
 	.section-room {
 		display: flex;
 		flex-flow: column;
 		justify-content: flex-end;
 	}
-	
+
 	.content-container-bottom {
 		flex: 0 0 30%;
 		background: rgba(0, 0, 0, .3);
@@ -900,54 +905,86 @@ div[class^='link-button'] {
 
 /*// ROOMS PAGE //*/
 
-.content-container-bottom {
-	
-}
-
 .flex-container-room {
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 	margin: 0 1em;
-	z-index: 1000;
+	margin-top: -50px;
+	padding: 0 1em;
 	background-color: white;
-  border-bottom: 1px solid black;
-  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(transparent), to(#000));
-  background-image: -webkit-linear-gradient(transparent, #000);
-  background-image:
-      -moz-linear-gradient(transparent, #000),
-      -moz-linear-gradient(transparent, #000);
-  background-image:
-      -o-linear-gradient(transparent, #000),
-      -o-linear-gradient(transparent, #000);
-  background-image: 
-      linear-gradient(transparent, #000),
-      linear-gradient(transparent, #000);
-  -moz-background-size: px 100%;
-  background-size: 1px 100%;
-  background-position: 0 0, 100% 0;
-  background-repeat: no-repeat; 
+	border-bottom: 1px solid #66635e;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
+	/* IE6-9 */
 }
 
-.room-logo {
-	flex: 0 0 55%;
+.flex-container-room:before,
+.flex-container-room:after {
+	content: "";
+	position: absolute;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#66635e));
+	background-image: -webkit-linear-gradient(transparent, #66635e);
+	background-image: -moz-linear-gradient(transparent, #66635e);
+	background-image: -o-linear-gradient(transparent, #66635e);
+	background-image: linear-gradient(transparent, #66635e);
+	top: 0;
+	bottom: -1px;
+	width: 1px;
+}
+
+.flex-container-room:before {
+	left: -1px;
+}
+
+.flex-container-room:after {
+	right: -1px;
+}
+
+.room-buttons {
+	display: none;
 }
 
 .room-logo img {
-	width: 100%;
+	max-height: 100px;
+	max-width: 100%;
+}
+
+#rooms-ivy .flex-container-room {
+	margin-top: -80px;
+}
+
+#rooms-ivy .room-logo img {
+	max-height: 150px;
 }
 
 .link-button-airbnb {
-	margin: 0em!important;
-	flex: 0 0 45%;
-	align-self: center;
+	margin-top: 1em !important;
+	margin-bottom: 2em !important;
 }
 
 .link-button-airbnb a {
 	border: 1px solid var(--medium-grey);
 	padding: .5em 1em;
 	color: var(--medium-grey);
-	transition: border-color .3s linear, color .3s linear;
+	transition: border-color .3s linear, color .3s linear, filter .3s linear;
+	filter: grayscale(100);
+}
+
+.link-button-airbnb a:hover {
+	border: 1px solid var(--dark-font);
+	padding: .5em 1em;
+	color: var(--dark-font);
+	filter: grayscale(0);
 }
 
 .link-button-airbnb img {
@@ -955,39 +992,171 @@ div[class^='link-button'] {
 	height: 24px;
 }
 
-.room-info {
-	flex: 0 0 100%;
-}
-
 .room-info p {
-	text-align: right;
+	white-space: nowrap;
 }
 
-.room-description {
-	flex: 0 0 100%;
+.room-description p {
+	max-width: 600px;
+	margin: auto;
 }
 
 /* BnB page extra small response */
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 390px) {
 	.flex-container-room {
+		margin: 0 .5em;
+		padding: 0 .5em;
+	}
+
+	.room-info p {
+		font-size: .85em;
+	}
+
+	.link-button-airbnb {
+		font-size: .9em;
+	}
+}
+
+/* BnB page tablet response */
+
+@media screen and (min-width: 768px) {
+
+	.flex-container-room {
+		flex-flow: row wrap;
+		margin-top: -20px;
+	}
+
+	#rooms-ivy .flex-container-room {
+		margin-top: -40px;
+	}
+
+	.room-logo {
+		flex: 0 0 40%;
 	}
 	.room-info {
-		font-size: .75em;
+		flex: 0 0 55%;
 	}
+	.room-info p {
+		text-align: right;
+	}
+	.room-description {
+		flex: 0 0 100%;
+	}
+}
+
+/* BnB page widescreen response */
+
+@media screen and (min-width: 1280px) {
+
+	.flex-container-room {
+		flex-flow: row;
+		justify-content: space-around;
+		height: 20vh;
+		margin: 0;
+		padding: 0;
+		border: none;
+		background: rgba(0, 0, 0, .5);
+	}
+
+	.flex-container-room p {
+		color: white;
+	}
+
+	.room-buttons {
+		display: block;
+		flex: 0 0 12.5%;
+	}
+	
+	.room-button {
+		background: none;
+		border: none;
+		color: white;
+		display: block;
+		margin-left: 2em;
+	}
+	
+	.room-button:hover {
+		filter: brightness(0);
+	}
+	
+	.previousRoom {
+		margin-bottom: 1em;
+	}
+	
+	.previousRoom span:first-of-type,
+	.nextRoom span:first-of-type {
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 30px;
+		height: 30px;
+		vertical-align: bottom;
+	}
+	
+	.previousRoom span:first-of-type {
+		background-image: url(../images/logo/arrow_up.png);
+	}
+
+	.nextRoom span:first-of-type {
+		background-image: url(../images/logo/arrow_down.png);
+	}
+	
+	.previousRoom span:nth-child(2),
+	.nextRoom span:nth-child(2) {
+		display: inline-block;
+		text-align: left;
+		padding-left: 1em;
+	}
+
 	.room-logo {
+		flex: 0 0 15%
 	}
+	.room-logo img {
+		filter: brightness(100);
+	}
+	.room-info {
+		flex: 0 0 33%;
+		order: 5;
+	}
+	
+	.room-info p {
+		text-align: left;
+	}
+
+	.room-description {
+		flex: 0 0 33%;
+		order: 4;
+	}
+	
+	.room-description p {
+		text-align: left;
+	}
+
 	.link-button-airbnb {
+		position: absolute;
+		right: 50px;
+		bottom: 25vh;
 	}
-	.airbnb-button-image {
-		display: none;
+
+	.link-button-airbnb a {
+		border: 1px solid var(--light-font);
+		padding: .5em 1em;
+		color: var(--light-font);
+		transition: border-color .3s linear, color .3s linear, filter .3s linear;
+		filter: grayscale(100);
+	}
+
+	.link-button-airbnb a:hover {
+		border: 1px solid var(white);
+		color: var(white);
 	}
 }
 
 /*// FOOTER //*/
 
 footer {
-	height: 220px!important;
+	height: 220px !important;
 	text-align: center;
 	background-color: var(--background-main);
 }
