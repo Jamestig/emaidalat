@@ -43,10 +43,6 @@ html {
 	font-size: 16px;
 }
 
-main {
-	overflow: hidden;
-}
-
 /* FUTURE: find overflowing content */
 
 /*////////////////////
@@ -903,7 +899,7 @@ div[class^='link-button'] {
 	}
 }
 
-/*// ROOMS PAGE //*/
+/*// BNB PAGE //*/
 
 .flex-container-room {
 	display: flex;
@@ -927,29 +923,29 @@ div[class^='link-button'] {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
 	/* IE6-9 */
 }
+@media screen and (max-width: 1279px) {
+	.flex-container-room:before,
+	.flex-container-room:after {
+		content: "";
+		position: absolute;
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#66635e));
+		background-image: -webkit-linear-gradient(transparent, #66635e);
+		background-image: -moz-linear-gradient(transparent, #66635e);
+		background-image: -o-linear-gradient(transparent, #66635e);
+		background-image: linear-gradient(transparent, #66635e);
+		top: 0;
+		bottom: -1px;
+		width: 1px;
+	}
 
-.flex-container-room:before,
-.flex-container-room:after {
-	content: "";
-	position: absolute;
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#66635e));
-	background-image: -webkit-linear-gradient(transparent, #66635e);
-	background-image: -moz-linear-gradient(transparent, #66635e);
-	background-image: -o-linear-gradient(transparent, #66635e);
-	background-image: linear-gradient(transparent, #66635e);
-	top: 0;
-	bottom: -1px;
-	width: 1px;
+	.flex-container-room:before {
+		left: -1px;
+	}
+
+	.flex-container-room:after {
+		right: -1px;
+	}
 }
-
-.flex-container-room:before {
-	left: -1px;
-}
-
-.flex-container-room:after {
-	right: -1px;
-}
-
 .room-buttons {
 	display: none;
 }
@@ -1054,8 +1050,6 @@ div[class^='link-button'] {
 		justify-content: space-around;
 		height: 20vh;
 		margin: 0;
-		padding: 0;
-		border: none;
 		background: rgba(0, 0, 0, .5);
 	}
 
@@ -1152,6 +1146,10 @@ div[class^='link-button'] {
 		color: var(white);
 	}
 }
+
+/*// MENU PAGE //*/
+
+
 
 /*// FOOTER //*/
 
