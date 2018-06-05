@@ -4,11 +4,11 @@ emaidalat.com
 
 BREAKPOINTS:
 
-mobile <= 550px
-tablet <= 768px
-desktop <= 1024px
-widescreen <= 1280
-hd <= 1600
+mobile first
+tablet => 768px
+desktop => 1024px
+widescreen => 1280
+hd => 1600
 
 //*/
 
@@ -53,6 +53,7 @@ html {
 	font-family: antro;
 	src: url(../fonts/Antro_Vectra.otf);
 }
+
 @font-face {
 	font-family: coffee;
 	src: url(../fonts/coffee+tea.ttf);
@@ -70,15 +71,14 @@ p,
 a,
 li {
 	font-family: 'Amiri', serif;
-	letter-spacing: .08rem;
 	color: var(--font-dark);
+	letter-spacing: .1rem;
 }
 
 h2 {
 	font-weight: normal;
 	font-size: 1rem;
 	text-transform: uppercase;
-	letter-spacing: .2rem;
 }
 
 h3 {
@@ -91,7 +91,6 @@ a,
 li {
 	font-size: .9rem;
 	line-height: 1.1rem;
-	letter-spacing: .2rem;
 }
 
 @media screen and (min-width:450px) {
@@ -152,7 +151,17 @@ html {
 .content-white h4,
 .content-white h5,
 .content-white h6 {
-	color: white;
+	color: var(--grey-f4);
+}
+
+.content-white .link-button a {
+	color: var(--grey-f4);
+	border: 1px solid var(--grey-f4);
+	background-color: rgba(255, 255, 255, .2);
+}
+
+.content-white .link-button a:hover {
+	background-color: rgba(255, 255, 255, .4);
 }
 
 /*// COLOUR VARIABLES //*/
@@ -228,9 +237,37 @@ html {
 }
 
 /*////////////////////
-	SITE-WIDE CLASSES
+	SITE-WIDE STYLING
 ////////////////////*/
 
+.sm-list {
+	text-align: center;
+}
+
+.sm-list li {
+	display: inline-block;
+	font-size: 1.3em;
+}
+
+.sm-list li a {
+	padding: 0 .5em;
+}
+
+.hr-left {
+	margin-left: 0;
+	max-width: 100px;
+	height: 1px;
+	background-color: var(--font-main);
+	border: 0;
+}
+
+.hr-center {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+	margin: 2em auto;
+	max-width: 400px;
+}
 
 @media screen and (max-width: 1279px) {
 	main > section {
@@ -246,17 +283,28 @@ html {
 	}
 }
 
-.sm-list {
-	text-align: center;
+@media screen and (orientation: landscape) and (max-width: 1279px) {
+	.first-image {
+		margin-left: -80px;
+	}
 }
 
-.sm-list li {
-	display: inline-block;
-	font-size: 1.3em;
-}
+/* Site-wide widescreen response */
 
-.sm-list li a {
-	padding: 0 .5em;
+@media screen and (min-width: 1280px) {
+
+	main {
+		margin-left: 20vw;
+	}
+
+	.first-image {
+		margin: 0;
+	}
+	/*
+	.fixed-image {
+		display: none;
+	}
+*/
 }
 
 /*// CONTENT //*/
@@ -266,12 +314,16 @@ html {
 	text-align: center;
 }
 
+.content li {
+	text-transform: none;
+	padding: .7em 0;
+}
+
 .content h3 {
 	margin-top: 0;
 }
 
 @media screen and (max-width:355px) {
-
 	.content {
 		padding: 0 2%;
 	}
@@ -288,7 +340,7 @@ html {
 		font-size: 1.7rem;
 	}
 
-	.content-container {
+	.ribbon-container {
 		flex: 0 0 40%;
 		max-width: 40%;
 		height: 100vh;
@@ -299,17 +351,7 @@ html {
 		justify-content: center;
 	}
 
-	.content-container-card {
-		height: 90vh;
-		margin: 5vh;
-	}
-
-	.content-container-wide {
-		height: 100vh;
-		position: static;
-	}
-
-	.content-container-bottom {
+	.ribbon-container-bottom {
 		flex: 0 0 30%;
 		background: rgba(0, 0, 0, .3);
 		align-items: flex-end;
@@ -319,15 +361,9 @@ html {
 
 /*// BUTTONS //*/
 
-div[class^='link-button'] {
+.link-button {
 	text-align: center;
 	margin: 2em;
-}
-
-@media screen and (max-width: 400px) {
-	div[class^='link-button'] {
-		margin: 2em 1em 1em 1em;
-	}
 }
 
 .link-button a {
@@ -343,101 +379,18 @@ div[class^='link-button'] {
 	color: var(--dark-grey);
 }
 
-.link-button-light a {
-	color: var(--grey-f4);
-	border: 1px solid var(--grey-f4);
-	background-color: rgba(255, 255, 255, .2);
-	padding: .5em 1em;
-	transition: background-color .3s linear, color .3s linear;
-	white-space: nowrap;
-}
-
-.link-button-light a:hover {
-	background-color: rgba(255, 255, 255, .4);
-}
-
-.link-button-airbnb {
-	margin-top: 1em !important;
-	margin-bottom: 2em !important;
-}
-
-.link-button-airbnb a {
-	border: 1px solid var(--grey-77);
-	padding: .5em 1em;
-	color: var(--grey-77);
-	transition: border-color .3s linear, color .3s linear, filter .3s linear;
-	filter: grayscale(100);
-}
-
-.link-button-airbnb a:hover {
-	border: 1px solid var(--font-dark);
-	padding: .5em 1em;
-	color: var(--font-dark);
-	filter: grayscale(0);
-}
-
-.link-button-airbnb img {
-	vertical-align: bottom;
-	height: 24px;
-}
-
-@media screen and (max-width: 390px) {
-	
-	.link-button-airbnb {
-		font-size: .9em;
-	}
-}
-
-@media screen and (min-width: 1280px) {
-
-	.content > .link-button {
-		text-align: left;
-		margin-top: 4em;
-	}
-
-	.content div[class^='link-button'] {
-		text-align: center;
-		margin-left: 0;
-	}
-	
-	.link-button-airbnb {
-		position: absolute;
-		right: 50px;
-		bottom: 25vh;
-	}
-
-	.link-button-airbnb a {
-		border: 1px solid var(--light-font);
-		padding: .5em 1em;
-		color: var(--light-font);
-		transition: border-color .3s linear, color .3s linear, filter .3s linear;
-		filter: grayscale(100);
-	}
-
-	.link-button-airbnb a:hover {
-		border: 1px solid var(white);
-		color: var(white);
-	}
-	
-	.room-buttons {
-		display: block;
-		flex: 0 0 12.5%;
-	}
-
-	.room-button {
-		background: none;
-		border: none;
-		color: white;
-		display: block;
-		margin-left: 2em;
-	}
-
-	.room-button:hover {
-		filter: brightness(0);
-	}
+.button-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 }
 
 /*// IMAGE CLASSES //*/
+
+.fixed-image img {
+	width: 100%;
+	height: auto;
+}
 
 @media screen and (min-width:1280px) {
 	.fixed-image {
@@ -460,29 +413,6 @@ div[class^='link-button'] {
 
 	.image-43 img {
 		height: auto;
-		width: 100%;
-	}
-}
-
-@media screen and (max-width: 1279px) {
-	.mobile-image img {
-		width: 100%;
-	}
-}
-
-.image-tall {
-	overflow: hidden;
-}
-
-@media screen and (orientation:portrait) {
-	.image-tall img {
-		margin-left: 50%;
-		transform: translateX(-50%);
-	}
-}
-
-@media screen and (min-width:450px) and (max-width: 1279px) {
-	.image-tall img {
 		width: 100%;
 	}
 }
@@ -524,39 +454,6 @@ div[class^='link-button'] {
 	align-items: center;
 	justify-content: center;
 	height: 100%;
-}
-
-/*// SITE-WIDE WIDESCREEN RESPONSE //*/
-
-@media screen and (min-width: 1280px) {
-
-	main {
-		margin-left: 20vw;
-	}
-
-	.first-image {
-		margin: 0;
-	}
-	/*
-	.fixed-image {
-		display: none;
-	}
-*/
-	.section-full {
-		display: flex;
-		flex-flow: row;
-	}
-
-
-	.section-room {
-		display: flex;
-		flex-flow: column;
-		justify-content: flex-end;
-	}
-
-	.section-spaced {
-		margin: 0;
-	}
 }
 
 /*////////////////////
@@ -945,7 +842,7 @@ div[class^='link-button'] {
 }
 
 /*////////////////////
-	HOME PAGE CLASSES
+	HOME PAGE
 ////////////////////*/
 
 #main-home a,
@@ -953,35 +850,50 @@ div[class^='link-button'] {
 	text-transform: uppercase;
 }
 
-.hr-left {
-	margin-left: 0;
-	max-width: 100px;
-	height: 1px;
-	background-color: var(--font-main);
-	border: 0;
+/*FUTURE: figure out what the deal is with the space under this */
+
+.image-tall {
+	background-color: red;
 }
 
-.hr-center {
-	border: 0;
-	height: 1px;
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
-	margin: 2em auto;
-	max-width: 400px;
-}
+/*
+@media screen and (max-width: 1279px) {
+	
+	.image-tall {
+		overflow: hidden;
+	}
 
-.button-container {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}
-
-@media screen and (orientation:landscape) and (max-width:1279px) {
-	main figure:first-of-type {
-		margin-left: -80px;
+	.image-tall img {
+		width: auto;
 	}
 }
 
+@media screen and (orientation:portrait) {
+	
+	.image-tall {
+		height: 50vh;
+	}
+	
+	.image-tall img {
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+@media screen and (min-width:450px) and (max-width: 1279px) {
+	.image-tall img {
+		width: 100%;
+	}
+}
+*/
+
+/* Home page widescreen response */
+
 @media screen and (min-width: 1280px) {
+
+	#main-home > section {
+		height: 100vh;
+	}
 
 	#main-home .content p {
 		margin-left: 2em;
@@ -992,18 +904,27 @@ div[class^='link-button'] {
 		width: 85%;
 	}
 
+	#home-booking .content {
+		width: 100%;
+	}
+
 	#homeRestaurantBG {
 		display: block;
 	}
 
-	#main-home > section {
+	#home-booking .position-overlay {
 		height: 100vh;
+		position: static;
 	}
 }
 
 /*////////////////////
-	BNB PAGE CLASSES
+	BNB PAGE
 ////////////////////*/
+
+.section-room:last-of-type {
+	margin-bottom: 2em;
+}
 
 .flex-container-room {
 	display: flex;
@@ -1052,8 +973,35 @@ div[class^='link-button'] {
 	}
 }
 
-.room-buttons {
+.room-button-container {
 	display: none;
+}
+
+.link-button-airbnb {
+	margin-top: 1em;
+	margin-bottom: 2em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.link-button-airbnb a {
+	border: 1px solid var(--grey-77);
+	padding: .5em 1em;
+	color: var(--grey-77);
+	white-space: nowrap;
+	transition: border-color .3s linear, color .3s linear, filter .3s linear;
+	filter: grayscale(100);
+}
+
+.link-button-airbnb a:hover {
+	border: 1px solid var(--font-dark);
+	color: var(--font-dark);
+	filter: grayscale(0);
+}
+
+.link-button-airbnb img {
+	vertical-align: bottom;
+	height: 24px;
 }
 
 .room-logo img {
@@ -1089,6 +1037,7 @@ div[class^='link-button'] {
 
 	.room-info p {
 		font-size: .85em;
+		letter-spacing: .05em;
 	}
 
 }
@@ -1128,6 +1077,24 @@ div[class^='link-button'] {
 		height: 100vh;
 	}
 
+	#main-bnb .ribbon-container {
+		height: 90vh;
+		margin: 5vh;
+		text-align: left;
+	}
+
+	#bnb-intro,
+	#bnb-breakfast {
+		display: flex;
+		flex-flow: row;
+	}
+
+	.section-room {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+	}
+
 	.flex-container-room {
 		flex-flow: row;
 		justify-content: space-around;
@@ -1140,6 +1107,42 @@ div[class^='link-button'] {
 
 	.flex-container-room p {
 		color: white;
+	}
+
+	.link-button-airbnb {
+		position: absolute;
+		right: 50px;
+		bottom: 25vh;
+	}
+
+	.link-button-airbnb a {
+		border: 1px solid var(--light-font);
+		padding: .5em 1em;
+		color: var(--light-font);
+		transition: border-color .3s linear, color .3s linear, filter .3s linear;
+		filter: grayscale(100);
+	}
+
+	.link-button-airbnb a:hover {
+		border: 1px solid var(white);
+		color: var(white);
+	}
+
+	.room-button-container {
+		display: block;
+		flex: 0 0 12.5%;
+	}
+
+	.room-button {
+		background: none;
+		border: none;
+		color: white;
+		display: block;
+		margin-left: 2em;
+	}
+
+	.room-button:hover {
+		filter: brightness(0);
 	}
 
 	.previousRoom {
@@ -1270,14 +1273,17 @@ div[class^='link-button'] {
 	height: 11px;
 	vertical-align: middle;
 }
+
 .icon-vegan {
 	height: 12px;
 	vertical-align: middle;
 }
+
 .icon-seasonal {
 	height: 16px;
 	vertical-align: middle;
 }
+
 .icon-spicy {
 	height: 15px;
 	vertical-align: middle;
@@ -1285,12 +1291,6 @@ div[class^='link-button'] {
 
 .section-dish {
 	margin-bottom: 2em;
-}
-
-.content-container-menu > ul > li {
-	text-transform: none;
-	padding: .7em 0;
-	letter-spacing: .1em;
 }
 
 .dish-header {
@@ -1303,6 +1303,8 @@ div[class^='link-button'] {
 	font-weight: normal;
 	font-size: 1.5em;
 	font-style: italic;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .dish-title::before {
@@ -1319,10 +1321,6 @@ div[class^='link-button'] {
 	padding-left: 10px;
 }
 
-.dish-price {
-	font-size: .8em;
-}
-
 @media screen and (min-width: 500px) {
 	.dish-title::before {
 		content: url(../images/icon/line_left.png);
@@ -1332,6 +1330,11 @@ div[class^='link-button'] {
 		content: url(../images/icon/line_right.png);
 	}
 }
+
+.dish-price {
+	font-size: .8em;
+}
+
 
 /* Menu page widescreen response */
 
@@ -1344,11 +1347,11 @@ div[class^='link-button'] {
 	.main-menu .fixed-image {
 		width: 30vw;
 	}
-	
+
 	.menu-select {
 		display: none;
 	}
-	
+
 	.menu-title {
 		background-color: var(--background-main);
 		padding-top: 2em;
@@ -1379,9 +1382,7 @@ div[class^='link-button'] {
 
 /* Drink menu page */
 
-#menu-coffee .dish-title {
-	
-}
+#menu-coffee .dish-title {}
 
 .drink-title {
 	font-weight: normal;
@@ -1403,7 +1404,6 @@ footer h2,
 footer a,
 footer span {
 	color: var(--font-main);
-	letter-spacing: .1em;
 }
 
 footer h2:hover,
