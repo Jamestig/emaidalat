@@ -180,8 +180,8 @@ html {
 
 .gradient-down::after {
 	display: block;
-	position: relative;
-	margin-top: -19.9vh;
+	position: absolute;
+	bottom: 0;
 	height: 20vh;
 	width: 100%;
 	content: '';
@@ -198,8 +198,8 @@ html {
 
 .gradient-up::before {
 	display: block;
-	position: relative;
-	margin-bottom: -19.9vh;
+	position: absolute;
+	bottom: 0;
 	height: 20vh;
 	width: 100%;
 	content: '';
@@ -216,11 +216,9 @@ html {
 
 @media screen and (orientation:landscape) {
 	.gradient-down::after {
-		margin-top: -49vh;
 		height: 50vh;
 	}
 	.gradient-up::before {
-		margin-bottom: -49vh;
 		height: 50vh;
 	}
 }
@@ -387,9 +385,26 @@ html {
 
 /*// IMAGE CLASSES //*/
 
+.fixed-image {
+	position: relative;
+}
+
 .fixed-image img {
 	width: 100%;
 	height: auto;
+}
+
+@media screen and (max-width: 1279px) and (orientation: landscape) {
+
+	.fixed-image {
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	.fixed-image img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 @media screen and (min-width:1280px) {
@@ -850,42 +865,32 @@ html {
 	text-transform: uppercase;
 }
 
-/*FUTURE: figure out what the deal is with the space under this */
-
-.image-tall {
-	background-color: red;
-}
-
-/*
 @media screen and (max-width: 1279px) {
-	
+
 	.image-tall {
 		overflow: hidden;
+		height: 50vh;
 	}
 
 	.image-tall img {
 		width: auto;
-	}
-}
-
-@media screen and (orientation:portrait) {
-	
-	.image-tall {
-		height: 50vh;
-	}
-	
-	.image-tall img {
+		height: 100%;
 		margin-left: 50%;
 		transform: translateX(-50%);
 	}
 }
 
-@media screen and (min-width:450px) and (max-width: 1279px) {
+@media screen and (max-width: 1279px) and (orientation: landscape) {
+
+	.image-tall {
+		min-height: 100vh;
+	}
+
 	.image-tall img {
 		width: 100%;
+		height: auto;
 	}
 }
-*/
 
 /* Home page widescreen response */
 
@@ -1229,6 +1234,10 @@ html {
 
 .menu-select a {
 	border-bottom: 1px solid black;
+}
+
+.menu-select-bottom ul {
+	margin-top: 1em;
 }
 
 .menu-title {
