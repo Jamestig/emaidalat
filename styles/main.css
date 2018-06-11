@@ -71,26 +71,29 @@ p,
 a,
 li {
 	font-family: 'Amiri', serif;
-	color: var(--font-dark);
 	letter-spacing: .1rem;
-}
-
-h2 {
-	font-weight: normal;
-	font-size: 1rem;
-	text-transform: uppercase;
-}
-
-h3 {
-	font-weight: normal;
-	font-size: 1.3rem;
 }
 
 p,
 a,
 li {
 	font-size: .9rem;
+	color: var(--font-dark);
+}
+
+p,
+li {
 	line-height: 1.1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	color: var(--font-main);
 }
 
 @media screen and (min-width:450px) {
@@ -168,6 +171,7 @@ html {
 
 :root {
 	--background-main: #f6f7f5;
+	--background-light: white;
 	--font-main: #66635e;
 	--font-dark: #363636;
 	--font-light: white;
@@ -237,6 +241,11 @@ html {
 /*////////////////////
 	SITE-WIDE STYLING
 ////////////////////*/
+
+.text-condition {
+	color: var(--grey-77);
+	font-size: .9em;
+}
 
 .sm-list {
 	text-align: center;
@@ -368,7 +377,7 @@ html {
 	border: 1px solid var(--grey-77);
 	padding: .5em 1em;
 	color: var(--grey-77);
-	transition: border-color .3s linear, color .3s linear;
+	transition: border-color .3s linear, color .3s linear, background .3s linear;
 	white-space: nowrap;
 }
 
@@ -589,7 +598,6 @@ html {
 
 .main-logo {
 	height: 50vh;
-	min-height: 300px;
 	margin: 0;
 	display: flex;
 	flex-flow: column;
@@ -703,6 +711,10 @@ html {
 	#navbarLogo {
 		display: none;
 	}
+	
+	.main-logo {
+		min-height: 300px;
+	}
 
 	.nav-overlay {
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f7f5+0,f6f7f5+100&1+15,0.9+30 */
@@ -765,14 +777,6 @@ html {
 		right: 0;
 		display: none;
 	}
-
-	.header-full {
-		display: none
-	}
-
-	.hr-left {
-		display: none;
-	}
 }
 
 /* Header nav widescreen (short) response */
@@ -805,16 +809,25 @@ html {
 
 	.main-logo {
 		width: 100%;
-		height: 30%;
+		height: 30vh;
 	}
 
 	.main-logo a {
-		margin-top: 25%;
+		height: 100%;
+		max-width: 70%;
+		margin: 10% auto 5% auto;
+		justify-content: flex-end;
+	}
+
+	.main-logo img {
+		height: auto;
+		max-height: 100%;
+		max-width: 100%;
 	}
 
 	.nav-overlay {
 		background: none;
-		height: 70%;
+		height: 70vh;
 		padding-top: 0;
 		display: flex;
 		flex-flow: column;
@@ -822,7 +835,7 @@ html {
 	}
 
 	.header-nav {
-		height: 70%;
+		height: 80%;
 	}
 
 	.accordion {
@@ -848,7 +861,7 @@ html {
 		align-items: center;
 		justify-content: flex-start;
 		margin-left: 20%;
-		height: 30%;
+		height: 20%;
 	}
 
 	.nav-overlay .sm-list a {
@@ -865,7 +878,26 @@ html {
 	text-transform: uppercase;
 }
 
-@media screen and (max-width: 1279px) {
+#main-home h3 {
+	font-size: 1.3rem;
+}
+
+.header-full {
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+/* Home page below widescreen */
+
+@media screen and (max-width:1279px) {
+
+	.header-full {
+		display: none
+	}
+
+	.hr-left {
+		display: none;
+	}
 
 	.image-tall {
 		overflow: hidden;
@@ -927,9 +959,6 @@ html {
 	BNB PAGE
 ////////////////////*/
 
-.section-room:last-of-type {
-	margin-bottom: 2em;
-}
 
 .flex-container-room {
 	display: flex;
@@ -1074,6 +1103,13 @@ html {
 	}
 }
 
+@media screen and (max-width: 1279px) {
+	
+	.section-room:last-of-type {
+		margin-bottom: 2em;
+	}
+}
+
 /* BnB page widescreen response */
 
 @media screen and (min-width: 1280px) {
@@ -1143,7 +1179,8 @@ html {
 		border: none;
 		color: white;
 		display: block;
-		margin-left: 2em;
+		margin-left: 15%;
+		white-space: nowrap;
 	}
 
 	.room-button:hover {
@@ -1206,8 +1243,12 @@ html {
 }
 
 /*////////////////////
-	MENU PAGES CLASSES
+	MENU PAGES
 ////////////////////*/
+
+.main-menu .content {
+	text-align: center;
+}
 
 .menu-select {
 	text-align: center;
@@ -1236,6 +1277,10 @@ html {
 	border-bottom: 1px solid black;
 }
 
+.menu-select-bottom {
+	margin-top: 3em;
+}
+
 .menu-select-bottom ul {
 	margin-top: 1em;
 }
@@ -1245,6 +1290,7 @@ html {
 	font-size: 2.5em;
 	text-transform: none;
 	text-align: center;
+	padding: .5em;
 }
 
 .menu-legend {
@@ -1342,10 +1388,11 @@ html {
 
 .dish-price {
 	font-size: .8em;
+	color: var(--grey-77)
 }
 
 
-/* Menu page widescreen response */
+/* Menu pages widescreen response */
 
 @media screen and (min-width: 1280px) {
 
@@ -1364,6 +1411,7 @@ html {
 	.menu-title {
 		background-color: var(--background-main);
 		padding-top: 2em;
+		margin-top: 0;
 	}
 
 	.dish-title {
@@ -1389,73 +1437,168 @@ html {
 	}
 }
 
-/* Drink menu page */
-
-#menu-coffee .dish-title {}
+/* DRINK MENU PAGE */
 
 .drink-title {
 	font-weight: normal;
 	font-size: 1em;
 	text-transform: uppercase;
+	margin-bottom: .8em;
+}
+
+/* WINE LIST PAGE */
+
+#main-menu-wine .dish-title {
+	margin: 2em 0 .5em 0;
+}
+
+#main-menu-wine .dish-title:first-child {
+	margin-top: 0;
+}
+
+/* BREAKFAST MENU PAGE */
+
+.menu-breakfast-information p:nth-child(1) {
+	color: var(--grey-77);
+	font-style: italic;
+}
+.menu-breakfast-information p:nth-of-type(2),
+.menu-breakfast-information p:nth-of-type(4) {
+	color: var(--grey-77);
+}
+
+.menu-breakfast-sets h6 {
+	font-family: antro;
+	font-size: 2em;
+	margin: 1em 0 .5em 0;
+}
+
+
+/*////////////////////
+	OUR STORY PAGE
+////////////////////*/
+
+#main-story {
+	background-color: var(--background-light);
+}
+
+.section-story {
+	margin-bottom: 6em;
+	background-color: var(--background-light);
+}
+
+#story-about {
+	padding-top: 4em;
+}
+
+#main-story header h2 {
+	font-size: 1.8em;
+}
+
+#main-story header h3 {
+	font-size: 3em;
+	color: black;
+}
+
+#main-story hr {
+	max-width: 120px;
+	border-style: none;
+	height: 1px;
+	background-color: var(--font-dark);
+	margin: 2em 0;
+}
+
+#main-story p {
+	line-height: 1.5em;
+	color: black;
+}
+
+@media screen and (max-width: 1279px) and (orientation: landscape) {
+	#story-about {
+		margin-left: -80px;
+	}
+	
+	#story-about header{
+		margin-left: 80px;
+	}
+}
+
+/* Story page widescreen response */
+
+@media screen and (min-width: 1280px) {
+
+	#main-story {
+		margin-left: 50vw;
+	}
+
+	#main-story .fixed-image {
+		width: 30vw;
+	}
 }
 
 /*////////////////////
-	FOOTER CLASSES
+	MOBILE FOOTER
 ////////////////////*/
 
-footer {
+@media screen and (min-width: 1280px) {
+	.mobile-footer {
+		display: none;
+	}
+}
+
+.mobile-footer {
 	height: 220px !important;
 	text-align: center;
 	background-color: lightgray;
 }
 
-footer h2,
-footer a,
-footer span {
+.mobile-footer h2,
+.mobile-footer a,
+.mobile-footer span {
 	color: var(--font-main);
 }
 
-footer h2:hover,
-footer a:hover,
-footer span:hover {
+.mobile-footer h2:hover,
+.mobile-footer a:hover,
+.mobile-footer span:hover {
 	transition: color .3s linear;
 	color: var(--dark-grey);
 }
 
-footer h2 a {
+.mobile-footer h2 a {
 	text-transform: none;
 	font-size: 1.5rem;
 }
 
-footer .sm-list {
+.mobile-footer .sm-list {
 	margin-bottom: 1em;
 }
 
-footer .sm-list li a {
+.mobile-footer .sm-list li a {
 	padding: 0 .3em;
 }
 
-address a {
+.mobile-footer address a {
 	text-transform: none;
 }
 
-.footer-address {
+.mobile-footer .footer-address {
 	display: block;
 }
 
-.footer-email,
-.footer-phone {
+.mobile-footer .footer-email,
+.mobile-footer .footer-phone {
 	display: inline-block;
 }
 
 @media screen and (max-width: 1279px) and (orientation: landscape) {
-	footer {
+	.mobile-footer {
 		margin-left: 80px;
 	}
 }
 
 @media screen and (min-width: 1280px) {
-	footer {
+	.mobile-footer {
 		height: 300px;
 		margin-left: 20vw;
 	}
