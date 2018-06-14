@@ -70,11 +70,6 @@
 
 					<li>
 						<a class="toggle" href="">Reservations</a>
-						<ul class="accordionInner">
-							<li><a href="">Reserve a table</a></li>
-							<li><a href="">Book your stay</a></li>
-							<li><a href="">Contact</a></li>
-						</ul>
 					</li>
 
 
@@ -91,33 +86,54 @@
 					<li>
 						<a class="toggle" href="">Gallery</a>
 					</li>
+					
+					<li>
+						<a class="toggle" href="">Contact</a>
+					</li>
 				</ul>
 			</nav>
+			
+			<div class="header-footer">
+				<ul class="sm-list">
+					<li><a href="https://www.facebook.com/emaidalat/" target="_blank" class="fa fa-facebook-square"></a></li>
+					<li><a href="https://www.instagram.com/emaidalat/" target="_blank" class="fa fa-instagram"></a></li>
+					<li><a href="mailto:family@emaidalat.com" class="fa fa-envelope"></a></li>
+				</ul>
 
-			<ul class="sm-list">
-				<li><a href="https://www.facebook.com/emaidalat/" target="_blank" class="fa fa-facebook-square"></a></li>
-				<li><a href="https://www.instagram.com/emaidalat/" target="_blank" class="fa fa-instagram"></a></li>
-				<li><a href="mailto:family@emaidalat.com" class="fa fa-envelope"></a></li>
-			</ul>
+				<address>
+					<a class="footer-address" href="https://www.google.com/maps/place/1+Thi+S%C3%A1ch,+Ph%C6%B0%E1%BB%9Dng+6,+Tp.+%C4%90%C3%A0+L%E1%BA%A1t,+L%C3%A2m+%C4%90%E1%BB%93ng,+Vietnam/@11.9468468,108.4303808,17z/data=!3m1!4b1!4m5!3m4!1s0x3171132bcb6e21e1:0x45649b7517deb5b!8m2!3d11.9468416!4d108.4325695">1 Thi Sach, Da lat, Vietnam</a>
+					<a class="footer-phone" href="tel: +842633839001">+84 2633 839 001</a>
+				</address>
+			</div>
 		</div>
 	</header>
 
 	<main id="main-home">
+		<div class="fullscreen-button-container">
+			<div class="fullscreen-buttons">
+				<button class="fullscreen-button" id="fullscreenIcon">[ ]</button>
+				<button class="fullscreen-button" id="previousImage">LEFT</button>
+				<button class="fullscreen-button" id="nextImage">RIGHT</button>
+			</div>
+		</div>
+
 		<section id="home-restaurant" class="section-full">
-			<figure id="homeRestaurantBG" class="first-image fixed-image gradient-down">
-				<picture>
-					<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
-					<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
-					<img src="images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
-				</picture>
-			</figure>
+			<div class="first-image fixed-image gradient-down">
+				<figure id="homeRestaurantBG" class="">
+					<picture>
+						<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
+						<img src="images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+					</picture>
+				</figure>
+			</div>
 
 			<div class="ribbon-container">
 				<div class="content">
 					<header>
-						<h2 class="header-full">emai restaurant</h2>
+						<h2 class="header-full header-upper">emai restaurant</h2>
 						<hr class="hr-left">
-						<h3>Sensational, authentic European flavours in the heart of Dalat, Vietnam</h3>
+						<h3 class="header-large">Sensational, authentic European flavours in the heart of Dalat, Vietnam</h3>
 					</header>
 
 					<p>Using the finest of Dalat's clean produce and chess imported from Italy, we passionately homecook dishes that blend Italian customs and contemporary dining, delivering a truly unforgettable experience.</p>
@@ -130,20 +146,22 @@
 		</section>
 
 		<section id="home-cafe" class="section-full">
-			<figure id="homeCafeBG" class="fixed-image gradient-down">
-				<picture>
-					<source srcset="images/photos/hd/panna_1500_01.jpg" media="(min-width: 1600px)">
-					<source srcset="images/photos/tablet/panna_800_01.jpg" media="(min-width: 600px)">
-					<img src="images/photos/mobile/panna_480_01.jpg" alt="Panna Cotta with Dalat Berries Cooked in Mulled Wine">
-				</picture>
-			</figure>
+			<div class="fixed-image gradient-down">
+				<figure id="homeCafeBG">
+					<picture>
+						<source srcset="images/photos/hd/panna_1500_01.jpg" media="(min-width: 1600px)">
+						<source srcset="images/photos/tablet/panna_800_01.jpg" media="(min-width: 600px)">
+						<img src="images/photos/mobile/panna_480_01.jpg" alt="Panna Cotta with Dalat Berries Cooked in Mulled Wine">
+					</picture>
+				</figure>
+			</div>
 
 			<div class="ribbon-container">
 				<div class="content">
 					<header>
-						<h2 class="header-full">emai cafe</h2>
+						<h2 class="header-full header-upper">emai cafe</h2>
 						<hr class="hr-left">
-						<h3>Wholesome and indulgent homemade desserts and drinks</h3>
+						<h3 class="header-large">Wholesome and indulgent homemade desserts and drinks</h3>
 					</header>
 
 					<p>Have a taste of heaven with our handpicked selection of special homemade cakes and desserts</p>
@@ -156,20 +174,22 @@
 		</section>
 
 		<section id="home-bnb" class="section-full">
-			<figure id="homeBnbBG" class="fixed-image gradient-down">
-				<picture>
-					<source srcset="images/photos/hd/lila_1920_01.jpg" media="(min-width: 1600px)">
-					<source srcset="images/photos/tablet/lila_800_01.jpg" media="(min-width: 600px)">
-					<img src="images/photos/mobile/lila_480_01.jpg" alt="Emai Homestay Room Four: Lila">
-				</picture>
-			</figure>
+			<div class="fixed-image gradient-down">
+				<figure id="homeBnbBG">
+					<picture>
+						<source srcset="images/photos/hd/lila_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="images/photos/tablet/lila_800_01.jpg" media="(min-width: 600px)">
+						<img src="images/photos/mobile/lila_480_01.jpg" alt="Emai Homestay Room Four: Lila">
+					</picture>
+				</figure>
+			</div>
 
 			<div class="ribbon-container">
 				<div class="content">
 					<header>
-						<h2 class="header-full">emai homestay</h2>
+						<h2 class="header-full header-upper">emai homestay</h2>
 						<hr class="hr-left">
-						<h3>Gorgeous and rustic little rooms</h3>
+						<h3 class="header-large">Gorgeous and rustic little rooms</h3>
 					</header>
 
 					<p>Our cozy guest rooms recall the picturesque charm of the Dalat countryside, with a touch of Zen and contemporary aesthetics from Europe and Japan.</p>
@@ -211,19 +231,20 @@
 			</section>
 -->
 		<section id="home-atmosphere" class="section-full">
-
-			<figure id="homeAtmosphereBG" class="fixed-image gradient-down">
-				<picture>
-					<source srcset="images/photos/hd/table_1920_01.jpg" media="(min-width: 1600px)">
-					<source srcset="images/photos/tablet/table_800_01.jpg" media="(min-width: 600px)">
-					<img src="images/photos/mobile/table_480_01.jpg" alt="Dining Room Table Setting with Candles and Flowers">
-				</picture>
-			</figure>
+			<div class="fixed-image gradient-down">
+				<figure id="homeAtmosphereBG">
+					<picture>
+						<source srcset="images/photos/hd/table_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="images/photos/tablet/table_800_01.jpg" media="(min-width: 600px)">
+						<img src="images/photos/mobile/table_480_01.jpg" alt="Dining Room Table Setting with Candles and Flowers">
+					</picture>
+				</figure>
+			</div>
 
 			<div class="ribbon-container">
 				<div class="content">
 					<header>
-						<h3>A cosy nest, a joie de vivre.</h3>
+						<h3 class="header-upper">A cosy nest, a joie de vivre.</h3>
 					</header>
 
 					<p>Nestled in Vietnam's most romantic city, émai is a dream born out of our love for nature, beauty, and good food, all housed together in a rustic little garden home.</p>
@@ -238,14 +259,15 @@
 
 		<section id="home-booking">
 			<div class="position-underlay">
-
-				<figure id="homeBookingBG" class="image-tall fixed-image">
-					<picture>
-						<source srcset="images/photos/hd/flower_1920_01.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/flower_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/flower_480_01.jpg" alt="Pink Flowers from the Emai Garden">
-					</picture>
-				</figure>
+				<div class="fixed-image">
+					<figure class="image-tall" id="homeBookingBG">
+						<picture>
+							<source srcset="images/photos/hd/flower_1920_01.jpg" media="(min-width: 1600px)">
+							<source srcset="images/photos/tablet/flower_800_01.jpg" media="(min-width: 600px)">
+							<img src="images/photos/mobile/flower_480_01.jpg" alt="Pink Flowers from the Emai Garden">
+						</picture>
+					</figure>
+				</div>
 
 				<div class="position-overlay">
 					<div class="content-white vertical-center content">
@@ -283,11 +305,11 @@
 		</ul>
 
 		<address>
-       <a class="footer-address" href="https://www.google.com/maps/place/1+Thi+S%C3%A1ch,+Ph%C6%B0%E1%BB%9Dng+6,+Tp.+%C4%90%C3%A0+L%E1%BA%A1t,+L%C3%A2m+%C4%90%E1%BB%93ng,+Vietnam/@11.9468468,108.4303808,17z/data=!3m1!4b1!4m5!3m4!1s0x3171132bcb6e21e1:0x45649b7517deb5b!8m2!3d11.9468416!4d108.4325695">1 Thi Sach, Da lat, Vietnam</a>
-        <a class="footer-email" href="mailto:family@emaidalat.com">family@emaidalat.com</a>
-        <span>&vert;</span>
-        <a class="footer-phone" href="tel: +842633839001">+84 2633 839 001</a>
-        </address>
+			<a class="footer-address" href="https://www.google.com/maps/place/1+Thi+S%C3%A1ch,+Ph%C6%B0%E1%BB%9Dng+6,+Tp.+%C4%90%C3%A0+L%E1%BA%A1t,+L%C3%A2m+%C4%90%E1%BB%93ng,+Vietnam/@11.9468468,108.4303808,17z/data=!3m1!4b1!4m5!3m4!1s0x3171132bcb6e21e1:0x45649b7517deb5b!8m2!3d11.9468416!4d108.4325695">1 Thi Sach, Da lat, Vietnam</a>
+			<a class="footer-email" href="mailto:family@emaidalat.com">family@emaidalat.com</a>
+			<span>&vert;</span>
+			<a class="footer-phone" href="tel: +842633839001">+84 2633 839 001</a>
+		</address>
 	</footer>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
