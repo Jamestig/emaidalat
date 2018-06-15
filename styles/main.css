@@ -47,7 +47,7 @@ html {
 	GLOBAL TYPOGRAPHY
 ////////////////////*/
 
-/* FONTS */
+/*// FONTS //*/
 
 @font-face {
 	font-family: antro;
@@ -77,7 +77,6 @@ li {
 p,
 a,
 li {
-	font-size: .9rem;
 	color: var(--font-dark);
 }
 
@@ -124,7 +123,7 @@ h6 {
 	p,
 	a,
 	li {
-		font-size: 1.2rem;
+		font-size: 1.15rem;
 	}
 }
 
@@ -132,7 +131,73 @@ h6 {
 	p,
 	a,
 	li {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
+	}
+}
+
+/* Font classes */
+
+.text-condition {
+	color: var(--grey-77);
+	font-size: .9em;
+}
+
+/* Header classes */
+
+.double-header>h2 {
+	font-size: 1.3em;
+	letter-spacing: .15em;
+	margin: 0;
+	margin-top: 2rem;
+	text-transform: uppercase;
+	color: var(--font-main);
+}
+
+.double-header>h3 {
+	font-size: 1.6em;
+	margin: 0;
+	margin-bottom: 2rem;
+	color: black;
+}
+
+#main-home .double-header>h3 {
+	font-size: 1.4em;
+}
+
+.header-caps {
+	text-transform: uppercase;
+	font-size: 1.4em;
+	margin: 3rem 0 2rem 0;
+	color: black;
+}
+
+@media screen and (max-width:1279px) {
+
+	.header-full {
+		display: none
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	
+	.double-header>h2 {
+		font-size: 1.3em;
+		letter-spacing: .15em;
+		margin: 0;
+		margin-top: 2rem;
+	}
+
+	.double-header>h3 {
+		font-size: 3em;
+		margin-bottom: 3rem;
+	}
+	
+	.header-large {
+		font-size: 4em;
+	}
+	
+	#main-home .double-header>h3 {
+		font-size: 2em;
 	}
 }
 
@@ -243,11 +308,6 @@ html {
 	SITE-WIDE STYLING
 ////////////////////*/
 
-.text-condition {
-	color: var(--grey-77);
-	font-size: .9em;
-}
-
 .sm-list {
 	text-align: center;
 }
@@ -269,6 +329,13 @@ html {
 	height: 1px;
 	background-color: var(--font-main);
 	border: 0;
+}
+
+@media screen and (max-width:1279px) {
+
+	.hr-left {
+		display: none;
+	}
 }
 
 .hr-center {
@@ -334,11 +401,6 @@ html {
 	line-height: 1.5rem;
 }
 
-.ribbon-container-right {
-	padding-top: 6em;
-	padding-bottom: 6em;
-}
-
 @media screen and (max-width:355px) {
 	.content {
 		padding-left: .5vw;
@@ -374,6 +436,8 @@ html {
 
 	.ribbon-container-right {
 		margin-left: 37vw;
+		padding-top: 10vh;
+		padding-bottom: 30vh;
 	}
 
 	.ribbon-container-right .fixed-image {
@@ -386,7 +450,7 @@ html {
 
 .link-button {
 	text-align: center;
-	margin: 2em;
+	margin: 3em 2em;
 }
 
 .link-button a {
@@ -395,11 +459,18 @@ html {
 	color: var(--grey-77);
 	transition: border-color .3s linear, color .3s linear, background .3s linear;
 	white-space: nowrap;
+	text-transform: uppercase;
 }
 
 .link-button a:hover {
 	border-color: var(--dark-grey);
 	color: var(--dark-grey);
+}
+
+@media screen and (min-width: 1280px) {
+	.link-button {
+		text-align: left;
+	}
 }
 
 .button-container {
@@ -464,7 +535,7 @@ html {
 	left: 0;
 	right: 0;
 	z-index: 500;
-	background: rgba(0,0,0, 0.8);
+	background: rgba(0, 0, 0, 0.8);
 }
 
 .fullscreen-image figure {
@@ -474,8 +545,8 @@ html {
 }
 
 .fullscreen-image img {
-	height: 100%!important;
-	width: auto!important;
+	height: 100% !important;
+	width: auto !important;
 }
 
 #previousImage {
@@ -483,11 +554,13 @@ html {
 	left: 25px;
 	top: 50%;
 }
+
 #nextImage {
 	position: absolute;
 	right: 25px;
 	top: 50%;
 }
+
 #fullscreenIcon {
 	position: absolute;
 	bottom: 25px;
@@ -701,6 +774,8 @@ html {
 	height: 80%;
 }
 
+/* Accordion */
+
 .accordion {
 	display: flex;
 	flex-flow: column wrap;
@@ -744,8 +819,14 @@ html {
 	padding: .6em;
 }
 
+/* Header footer */
+
 .header-footer {
 	text-align: center;
+	height: 16vh;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
 }
 
 .header-footer .sm-list {
@@ -970,21 +1051,10 @@ html {
 	text-transform: uppercase;
 }
 
-#main-home .header-large {
-	font-size: 2rem;
-}
 
 /* Home page below widescreen */
 
 @media screen and (max-width:1279px) {
-
-	.header-full {
-		display: none
-	}
-
-	.hr-left {
-		display: none;
-	}
 
 	.image-tall {
 		overflow: hidden;
@@ -1019,6 +1089,10 @@ html {
 		height: 100vh;
 	}
 
+	.ribbon-container .link-button {
+		margin-left: 3em;
+	}
+
 	#main-home .content p {
 		margin-left: 2em;
 		text-align: left;
@@ -1040,6 +1114,7 @@ html {
 		height: 100vh;
 		position: static;
 	}
+
 }
 
 /*////////////////////
@@ -1373,7 +1448,7 @@ html {
 
 .menu-title {
 	font-family: antro;
-	font-size: 2.5em;
+	font-size: 3em;
 	text-transform: none;
 	text-align: center;
 	padding: .5em;
@@ -1482,11 +1557,11 @@ html {
 
 @media screen and (min-width: 1280px) {
 
-	.main-menu {
-		margin-left: 55vw;
+	.main-menu .ribbon-container-right {
+		margin-left: 35vw;
 	}
 
-	.main-menu .fixed-image {
+	.main-menu .ribbon-container-right .fixed-image {
 		width: 35vw;
 	}
 
@@ -1496,12 +1571,11 @@ html {
 
 	.menu-title {
 		background-color: var(--background-main);
-		padding-top: 2em;
 		margin-top: 0;
 	}
 
 	.dish-title {
-		padding: 2em 0;
+		padding: 2em 0 1em 0;
 	}
 
 	.main-menu::after {
@@ -1637,28 +1711,6 @@ html {
 ////////////////////*/
 
 
-#main-reservations h4 {
-	text-transform: uppercase;
-	font-size: 1.4em;
-	margin: 3rem 0;
-}
-
-.header-large {
-	font-size: 4em;
-	margin: 0;
-	margin-bottom: 3rem;
-	color: black;
-}
-
-.header-upper {
-	font-size: 1.3em;
-	letter-spacing: .15em;
-	margin: 0;
-	margin-top: 2rem;
-	text-transform: uppercase;
-	color: var(--font-main);
-}
-
 .link-underline {
 	text-decoration: underline;
 	color: var(--font-green);
@@ -1679,19 +1731,37 @@ html {
 
 /* Reservations page widescreen response */
 
-@media screen and (min-width: 1280px) {
-
-
-}
+@media screen and (min-width: 1280px) {}
 
 /*////////////////////
 	CONTACT PAGE
 ////////////////////*/
 
-@media screen and (min-width: 1280px) {
-
-
+.contact-images {
+	display: flex;
+	flex-flow: row wrap;
 }
+
+.contact-images figure {
+	max-height: 240px;
+	overflow: hidden;
+}
+
+.contact-sign {
+	flex: 0 0 60%;
+}
+
+.contact-sign img {
+	width: 100%;
+	height: auto;
+	padding-right: 1em;
+}
+
+.contact-maps {
+	flex: 0 0 40%;
+}
+
+@media screen and (min-width: 1280px) {}
 
 /*////////////////////
 	MOBILE FOOTER
