@@ -30,7 +30,6 @@ li {
 }
 
 a {
-	color: black;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -71,18 +70,14 @@ p,
 a,
 li {
 	font-family: 'Amiri', serif;
-	letter-spacing: .1rem;
 }
 
 p,
 a,
 li {
-	color: var(--font-dark);
-}
-
-p,
-li {
-	line-height: 1.1rem;
+	color: var(--font-main);
+	font-size: 1.25rem;
+	line-height: 1.45rem;
 }
 
 h1,
@@ -95,11 +90,12 @@ h6 {
 	color: var(--font-main);
 }
 
+/*
 @media screen and (min-width:450px) {
 	p,
 	a,
 	li {
-		font-size: 1rem;
+		font-size: 1.25rem;
 	}
 }
 
@@ -107,7 +103,7 @@ h6 {
 	p,
 	a,
 	li {
-		font-size: 1.05rem;
+		font-size: 1.3rem;
 	}
 }
 
@@ -115,7 +111,7 @@ h6 {
 	p,
 	a,
 	li {
-		font-size: 1.1rem;
+		font-size: 1.35rem;
 	}
 }
 
@@ -134,7 +130,7 @@ h6 {
 		font-size: 1.2rem;
 	}
 }
-
+*/
 /* Font classes */
 
 .link-underline {
@@ -143,12 +139,12 @@ h6 {
 }
 
 .link-bold {
-	color: var(--font-dark);
+	color: var(--font-main);
 	font-weight: bold;
 }
 
 .text-condition {
-	color: var(--grey-77);
+	color: var(--font-light);
 	font-size: .9em;
 }
 
@@ -160,18 +156,15 @@ h6 {
 	margin: 0;
 	margin-top: 2rem;
 	text-transform: uppercase;
-	color: var(--font-main);
+	color: var(--font-light);
 }
 
 .double-header > h3 {
 	font-size: 1.6em;
 	margin: 0;
 	margin-bottom: 2rem;
-	color: black;
-}
-
-#main-home .double-header > h3 {
-	font-size: 1.4em;
+	color: var(--font-main);
+	letter-spacing: 0;
 }
 
 .header-caps {
@@ -229,27 +222,27 @@ html {
 .content-white h4,
 .content-white h5,
 .content-white h6 {
-	color: var(--grey-f4);
+	color: var(--font-white);
 }
 
 .content-white .link-button a {
-	color: var(--grey-f4);
-	border: 1px solid var(--grey-f4);
-	background-color: rgba(255, 255, 255, .2);
+	color: var(--font-white);
+	border: 1px solid var(--font-light);
+	background-color: rgba(244, 244, 240, .35);
 }
 
 .content-white .link-button a:hover {
-	background-color: rgba(255, 255, 255, .4);
+	background-color: rgba(244, 244, 240, .4);
 }
 
 /*// COLOUR VARIABLES //*/
 
 :root {
-	--background-main: #f6f7f5;
-	--background-light: white;
-	--font-main: #66635e;
-	--font-dark: #363636;
-	--font-light: white;
+	--background-main: #f5f5f2;
+	--font-main: #393836;
+	--font-header: #484843;
+	--font-light: #8b8b88;
+	--font-white: #f4f4f0;
 	--font-green: #919583;
 	--grey-f4: #f4f4f4;
 	--grey-ea: #eaeaea;
@@ -262,18 +255,11 @@ html {
 	display: block;
 	position: absolute;
 	bottom: 0;
-	height: 20vh;
+	height: 50%;
 	width: 100%;
 	content: '';
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f7f5+0,f6f7f5+100&0+0,1+95 */
-	background: -moz-linear-gradient(top, rgba(246, 247, 245, 0) 0%, rgba(246, 247, 245, 1) 95%, rgba(246, 247, 245, 1) 100%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(246, 247, 245, 0) 0%, rgba(246, 247, 245, 1) 95%, rgba(246, 247, 245, 1) 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(246, 247, 245, 0) 0%, rgba(246, 247, 245, 1) 95%, rgba(246, 247, 245, 1) 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f6f7f5', endColorstr='#f6f7f5', GradientType=0);
-	/* IE6-9 */
+background: rgb(245,246,242);
+background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 100%);
 }
 
 .gradient-up::before {
@@ -329,6 +315,7 @@ html {
 
 .sm-list li a {
 	padding: 0 .5em;
+	color: var(--font-light);
 }
 
 .hr-left {
@@ -337,7 +324,7 @@ html {
 	margin-bottom: 2.4rem;
 	max-width: 140px;
 	height: 1px;
-	background-color: var(--font-main);
+	background-color: var(--font-light);
 	border: 0;
 }
 
@@ -358,7 +345,7 @@ html {
 
 @media screen and (max-width: 1279px) {
 	main > section {
-		margin: 5% 0;
+		margin: 15% 0;
 	}
 
 	main > section:first-child {
@@ -397,25 +384,14 @@ html {
 /*// CONTENT //*/
 
 .content {
-	padding-left: 2vw;
-	padding-right: 2vw;
+	padding-left: 7vw;
+	padding-right: 7vw;
 	text-align: center;
 }
 
 .content li {
 	text-transform: none;
 	padding: .7em 0;
-}
-
-.content p {
-	line-height: 1.5rem;
-}
-
-@media screen and (max-width:355px) {
-	.content {
-		padding-left: .5vw;
-		padding-right: .5vw;
-	}
 }
 
 @media screen and (min-width: 1280px) {
@@ -464,9 +440,10 @@ html {
 }
 
 .link-button a {
-	border: 1px solid var(--grey-77);
+	border: 1px solid var(--font-light);
 	padding: .5em 1em;
-	color: var(--grey-77);
+	letter-spacing: .15em;
+	color: var(--font-light);
 	transition: border-color .3s linear, color .3s linear, background .3s linear;
 	white-space: nowrap;
 	text-transform: uppercase;
@@ -494,7 +471,6 @@ html {
 	background: none;
 	border: none;
 	color: black;
-	display: block;
 	margin-top: 2em;
 }
 
@@ -848,13 +824,13 @@ html {
 .accordion > li > a {
 	flex: 0 0 auto;
 	z-index: 11;
-	color: var(--font-main);
+	color: var(--font-header);
 	padding: 1em;
 	transition: color .3s linear;
 }
 
 .accordion a:hover {
-	color: var(--font-dark);
+	color: var(--font-main);
 }
 
 .accordion .toggle:hover {
@@ -1114,6 +1090,10 @@ html {
 	text-transform: uppercase;
 }
 
+#home-booking .fixed-image{
+	filter: brightness(.6);
+}
+
 
 /* Home page below widescreen */
 
@@ -1242,8 +1222,7 @@ html {
 }
 
 .link-button-airbnb {
-	margin-top: 1em;
-	margin-bottom: 2em;
+	margin: 2em 0 2.5em 0;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -1258,8 +1237,8 @@ html {
 }
 
 .link-button-airbnb a:hover {
-	border: 1px solid var(--font-dark);
-	color: var(--font-dark);
+	border: 1px solid var(--font-main);
+	color: var(--font-main);
 	filter: grayscale(0);
 }
 
@@ -1283,6 +1262,7 @@ html {
 
 .room-info p {
 	white-space: nowrap;
+	font-size: 1.1em;
 }
 
 .room-description p {
@@ -1292,7 +1272,7 @@ html {
 
 /* BnB page extra small response */
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 360px) {
 	.flex-container-room {
 		margin-left: .5em;
 		margin-right: .5em;
@@ -1300,8 +1280,7 @@ html {
 	}
 
 	.room-info p {
-		font-size: .85em;
-		letter-spacing: .05em;
+		font-size: 1em;
 	}
 
 }
@@ -1482,7 +1461,7 @@ html {
 
 .menu-select {
 	text-align: center;
-	background-color: var(--grey-f4);
+	background-color: var(--font-white);
 	border-top: 1px solid var(--grey-77);
 	border-bottom: 1px solid var(--grey-77);
 	padding-bottom: 1em;
@@ -1709,7 +1688,7 @@ html {
 ////////////////////*/
 
 #main-story {
-	background-color: var(--background-light);
+	background-color: var(--background-main);
 }
 
 #main-story .double-header:first-child {
@@ -1875,13 +1854,13 @@ html {
 .mobile-footer {
 	height: 220px !important;
 	text-align: center;
-	background-color: lightgray;
+	background-color: #e2e2e2;
 }
 
 .mobile-footer h2,
 .mobile-footer a,
 .mobile-footer span {
-	color: var(--font-main);
+	color: var(--font-light);
 }
 
 .mobile-footer h2:hover,
@@ -1901,11 +1880,12 @@ html {
 }
 
 .mobile-footer .sm-list li a {
-	padding: 0 .3em;
+	padding: 0 .2em;
 }
 
 .mobile-footer address a {
 	text-transform: none;
+	font-style: normal;
 }
 
 .mobile-footer .footer-address {
