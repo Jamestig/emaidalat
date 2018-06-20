@@ -42,6 +42,10 @@ html {
 	font-size: 16px;
 }
 
+main {
+	overflow: hidden;
+}
+
 /*////////////////////
 	GLOBAL TYPOGRAPHY
 ////////////////////*/
@@ -58,7 +62,10 @@ html {
 	src: url(../fonts/coffee+tea.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css?family=Amiri');
+@font-face {
+	font-family: oldstyle;
+	src: url(../fonts/old_style_italics.ttf);
+}
 
 h1,
 h2,
@@ -76,7 +83,7 @@ p,
 a,
 li {
 	color: var(--font-main);
-	font-size: 1.25rem;
+	font-size: 1.15rem;
 	line-height: 1.45rem;
 }
 
@@ -90,47 +97,6 @@ h6 {
 	color: var(--font-main);
 }
 
-/*
-@media screen and (min-width:450px) {
-	p,
-	a,
-	li {
-		font-size: 1.25rem;
-	}
-}
-
-@media screen and (min-width:768px) {
-	p,
-	a,
-	li {
-		font-size: 1.3rem;
-	}
-}
-
-@media screen and (min-width:1024px) {
-	p,
-	a,
-	li {
-		font-size: 1.35rem;
-	}
-}
-
-@media screen and (min-width:1280px) {
-	p,
-	a,
-	li {
-		font-size: 1.15rem;
-	}
-}
-
-@media screen and (min-width:1600px) {
-	p,
-	a,
-	li {
-		font-size: 1.2rem;
-	}
-}
-*/
 /* Font classes */
 
 .link-underline {
@@ -145,13 +111,13 @@ h6 {
 
 .text-condition {
 	color: var(--font-light);
-	font-size: .9em;
+	font-size: 1.1em;
 }
 
 /* Header classes */
 
 .double-header > h2 {
-	font-size: 1.3em;
+	font-size: 1.1em;
 	letter-spacing: .15em;
 	margin: 0;
 	margin-top: 2rem;
@@ -160,7 +126,7 @@ h6 {
 }
 
 .double-header > h3 {
-	font-size: 1.6em;
+	font-size: 2.2em;
 	margin: 0;
 	margin-bottom: 2rem;
 	color: var(--font-main);
@@ -168,10 +134,12 @@ h6 {
 }
 
 .header-caps {
+	font-weight: normal;
+	font-size: 1.1em;
 	text-transform: uppercase;
-	font-size: 1.4em;
-	margin: 3rem 0 2rem 0;
-	color: black;
+	margin-bottom: .8em;
+	letter-spacing: .09em;
+	color: var(--font-light);
 }
 
 @media screen and (max-width:1279px) {
@@ -239,14 +207,14 @@ html {
 
 :root {
 	--background-main: #f5f5f2;
+	--background-light: #f8f8f6;
+	--background-dark: #f2f4f1;
 	--font-main: #393836;
 	--font-header: #484843;
 	--font-light: #8b8b88;
 	--font-white: #f4f4f0;
 	--font-green: #919583;
-	--grey-f4: #f4f4f4;
-	--grey-ea: #eaeaea;
-	--grey-77: #777777;
+	--border-light: #e1e2e0;
 }
 
 /*// GRADIENT CLASSES //*/
@@ -258,42 +226,18 @@ html {
 	height: 50%;
 	width: 100%;
 	content: '';
-background: rgb(245,246,242);
-background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 100%);
-}
-
-.gradient-up::before {
-	display: block;
-	position: absolute;
-	bottom: 0;
-	height: 20vh;
-	width: 100%;
-	content: '';
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f7f5+0,f6f7f5+100&1+5,0+100 */
-	background: -moz-linear-gradient(top, rgba(246, 247, 245, 1) 0%, rgba(246, 247, 245, 1) 5%, rgba(246, 247, 245, 0) 100%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(246, 247, 245, 1) 0%, rgba(246, 247, 245, 1) 5%, rgba(246, 247, 245, 0) 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(246, 247, 245, 1) 0%, rgba(246, 247, 245, 1) 5%, rgba(246, 247, 245, 0) 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7f5', endColorstr='#00f6f7f5', GradientType=0);
-	/* IE6-9 */
+	background-image: url(/images/icon/line_fade.png);
+	background-repeat:repeat-x;
+	background-size: contain;
 }
 
 @media screen and (orientation:landscape) {
 	.gradient-down::after {
 		height: 50vh;
 	}
-	.gradient-up::before {
-		height: 50vh;
-	}
 }
 
 @media screen and (min-width: 1280px) {
-
-	.gradient-up::before {
-		display: none;
-	}
 
 	.gradient-down::after {
 		display: none;
@@ -303,6 +247,12 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 /*////////////////////
 	SITE-WIDE STYLING
 ////////////////////*/
+
+@media screen and (max-width: 450px) {
+	.hidden-mobile {
+		display: none;
+	}
+}
 
 .sm-list {
 	text-align: center;
@@ -320,8 +270,8 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 
 .hr-left {
 	margin-left: 0;
-	margin-top: 2.5rem;
-	margin-bottom: 2.4rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 	max-width: 140px;
 	height: 1px;
 	background-color: var(--font-light);
@@ -339,7 +289,7 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 	border: 0;
 	height: 1px;
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
-	margin: 3rem auto;
+	margin: 1rem auto;
 	max-width: 400px;
 }
 
@@ -358,7 +308,8 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 }
 
 @media screen and (orientation: landscape) and (max-width: 1279px) {
-	.first-image {
+	.first-image,
+	.first-image figure {
 		margin-left: -80px;
 	}
 }
@@ -384,14 +335,14 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 /*// CONTENT //*/
 
 .content {
-	padding-left: 7vw;
-	padding-right: 7vw;
+	padding-left: 8vw;
+	padding-right: 8vw;
 	text-align: center;
 }
 
 .content li {
 	text-transform: none;
-	padding: .7em 0;
+	padding: .5em 0;
 }
 
 @media screen and (min-width: 1280px) {
@@ -498,7 +449,7 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 	.link-button {
 		text-align: left;
 	}
-	
+
 	.scrollDown {
 		display: block;
 	}
@@ -755,6 +706,7 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 
 .navbar {
 	position: fixed;
+	top: 0;
 	width: 100%;
 	height: 80px;
 	display: flex;
@@ -1094,6 +1046,10 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 	filter: brightness(.6);
 }
 
+#main-home .double-header h3 {
+	font-size: 1.6em;
+}
+
 
 /* Home page below widescreen */
 
@@ -1170,6 +1126,14 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 	BNB PAGE
 ////////////////////*/
 
+#main-bnb .double-header h3 {
+	font-size: 2em;
+}
+
+#main-bnb section {
+	margin: 10% 0;
+}
+
 .flex-container-room {
 	display: flex;
 	flex-flow: column;
@@ -1222,15 +1186,15 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 }
 
 .link-button-airbnb {
-	margin: 2em 0 2.5em 0;
+	margin: 2.5em 0 3em 0;
 	text-align: center;
 	text-transform: uppercase;
 }
 
 .link-button-airbnb a {
-	border: 1px solid var(--grey-77);
+	border: 1px solid var(--font-light);
 	padding: .5em 1em;
-	color: var(--grey-77);
+	color: var(--font-light);
 	white-space: nowrap;
 	transition: border-color .3s linear, color .3s linear, filter .3s linear;
 	filter: grayscale(100);
@@ -1281,6 +1245,7 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 
 	.room-info p {
 		font-size: 1em;
+		white-space: normal;
 	}
 
 }
@@ -1459,11 +1424,15 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 	text-align: center;
 }
 
+.main-menu .content li {
+		line-height: 1.4em;
+}
+
 .menu-select {
 	text-align: center;
-	background-color: var(--font-white);
-	border-top: 1px solid var(--grey-77);
-	border-bottom: 1px solid var(--grey-77);
+	background-color: var(--background-dark);
+	border-top: 1px solid var(--border-light);
+	border-bottom: 1px solid var(--border-light);
 	padding-bottom: 1em;
 }
 
@@ -1473,7 +1442,7 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 }
 
 .menu-select li {
-	padding: 1em 0;
+	padding: .5em 0;
 	display: inline-block;
 	text-transform: uppercase;
 }
@@ -1483,7 +1452,11 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 }
 
 .menu-select a {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #b3b3b3;
+	font-size: .8em;
+	color: var(--font-main);
+	letter-spacing: .05em;
+	line-height: 1em;
 }
 
 .menu-select-bottom {
@@ -1499,7 +1472,7 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 	font-size: 3em;
 	text-transform: none;
 	text-align: center;
-	padding: .5em;
+	margin: .8em 0 .5em 0;
 }
 
 .menu-legend {
@@ -1554,7 +1527,7 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 }
 
 .section-dish {
-	margin-bottom: 2em;
+	margin-bottom: 2.5em;
 }
 
 .dish-header {
@@ -1562,13 +1535,15 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 }
 
 .dish-title {
+	font-family: oldstyle;
 	margin: auto;
 	text-align: center;
 	font-weight: normal;
 	font-size: 1.5em;
 	font-style: italic;
+	text-transform: capitalize;
 	white-space: nowrap;
-	overflow: hidden;
+	letter-spacing: .06em;
 }
 
 .dish-title::before {
@@ -1597,7 +1572,7 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 
 .dish-price {
 	font-size: .8em;
-	color: var(--grey-77)
+	color: var(--font-light)
 }
 
 
@@ -1647,11 +1622,8 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 
 /* DRINK MENU PAGE */
 
-.drink-title {
-	font-weight: normal;
-	font-size: 1em;
-	text-transform: uppercase;
-	margin-bottom: .8em;
+#menu-drinks .section-dish li {
+	padding: .25em 0;
 }
 
 /* WINE LIST PAGE */
@@ -1667,19 +1639,23 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 /* BREAKFAST MENU PAGE */
 
 .menu-breakfast-information p:nth-child(1) {
-	color: var(--grey-77);
+	color: var(--font-light);
 	font-style: italic;
 }
 
 .menu-breakfast-information p:nth-of-type(2),
 .menu-breakfast-information p:nth-of-type(4) {
-	color: var(--grey-77);
+	color: var(--font-light);
+}
+
+.menu-breakfast-sets p {
+	margin: .5em 0;
 }
 
 .menu-breakfast-sets h6 {
 	font-family: antro;
 	font-size: 2em;
-	margin: 1em 0 .5em 0;
+	margin: 1.2em 0 0 0;
 }
 
 
@@ -1688,32 +1664,19 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 ////////////////////*/
 
 #main-story {
-	background-color: var(--background-main);
+	background-color: var(--background-light);
 }
 
-#main-story .double-header:first-child {
-	padding-top: 3em;
+#story-about {
+	padding-top: 2em;
 }
 
 #main-story .content {
-	padding-bottom: 3em;
+	padding-bottom: 2em;
 }
 
-#main-story .gradient-down::after {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+95 */
-	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 95%, rgba(255, 255, 255, 1) 100%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 95%, rgba(255, 255, 255, 1) 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 95%, rgba(255, 255, 255, 1) 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
-	/* IE6-9 */
-}
-
-#main-story p {
-	line-height: 1.5em;
-	color: black;
+#story-about-2 p:nth-child(1) {
+	padding-top: 1em;
 }
 
 @media screen and (max-width: 1279px) {
@@ -1773,10 +1736,12 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 
 #main-reservations ul {
 	padding-left: 2em;
+	text-indent: -.8em;
 }
 
-#main-reservations li {
-	list-style-type: disc;
+#main-reservations li::before {
+	content: '• ';
+	color: var(--font-light);
 }
 
 @media screen and (max-width: 1279px) {
@@ -1803,14 +1768,21 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 	flex-flow: column;
 }
 
+.contact-images figure:first-child {
+	margin-top: 1em;
+}
+
 .contact-images figure {
-	height: 40vh;
+	height: 350px;
 	overflow: hidden;
-	margin-bottom: .5em;
+	margin-bottom: 1.5em;
 }
 
 .contact-images img {
 	width: auto;
+	height: 100%;
+	margin-left: 50%;
+	transform: translateX(-50%);
 }
 
 
@@ -1852,7 +1824,7 @@ background: linear-gradient(180deg, rgba(245,246,242,0) 0%, rgba(245,246,242,1) 
 }
 
 .mobile-footer {
-	height: 220px !important;
+	height: 200px !important;
 	text-align: center;
 	background-color: #e2e2e2;
 }
