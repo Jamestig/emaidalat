@@ -100,7 +100,6 @@ h6 {
 /* Font classes */
 
 .link-underline {
-	text-decoration: underline;
 	color: var(--font-green);
 }
 
@@ -137,7 +136,7 @@ h6 {
 	font-weight: normal;
 	font-size: 1.1em;
 	text-transform: uppercase;
-	margin-bottom: .8em;
+	margin: 1.8em 0 1em 0;
 	letter-spacing: .09em;
 	color: var(--font-light);
 }
@@ -295,22 +294,11 @@ html {
 
 @media screen and (max-width: 1279px) {
 	main > section {
-		margin: 15% 0;
-	}
-
-	main > section:first-child {
-		margin-top: 0;
+		margin-bottom: 15%;
 	}
 
 	main > section:last-child {
 		margin-bottom: 0;
-	}
-}
-
-@media screen and (orientation: landscape) and (max-width: 1279px) {
-	.first-image,
-	.first-image figure {
-		margin-left: -80px;
 	}
 }
 
@@ -322,9 +310,6 @@ html {
 		margin-left: 20vw;
 	}
 
-	.first-image {
-		margin: 0;
-	}
 	/*
 	.fixed-image {
 		display: none;
@@ -621,8 +606,8 @@ html {
 /*// NAV BURGER //*/
 
 #burger-icon {
-	width: 40px;
-	height: 31px;
+	width: 30px;
+	height: 24px;
 	margin-right: 5%;
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
@@ -638,9 +623,9 @@ html {
 #burger-icon span {
 	display: block;
 	position: absolute;
-	height: 5px;
+	height: 3px;
 	width: 100%;
-	background: var(--font-main);
+	background: var(--font-light);
 	border-radius: 8px;
 	opacity: 1;
 	left: 0;
@@ -663,7 +648,7 @@ html {
 }
 
 #burger-icon span:nth-child(2) {
-	top: 12px;
+	top: 10px;
 	-webkit-transform-origin: left center;
 	-moz-transform-origin: left center;
 	-o-transform-origin: left center;
@@ -671,7 +656,7 @@ html {
 }
 
 #burger-icon span:nth-child(3) {
-	top: 24px;
+	top: 20px;
 	-webkit-transform-origin: left center;
 	-moz-transform-origin: left center;
 	-o-transform-origin: left center;
@@ -683,8 +668,8 @@ html {
 	-moz-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
-	top: px;
-	left: 5px;
+	top: 0px;
+	left: 4px;
 }
 
 #burger-icon.open span:nth-child(2) {
@@ -698,8 +683,8 @@ html {
 	-moz-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-	top: 28px;
-	left: 5px;
+	top: 21px;
+	left: 4px;
 }
 
 /*// HEADER NAVIGATION //*/
@@ -715,6 +700,7 @@ html {
 	justify-content: space-between;
 	z-index: 8;
 	transition: background-color .4s linear;
+	background-color: var(--background-dark);
 }
 
 .navbar-logo {
@@ -728,7 +714,7 @@ html {
 
 #navbarRose {
 	width: 70px;
-	margin-bottom: 10%;
+	padding: .6em;
 }
 
 .main-logo {
@@ -770,14 +756,13 @@ html {
 .accordion > li {
 	flex: 0 0 auto;
 	z-index: 11;
-	padding: 1em 0;
 }
 
 .accordion > li > a {
 	flex: 0 0 auto;
 	z-index: 11;
 	color: var(--font-header);
-	padding: 1em;
+	padding: .3em .5em;
 	transition: color .3s linear;
 }
 
@@ -822,6 +807,11 @@ html {
 	height: 20%;
 }
 
+.header-footer address a {
+	font-style: normal;
+	color: var(--font-light);
+}
+
 /* Header nav toggle classes */
 
 .activeSection {
@@ -850,6 +840,12 @@ html {
 		width: 80px;
 		height: 100%;
 		flex-flow: column-reverse;
+		justify-content: flex-end;
+	}
+
+	.navbar-logo-container {
+		position: fixed;
+		bottom: 0;
 	}
 
 	#burger-icon {
@@ -905,15 +901,11 @@ html {
 	}
 
 	.nav-overlay {
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f7f5+0,f6f7f5+100&1+15,0.9+30 */
-		background: -moz-linear-gradient(top, rgba(246, 247, 245, 1) 0%, rgba(246, 247, 245, 1) 15%, rgba(246, 247, 245, 0.9) 30%, rgba(246, 247, 245, 0.9) 100%);
-		/* FF3.6-15 */
-		background: -webkit-linear-gradient(top, rgba(246, 247, 245, 1) 0%, rgba(246, 247, 245, 1) 15%, rgba(246, 247, 245, 0.9) 30%, rgba(246, 247, 245, 0.9) 100%);
-		/* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to bottom, rgba(246, 247, 245, 1) 0%, rgba(246, 247, 245, 1) 15%, rgba(246, 247, 245, 0.9) 30%, rgba(246, 247, 245, 0.9) 100%);
-		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7f5', endColorstr='#e6f6f7f5', GradientType=0);
-		/* IE6-9 */
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f4f1+0,f2f4f1+100&1+15,0.9+30 */
+		background: -moz-linear-gradient(top, rgba(242,244,241,1) 0%, rgba(242,244,241,1) 15%, rgba(242,244,241,0.9) 30%, rgba(242,244,241,0.9) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(242,244,241,1) 0%,rgba(242,244,241,1) 15%,rgba(242,244,241,0.9) 30%,rgba(242,244,241,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(242,244,241,1) 0%,rgba(242,244,241,1) 15%,rgba(242,244,241,0.9) 30%,rgba(242,244,241,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f4f1', endColorstr='#e6f2f4f1',GradientType=0 ); /* IE6-9 */
 	}
 
 	.header-footer .footer-phone {
@@ -1224,6 +1216,10 @@ html {
 	max-height: 160px;
 }
 
+#room-jasmine .room-logo img {
+	max-width: 280px;
+}
+
 .room-info p {
 	white-space: nowrap;
 	font-size: 1.1em;
@@ -1469,17 +1465,17 @@ html {
 
 .menu-title {
 	font-family: antro;
-	font-size: 3em;
+	font-size: 2.5em;
 	text-transform: none;
 	text-align: center;
-	margin: .8em 0 .5em 0;
+	margin: .8em 5vw .5em 5vw;
 }
 
 .menu-legend {
-	margin-bottom: 2em;
+	margin: 0 5vw 2em 5vw;
 	text-align: center;
 	letter-spacing: .1em;
-	font-size: 1em;
+	font-size: .9em;
 }
 
 .menu-legend img {
@@ -1491,13 +1487,7 @@ html {
 	padding-left: 0;
 }
 
-@media screen and (orientation: landscape) and (max-width: 1279px) {
-	.menu-header {
-		margin-left: -80px;
-	}
-}
-
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
 	.menu-legend {
 		font-size: .8em;
 	}
@@ -1667,6 +1657,10 @@ html {
 	background-color: var(--background-light);
 }
 
+#main-story .gradient-down::after {
+	background-image: url(/images/icon/line_fade_light.png);
+}
+
 #story-about {
 	padding-top: 2em;
 }
@@ -1773,7 +1767,7 @@ html {
 }
 
 .contact-images figure {
-	height: 350px;
+	height: 300px;
 	overflow: hidden;
 	margin-bottom: 1.5em;
 }

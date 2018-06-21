@@ -69,9 +69,9 @@ $(document).ready(function () {
 		};
 
 		if (windowTop >= 240) {
-			$('.navbar').css('background-color', 'rgba(246, 247, 245, 1)');
+			$('.navbar').css('background-color', 'rgba(242, 244, 241, 1)');
 		} else {
-			$('.navbar').css('background-color', 'rgba(246, 247, 245, 0)');
+			$('.navbar').css('background-color', 'rgba(245, 245, 242, 0)');
 		};
 	}); // End scroll function
 
