@@ -1,13 +1,6 @@
 $(document).ready(function () {
 
 	// Global variables
-	var currentPage = $(location).attr('href');
-
-	if (currentPage) {
-		console.log(currentPage);
-	} else {
-			console.log ('not current page');
-	}
 
 	// Burger button
 	$('#burger-icon').click(function () {
@@ -26,7 +19,7 @@ $(document).ready(function () {
 		portrait = false;
 	};
 
-	// Image swapping on orientation test
+	// Image swapping on orientation
 	mql.addListener(function (m) {
 		var windowTop = $(window).scrollTop();
 
@@ -68,22 +61,37 @@ $(document).ready(function () {
 			$("#navbarRose").fadeOut();
 		};
 
-		if (windowTop >= 240) {
-			$('.navbar').css('background-color', 'rgba(242, 244, 241, 1)');
-		} else {
-			$('.navbar').css('background-color', 'rgba(245, 245, 242, 0)');
+		if (windowTop <= 240 && portrait === true) {
+			$('.navbar').css('background-color', 'rgba(235, 235, 230, 0)');
+		} else if (windowTop > 240) {
+			$('.navbar').css('background-color', 'rgba(235, 235, 230, 1)');
+		} else if (windowTop < 240 && portrait === false) {
+			$('.navbar').css('background-color', 'rgba(235, 235, 230, 1)');
 		};
 	}); // End scroll function
 
 	// Smooth scrolling
 	var scrollLink = $('.scroll');
+	var thisPage = $(location).attr('href');
+	var currentPage;
+
+	if (thisPage) {
+		console.log(thisPage);
+		currentPage === true;
+	} else {
+		console.log('not current page');
+		currentPage === false;
+	};
 
 	scrollLink.click(function (e) {
-		e.preventDefault();
-		$('body,html').animate({
-			scrollTop: $(this.hash).offset().top
-		}, 1000);
+		if (thisPage === true) {
+			e.preventDefault();
+			$('body,html').animate({
+				scrollTop: $(this.hash).offset().top
+			}, 1000);
+		};
 	}); // End smooth scrolling function
+
 
 	// Active link switching and background fading
 	var sectionOffset;

@@ -6,9 +6,8 @@ BREAKPOINTS:
 
 mobile first
 tablet => 768px
-desktop => 1024px
 widescreen => 1280
-hd => 1600
+ultra => 1920
 
 //*/
 
@@ -77,12 +76,12 @@ p,
 a,
 li {
 	font-family: 'Amiri', serif;
+	color: var(--font-main);
 }
 
 p,
 a,
 li {
-	color: var(--font-main);
 	font-size: 1.15rem;
 	line-height: 1.45rem;
 }
@@ -94,26 +93,9 @@ h4,
 h5,
 h6 {
 	font-weight: normal;
-	color: var(--font-main);
 }
 
-/* Font classes */
-
-.link-underline {
-	color: var(--font-green);
-}
-
-.link-bold {
-	color: var(--font-main);
-	font-weight: bold;
-}
-
-.text-condition {
-	color: var(--font-light);
-	font-size: 1.1em;
-}
-
-/* Header classes */
+/*// HEADER CLASSES //*/
 
 .double-header > h2 {
 	font-size: 1.1em;
@@ -142,14 +124,12 @@ h6 {
 }
 
 @media screen and (max-width:1279px) {
-
 	.header-full {
 		display: none
 	}
 }
 
 @media screen and (min-width: 1280px) {
-
 	.double-header > h2 {
 		font-size: 1.3em;
 		letter-spacing: .15em;
@@ -169,6 +149,22 @@ h6 {
 	#main-home .double-header > h3 {
 		font-size: 2em;
 	}
+}
+
+/*// FONT CLASSES //*/
+
+.link-underline {
+	color: var(--font-green);
+}
+
+.link-bold {
+	color: var(--font-main);
+	font-weight: bold;
+}
+
+.text-condition {
+	color: var(--font-light);
+	font-size: 1.1em;
 }
 
 /*////////////////////
@@ -208,6 +204,7 @@ html {
 	--background-main: #f5f5f2;
 	--background-light: #f8f8f6;
 	--background-dark: #f2f4f1;
+	--background-navbar: #ebebe6;
 	--font-main: #393836;
 	--font-header: #484843;
 	--font-light: #8b8b88;
@@ -226,7 +223,7 @@ html {
 	width: 100%;
 	content: '';
 	background-image: url(/images/icon/line_fade.png);
-	background-repeat:repeat-x;
+	background-repeat: repeat-x;
 	background-size: contain;
 }
 
@@ -237,15 +234,69 @@ html {
 }
 
 @media screen and (min-width: 1280px) {
-
 	.gradient-down::after {
 		display: none;
 	}
 }
 
 /*////////////////////
-	SITE-WIDE STYLING
+	SITE-WIDE
 ////////////////////*/
+
+@media screen and (max-width: 1279px) {
+	main > section {
+		margin-bottom: 15%;
+	}
+
+	main > section:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/* Site-wide widescreen response */
+
+@media screen and (min-width: 1280px) {
+	main {
+		margin-left: 20vw;
+	}
+
+	.ribbon-container {
+		flex: 0 0 40%;
+		max-width: 40%;
+		height: 100vh;
+		background: rgba(255, 255, 255, .85);
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.ribbon-container-bottom {
+		flex: 0 0 30%;
+		background: rgba(0, 0, 0, .3);
+		align-items: flex-end;
+		justify-content: flex-end;
+	}
+
+	.ribbon-container-right {
+		margin-left: 37vw;
+		padding-top: 10vh;
+		padding-bottom: 30vh;
+	}
+
+	.ribbon-container-right .fixed-image {
+		width: 37vw;
+		z-index: 5;
+	}
+
+	/*
+	.fixed-image {
+		display: none;
+	}
+*/
+}
+
+/*// SITE-WIDE CLASSES //*/
 
 @media screen and (max-width: 450px) {
 	.hidden-mobile {
@@ -278,7 +329,6 @@ html {
 }
 
 @media screen and (max-width:1279px) {
-
 	.hr-left {
 		display: none;
 	}
@@ -292,32 +342,7 @@ html {
 	max-width: 400px;
 }
 
-@media screen and (max-width: 1279px) {
-	main > section {
-		margin-bottom: 15%;
-	}
-
-	main > section:last-child {
-		margin-bottom: 0;
-	}
-}
-
-/* Site-wide widescreen response */
-
-@media screen and (min-width: 1280px) {
-
-	main {
-		margin-left: 20vw;
-	}
-
-	/*
-	.fixed-image {
-		display: none;
-	}
-*/
-}
-
-/*// CONTENT //*/
+/*// CONTENT CLASSES //*/
 
 .content {
 	padding-left: 8vw;
@@ -331,44 +356,20 @@ html {
 }
 
 @media screen and (min-width: 1280px) {
-
 	.content {
 		text-align: left;
 		padding-left: 5vw;
 		padding-right: 5vw;
 	}
-
-	.ribbon-container {
-		flex: 0 0 40%;
-		max-width: 40%;
-		height: 100vh;
-		background: rgba(256, 255, 257, .8);
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.ribbon-container-bottom {
-		flex: 0 0 30%;
-		background: rgba(0, 0, 0, .3);
-		align-items: flex-end;
-		justify-content: flex-end;
-	}
-
-	.ribbon-container-right {
-		margin-left: 37vw;
-		padding-top: 10vh;
-		padding-bottom: 30vh;
-	}
-
-	.ribbon-container-right .fixed-image {
-		width: 37vw;
-		z-index: 5;
-	}
 }
 
 /*// BUTTONS //*/
+
+.button-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
 
 .link-button {
 	text-align: center;
@@ -390,24 +391,12 @@ html {
 	color: var(--dark-grey);
 }
 
-.button-container {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}
-
-@media screen and (max-width: 620px) {
-	.button-container .link-button {
-		margin: 1.5em 1em;
-	}
-}
-
 .scrollDown {
 	display: none;
 	background: none;
 	border: none;
-	color: black;
-	margin-top: 2em;
+	margin-top: 6em;
+	padding-left: 2em;
 }
 
 .scrollDown span:first-of-type {
@@ -420,14 +409,20 @@ html {
 }
 
 .scrollDown span:first-of-type {
-	background-image: url(../images/icon/arrow_down.png);
+	background-image: url(../images/icon/arrow_down_grey.png);
 	filter: brightness(0);
 }
 
 .scrollDown span:last-of-type {
 	font-style: italic;
-	color: var(--font-main);
 	font-size: .8em;
+	color: var(--font-light);
+}
+
+@media screen and (max-width: 620px) {
+	.button-container .link-button {
+		margin: 1.5em 1em;
+	}
 }
 
 @media screen and (min-width: 1280px) {
@@ -440,56 +435,7 @@ html {
 	}
 }
 
-/*// IMAGE CLASSES //*/
-
-.fixed-image {
-	position: relative;
-}
-
-.fixed-image img {
-	width: 100%;
-	height: auto;
-}
-
-@media screen and (max-width: 1279px) and (orientation: landscape) {
-
-	.fixed-image {
-		height: 100vh;
-		overflow: hidden;
-	}
-
-	.fixed-image img {
-		width: 100%;
-		height: auto;
-	}
-}
-
-@media screen and (min-width:1280px) {
-	.fixed-image {
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 20vw;
-		right: 0;
-		z-index: -100;
-		overflow: hidden;
-	}
-
-	.fixed-image img {
-		height: 100vh;
-		width: auto;
-		margin-left: 50%;
-		transform: translateX(-50%);
-		z-index: -100;
-	}
-
-	.image-43 img {
-		height: auto;
-		width: 100%;
-	}
-}
-
-/* Fullscreen button classes */
+/*// FULLSCREEN FEATURE - BUTTON CLASSES*/
 
 .fullscreen-container {
 	display: none;
@@ -535,7 +481,7 @@ html {
 	right: 25px;
 }
 
-/* Fullscreen image classes */
+/*// FULLSCREEN FEATURE - IMAGE CLASSES*/
 
 .fullscreen-image {
 	position: fixed;
@@ -559,6 +505,53 @@ html {
 	width: 100% !important;
 }
 
+/*// IMAGE CLASSES //*/
+
+.fixed-image {
+	position: relative;
+}
+
+.fixed-image img {
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 1279px) and (orientation: landscape) {
+	.fixed-image {
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	.fixed-image img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (min-width:1280px) {
+	.fixed-image {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 20vw;
+		right: 0;
+		z-index: -100;
+		overflow: hidden;
+	}
+
+	.fixed-image img {
+		height: 100vh;
+		width: auto;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		z-index: -100;
+	}
+
+	.image-43 img {
+		height: auto;
+		width: 100%;
+	}
+}
 
 /*// POSITIONING AND SPACING //*/
 
@@ -700,7 +693,6 @@ html {
 	justify-content: space-between;
 	z-index: 8;
 	transition: background-color .4s linear;
-	background-color: var(--background-dark);
 }
 
 .navbar-logo {
@@ -737,13 +729,19 @@ html {
 .nav-overlay {
 	z-index: 6;
 	padding-top: 80px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
 }
 
 .header-nav {
 	height: 80%;
 }
 
-/* Accordion */
+/*// ACCORDION //*/
 
 .accordion {
 	display: flex;
@@ -751,6 +749,13 @@ html {
 	height: 100%;
 	justify-content: space-around;
 	text-align: center;
+}
+
+.accordion a {
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	font-size: .8em;
+	font-family: Marcellus SC;
 }
 
 .accordion > li {
@@ -762,7 +767,7 @@ html {
 	flex: 0 0 auto;
 	z-index: 11;
 	color: var(--font-header);
-	padding: .3em .5em;
+	padding: .4em .5em;
 	transition: color .3s linear;
 }
 
@@ -783,11 +788,10 @@ html {
 
 .accordionInner > li > a {
 	display: block;
-	font-size: .9em;
-	padding: .6em;
+	padding: .4em;
 }
 
-/* Header footer */
+/*// HEADER FOOTER //*/
 
 .header-footer {
 	text-align: center;
@@ -812,7 +816,7 @@ html {
 	color: var(--font-light);
 }
 
-/* Header nav toggle classes */
+/*// HEADER NAV TOGGLE CLASSES //*/
 
 .activeSection {
 	font-weight: bold;
@@ -831,7 +835,6 @@ html {
 }
 
 @media screen and (orientation:landscape) and (max-width: 1279px) {
-
 	main {
 		margin-left: 80px;
 	}
@@ -841,6 +844,7 @@ html {
 		height: 100%;
 		flex-flow: column-reverse;
 		justify-content: flex-end;
+		background-color: var(--background-navbar);
 	}
 
 	.navbar-logo-container {
@@ -861,14 +865,14 @@ html {
 	}
 
 	.nav-overlay {
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f7f5+0,f6f7f5+100&1+15,0.9+30 */
-		background: -moz-linear-gradient(left, rgba(246, 247, 245, 1) 0%, rgba(246, 247, 245, 1) 15%, rgba(246, 247, 245, 0.9) 30%, rgba(246, 247, 245, 0.9) 100%);
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebebe6+0,ebebe6+100&1+15,0.9+30 */
+		background: -moz-linear-gradient(left, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
 		/* FF3.6-15 */
-		background: -webkit-linear-gradient(left, rgba(246, 247, 245, 1) 0%, rgba(246, 247, 245, 1) 15%, rgba(246, 247, 245, 0.9) 30%, rgba(246, 247, 245, 0.9) 100%);
+		background: -webkit-linear-gradient(left, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
 		/* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to right, rgba(246, 247, 245, 1) 0%, rgba(246, 247, 245, 1) 15%, rgba(246, 247, 245, 0.9) 30%, rgba(246, 247, 245, 0.9) 100%);
+		background: linear-gradient(to right, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
 		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7f5', endColorstr='#e6f6f7f5', GradientType=1);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebe6', endColorstr='#e6ebebe6', GradientType=1);
 		/* IE6-9 */
 	}
 
@@ -901,29 +905,19 @@ html {
 	}
 
 	.nav-overlay {
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f4f1+0,f2f4f1+100&1+15,0.9+30 */
-		background: -moz-linear-gradient(top, rgba(242,244,241,1) 0%, rgba(242,244,241,1) 15%, rgba(242,244,241,0.9) 30%, rgba(242,244,241,0.9) 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(top, rgba(242,244,241,1) 0%,rgba(242,244,241,1) 15%,rgba(242,244,241,0.9) 30%,rgba(242,244,241,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to bottom, rgba(242,244,241,1) 0%,rgba(242,244,241,1) 15%,rgba(242,244,241,0.9) 30%,rgba(242,244,241,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f4f1', endColorstr='#e6f2f4f1',GradientType=0 ); /* IE6-9 */
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebebe6+0,ebebe6+100&1+15,0.9+30 */
+		background: -moz-linear-gradient(top, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
+		/* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebe6', endColorstr='#e6ebebe6', GradientType=0);
+		/* IE6-9 */
 	}
 
 	.header-footer .footer-phone {
 		display: block;
-	}
-}
-
-/* Header nav items hidden below widescreen */
-
-@media screen and (max-width:1279px) {
-
-	.nav-overlay {
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		display: none;
 	}
 }
 
@@ -962,7 +956,7 @@ html {
 
 	.main-logo a {
 		height: 100%;
-		max-width: 60%;
+		max-width: 50%;
 		margin: 10% auto 5% auto;
 		justify-content: flex-end;
 	}
@@ -974,6 +968,7 @@ html {
 	}
 
 	.nav-overlay {
+		position: static;
 		background: none;
 		height: 70vh;
 		padding-top: 0;
@@ -1034,7 +1029,7 @@ html {
 	text-transform: uppercase;
 }
 
-#home-booking .fixed-image{
+#home-booking .fixed-image {
 	filter: brightness(.6);
 }
 
@@ -1085,12 +1080,12 @@ html {
 	}
 
 	#main-home .content p {
-		margin-left: 2em;
+		padding-left: 2em;
 		text-align: left;
 	}
 
 	#main-home .content {
-		width: 85%;
+		width: 90%;
 	}
 
 	#home-booking .content {
@@ -1107,11 +1102,82 @@ html {
 	}
 
 	#home-booking .content p {
-		margin-left: 0;
-		font-size: 1.5em;
+		padding-left: 0;
 		line-height: 1.5em;
 	}
+}
 
+/*////////////////////
+	OUR STORY PAGE
+////////////////////*/
+
+#main-story {
+	background-color: var(--background-light);
+}
+
+#main-story .gradient-down::after {
+	background-image: url(/images/icon/line_fade_light.png);
+}
+
+#story-about-1 {
+	padding-top: 2em;
+}
+
+#main-story .content {
+	padding-bottom: 2em;
+}
+
+#story-about-2 p:nth-child(1) {
+	padding-top: 1em;
+}
+
+@media screen and (max-width: 1279px) {
+
+	#main-story .hr-left {
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 1279px) and (orientation: landscape) {
+	#story-about-1 {
+		margin-left: -80px;
+	}
+
+	#story-about-1 .content {
+		margin-left: 80px;
+	}
+
+	#story-about-1 header {
+		margin-left: 80px;
+	}
+
+	#story-three p:last-child {
+		padding-bottom: 2em;
+	}
+}
+
+/* Story page widescreen response */
+
+@media screen and (min-width: 1280px) {
+	#main-story .gradient-down::after {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		left: 57vw;
+		width: 43vw;
+		height: 30vh;
+	}
+
+	#story-about-1 .content {
+		padding-bottom: 0;
+	}
+
+	#story-about-2 p:nth-child(1) {
+		padding-top: 0;
+	}
 }
 
 /*////////////////////
@@ -1120,10 +1186,6 @@ html {
 
 #main-bnb .double-header h3 {
 	font-size: 2em;
-}
-
-#main-bnb section {
-	margin: 10% 0;
 }
 
 .flex-container-room {
@@ -1136,7 +1198,7 @@ html {
 	margin-top: -50px;
 	padding: 0 1em;
 	background-color: white;
-	border-bottom: 1px solid #66635e;
+	border-bottom: 1px solid var(--border-light);
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
 	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
@@ -1150,22 +1212,21 @@ html {
 }
 
 @media screen and (max-width: 1279px) {
-	.flex-container-room:before,
+	#main-bnb section {
+		margin: 10% 0;
+	}
+
 	.flex-container-room:after {
 		content: "";
 		position: absolute;
-		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#66635e));
-		background-image: -webkit-linear-gradient(transparent, #66635e);
-		background-image: -moz-linear-gradient(transparent, #66635e);
-		background-image: -o-linear-gradient(transparent, #66635e);
-		background-image: linear-gradient(transparent, #66635e);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#e1e2e0));
+		background-image: -webkit-linear-gradient(transparent, #e1e2e0);
+		background-image: -moz-linear-gradient(transparent, #e1e2e0);
+		background-image: -o-linear-gradient(transparent, #e1e2e0);
+		background-image: linear-gradient(transparent, #e1e2e0);
 		top: 0;
 		bottom: -1px;
 		width: 1px;
-	}
-
-	.flex-container-room:before {
-		left: -1px;
 	}
 
 	.flex-container-room:after {
@@ -1421,7 +1482,7 @@ html {
 }
 
 .main-menu .content li {
-		line-height: 1.4em;
+	line-height: 1.4em;
 }
 
 .menu-select {
@@ -1610,13 +1671,13 @@ html {
 	}
 }
 
-/* DRINK MENU PAGE */
+/*// DRINK MENU PAGE //*/
 
 #menu-drinks .section-dish li {
 	padding: .25em 0;
 }
 
-/* WINE LIST PAGE */
+/*// WINE LIST PAGE //*/
 
 #main-menu-wine .dish-title {
 	margin: 2em 0 .5em 0;
@@ -1626,7 +1687,7 @@ html {
 	margin-top: 0;
 }
 
-/* BREAKFAST MENU PAGE */
+/*// BREAKFAST MENU PAGE //*/
 
 .menu-breakfast-information p:nth-child(1) {
 	color: var(--font-light);
@@ -1648,81 +1709,6 @@ html {
 	margin: 1.2em 0 0 0;
 }
 
-
-/*////////////////////
-	OUR STORY PAGE
-////////////////////*/
-
-#main-story {
-	background-color: var(--background-light);
-}
-
-#main-story .gradient-down::after {
-	background-image: url(/images/icon/line_fade_light.png);
-}
-
-#story-about {
-	padding-top: 2em;
-}
-
-#main-story .content {
-	padding-bottom: 2em;
-}
-
-#story-about-2 p:nth-child(1) {
-	padding-top: 1em;
-}
-
-@media screen and (max-width: 1279px) {
-
-	#main-story .hr-left {
-		display: block;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
-@media screen and (max-width: 1279px) and (orientation: landscape) {
-	#story-about {
-		margin-left: -80px;
-	}
-
-	#story-about .content {
-		margin-left: 80px;
-	}
-
-	#story-about header {
-		margin-left: 80px;
-	}
-
-	#story-three p:last-child {
-		padding-bottom: 2em;
-	}
-}
-
-/* Story page widescreen response */
-
-@media screen and (min-width: 1280px) {
-
-	.section-story::after {
-		content: '';
-		position: fixed;
-		bottom: 0;
-		left: 57vw;
-		width: 43vw;
-		height: 40vh;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+95 */
-		background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 95%, rgba(255, 255, 255, 1) 100%);
-		/* FF3.6-15 */
-		background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 95%, rgba(255, 255, 255, 1) 100%);
-		/* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 95%, rgba(255, 255, 255, 1) 100%);
-		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
-		/* IE6-9 */
-	}
-}
 
 /*////////////////////
 	RESERVATIONS PAGE
@@ -1757,19 +1743,10 @@ html {
 	CONTACT PAGE
 ////////////////////*/
 
-.contact-images {
-	display: flex;
-	flex-flow: column;
-}
-
-.contact-images figure:first-child {
-	margin-top: 1em;
-}
-
 .contact-images figure {
 	height: 300px;
 	overflow: hidden;
-	margin-bottom: 1.5em;
+	margin-bottom: 2em;
 }
 
 .contact-images img {
@@ -1779,31 +1756,33 @@ html {
 	transform: translateX(-50%);
 }
 
+.contact-sign {
+	margin-top: 2em;
+}
+
+.contact-maps {}
 
 @media screen and (min-width: 1280px) {
 	.contact-images {
 		display: flex;
-		flex-flow: row wrap;
+		flex-flow: row;
 	}
 
 	.contact-images figure {
-		max-height: 240px;
-		overflow: hidden;
+		height: 200px;
 		margin-bottom: 0;
 	}
 
+	.contact-images img {}
+
 	.contact-sign {
 		flex: 0 0 60%;
+		margin-right: 1em;
+		margin-top: 0;
 	}
-
-	.contact-sign img {
-		width: 100%;
-		height: auto;
-		padding-right: 1em;
-	}
-
 	.contact-maps {
 		flex: 0 0 40%;
+		margin-bottom: 0;
 	}
 }
 

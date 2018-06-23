@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +16,7 @@
 	<header class="side-header">
 		<div class="navbar">
 
-			<div>
+			<div class="navbar-logo-container">
 				<a href="https://emaidalat.com">
 					<img class="navbar-logo" id="navbarLogo" src="images/logo/logo_wide.png" alt="émai dalat small logo">
 					<img class="navbar-logo" id="navbarRose" src="images/logo/logo_tall.png" alt="émai dalat small logo">
@@ -39,7 +40,7 @@
 			<nav class="header-nav">
 				<ul class="accordion">
 					<li>
-						<a href="index.html" class=" activePage">Home</a>
+						<a href="index.html" class="toggle activePage">Home</a>
 						<ul class="accordionInner">
 							<li><a href="index.html" class="scroll activeSection">Restaurant</a></li>
 							<li><a href="index.html#home-cafe" class="scroll">Cafe</a></li>
@@ -50,7 +51,7 @@
 					</li>
 
 					<li>
-						<a class="" href="story.html">Our Story</a>
+						<a class="toggle" href="story.html">Our Story</a>
 						<ul class="accordionInner">
 							<li><a href="story.html#story-about">About Us</a></li>
 							<li><a href="story.html#story-dalat">Dalat</a></li>
@@ -59,7 +60,7 @@
 					</li>
 
 					<li>
-						<a href="bnb.html" class="">Our Rooms</a>
+						<a href="bnb.html" class="toggle">Our Rooms</a>
 						<ul class="accordionInner">
 							<li><a href="bnb.html#rooms-ivy">Ivy</a></li>
 							<li><a href="bnb.html#rooms-clara">Clara</a></li>
@@ -75,7 +76,7 @@
 
 
 					<li>
-						<a class="" href="menu-restaurant.html">Menu</a>
+						<a class="toggle" href="menu-restaurant.html">Menu</a>
 						<ul class="accordionInner">
 							<li><a href="menu-restaurant.html">Restaurant</a></li>
 							<li><a href="menu-drinks.html">Drinks &amp; Desserts</a></li>
@@ -144,11 +145,10 @@
 
 				<div class="contact-images">
 					<figure class="contact-sign">
-						<img src="/images/info/map_grey.jpg" alt="">
+						<a href=""><img src="/images/info/street_sign.jpg" alt=""></a>
 					</figure>
-
 					<figure class="contact-maps">
-						<a href="https://goo.gl/maps/8qyopBGFrM62"><img src="/images/info/street_sign.jpg" alt=""></a>
+						<a href="https://goo.gl/maps/rfoB76bXZLM2"><img src="/images/info/map_grey.jpg" alt=""></a>
 					</figure>
 				</div>
 			</div>
@@ -178,4 +178,5 @@
 	<script src="scripts/main.js"></script>
 
 </body>
+
 </html>
