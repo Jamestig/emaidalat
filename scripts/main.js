@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-	// Global variables
-
 	// Burger button
 	$('#burger-icon').click(function () {
 		$(this).toggleClass('open');
@@ -75,21 +73,11 @@ $(document).ready(function () {
 	var thisPage = $(location).attr('href');
 	var currentPage;
 
-	if (thisPage) {
-		console.log(thisPage);
-		currentPage === true;
-	} else {
-		console.log('not current page');
-		currentPage === false;
-	};
-
 	scrollLink.click(function (e) {
-		if (thisPage === true) {
-			e.preventDefault();
-			$('body,html').animate({
-				scrollTop: $(this.hash).offset().top
-			}, 1000);
-		};
+		e.preventDefault();
+		$('body,html').animate({
+			scrollTop: $(this.hash).offset().top
+		}, 1000);
 	}); // End smooth scrolling function
 
 
@@ -103,18 +91,18 @@ $(document).ready(function () {
 			var scrollbarLocation = $(this).scrollTop();
 			var windowHeight = $(window).height();
 			var clientHeight = document.body.clientHeight - 300;
-			var homeHeight = clientHeight / 5;
+			//var scrollSections = $('main > section').length();
 			var pageSection = "sectionOne";
 
 			scrollLink.each(function () {
 
-				//			var sectionOffset = $(this.hash).offset().top - 20;
+				var sectionOffset = $(this.hash).offset().top - 20;
 
-				//			if (sectionOffset <= scrollbarLocation) {
-				//				$(this).parent().addClass('activeSection');
-				//				$(this).parent().siblings().removeClass('activeSection');
-				//			}
-
+				if (sectionOffset <= scrollbarLocation) {
+					$(this).parent().addClass('activeSection');
+					$(this).parent().siblings().removeClass('activeSection');
+				}
+/*
 				if (scrollbarLocation <= homeHeight) {
 					$('#homeRestaurantBG').fadeIn(1000);
 					$('#homeCafeBG').fadeOut(1000);
@@ -130,6 +118,7 @@ $(document).ready(function () {
 				} else if (scrollbarLocation > homeHeight * 4 && scrollbarLocation <= homeHeight * 5) {
 					pageSection = "sectionFive";
 				}
+*/
 			});
 
 
@@ -142,6 +131,52 @@ $(document).ready(function () {
 	}); // End scroll function
 
 	// Accordion
+
+	var accordionHidden = $('.accordionInner');
+	var pageLinks = $('.accordion > li > a');
+	var menuLinks = $('#inner-restaurant > li > a');
+	var current_href = $(location).attr('href');
+	var currentPage = $(location).attr('href').split('/')[3];
+	var prevLink = $('.accordionInner').prev('a');
+	var link_href = prevLink.attr('href');
+
+	//console.log(currentPage);
+	//console.log(accordionHidden);
+	//console.log(pageLinks);
+	//console.log(menuLinks);
+	//console.log(prevLink);
+	//console.log(link_href);
+
+	for (x = 0; x < prevLink.length; x++) {
+		var findLink = prevLink.eq(x).attr('href');
+		var openMenu = $('a[href="' + findLink + '"]').next('ul');
+
+		if (prevLink.eq(x).attr('href') === currentPage) {
+			openMenu.slideDown();
+		}
+	}
+
+	/*
+		if ((current_href).indexOf('index.html') > -1) {
+			$('#inner-home').slideDown();
+			$(pageLinks[0]).addClass('activePage');
+		} else if ((current_href).indexOf('story.html') > -1) {
+			$('#inner-story').slideDown();
+			$(pageLinks[1]).addClass('activePage');
+		} else if ((current_href).indexOf('bnb.html') > -1) {
+			$('#inner-bnb').slideDown();
+			$(pageLinks[2]).addClass('activePage');
+		} else if ((current_href).indexOf('reservations.html') > -1) {
+			$(pageLinks[3]).addClass('activePage');
+		} else if ((current_href).indexOf('menu-') > -1) {
+			$('#inner-restaurant').slideDown();
+			$(pageLinks[4]).addClass('activePage');
+		} else if ((current_href).indexOf('menu-restaurant.html') > -1) {
+			$(pageLinks[4]).addClass('activePage');
+		}
+	*/
+
+	/*
 	$('.toggle').click(function (e) {
 
 		if (window.matchMedia('(min-width: 1280px)').matches) {
@@ -160,5 +195,5 @@ $(document).ready(function () {
 			};
 		} // Match query if statement
 	}); // End accordion function
-
+	*/
 });

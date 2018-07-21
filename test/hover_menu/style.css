@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+}
+
+.menu {
+	width: 20%;
+	height: 100%;
+	position: fixed;
+	background-color: beige;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+}
+
+nav>a {
+	display: block;
+}
+
+.content {
+	margin-left: 20%;
+	background-color: azure;
+	height: 100%;
+}
+
+.active {
+	color: red;
+	font-size: 2em;
+}

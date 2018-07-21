@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hover menu</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="menu">
+	<h1>emai</h1>
+		<nav>
+			<a href="index.html">One</a>
+			<ul class="menu-one">
+				<li><a href="">one-one</a></li>
+				<li><a href="">one-two</a></li>
+				<li><a href="">one-three</a></li>
+				<li><a href="">one-four</a></li>
+				<li><a href="">one-five</a></li>
+			</ul>
+			<a href="two.html">Two</a>
+			<ul>
+				<li><a href="">two-one</a></li>
+				<li><a href="">two-two</a></li>
+				<li><a href="">two-three</a></li>
+				<li><a href="">two-four</a></li>
+				<li><a href="">two-five</a></li>
+			</ul>
+			<a href="">Three</a>
+			<a href="">Four</a>
+			<a href="">Five</a>
+			<a href="">Six</a>
+		</nav>
+		<footer>
+			<h2>footer</h2>
+		</footer>
+	</section>
+
+	<section class="content">
+		<h1>welcome to emai</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis et, maiores iste harum non ex quibusdam natus dolore consequatur suscipit ullam, voluptate quasi officiis totam similique itaque, aspernatur ipsum fugiat!</p>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('ul').slideUp();
+		$('.menu-one').slideDown();
+	})
+	</script>
+</body>
+</html>
