@@ -1119,6 +1119,12 @@ html {
 	background-image: url(/images/icon/line_fade_light.png);
 }
 
+@media screen and (max-width: 1280px) {
+	#main-story .gradient-down::after {
+		background-image: none;
+	}
+}
+
 #story-about-1 {
 	padding-top: 2em;
 }
