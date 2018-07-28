@@ -269,6 +269,7 @@ html {
 		flex-flow: column;
 		align-items: center;
 		justify-content: center;
+		z-index: 10;
 	}
 
 	.ribbon-container-bottom {
@@ -507,8 +508,13 @@ html {
 
 /*// IMAGE CLASSES //*/
 
+.activeBG {
+	z-index: 5;
+}
+
 .fixed-image {
 	position: relative;
+	z-index: 4;
 }
 
 .fixed-image img {
@@ -571,6 +577,7 @@ html {
 	bottom: 0;
 	left: 0;
 	right: 0;
+	z-index: 50;
 }
 
 .remove-header {
@@ -772,7 +779,7 @@ html {
 }
 
 .accordion a:hover {
-	color: var(--font-main);
+	color: var(--font-light);
 }
 
 .accordion .toggle:hover {
@@ -1119,8 +1126,9 @@ html {
 	background-image: url(/images/icon/line_fade_light.png);
 }
 
-@media screen and (max-width: 1280px) {
-	#main-story .gradient-down::after {
+@media screen and (max-width: 1279px) {
+	
+	#main-story > .gradient-down::after {
 		background-image: none;
 	}
 }
@@ -1168,6 +1176,16 @@ html {
 /* Story page widescreen response */
 
 @media screen and (min-width: 1280px) {
+
+
+	#main-story section {
+		height: 100vh;
+	}
+
+	#main-story .content {
+		padding-top: 2em;
+	}
+
 	#main-story .gradient-down::after {
 		display: block;
 		position: fixed;
@@ -1268,6 +1286,10 @@ html {
 .link-button-airbnb img {
 	vertical-align: bottom;
 	height: 24px;
+}
+
+.room-logo {
+	z-index: 30;
 }
 
 .room-logo img {

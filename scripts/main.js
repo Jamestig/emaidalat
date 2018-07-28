@@ -1,5 +1,37 @@
 $(document).ready(function () {
 
+	// Accordion
+
+	if (window.matchMedia('(min-width: 1280px)').matches) {
+
+		var accordionHidden = $('.accordionInner');
+		var pageLinks = $('.accordion > li > a');
+		var menuLinks = $('#inner-restaurant > li > a');
+		var current_href = $(location).attr('href');
+		var currentPage = $(location).attr('href').split('/')[3];
+		var prevLink = $('.accordionInner').prev('a');
+		var link_href = prevLink.attr('href');
+		var openHeader = $('a[href="' + currentPage + '"]');
+
+		for (x = 0; x < prevLink.length; x++) {
+			var findLink = prevLink.eq(x).attr('href');
+			var openMenu = $('a[href="' + findLink + '"]').next('ul');
+			var openList = openMenu.find('a');
+			var menuLinks = current_href.indexOf('menu-');
+
+			if (prevLink.eq(x).attr('href') === currentPage) {
+				openMenu.slideDown();
+				openList.addClass('scroll');
+			}
+
+			if (menuLinks > -1) {
+				$('#inner-restaurant').show();
+				$('#restaurantLink').addClass('activePage');
+			}
+		}
+		openHeader.addClass('activePage');
+	} // End accordion
+
 	// Burger button
 	$('#burger-icon').click(function () {
 		$(this).toggleClass('open');
@@ -70,7 +102,6 @@ $(document).ready(function () {
 
 	// Smooth scrolling
 	var scrollLink = $('.scroll');
-	var thisPage = $(location).attr('href');
 	var currentPage;
 
 	if (currentPage === 'index.html' || currentPage === 'story.html' || currentPage === 'bnb.html') {
@@ -82,93 +113,72 @@ $(document).ready(function () {
 		}); // End smooth scrolling function
 	};
 
-
-	// Accordion
-
-	var accordionHidden = $('.accordionInner');
-	var pageLinks = $('.accordion > li > a');
-	var menuLinks = $('#inner-restaurant > li > a');
-	var current_href = $(location).attr('href');
-	var currentPage = $(location).attr('href').split('/')[3];
-	var prevLink = $('.accordionInner').prev('a');
-	var link_href = prevLink.attr('href');
-	var openHeader = $('a[href="' + currentPage + '"]');
-
-	console.log(currentPage);
-	//console.log(accordionHidden);
-	//console.log(pageLinks);
-	//console.log(prevLink);
-	//console.log(link_href);
+	// Active link switching and background fading
 
 	if (window.matchMedia('(min-width: 1280px)').matches) {
+		
+		var windowHeight = $(window).height();
+		var windowHalf = (windowHeight / 2) -50;
+		var clientHeight = document.body.clientHeight;
+		var pageSections = $('section').length;
+		var backgroundFigure = $('.fixed-image');
+		
+		//console.log(pageSections);
+		//console.log("window height = " + windowHeight);
+		//console.log("client height = " + clientHeight);
+		//console.log("home height = " + homeHeight);
+		
+		$(backgroundFigure).not( $(backgroundFigure)[ 0 ]).hide();
 
-		for (x = 0; x < prevLink.length; x++) {
-			var findLink = prevLink.eq(x).attr('href');
-			var openMenu = $('a[href="' + findLink + '"]').next('ul');
-			var openList = openMenu.find('a');
-			var menuLinks = current_href.indexOf('menu-');
+		$(window).scroll(function () {
+			
+		var sectionOffset;
+		var scrollbarLocation = $(this).scrollTop();
 
-			if (prevLink.eq(x).attr('href') === currentPage) {
-				openMenu.slideDown();
-				openList.addClass('scroll');
-			}
-
-			if (menuLinks > -1) {
-				$('#inner-restaurant').show();
-				$('#restaurantLink').addClass('activePage');
-			}
-		}
-
-		openHeader.addClass('activePage');
-	}
-
-	// Active link switching and background fading
-	var sectionOffset;
-
-	$(window).scroll(function () {
-
-		if (window.matchMedia('(min-width: 1280px)').matches) {
-
-			var scrollbarLocation = $(this).scrollTop();
-			var windowHeight = $(window).height();
-			var clientHeight = document.body.clientHeight - 300;
-			//var scrollSections = $('main > section').length();
-			var pageSection = "sectionOne";
+		console.log("scroll location = " + scrollbarLocation);
 
 			scrollLink.each(function () {
 
-				var sectionOffset = $(this.hash).offset().top - 20;
+				var sectionOffset = $(this.hash).offset().top -20;
 
 				if (sectionOffset <= scrollbarLocation) {
 					$(this).parent().addClass('activeSection');
 					$(this).parent().siblings().removeClass('activeSection');
 				}
-				/*
-								if (scrollbarLocation <= homeHeight) {
-									$('#homeRestaurantBG').fadeIn(1000);
-									$('#homeCafeBG').fadeOut(1000);
-									pageSection = "sectionOne";
-								} else if (scrollbarLocation > homeHeight && scrollbarLocation <= homeHeight * 2) {
-									$('#homeCafeBG').fadeIn(1000);
-									$('#homeRestaurantBG').fadeOut(1000);
-									pageSection = "sectionTwo";
-								} else if (scrollbarLocation > homeHeight * 2 && scrollbarLocation <= homeHeight * 3) {
-									pageSection = "sectionThree";
-								} else if (scrollbarLocation > homeHeight * 3 && scrollbarLocation <= homeHeight * 4) {
-									pageSection = "sectionFour";
-								} else if (scrollbarLocation > homeHeight * 4 && scrollbarLocation <= homeHeight * 5) {
-									pageSection = "sectionFive";
-								}
-				*/
+				
+				if (scrollbarLocation <= windowHeight / 2) {
+					console.log('section 1');
+					$(backgroundFigure[0]).fadeIn(1000);
+					$(backgroundFigure).not( $(backgroundFigure)[0]).fadeOut(2000);
+				} else if ( scrollbarLocation > windowHeight / 2 && scrollbarLocation <= windowHeight + (windowHeight / 2) ) {
+					$(backgroundFigure[1]).fadeIn(1000);
+					$(backgroundFigure).not( $(backgroundFigure)[1]).fadeOut(2000);
+					console.log('section 2');
+				} else if ( scrollbarLocation > windowHeight + windowHalf && scrollbarLocation <= (windowHeight * 2) + windowHalf) {
+					$(backgroundFigure[2]).fadeIn(1000);
+					$(backgroundFigure).not( $(backgroundFigure)[2]).fadeOut(2000);
+					console.log('section 3');
+				} else if ( scrollbarLocation > (windowHeight * 2) + windowHalf && scrollbarLocation <= (windowHeight * 3) + windowHalf) {
+					$(backgroundFigure[3]).fadeIn(1000);
+					$(backgroundFigure).not( $(backgroundFigure)[3]).fadeOut(2000);
+					console.log('section 4');
+				} else if ( scrollbarLocation > (windowHeight * 3) + windowHalf && scrollbarLocation <= (windowHeight * 4) + windowHalf) {
+					$(backgroundFigure[4]).fadeIn(1000);
+					$(backgroundFigure).not( $(backgroundFigure)[4]).fadeOut(2000);
+					console.log('section 5');
+				} else if ( scrollbarLocation > (windowHeight * 4) + windowHalf && scrollbarLocation <= (windowHeight * 5) + windowHalf) {
+					console.log('section 6');
+					$(backgroundFigure[5]).fadeIn(1000);
+					$(backgroundFigure).not( $(backgroundFigure)[5]).fadeOut(2000);
+				} else if ( scrollbarLocation > (windowHeight * 5) + windowHalf && scrollbarLocation <= (windowHeight * 6) + windowHalf) {
+					console.log('section 7');
+					$(backgroundFigure[6]).fadeIn(1000);
+					$(backgroundFigure).not( $(backgroundFigure)[6]).fadeOut(2000);
+				};
+
 			});
 
-
-			//console.log("scroll location = " + scrollbarLocation);
-			//console.log("window height = " + windowHeight);
-			//console.log("client height = " + clientHeight);
-			//console.log("home height = " + homeHeight);
-			//console.log(pageSection);
-		} // Match query if statement
-	}); // End scroll function
+		}) // Match query if statement
+	}; // End scroll function
 
 });
