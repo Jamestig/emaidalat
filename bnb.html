@@ -74,7 +74,6 @@
 						<a href="reservations.html">Reservations</a>
 					</li>
 
-
 					<li>
 						<a id="restaurantLink" href="menu-restaurant.html">Menu</a>
 						<ul id="inner-restaurant" class="accordionInner">
@@ -107,7 +106,15 @@
 	</header>
 
 	<main id="main-bnb">
-		<section id="bnb-intro">
+		<!--
+		<div class="fullscreen-container">
+			<div class="fullscreen-button-container">
+				<button class="fullscreen-button" id="previousImage">L</button>
+				<button class="fullscreen-button" id="nextImage">R</button>
+			</div>
+		</div>
+	-->
+		<section class="scrollSection" id="bnb-intro">
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
@@ -136,7 +143,7 @@
 			</div>
 		</section>
 
-		<section id="bnb-breakfast">
+		<section class="scrollSection" id="bnb-breakfast">
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
@@ -165,53 +172,58 @@
 			</div>
 		</section>
 
-		<section id="rooms-ivy" class="section-room">
+		<div class="room-button-container">
+			<button class="previousRoom room-button">
+				<span></span>
+				<span>Previous<br>Room</span>
+			</button>
+			<button class="nextRoom room-button">
+				<span class="down-arrow"></span>
+				<span>Next<br>Room</span>
+			</button>
+		</div>
+
+		<section class="scrollSection section-room" id="rooms-ivy">
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
-						<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/duck_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
+						<source srcset="images/photos/hd/room_ivy_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="images/photos/tablet/room_ivy_1024_01.jpg" media="(min-width: 600px)">
+						<img src="images/photos/mobile/room_ivy_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
+					</picture>
+				</figure>
+				<figure class="room-slide">
+					<picture>
+						<source srcset="images/photos/hd/room_clara_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="images/photos/tablet/room_clara_1024_01.jpg" media="(min-width: 600px)">
+						<img src="images/photos/mobile/room_clara_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
 					</picture>
 				</figure>
 			</div>
 
 			<div class="center flex-container-room">
-				<div class="room-button-container">
-					<button class="previousRoom room-button">
-						<span></span>
-						<span>Previous<br>Room</span>
-					</button>
-					<button class="nextRoom room-button">
-						<span class="down-arrow"></span>
-						<span>Next<br>Room</span>
-					</button>
-				</div>
-				<div class="room-logo">
-					<img src="images/logo/ivy-logo.png" alt="Ivy logo">
+
+					<div class="room-logo">
+						<img src="images/logo/ivy-logo.png" alt="Ivy logo">
+					</div>
+
+					<div class="room-info">
+						<p>Accomodates two &#183; Double bed (140cm)<br> Garden view &#183; Bathroom with wooden bathtub<br> Heavenly soft bedsheets from Portugal<br> Free breakfast &#183; 970,000 / 43 USD per night
+						</p>
+					</div>
+
+					<div class="room-description">
+						<p>With a view of our gorgeous garden and vine-covered wall down below, Ivy is a delight to eyes that are sensitive to the greeneries of life.</p>
+					</div>
+
+				<div class="link-button-light link-button-airbnb">
+					<a href="">Book now on Airbnb</a>
 				</div>
 
-				<div class="room-info">
-					<p>Accomodates two &#183; Double bed (140cm)<br> Garden view &#183; Bathroom with wooden bathtub<br> Heavenly soft bedsheets from Portugal<br> Free breakfast &#183; 970,000 / 43 USD per night
-					</p>
-				</div>
-
-				<div class="room-description">
-					<p>With a view of our gorgeous garden and vine-covered wall down below, Ivy is a delight to eyes that are sensitive to the greeneries of life.</p>
-				</div>
-
-				<div class="link-button-airbnb">
-					<a href="">
-						<span class="airbnb-button-text">book now on</span>
-						<span class="airbnb-button-image">
-							<img src="/images/logo/airbnb_logo.png" alt="">
-						</span>
-					</a>
-				</div>
 			</div>
 		</section>
 
-		<section id="rooms-clara" class="section-room">
+		<section class="scrollSection section-room" id="rooms-clara">
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
@@ -223,62 +235,39 @@
 			</div>
 
 			<div class="center flex-container-room">
-				<div class="room-button-container">
-					<button class="previousRoom room-button">
-						<span></span>
-						<span>Previous<br>Room</span>
-					</button>
-					<button class="nextRoom room-button">
-						<span class="down-arrow"></span>
-						<span>Next<br>Room</span>
-					</button>
-				</div>
-				<div class="room-logo">
+
+				<div id="clara-logo" class="room-logo">
 					<img src="images/logo/clara_logo.png" alt="Clara logo">
 				</div>
 
-				<div class="room-info">
+				<div id="clara-info" class="room-info">
 					<p>Accomodates two &#183; Double bed (140cm)<br> Garden view &#183; Bathroom with wooden bathtub<br> Heavenly soft bedsheets from Portugal<br> Free breakfast &#183; 970,000 / 43 USD per night
 					</p>
 				</div>
 
-				<div class="room-description">
+				<div id="clara-description" class="room-description">
 					<p>With a view of our gorgeous garden and vine-covered wall down below, Ivy is a delight to eyes that are sensitive to the greeneries of life.</p>
 				</div>
 
-				<div class="link-button-airbnb">
-					<a href="">
-							<span class="airbnb-button-text">book now on</span>
-							<span class="airbnb-button-image">
-									<img src="/images/logo/airbnb_logo.png" alt="">
-							</span>
-						</a>
+				<div class="link-button-light link-button-airbnb">
+					<a href="">Book now on Airbnb</a>
 				</div>
 			</div>
 		</section>
 
-		<section id="rooms-may" class="section-room">
+		<section class="scrollSection section-room" id="rooms-may">
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
-						<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/duck_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
+						<source srcset="images/photos/hd/room_may_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="images/photos/tablet/room_may_1024_01.jpg" media="(min-width: 600px)">
+						<img src="images/photos/mobile/room_may_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
 					</picture>
 				</figure>
 			</div>
 
 			<div class="center flex-container-room">
-				<div class="room-button-container">
-					<button class="previousRoom room-button">
-						<span></span>
-						<span>Previous<br>Room</span>
-					</button>
-					<button class="nextRoom room-button">
-						<span class="down-arrow"></span>
-						<span>Next<br>Room</span>
-					</button>
-				</div>
+
 				<div class="room-logo">
 					<img src="images/logo/may_logo.png" alt="May logo">
 				</div>
@@ -291,18 +280,15 @@
 				<div class="room-description">
 					<p>With a view of our gorgeous garden and vine-covered wall down below, Ivy is a delight to eyes that are sensitive to the greeneries of life.</p>
 				</div>
-				<div class="link-button-airbnb">
-					<a href="">
-							<span class="airbnb-button-text">book now on</span>
-							<span class="airbnb-button-image">
-									<img src="/images/logo/airbnb_logo.png" alt="">
-							</span>
-					</a>
+
+				<div class="link-button-light link-button-airbnb">
+					<a href="">Book now on Airbnb</a>
 				</div>
+
 			</div>
 		</section>
 
-		<section id="rooms-lila" class="section-room">
+		<section class="scrollSection section-room" id="rooms-lila">
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
@@ -314,16 +300,7 @@
 			</div>
 
 			<div class="center flex-container-room">
-				<div class="room-button-container">
-					<button class="previousRoom room-button">
-						<span></span>
-						<span>Previous<br>Room</span>
-					</button>
-					<button class="nextRoom room-button">
-						<span class="down-arrow"></span>
-						<span>Next<br>Room</span>
-					</button>
-				</div>
+
 				<div class="room-logo">
 					<img src="images/logo/lila_logo.png" alt="Lila logo">
 				</div>
@@ -337,39 +314,26 @@
 					<p>With a view of our gorgeous garden and vine-covered wall down below, Ivy is a delight to eyes that are sensitive to the greeneries of life.</p>
 				</div>
 
-				<div class="link-button-airbnb">
-					<a href="">
-							<span class="airbnb-button-text">book now on</span>
-							<span class="airbnb-button-image">
-									<img src="/images/logo/airbnb_logo.png" alt="">
-							</span>
-					</a>
+				<div class="link-button-light link-button-airbnb">
+					<a href="">Book now on Airbnb</a>
 				</div>
+
 			</div>
 		</section>
 
-		<section id="rooms-jasmine" class="section-room">
+		<section class="scrollSection section-room" id="rooms-jasmine">
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
-						<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/duck_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
+						<source srcset="images/photos/hd/room_jasmine_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="images/photos/tablet/room_jasmine_1024_01.jpg" media="(min-width: 600px)">
+						<img src="images/photos/mobile/jasmine_480_03.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
 					</picture>
 				</figure>
 			</div>
 
 			<div class="center flex-container-room">
-				<div class="room-button-container">
-					<button class="previousRoom room-button">
-						<span></span>
-						<span>Previous<br>Room</span>
-					</button>
-					<button class="nextRoom room-button">
-						<span class="down-arrow"></span>
-						<span>Next<br>Room</span>
-					</button>
-				</div>
+
 				<div class="room-logo">
 					<img src="images/logo/jasmine_logo.png" alt="Jasmine logo">
 				</div>
@@ -383,14 +347,10 @@
 					<p>With a view of our gorgeous garden and vine-covered wall down below, Ivy is a delight to eyes that are sensitive to the greeneries of life.</p>
 				</div>
 
-				<div class="link-button-airbnb">
-					<a href="">
-							<span class="airbnb-button-text">book now on</span>
-							<span class="airbnb-button-image">
-									<img src="/images/logo/airbnb_logo.png" alt="">
-							</span>
-					</a>
+				<div class="link-button-light link-button-airbnb">
+					<a href="">Book now on Airbnb</a>
 				</div>
+
 			</div>
 		</section>
 
@@ -407,11 +367,11 @@
 		</ul>
 
 		<address>
-       <a class="footer-address" href="https://www.google.com/maps/place/1+Thi+S%C3%A1ch,+Ph%C6%B0%E1%BB%9Dng+6,+Tp.+%C4%90%C3%A0+L%E1%BA%A1t,+L%C3%A2m+%C4%90%E1%BB%93ng,+Vietnam/@11.9468468,108.4303808,17z/data=!3m1!4b1!4m5!3m4!1s0x3171132bcb6e21e1:0x45649b7517deb5b!8m2!3d11.9468416!4d108.4325695">1 Thi Sach, Da lat, Vietnam</a>
-        <a class="footer-email" href="mailto:family@emaidalat.com">family@emaidalat.com</a>
-        <span>&vert;</span>
-        <a class="footer-phone" href="tel: +842633839001">+84 2633 839 001</a>
-        </address>
+			<a class="footer-address" href="https://www.google.com/maps/place/1+Thi+S%C3%A1ch,+Ph%C6%B0%E1%BB%9Dng+6,+Tp.+%C4%90%C3%A0+L%E1%BA%A1t,+L%C3%A2m+%C4%90%E1%BB%93ng,+Vietnam/@11.9468468,108.4303808,17z/data=!3m1!4b1!4m5!3m4!1s0x3171132bcb6e21e1:0x45649b7517deb5b!8m2!3d11.9468416!4d108.4325695">1 Thi Sach, Da lat, Vietnam</a>
+			<a class="footer-email" href="mailto:family@emaidalat.com">family@emaidalat.com</a>
+			<span>&vert;</span>
+			<a class="footer-phone" href="tel: +842633839001">+84 2633 839 001</a>
+		</address>
 	</footer>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>

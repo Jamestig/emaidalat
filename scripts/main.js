@@ -1,8 +1,46 @@
 $(document).ready(function () {
-
-	// Accordion
+	
+	//FULLSCREEN FUNCTIONALITY
 
 	if (window.matchMedia('(min-width: 1280px)').matches) {
+		
+		// Fullscreen scroll //
+
+		var divs = $('.scrollSection');
+		var dir = 'up'; // wheel scroll direction
+		var div = 0; // current div
+
+		$(document.body).on('DOMMouseScroll mousewheel', function (e) {
+			if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {
+				dir = 'down';
+			} else {
+				dir = 'up';
+			}
+			// find currently visible div :
+			div = -1;
+			divs.each(function (i) {
+				if (div < 0 && ($(this).offset().top >= $(window).scrollTop())) {
+					div = i;
+				}
+			});
+			if (dir == 'up' && div > 0) {
+				div--;
+			}
+			if (dir == 'down' && div < divs.length) {
+				div++;
+			}
+			//console.log(div, dir, divs.length);
+			$('html,body').stop().animate({
+				scrollTop: divs.eq(div).offset().top
+			}, 800);
+			return false;
+		});
+
+		$(window).resize(function () {
+			$('html,body').scrollTop(divs.eq(div).offset().top);
+		});
+		
+		// Accordion
 
 		var accordionHidden = $('.accordionInner');
 		var pageLinks = $('.accordion > li > a');
@@ -31,6 +69,8 @@ $(document).ready(function () {
 		}
 		openHeader.addClass('activePage');
 	} // End accordion
+	
+	// MOBILE FUNCTIONALITY
 
 	// Burger button
 	$('#burger-icon').click(function () {
@@ -122,6 +162,7 @@ $(document).ready(function () {
 		var clientHeight = document.body.clientHeight;
 		var pageSections = $('section').length;
 		var backgroundFigure = $('.fixed-image');
+		var bookButtons = $('.flex-container-room');
 		
 		//console.log(pageSections);
 		//console.log("window height = " + windowHeight);
@@ -129,6 +170,25 @@ $(document).ready(function () {
 		//console.log("home height = " + homeHeight);
 		
 		$(backgroundFigure).not( $(backgroundFigure)[ 0 ]).hide();
+		$(bookButtons).hide();
+		$('.flex-container-room').hide();
+		$('.room-button-container').hide();
+		
+		$('#rooms-ivy .flex-container-room').click(function(){
+			alert('Room Ivy');
+		});
+		$('#rooms-clara .flex-container-room').click(function(){
+			alert('Room Clara');
+		});
+		$('#rooms-may .flex-container-room').click(function(){
+			alert('Room may');
+		});
+		$('#rooms-lila .flex-container-room').click(function(){
+			alert('Room lila');
+		});
+		$('#rooms-jasmine .flex-container-room').click(function(){
+			alert('Room jasmine');
+		});
 
 		$(window).scroll(function () {
 			
@@ -146,34 +206,46 @@ $(document).ready(function () {
 					$(this).parent().siblings().removeClass('activeSection');
 				}
 				
+				if (scrollbarLocation > windowHeight + windowHalf) {
+					$('.room-button-container').fadeIn();
+				} else {
+					$('.room-button-container').fadeOut();
+					$('.flex-container-room').fadeOut();
+				}
+				
 				if (scrollbarLocation <= windowHeight / 2) {
-					console.log('section 1');
 					$(backgroundFigure[0]).fadeIn(1000);
 					$(backgroundFigure).not( $(backgroundFigure)[0]).fadeOut(2000);
 				} else if ( scrollbarLocation > windowHeight / 2 && scrollbarLocation <= windowHeight + (windowHeight / 2) ) {
 					$(backgroundFigure[1]).fadeIn(1000);
 					$(backgroundFigure).not( $(backgroundFigure)[1]).fadeOut(2000);
-					console.log('section 2');
 				} else if ( scrollbarLocation > windowHeight + windowHalf && scrollbarLocation <= (windowHeight * 2) + windowHalf) {
 					$(backgroundFigure[2]).fadeIn(1000);
 					$(backgroundFigure).not( $(backgroundFigure)[2]).fadeOut(2000);
-					console.log('section 3');
+					$('#rooms-ivy .flex-container-room').fadeIn();
+					$('.flex-container-room').not( $('#rooms-ivy .flex-container-room') ).fadeOut();
 				} else if ( scrollbarLocation > (windowHeight * 2) + windowHalf && scrollbarLocation <= (windowHeight * 3) + windowHalf) {
 					$(backgroundFigure[3]).fadeIn(1000);
 					$(backgroundFigure).not( $(backgroundFigure)[3]).fadeOut(2000);
-					console.log('section 4');
+					$('#rooms-clara .flex-container-room').fadeIn();
+					$('.flex-container-room').not( $('#rooms-clara .flex-container-room') ).fadeOut();
+					$('#main-home .ribbon-container').fadeIn();
 				} else if ( scrollbarLocation > (windowHeight * 3) + windowHalf && scrollbarLocation <= (windowHeight * 4) + windowHalf) {
 					$(backgroundFigure[4]).fadeIn(1000);
 					$(backgroundFigure).not( $(backgroundFigure)[4]).fadeOut(2000);
-					console.log('section 5');
+					$('#rooms-may .flex-container-room').fadeIn();
+					$('.flex-container-room').not( $('#rooms-may .flex-container-room') ).fadeOut();
+					$('#main-home .ribbon-container').fadeOut(400);
 				} else if ( scrollbarLocation > (windowHeight * 4) + windowHalf && scrollbarLocation <= (windowHeight * 5) + windowHalf) {
-					console.log('section 6');
 					$(backgroundFigure[5]).fadeIn(1000);
 					$(backgroundFigure).not( $(backgroundFigure)[5]).fadeOut(2000);
+					$('#rooms-lila .flex-container-room').fadeIn();
+					$('.flex-container-room').not( $('#rooms-lila .flex-container-room') ).fadeOut();
 				} else if ( scrollbarLocation > (windowHeight * 5) + windowHalf && scrollbarLocation <= (windowHeight * 6) + windowHalf) {
-					console.log('section 7');
 					$(backgroundFigure[6]).fadeIn(1000);
 					$(backgroundFigure).not( $(backgroundFigure)[6]).fadeOut(2000);
+					$('#rooms-jasmine .flex-container-room').fadeIn();
+					$('.flex-container-room').not( $('#rooms-jasmine .flex-container-room') ).fadeOut();
 				};
 
 			});

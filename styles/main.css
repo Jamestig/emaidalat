@@ -188,15 +188,6 @@ html {
 	color: var(--font-white);
 }
 
-.content-white .link-button a {
-	color: var(--font-white);
-	border: 1px solid var(--font-light);
-	background-color: rgba(244, 244, 240, .35);
-}
-
-.content-white .link-button a:hover {
-	background-color: rgba(244, 244, 240, .4);
-}
 
 /*// COLOUR VARIABLES //*/
 
@@ -282,7 +273,7 @@ html {
 	.ribbon-container-right {
 		margin-left: 37vw;
 		padding-top: 10vh;
-		padding-bottom: 30vh;
+		padding-bottom: 40vh;
 	}
 
 	.ribbon-container-right .fixed-image {
@@ -392,6 +383,26 @@ html {
 	color: var(--dark-grey);
 }
 
+.link-button-light {
+	text-align: center;
+	margin: 3em 2em;
+}
+
+.link-button-light a {
+	color: var(--font-white);
+	border: 1px solid var(--font-white);
+	background-color: rgba(244, 244, 240, .35);
+	padding: .5em 1em;
+	letter-spacing: .15em;
+	transition: border-color .3s linear, color .3s linear, background .3s linear;
+	white-space: nowrap;
+	text-transform: uppercase;
+}
+
+.link-button-light a:hover {
+	background-color: rgba(244, 244, 240, .4);
+}
+
 .scrollDown {
 	display: none;
 	background: none;
@@ -439,7 +450,6 @@ html {
 /*// FULLSCREEN FEATURE - BUTTON CLASSES*/
 
 .fullscreen-container {
-	display: none;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -523,10 +533,6 @@ html {
 }
 
 @media screen and (max-width: 1279px) and (orientation: landscape) {
-	.fixed-image {
-		height: 100vh;
-		overflow: hidden;
-	}
 
 	.fixed-image img {
 		width: 100%;
@@ -577,7 +583,7 @@ html {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	z-index: 50;
+	z-index: 5;
 }
 
 .remove-header {
@@ -1023,7 +1029,7 @@ html {
 
 	.header-footer address a {
 		display: block;
-		font-size: .9em;
+		letter-spacing: .01em;
 	}
 }
 
@@ -1111,6 +1117,7 @@ html {
 	#home-booking .content p {
 		padding-left: 0;
 		line-height: 1.5em;
+		font-size: 1.4em;
 	}
 }
 
@@ -1179,7 +1186,10 @@ html {
 
 
 	#main-story section {
-		height: 100vh;
+		height: 60vh;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
 	}
 
 	#main-story .content {
@@ -1195,8 +1205,12 @@ html {
 		height: 30vh;
 	}
 
-	#story-about-1 .content {
+	#story-about .content {
 		padding-bottom: 0;
+	}
+	
+	#main-story #story-about-2 {
+		padding-top: 0;
 	}
 
 	#story-about-2 p:nth-child(1) {
@@ -1235,6 +1249,10 @@ html {
 	/* IE6-9 */
 }
 
+.room-button-container {
+	display: none;
+}
+
 @media screen and (max-width: 1279px) {
 	#main-bnb section {
 		margin: 10% 0;
@@ -1264,32 +1282,15 @@ html {
 
 .link-button-airbnb {
 	margin: 2.5em 0 3em 0;
-	text-align: center;
-	text-transform: uppercase;
 }
 
 .link-button-airbnb a {
-	border: 1px solid var(--font-light);
-	padding: .5em 1em;
-	color: var(--font-light);
+	background: rgba(0, 0, 0, .3);
 	white-space: nowrap;
-	transition: border-color .3s linear, color .3s linear, filter .3s linear;
-	filter: grayscale(100);
-}
-
-.link-button-airbnb a:hover {
-	border: 1px solid var(--font-main);
-	color: var(--font-main);
-	filter: grayscale(0);
-}
-
-.link-button-airbnb img {
-	vertical-align: bottom;
-	height: 24px;
 }
 
 .room-logo {
-	z-index: 30;
+	z-index: 5;
 }
 
 .room-logo img {
@@ -1396,13 +1397,16 @@ html {
 	}
 
 	.flex-container-room {
+		position: fixed;
+		bottom: 0;
 		flex-flow: row;
 		justify-content: space-around;
 		height: 20vh;
 		margin: 0;
+		margin-left: 12vw;
 		padding: 0;
 		border: none;
-		background: rgba(0, 0, 0, .5);
+		background: none;
 	}
 
 	.flex-container-room p {
@@ -1410,17 +1414,13 @@ html {
 	}
 
 	.link-button-airbnb {
-		position: absolute;
+		position: fixed;
 		right: 50px;
 		bottom: 25vh;
 	}
 
 	.link-button-airbnb a {
-		border: 1px solid var(--light-font);
-		padding: .5em 1em;
-		color: var(--light-font);
-		transition: border-color .3s linear, color .3s linear, filter .3s linear;
-		filter: grayscale(100);
+		background: rgba(0, 0, 0, .3);
 	}
 
 	.link-button-airbnb a:hover {
@@ -1429,8 +1429,15 @@ html {
 	}
 
 	.room-button-container {
-		display: block;
-		flex: 0 0 12.5%;
+		display: flex;
+		flex-flow: column;
+		align-items: flex-start;
+		justify-content: center;
+		position: fixed;
+		bottom: 0;
+		background: rgba(0,0,0,.5);
+		height: 20vh;
+		width: 100%;
 	}
 
 	.room-button {
@@ -1438,8 +1445,9 @@ html {
 		border: none;
 		color: white;
 		display: block;
-		margin-left: 15%;
+		margin-left: 3%;
 		white-space: nowrap;
+		z-index: 1000;
 	}
 
 	.room-button:hover {
@@ -1476,13 +1484,13 @@ html {
 	}
 
 	.room-logo {
-		flex: 0 0 15%
+		flex: 0 0 20%
 	}
 	.room-logo img {
 		filter: brightness(100);
 	}
 	.room-info {
-		flex: 0 0 33%;
+		flex: 0 0 40%;
 		order: 5;
 	}
 
@@ -1491,14 +1499,42 @@ html {
 	}
 
 	.room-description {
-		flex: 0 0 33%;
+		flex: 0 0 40%;
 		order: 4;
 	}
 
 	.room-description p {
 		text-align: left;
+		padding: 0 2vw;
+	}
+	
+	.room-content {
+		position: fixed;
+		z-index: 1000;
+		
 	}
 
+}
+
+/* BNB page image slider */
+
+#main-bnb .fullscreen-container {
+	left: 20vw;
+	right: 0;
+}
+
+#main-bnb .fullscreen-button-container {
+	width: 100%;
+}
+
+#main-bnb #previousImage {
+}
+
+#main-bnb #nextImage {
+}
+
+.room-slide {
+	display: none;
 }
 
 /*////////////////////
@@ -1791,9 +1827,14 @@ html {
 .contact-maps {}
 
 @media screen and (min-width: 1280px) {
+	
+	#main-contact .ribbon-container-right {
+		padding-bottom: 5em;
+	}
 	.contact-images {
 		display: flex;
 		flex-flow: row;
+		margin-top: 2em;
 	}
 
 	.contact-images figure {
@@ -1804,7 +1845,6 @@ html {
 	.contact-images img {}
 
 	.contact-sign {
-		flex: 0 0 60%;
 		margin-right: 1em;
 		margin-top: 0;
 	}
