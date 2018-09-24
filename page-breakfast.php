@@ -13,10 +13,10 @@
 				<nav class="menu-select">
 					<h3>Select menu:</h3>
 					<ul>
-						<li><a href="menu-restaurant.html">Restaurant</a><span>&#183;</span></li>
-						<li><a href="menu-drinks.html">Drinks &amp; Desserts</a></li><br>
-						<li><a href="menu-breakfast.html">Breakfast</a><span>&#183;</span></li>
-						<li><a href="menu-wine.html">Wine list</a></li>
+						<li><a href="http://localhost/local_wordpress/restaurant-menu/">Restaurant</a><span>&#183;</span></li>
+						<li><a href="http://localhost/local_wordpress/drinks-desserts-menu/">Drinks &amp; Desserts</a></li><br>
+						<li><a href="http://localhost/local_wordpress/breakfast-menu/">Breakfast</a><span>&#183;</span></li>
+						<li><a href="http://localhost/local_wordpress/wine-list/">Wine list</a></li>
 					</ul>
 				</nav>
 
@@ -25,9 +25,9 @@
 
 			<figure id="" class="first-image fixed-image mobile-image gradient-down">
 				<picture>
-					<source srcset="images/photos/hd/breakfast_1920_01.jpg" media="(min-width: 1600px)">
-					<source srcset="images/photos/tablet/breakfast_1024_01.jpg" media="(min-width: 600px)">
-					<img src="images/photos/mobile/breakfast_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/breakfast_1920_01.jpg" media="(min-width: 1600px)">
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/breakfast_1024_01.jpg" media="(min-width: 600px)">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/breakfast_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 				</picture>
 			</figure>
 
@@ -62,9 +62,9 @@
 			<section class="menu-select-bottom">
 				<nav class="menu-select">
 					<ul>
-						<li><a href="menu-restaurant.html">Restaurant menu</a></li><br>
-						<li><a href="menu-drinks.html">Drinks &amp; Desserts</a><span>&#183;</span></li>
-						<li><a href="menu-wine.html">Wine list</a></li>
+						<li><a href="http://localhost/local_wordpress/restaurant-menu/">Restaurant menu</a></li><br>
+						<li><a href="http://localhost/local_wordpress/drinks-desserts-menu/">Drinks &amp; Desserts</a><span>&#183;</span></li>
+						<li><a href="http://localhost/local_wordpress/wine-list/">Wine list</a></li>
 					</ul>
 				</nav>
 			</section>

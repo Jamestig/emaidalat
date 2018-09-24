@@ -12,9 +12,9 @@
 
 			<figure id="" class="fixed-image mobile-image gradient-down">
 				<picture>
-					<source srcset="images/photos/hd/bar_1920_01.jpg" media="(min-width: 1600px)">
-					<source srcset="images/photos/tablet/bar_1024_01.jpg" media="(min-width: 600px)">
-					<img src="images/photos/mobile/bar_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/bar_1920_01.jpg" media="(min-width: 1600px)">
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/bar_1024_01.jpg" media="(min-width: 600px)">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/bar_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 				</picture>
 			</figure>
 
@@ -41,10 +41,10 @@
 
 				<div class="contact-images">
 					<figure class="contact-sign">
-						<a href=""><img src="/images/info/street_sign.jpg" alt=""></a>
+						<a href=""><img src="<?php bloginfo('stylesheet_directory'); ?>/images/info/street_sign.jpg" alt=""></a>
 					</figure>
 					<figure class="contact-maps">
-						<a href="https://goo.gl/maps/rfoB76bXZLM2"><img src="/images/info/map_grey.jpg" alt=""></a>
+						<a href="https://goo.gl/maps/rfoB76bXZLM2"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/info/map_grey.jpg" alt=""></a>
 					</figure>
 				</div>
 			</div>

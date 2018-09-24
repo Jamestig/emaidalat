@@ -212,7 +212,7 @@ html {
 	height: 50%;
 	width: 100%;
 	content: '';
-	background-image: url(/images/icon/line_fade.png);
+	background-image: url(images/icon/line_fade.png);
 	background-repeat: repeat-x;
 	background-size: contain;
 }
@@ -420,7 +420,7 @@ html {
 }
 
 .scrollDown span:first-of-type {
-	background-image: url(../images/icon/arrow_down_grey.png);
+	background-image: url(images/icon/arrow_down_grey.png);
 	filter: brightness(0);
 }
 
@@ -1129,7 +1129,7 @@ html {
 }
 
 #main-story .gradient-down::after {
-	background-image: url(/images/icon/line_fade_light.png);
+	background-image: url(images/icon/line_fade_light.png);
 }
 
 @media screen and (max-width: 1279px) {
@@ -1468,11 +1468,11 @@ html {
 	}
 
 	.previousRoom span:first-of-type {
-		background-image: url(../images/icon/arrow_up.png);
+		background-image: url(images/icon/arrow_up.png);
 	}
 
 	.nextRoom span:first-of-type {
-		background-image: url(../images/icon/arrow_down.png);
+		background-image: url(images/icon/arrow_down.png);
 	}
 
 	.previousRoom span:nth-child(2),
@@ -1661,14 +1661,14 @@ html {
 }
 
 .dish-title::before {
-	content: url(../images/icon/line_left_short.png);
+	content: url(images/icon/line_left_short.png);
 	position: relative;
 	top: -5px;
 	padding-right: 10px;
 }
 
 .dish-title::after {
-	content: url(../images/icon/line_right_short.png);
+	content: url(images/icon/line_right_short.png);
 	position: relative;
 	top: -5px;
 	padding-left: 10px;
@@ -1676,11 +1676,11 @@ html {
 
 @media screen and (min-width: 500px) {
 	.dish-title::before {
-		content: url(../images/icon/line_left.png);
+		content: url(images/icon/line_left.png);
 	}
 
 	.dish-title::after {
-		content: url(../images/icon/line_right.png);
+		content: url(images/icon/line_right.png);
 	}
 }
 

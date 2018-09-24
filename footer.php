@@ -18,9 +18,6 @@
 		</address>
 	</footer>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-	<script src="scripts/main.js"></script>
-
 	<?php wp_footer(); ?>
 </body>
 </html>

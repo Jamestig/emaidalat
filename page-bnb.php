@@ -19,9 +19,9 @@
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
-						<source srcset="images/photos/hd/house_exterior_1920_01.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/house_exterior_1024_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/house_exterior_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/house_exterior_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/house_exterior_1024_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/house_exterior_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
 					</picture>
 				</figure>
 			</div>
@@ -48,9 +48,9 @@
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
-						<source srcset="images/photos/hd/breakfast_1920_01.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/breakfast_1024_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/breakfast_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/breakfast_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/breakfast_1024_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/breakfast_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
 					</picture>
 				</figure>
 			</div>
@@ -88,16 +88,16 @@
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
-						<source srcset="images/photos/hd/room_ivy_1920_01.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/room_ivy_1024_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/room_ivy_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/room_ivy_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_ivy_1024_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/room_ivy_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
 					</picture>
 				</figure>
 				<figure class="room-slide">
 					<picture>
-						<source srcset="images/photos/hd/room_clara_1920_01.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/room_clara_1024_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/room_clara_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/room_clara_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_clara_1024_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/room_clara_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
 					</picture>
 				</figure>
 			</div>
@@ -105,7 +105,7 @@
 			<div class="center flex-container-room">
 
 					<div class="room-logo">
-						<img src="images/logo/ivy-logo.png" alt="Ivy logo">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo/ivy-logo.png" alt="Ivy logo">
 					</div>
 
 					<div class="room-info">
@@ -128,9 +128,9 @@
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
-						<source srcset="images/photos/hd/room_clara_1920_01.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/room_clara_1024_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/room_clara_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/room_clara_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_clara_1024_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/room_clara_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
 					</picture>
 				</figure>
 			</div>
@@ -138,7 +138,7 @@
 			<div class="center flex-container-room">
 
 				<div id="clara-logo" class="room-logo">
-					<img src="images/logo/clara_logo.png" alt="Clara logo">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo/clara_logo.png" alt="Clara logo">
 				</div>
 
 				<div id="clara-info" class="room-info">
@@ -160,9 +160,9 @@
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
-						<source srcset="images/photos/hd/room_may_1920_01.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/room_may_1024_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/room_may_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/room_may_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_may_1024_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/room_may_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
 					</picture>
 				</figure>
 			</div>
@@ -170,7 +170,7 @@
 			<div class="center flex-container-room">
 
 				<div class="room-logo">
-					<img src="images/logo/may_logo.png" alt="May logo">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo/may_logo.png" alt="May logo">
 				</div>
 
 				<div class="room-info">
@@ -193,9 +193,9 @@
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
-						<source srcset="images/photos/hd/lila_1920_01.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/lila_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/lila_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/lila_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/lila_800_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/lila_480_01.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
 					</picture>
 				</figure>
 			</div>
@@ -203,7 +203,7 @@
 			<div class="center flex-container-room">
 
 				<div class="room-logo">
-					<img src="images/logo/lila_logo.png" alt="Lila logo">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo/lila_logo.png" alt="Lila logo">
 				</div>
 
 				<div class="room-info">
@@ -226,9 +226,9 @@
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
-						<source srcset="images/photos/hd/room_jasmine_1920_01.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/room_jasmine_1024_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/jasmine_480_03.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/room_jasmine_1920_01.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_jasmine_1024_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/jasmine_480_03.jpg" alt="Outside view of emai bed and breakfast, with walls covered in plants">
 					</picture>
 				</figure>
 			</div>
@@ -236,7 +236,7 @@
 			<div class="center flex-container-room">
 
 				<div class="room-logo">
-					<img src="images/logo/jasmine_logo.png" alt="Jasmine logo">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo/jasmine_logo.png" alt="Jasmine logo">
 				</div>
 
 				<div class="room-info">

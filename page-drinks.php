@@ -13,10 +13,10 @@
 				<nav class="menu-select">
 					<h3>Select menu:</h3>
 					<ul>
-						<li><a href="menu-restaurant.html">Restaurant</a><span>&#183;</span></li>
-						<li><a href="menu-drinks.html">Drinks &amp; Desserts</a></li><br>
-						<li><a href="menu-breakfast.html">Breakfast</a><span>&#183;</span></li>
-						<li><a href="menu-wine.html">Wine list</a></li>
+						<li><a href="http://localhost/local_wordpress/restaurant-menu/">Restaurant</a><span>&#183;</span></li>
+						<li><a href="http://localhost/local_wordpress/drinks-desserts-menu/">Drinks &amp; Desserts</a></li><br>
+						<li><a href="http://localhost/local_wordpress/breakfast-menu/">Breakfast</a><span>&#183;</span></li>
+						<li><a href="http://localhost/local_wordpress/wine-list/">Wine list</a></li>
 					</ul>
 				</nav>
 
@@ -27,9 +27,9 @@
 				<div class="fixed-image mobile-image gradient-down">
 					<figure id="">
 						<picture>
-							<source srcset="images/photos/hd/almond_1920_01.jpg" media="(min-width: 1600px)">
-							<source srcset="images/photos/tablet/almond_1024_01.jpg" media="(min-width: 600px)">
-							<img src="images/photos/mobile/almond_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+							<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/almond_1920_01.jpg" media="(min-width: 1600px)">
+							<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/almond_1024_01.jpg" media="(min-width: 600px)">
+							<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/almond_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 						</picture>
 					</figure>
 				</div>
@@ -66,9 +66,9 @@
 			<section id="menu-tea" class="section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
 				</figure>
 
@@ -105,9 +105,9 @@
 			<section id="menu-drinks" class="section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
 				</figure>
 
@@ -139,9 +139,9 @@
 			<section id="menu-cakes" class="section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
 				</figure>
 
@@ -164,9 +164,9 @@
 			<section id="menu-liquor" class="section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
 				</figure>
 
@@ -201,9 +201,9 @@
 			<section class="menu-select-bottom">
 				<nav class="menu-select">
 					<ul>
-						<li><a href="menu-restaurant.html">Restaurant Menu</a></li><br>
-						<li><a href="menu-breakfast.html">Breakfast</a><span>&#183;</span></li>
-						<li><a href="menu-wine.html">Wine list</a></li>
+						<li><a href="http://localhost/local_wordpress/restaurant-menu/">Restaurant Menu</a></li><br>
+						<li><a href="http://localhost/local_wordpress/breakfast-menu/">Breakfast</a><span>&#183;</span></li>
+						<li><a href="http://localhost/local_wordpress/wine-list/">Wine list</a></li>
 					</ul>
 				</nav>
 			</section>

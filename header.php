@@ -37,53 +37,53 @@
 			<nav class="header-nav">
 				<ul class="accordion">
 					<li>
-						<a href="index.html">Home</a>
+						<a href="http://localhost/local_wordpress">Home</a>
 						<ul id="inner-home" class="accordionInner">
-							<li><a href="index.html#home-restaurant">Restaurant</a></li>
-							<li><a href="index.html#home-cafe">Cafe</a></li>
-							<li><a href="index.html#home-bnb">Bed &amp; Breakfast</a></li>
-							<li><a href="index.html#home-atmosphere">Atmosphere</a></li>
-							<li><a href="index.html#home-booking">Booking</a></li>
+							<li><a href="index.html#home-restaurant" class="scroll">Restaurant</a></li>
+							<li><a href="index.html#home-cafe" class="scroll">Cafe</a></li>
+							<li><a href="index.html#home-bnb" class="scroll">Bed &amp; Breakfast</a></li>
+							<li><a href="index.html#home-atmosphere" class="scroll">Atmosphere</a></li>
+							<li><a href="index.html#home-booking" class="scroll">Booking</a></li>
 						</ul>
 					</li>
 
 					<li>
-						<a href="story.html">Our Story</a>
+						<a href="http://localhost/local_wordpress/our-story/">Our Story</a>
 						<ul id="inner-story" class="accordionInner">
-							<li><a href="story.html#story-about">About Us</a></li>
-							<li><a href="story.html#story-dalat">Dalat</a></li>
-							<li><a href="story.html#story-team">The Team</a></li>
+							<li><a href="story.html#story-about" class="scroll">About Us</a></li>
+							<li><a href="story.html#story-dalat" class="scroll">Dalat</a></li>
+							<li><a href="story.html#story-team" class="scroll">The Team</a></li>
 						</ul>
 					</li>
 
 					<li>
-						<a href="bnb.html">Our Rooms</a>
+						<a href="http://localhost/local_wordpress/our-rooms/">Our Rooms</a>
 						<ul id="inner-bnb" class="accordionInner">
-							<li><a href="bnb.html#rooms-ivy">Ivy</a></li>
-							<li><a href="bnb.html#rooms-clara">Clara</a></li>
-							<li><a href="bnb.html#rooms-may">May</a></li>
-							<li><a href="bnb.html#rooms-lila">Lila</a></li>
-							<li><a href="bnb.html#rooms-jasmine">Jasmine</a></li>
+							<li><a href="bnb.html#rooms-ivy" class="scroll">Ivy</a></li>
+							<li><a href="bnb.html#rooms-clara" class="scroll">Clara</a></li>
+							<li><a href="bnb.html#rooms-may" class="scroll">May</a></li>
+							<li><a href="bnb.html#rooms-lila" class="scroll">Lila</a></li>
+							<li><a href="bnb.html#rooms-jasmine" class="scroll">Jasmine</a></li>
 						</ul>
 					</li>
 
 					<li>
-						<a href="reservations.html">Reservations</a>
+						<a href="http://localhost/local_wordpress/reservations/">Reservations</a>
 					</li>
 
 
 					<li>
-						<a id="restaurantLink" href="menu-restaurant.html">Menu</a>
+						<a id="restaurantLink" href="http://localhost/local_wordpress/restaurant-menu/">Menu</a>
 						<ul id="inner-restaurant" class="accordionInner">
-							<li><a href="menu-restaurant.html">Restaurant</a></li>
-							<li><a href="menu-drinks.html">Drinks &amp; Desserts</a></li>
-							<li><a href="menu-breakfast.html">Breakfast</a></li>
-							<li><a href="menu-wine.html">Wine list</a></li>
+							<li><a href="http://localhost/local_wordpress/restaurant-menu/">Restaurant</a></li>
+							<li><a href="http://localhost/local_wordpress/drinks-desserts-menu/">Drinks &amp; Desserts</a></li>
+							<li><a href="http://localhost/local_wordpress/breakfast-menu/">Breakfast</a></li>
+							<li><a href="http://localhost/local_wordpress/wine-list/">Wine list</a></li>
 						</ul>
 					</li>
 
 					<li>
-						<a href="contact.html">Contact</a>
+						<a href="http://localhost/local_wordpress/contact/">Contact</a>
 					</li>
 				</ul>
 			</nav>

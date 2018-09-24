@@ -13,28 +13,28 @@
 				<nav class="menu-select">
 					<h3>Select menu:</h3>
 					<ul>
-						<li><a href="menu-restaurant.html">Restaurant</a><span>&#183;</span></li>
-						<li><a href="menu-drinks.html">Drinks &amp; Desserts</a></li><br>
-						<li><a href="menu-breakfast.html">Breakfast</a><span>&#183;</span></li>
-						<li><a href="menu-wine.html">Wine list</a></li>
+						<li><a href="http://localhost/local_wordpress/restaurant-menu/">Restaurant</a><span>&#183;</span></li>
+						<li><a href="http://localhost/local_wordpress/drinks-desserts-menu/">Drinks &amp; Desserts</a></li><br>
+						<li><a href="http://localhost/local_wordpress/breakfast-menu/">Breakfast</a><span>&#183;</span></li>
+						<li><a href="http://localhost/local_wordpress/wine-list/">Wine list</a></li>
 					</ul>
 				</nav>
 
 				<h2 class="menu-title">Restaurant Menu</h2>
 				<p class="menu-legend">
-					<span><img class="icon-vegetarian" class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian icon"></span>Vegetarian
-					<span><img class="icon-vegan" class="icon-vegan" src="images/icon/vegan.png" alt="Vegan icon"></span>Vegan
-					<span><img class="icon-seasonal" class="icon-seasonal" src="images/icon/seasonal.png" alt="Seasonal icon"></span>Seasonal
-					<span><img class="icon-spicy" class="icon-spicy" src="images/icon/spicy.png" alt="Spicy icon"></span>Spicy
+					<span><img class="icon-vegetarian" class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian icon"></span>Vegetarian
+					<span><img class="icon-vegan" class="icon-vegan" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegan.png" alt="Vegan icon"></span>Vegan
+					<span><img class="icon-seasonal" class="icon-seasonal" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/seasonal.png" alt="Seasonal icon"></span>Seasonal
+					<span><img class="icon-spicy" class="icon-spicy" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/spicy.png" alt="Spicy icon"></span>Spicy
 				</p>
 			</header>
 
 			<section id="menu-soups" class="section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
 				</figure>
 
@@ -45,25 +45,25 @@
 
 					<ul class="list-soups">
 						<li>Italian Garden-fresh &amp; Sun-dried Tomato Soup with Rosemary Cream
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">120</span>
 						</li>
 						<li>Potato, Leek, Sun-dried Tomato and Garlic Cream
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">120</span>
 						</li>
 						<li>French Onion Soup with a hint of Anise Liqueur
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
-							<span><img class="icon-seasonal" src="images/icon/seasonal.png" alt="Seasonal"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-seasonal" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/seasonal.png" alt="Seasonal"></span>
 							<span class="dish-price">190</span>
 						</li>
 						<li>Artichoke Cream Soup with Sauvignon Blanc
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">220</span>
 						</li>
 						<li>Red Beet Cream Soup with Galangal and Fresh Coconut Milk
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
-							<span><img class="icon-vegan" src="images/icon/vegan.png" alt="Vegan"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegan.png" alt="Vegan"></span>
 							<span class="dish-price">120</span>
 						</li>
 					</ul>
@@ -73,9 +73,9 @@
 			<section id="menu-salads" class="section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="images/photos/hd/salad_pomelo_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/salad_pomelo_800.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/salad_pomelo_480.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/salad_pomelo_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/salad_pomelo_800.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/salad_pomelo_480.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
 				</figure>
 
@@ -86,19 +86,19 @@
 
 					<ul class="list-salads">
 						<li>Summer Salad with Green Beans, Snow Peas &amp; Pods, and Feta Cheese, Delicately Spiced with Coriander Seeds and Tarragon
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">220</span>
 						</li>
 						<li>Salad of Red Beets, Fresh Oranges and Strawberries, and Earthly Mixed Nuts
-							<span><img class="icon-vegan" src="images/icon/vegan.png" alt="Vegan"></span>
+							<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegan.png" alt="Vegan"></span>
 							<span class="dish-price">160</span>
 						</li>
 						<li>Pomelo Salad with Cinnamon, Star Anise and Orange Blossom Water
-							<span><img class="icon-vegan" src="images/icon/vegan.png" alt="Vegan"></span>
+							<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegan.png" alt="Vegan"></span>
 							<span class="dish-price">190</span>
 						</li>
 						<li>Salad of Green Asparagus and Courgettes, with Lime Vinegrette and sprinkled with Pecorino Cheese
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">230</span>
 						</li>
 						<li>Classic Caesar Salad
@@ -111,9 +111,9 @@
 			<section id="menu-appetisers" class="section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="images/photos/hd/food_ravioli_1600.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/food_ravioli_1024.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/food_ravioli_480.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/food_ravioli_1600.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/food_ravioli_1024.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/food_ravioli_480.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
 				</figure>
 
@@ -124,23 +124,23 @@
 
 					<ul class="list-appetisers">
 						<li>Pumpkin Wedges Crusted with Parmesan and Herbs, served with Yoghurt Cream
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">150</span>
 						</li>
 						<li>Sun-dried Tomato and Feta Cheese Ravioli with Roasted Chilies
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">210</span>
 						</li>
 						<li>Potato Salad with Quail Eggs and Basil/Rucola Almond Pesto
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">180</span>
 						</li>
 						<li>Quiche of Caramelized Garlic Marinated in Balsamic Vinegar with Goat Cheese, Rosemary &amp; Thyme
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">180</span>
 						</li>
 						<li>Baked Spinach and Feta Cheese Balls with Creamy Mushroom Sauce
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">180</span>
 						</li>
 					</ul>
@@ -150,9 +150,9 @@
 			<section id="menu-pasta" class="section-dish">
 				<figure id="" class="first-image fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="images/photos/hd/pasta_tomato_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/pasta_tomato_1024.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/pasta_tomato_480.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/pasta_tomato_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/pasta_tomato_1024.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/pasta_tomato_480.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
 				</figure>
 
@@ -164,32 +164,32 @@
 
 					<ul class="list-pasta">
 						<li>Homemade Tagliatella with Sea Prawns in White Wine Bisque Sauce
-							<span><img class="icon-spicy" src="images/icon/spicy.png" alt="Spicy"></span>
+							<span><img class="icon-spicy" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/spicy.png" alt="Spicy"></span>
 							<span class="dish-price">230</span>
 						</li>
 						<li>Spaghetti Aglio Olio
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
-							<span><img class="icon-spicy" src="images/icon/spicy.png" alt="Spicy"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-spicy" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/spicy.png" alt="Spicy"></span>
 							<span class="dish-price">160</span>
 						</li>
 						<li>Spaghetti with Garden-fresh and Sun-dried Tomatoes
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
-							<span><img class="icon-spicy" src="images/icon/spicy.png" alt="Spicy"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-spicy" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/spicy.png" alt="Spicy"></span>
 							<span class="dish-price">160</span>
 						</li>
 						<li>Pan-Seared Homemade Gnocchi with Sage Butter and Shaved Pecorino
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">190</span>
 						</li>
 						<li>Homemade Gnocchi with Mushroom and Thyme Sauce with Cream and Brandy
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">190</span>
 						</li>
 						<li>Spaghetti Carbonara
 							<span class="dish-price">180</span>
 						</li>
 						<li>Homemade Fettucine with Gorgonzola or Blue Cheese Cream Sauce and Thyme
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">210</span>
 						</li>
 						<li>Homemade Tagliatella with Basil/Rucola Pesto and Chicken
@@ -202,9 +202,9 @@
 			<section id="menu-pizza" class="section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="images/photos/hd/pizza_margherita_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/pizza_margherita_800.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/pizza_margherita_480.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/pizza_margherita_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/pizza_margherita_800.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/pizza_margherita_480.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
 				</figure>
 
@@ -216,23 +216,23 @@
 
 					<ul class="list-pizza">
 						<li>Four Cheeses
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">260</span>
 						</li>
 						<li>Margherita with Sun-dried Tomatoes
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
-							<span><img class="icon-spicy" src="images/icon/spicy.png" alt="Spicy"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-spicy" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/spicy.png" alt="Spicy"></span>
 							<span class="dish-price">155</span>
 						</li>
 						<li>Tuna and Onion with Black Olives
 							<span class="dish-price">210</span>
 						</li>
 						<li>Grilled Dalat Vegetables, Balsamico, Black Olives, and Sun-dried Tomatoes
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">170</span>
 						</li>
 						<li>White Wine Shrimp Diavolo
-							<span><img class="icon-spicy" src="images/icon/spicy.png" alt="Spicy"></span>
+							<span><img class="icon-spicy" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/spicy.png" alt="Spicy"></span>
 							<span class="dish-price">225</span>
 						</li>
 						<li>Shredded Roasted Chicken with Brandy and Cream Sauce
@@ -245,9 +245,9 @@
 			<section id="menu-mains" class="section-dish">
 				<figure id="" class="first-image fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
 				</figure>
 
@@ -271,8 +271,8 @@
 						</li>
 
 						<li>Dalat Artichoke with Thyme &amp; Lime Butter Sauce, served with Fresh Pasta
-							<span><img class="icon-vegetarian" src="images/icon/vegetarian.png" alt="Vegetarian"></span>
-							<span><img class="icon-seasonal" src="images/icon/seasonal.png" alt="Seasonal"></span>
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span><img class="icon-seasonal" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/seasonal.png" alt="Seasonal"></span>
 							<span class="dish-price">290</span>
 						</li>
 					</ul>
@@ -283,9 +283,9 @@
 		<section class="menu-select-bottom">
 				<nav class="menu-select">
 					<ul>
-						<li><a href="menu-drinks.html">Drinks &amp; Desserts</a></li><br>
-						<li><a href="menu-breakfast.html">Breakfast</a><span>&#183;</span></li>
-						<li><a href="menu-wine.html">Wine list</a></li>
+						<li><a href="http://localhost/local_wordpress/drinks-menu/">Drinks &amp; Desserts</a></li><br>
+						<li><a href="http://localhost/local_wordpress/breakfast-menu/">Breakfast</a><span>&#183;</span></li>
+						<li><a href="http://localhost/local_wordpress/wine-list/">Wine list</a></li>
 					</ul>
 				</nav>
 		</section>

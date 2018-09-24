@@ -11,9 +11,9 @@
 		<section class="ribbon-container-right">
 			<figure id="" class="fixed-image mobile-image gradient-down">
 				<picture>
-					<source srcset="images/photos/hd/tables_1920_01.jpg" media="(min-width: 1600px)">
-					<source srcset="images/photos/tablet/tables_1024_01.jpg" media="(min-width: 600px)">
-					<img src="images/photos/mobile/tables_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/tables_1920_01.jpg" media="(min-width: 1600px)">
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/tables_1024_01.jpg" media="(min-width: 600px)">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/tables_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 				</picture>
 			</figure>
 

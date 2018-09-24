@@ -25,9 +25,9 @@
 
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
 				</figure>
 
@@ -39,16 +39,14 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime laudantium commodi quam, quae minima voluptas doloribus sit, at, earum voluptatum, quia eveniet! Vitae fuga illo explicabo natus nesciunt, pariatur, dolorem!
 					</p>
 				</div>
-
-
 			</section>
 
 			<section class="scrollSection" id="story-dalat">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
 				</figure>
 
@@ -76,9 +74,9 @@
 			<section class="scrollSection" id="story-team">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
-						<source srcset="images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
-						<img src="images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
 				</figure>
 
