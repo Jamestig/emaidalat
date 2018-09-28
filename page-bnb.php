@@ -15,7 +15,7 @@
 			</div>
 		</div>
 	-->
-		<section class="scrollSection" id="bnb-intro">
+		<section class="pageSection scrollSection" id="bnb-intro">
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
@@ -44,7 +44,7 @@
 			</div>
 		</section>
 
-		<section class="scrollSection" id="bnb-breakfast">
+		<section class="pageSection scrollSection" id="bnb-breakfast">
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
@@ -84,7 +84,7 @@
 			</button>
 		</div>
 
-		<section class="scrollSection section-room" id="rooms-ivy">
+		<section class="pageSection scrollSection section-room" id="rooms-ivy">
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
@@ -124,7 +124,7 @@
 			</div>
 		</section>
 
-		<section class="scrollSection section-room" id="rooms-clara">
+		<section class="pageSection scrollSection section-room" id="rooms-clara">
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
@@ -156,7 +156,7 @@
 			</div>
 		</section>
 
-		<section class="scrollSection section-room" id="rooms-may">
+		<section class="pageSection scrollSection section-room" id="rooms-may">
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
@@ -189,7 +189,7 @@
 			</div>
 		</section>
 
-		<section class="scrollSection section-room" id="rooms-lila">
+		<section class="pageSection scrollSection section-room" id="rooms-lila">
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>
@@ -222,7 +222,7 @@
 			</div>
 		</section>
 
-		<section class="scrollSection section-room" id="rooms-jasmine">
+		<section class="pageSection scrollSection section-room" id="rooms-jasmine">
 			<div class="fixed-image gradient-down">
 				<figure id="">
 					<picture>

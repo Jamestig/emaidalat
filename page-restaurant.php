@@ -29,7 +29,7 @@
 				</p>
 			</header>
 
-			<section id="menu-soups" class="section-dish">
+			<section id="menu-soups" class="pageSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
@@ -70,7 +70,7 @@
 				</div>
 			</section>
 
-			<section id="menu-salads" class="section-dish">
+			<section id="menu-salads" class="pageSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/salad_pomelo_1920.jpg" media="(min-width: 1600px)">
@@ -108,7 +108,7 @@
 				</div>
 			</section>
 
-			<section id="menu-appetisers" class="section-dish">
+			<section id="menu-appetisers" class="pageSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/food_ravioli_1600.jpg" media="(min-width: 1600px)">
@@ -147,7 +147,7 @@
 				</div>
 			</section>
 
-			<section id="menu-pasta" class="section-dish">
+			<section id="menu-pasta" class="pageSection section-dish">
 				<figure id="" class="first-image fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/pasta_tomato_1920.jpg" media="(min-width: 1600px)">
@@ -199,7 +199,7 @@
 				</div>
 			</section>
 
-			<section id="menu-pizza" class="section-dish">
+			<section id="menu-pizza" class="pageSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/pizza_margherita_1920.jpg" media="(min-width: 1600px)">
@@ -242,7 +242,7 @@
 				</div>
 			</section>
 
-			<section id="menu-mains" class="section-dish">
+			<section id="menu-mains" class="pageSection section-dish">
 				<figure id="" class="first-image fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">

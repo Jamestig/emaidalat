@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php wp_title(); ?></title>
-	
+
 	<?php wp_head(); ?>
 </head>
 
@@ -36,53 +36,55 @@
 		<div class="nav-overlay">
 			<nav class="header-nav">
 				<ul class="accordion">
-					<li>
+					<li id="link-home">
 						<a href="http://localhost/local_wordpress">Home</a>
 						<ul id="inner-home" class="accordionInner">
-							<li><a href="index.html#home-restaurant" class="scroll">Restaurant</a></li>
-							<li><a href="index.html#home-cafe" class="scroll">Cafe</a></li>
-							<li><a href="index.html#home-bnb" class="scroll">Bed &amp; Breakfast</a></li>
-							<li><a href="index.html#home-atmosphere" class="scroll">Atmosphere</a></li>
-							<li><a href="index.html#home-booking" class="scroll">Booking</a></li>
+							<li><a href="#home-restaurant" class="scroll">Restaurant</a></li>
+							<li><a href="#home-cafe" class="scroll">Cafe</a></li>
+							<li><a href="#home-bnb" class="scroll">Bed &amp; Breakfast</a></li>
+							<li><a href="#home-atmosphere" class="scroll">Atmosphere</a></li>
+							<li><a href="#home-booking" class="scroll">Booking</a></li>
 						</ul>
 					</li>
 
-					<li>
+					<li id="link-story">
 						<a href="http://localhost/local_wordpress/our-story/">Our Story</a>
+						<!--
 						<ul id="inner-story" class="accordionInner">
 							<li><a href="story.html#story-about" class="scroll">About Us</a></li>
 							<li><a href="story.html#story-dalat" class="scroll">Dalat</a></li>
 							<li><a href="story.html#story-team" class="scroll">The Team</a></li>
 						</ul>
+						-->
 					</li>
 
-					<li>
+					<li id="link-bnb">
 						<a href="http://localhost/local_wordpress/our-rooms/">Our Rooms</a>
 						<ul id="inner-bnb" class="accordionInner">
-							<li><a href="bnb.html#rooms-ivy" class="scroll">Ivy</a></li>
-							<li><a href="bnb.html#rooms-clara" class="scroll">Clara</a></li>
-							<li><a href="bnb.html#rooms-may" class="scroll">May</a></li>
-							<li><a href="bnb.html#rooms-lila" class="scroll">Lila</a></li>
-							<li><a href="bnb.html#rooms-jasmine" class="scroll">Jasmine</a></li>
+							<li><a href="#rooms-ivy" class="scroll">Ivy</a></li>
+							<li><a href="#rooms-clara" class="scroll">Clara</a></li>
+							<li><a href="#rooms-may" class="scroll">May</a></li>
+							<li><a href="#rooms-lila" class="scroll">Lila</a></li>
+							<li><a href="#rooms-jasmine" class="scroll">Jasmine</a></li>
 						</ul>
 					</li>
 
-					<li>
+					<li id="link-reservations">
 						<a href="http://localhost/local_wordpress/reservations/">Reservations</a>
 					</li>
 
 
-					<li>
+					<li id="link-menu">
 						<a id="restaurantLink" href="http://localhost/local_wordpress/restaurant-menu/">Menu</a>
 						<ul id="inner-restaurant" class="accordionInner">
-							<li><a href="http://localhost/local_wordpress/restaurant-menu/">Restaurant</a></li>
-							<li><a href="http://localhost/local_wordpress/drinks-desserts-menu/">Drinks &amp; Desserts</a></li>
-							<li><a href="http://localhost/local_wordpress/breakfast-menu/">Breakfast</a></li>
-							<li><a href="http://localhost/local_wordpress/wine-list/">Wine list</a></li>
+							<li id="link-restaurant"><a href="http://localhost/local_wordpress/restaurant-menu/">Restaurant</a></li>
+							<li id="link-drinks"><a href="http://localhost/local_wordpress/drinks-desserts-menu/">Drinks &amp; Desserts</a></li>
+							<li id="link-breakfast"><a href="http://localhost/local_wordpress/breakfast-menu/">Breakfast</a></li>
+							<li id="link-wine"><a href="http://localhost/local_wordpress/wine-list/">Wine list</a></li>
 						</ul>
 					</li>
 
-					<li>
+					<li id="link-contact">
 						<a href="http://localhost/local_wordpress/contact/">Contact</a>
 					</li>
 				</ul>

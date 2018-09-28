@@ -52,7 +52,7 @@ main {
 
 @font-face {
 	font-family: antro;
-	src: url(../fonts/Antro_Vectra.otf);
+	src: url(/fonts/antro-webfont.woff);
 }
 
 @font-face {
@@ -209,6 +209,7 @@ html {
 	display: block;
 	position: absolute;
 	bottom: 0;
+	right: 0;
 	height: 50%;
 	width: 100%;
 	content: '';
@@ -876,6 +877,10 @@ html {
 		min-height: 80vh;
 	}
 
+	.main-logo img {
+		margin-left: 80px;
+	}
+
 	.nav-overlay {
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebebe6+0,ebebe6+100&1+15,0.9+30 */
 		background: -moz-linear-gradient(left, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
@@ -884,7 +889,7 @@ html {
 		/* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(to right, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
 		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebe6', endColorstr='#e6ebebe6', GradientType=1);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebe6', endColorstr='#e6ebebe6', GradientType=1);
 		/* IE6-9 */
 	}
 
@@ -924,7 +929,7 @@ html {
 		/* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(to bottom, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
 		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebe6', endColorstr='#e6ebebe6', GradientType=0);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebe6', endColorstr='#e6ebebe6', GradientType=0);
 		/* IE6-9 */
 	}
 
@@ -1070,7 +1075,7 @@ html {
 @media screen and (max-width: 1279px) and (orientation: landscape) {
 
 	.image-tall {
-		min-height: 100vh;
+		min-height: 80vh;
 	}
 
 	.image-tall img {
@@ -1117,6 +1122,7 @@ html {
 		padding-left: 0;
 		line-height: 1.5em;
 		font-size: 1.4em;
+		text-align: center;
 	}
 }
 
@@ -1133,7 +1139,7 @@ html {
 }
 
 @media screen and (max-width: 1279px) {
-	
+
 	#main-story > .gradient-down::after {
 		background-image: none;
 	}
@@ -1185,7 +1191,6 @@ html {
 
 
 	#main-story section {
-		height: 60vh;
 		display: flex;
 		flex-flow: column;
 		justify-content: center;
@@ -1207,7 +1212,7 @@ html {
 	#story-about .content {
 		padding-bottom: 0;
 	}
-	
+
 	#main-story #story-about-2 {
 		padding-top: 0;
 	}
@@ -1244,7 +1249,7 @@ html {
 	/* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
 	/* IE6-9 */
 }
 
@@ -1351,12 +1356,15 @@ html {
 	.room-logo {
 		flex: 0 0 40%;
 	}
+
 	.room-info {
 		flex: 0 0 55%;
 	}
+
 	.room-info p {
 		text-align: right;
 	}
+
 	.room-description {
 		flex: 0 0 100%;
 	}
@@ -1366,6 +1374,13 @@ html {
 
 	.section-room:last-of-type {
 		margin-bottom: 2em;
+	}
+}
+
+@media screen and (max-width: 1279px) and (orientation: landscape) {
+
+	#main-bnb section:first-of-type {
+		margin: 0;
 	}
 }
 
@@ -1434,7 +1449,7 @@ html {
 		justify-content: center;
 		position: fixed;
 		bottom: 0;
-		background: rgba(0,0,0,.5);
+		background: rgba(0, 0, 0, .5);
 		height: 20vh;
 		width: 100%;
 	}
@@ -1485,9 +1500,11 @@ html {
 	.room-logo {
 		flex: 0 0 20%
 	}
+
 	.room-logo img {
 		filter: brightness(100);
 	}
+
 	.room-info {
 		flex: 0 0 40%;
 		order: 5;
@@ -1506,11 +1523,11 @@ html {
 		text-align: left;
 		padding: 0 2vw;
 	}
-	
+
 	.room-content {
 		position: fixed;
 		z-index: 1000;
-		
+
 	}
 
 }
@@ -1526,11 +1543,9 @@ html {
 	width: 100%;
 }
 
-#main-bnb #previousImage {
-}
+#main-bnb #previousImage {}
 
-#main-bnb #nextImage {
-}
+#main-bnb #nextImage {}
 
 .room-slide {
 	display: none;
@@ -1615,6 +1630,7 @@ html {
 	.menu-legend {
 		font-size: .8em;
 	}
+
 	.menu-legend img {
 		padding: 0 .2em 0 .3em;
 	}
@@ -1729,7 +1745,7 @@ html {
 		/* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(to bottom, rgba(246, 247, 245, 0) 0%, rgba(246, 247, 245, 1) 95%, rgba(246, 247, 245, 1) 100%);
 		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f6f7f5', endColorstr='#f6f7f5', GradientType=0);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00f6f7f5', endColorstr='#f6f7f5', GradientType=0);
 		/* IE6-9 */
 	}
 }
@@ -1738,6 +1754,12 @@ html {
 
 #menu-drinks .section-dish li {
 	padding: .25em 0;
+}
+
+@media screen and (min-width: 1280px) {
+	#menu-coffee img {
+		margin-left: 28%;
+	}
 }
 
 /*// WINE LIST PAGE //*/
@@ -1800,7 +1822,12 @@ html {
 
 /* Reservations page widescreen response */
 
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 1280px) {
+
+	#main-reservations .ribbon-container-right {
+		padding-bottom: 0;
+	}
+}
 
 /*////////////////////
 	CONTACT PAGE
@@ -1826,10 +1853,11 @@ html {
 .contact-maps {}
 
 @media screen and (min-width: 1280px) {
-	
+
 	#main-contact .ribbon-container-right {
 		padding-bottom: 5em;
 	}
+
 	.contact-images {
 		display: flex;
 		flex-flow: row;
@@ -1847,6 +1875,7 @@ html {
 		margin-right: 1em;
 		margin-top: 0;
 	}
+
 	.contact-maps {
 		flex: 0 0 40%;
 		margin-bottom: 0;

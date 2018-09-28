@@ -17,7 +17,7 @@
 		</div>
 	-->
 
-	<section class="scrollSection" id="home-restaurant">
+	<section class="scrollSection pageSection" id="home-restaurant">
 		<div class="fixed-image gradient-down">
 			<figure id="homeRestaurantBG" class="">
 				<picture>
@@ -50,7 +50,7 @@
 		</div>
 	</section>
 
-	<section class="scrollSection" id="home-cafe">
+	<section class="pageSection scrollSection" id="home-cafe">
 		<div class="fixed-image gradient-down">
 			<figure id="homeCafeBG">
 				<picture>
@@ -83,7 +83,7 @@
 		</div>
 	</section>
 
-	<section class="scrollSection" id="home-bnb">
+	<section class="pageSection scrollSection" id="home-bnb">
 		<div class="fixed-image gradient-down">
 			<figure id="homeBnbBG">
 				<picture>
@@ -116,7 +116,7 @@
 		</div>
 	</section>
 
-	<section class="scrollSection" id="home-atmosphere">
+	<section class="pageSection scrollSection" id="home-atmosphere">
 		<div class="fixed-image gradient-down">
 			<figure id="homeAtmosphereBG">
 				<picture>
@@ -148,7 +148,7 @@
 		</div>
 	</section>
 
-	<section class="scrollSection" id="home-booking">
+	<section class="pageSection scrollSection" id="home-booking">
 		<div class="position-underlay">
 			<div class="fixed-image">
 				<figure class="image-tall" id="homeBookingBG">

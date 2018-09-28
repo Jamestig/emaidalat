@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	//FULLSCREEN FUNCTIONALITY
 
 	if (window.matchMedia('(min-width: 1280px)').matches) {
-		
+
 // Fullscreen scroll //
 
 		var divs = jQuery('.scrollSection');
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		jQuery(window).resize(function () {
 			jQuery('html,body').scrollTop(divs.eq(div).offset().top);
 		});
-		
+
 // Accordion
 
 		var accordionHidden = jQuery('.accordionInner');
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		var prevLink = jQuery('.accordionInner').prev('a');
 		var link_href = prevLink.attr('href');
 		var openHeader = jQuery('a[href="' + currentPage + '"]');
-		
+
 		console.log(current_href);
 		console.log(currentPage);
 
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 		openHeader.addClass('activePage');
 	} // End accordion
-	
+
 // MOBILE FUNCTIONALITY
 
 // Burger button
@@ -160,24 +160,24 @@ document.addEventListener('DOMContentLoaded', function () {
 	// Active link switching and background fading
 
 	if (window.matchMedia('(min-width: 1280px)').matches) {
-		
+
 		var windowHeight = jQuery(window).height();
 		var windowHalf = (windowHeight / 2) -50;
 		var clientHeight = document.body.clientHeight;
 		var pageSections = jQuery('section').length;
 		var backgroundFigure = jQuery('.fixed-image');
 		var bookButtons = jQuery('.flex-container-room');
-		
+
 		//console.log(pageSections);
 		//console.log("window height = " + windowHeight);
 		//console.log("client height = " + clientHeight);
 		//console.log("home height = " + homeHeight);
-		
+
 		jQuery(backgroundFigure).not( jQuery(backgroundFigure)[ 0 ]).hide();
 		jQuery(bookButtons).hide();
 		jQuery('.flex-container-room').hide();
 		jQuery('.room-button-container').hide();
-		
+
 		jQuery('#rooms-ivy .flex-container-room').click(function(){
 			alert('Room Ivy');
 		});
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 
 		jQuery(window).scroll(function () {
-			
+
 		var sectionOffset;
 		var scrollbarLocation = jQuery(this).scrollTop();
 
@@ -209,14 +209,15 @@ document.addEventListener('DOMContentLoaded', function () {
 					jQuery(this).parent().addClass('activeSection');
 					jQuery(this).parent().siblings().removeClass('activeSection');
 				}
-				
+			});
+
 				if (scrollbarLocation > windowHeight + windowHalf) {
 					jQuery('.room-button-container').fadeIn();
 				} else {
 					jQuery('.room-button-container').fadeOut();
 					jQuery('.flex-container-room').fadeOut();
 				}
-				
+
 				if (scrollbarLocation <= windowHeight / 2) {
 					jQuery(backgroundFigure[0]).fadeIn(1000);
 					jQuery(backgroundFigure).not( jQuery(backgroundFigure)[0]).fadeOut(2000);
@@ -251,8 +252,6 @@ document.addEventListener('DOMContentLoaded', function () {
 					jQuery('#rooms-jasmine .flex-container-room').fadeIn();
 					jQuery('.flex-container-room').not( jQuery('#rooms-jasmine .flex-container-room') ).fadeOut();
 				};
-
-			});
 
 		}); // End scroll function
 	}; // Match query if statement

@@ -4,6 +4,7 @@
 	function emai_theme_styles() {
 		wp_enqueue_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 		wp_enqueue_style( 'emai_fonts', 'https://fonts.googleapis.com/css?family=Amiri|Marcellus+SC' );
+		wp_enqueue_style( 'antro_font', get_template_directory_uri() . '/fonts/antro-webfont.woff');
 		wp_enqueue_style('normalize_css', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
 		wp_enqueue_style('main_css', get_template_directory_uri() . '/style.css');
 	}
@@ -71,6 +72,6 @@
 		}
 	}
 	add_action( 'pre_get_posts', 'exclude_category' );
-  
-  
+
+
 -->
