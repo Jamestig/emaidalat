@@ -37,7 +37,7 @@
 			<nav class="header-nav">
 				<ul class="accordion">
 					<li id="link-home">
-						<a href="http://localhost/local_wordpress">Home</a>
+						<a href="http://localhost/local_wordpress/">Home</a>
 						<ul id="inner-home" class="accordionInner">
 							<li><a href="#home-restaurant" class="scroll">Restaurant</a></li>
 							<li><a href="#home-cafe" class="scroll">Cafe</a></li>

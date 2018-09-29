@@ -40,13 +40,16 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Fixed image ratio change to fit container
-  var fixedWidth = jQuery('.fixed-image').width();
-  var fixedHeight = jQuery(window).height();
-  var fixedRatio = (fixedWidth / 4) - (fixedHeight / 3);
+  function getRatio() {
+    var fixedWidth = jQuery('.fixed-image').width();
+    var fixedHeight = jQuery(window).height();
+    var fixedRatio = (fixedWidth / 4) - (fixedHeight / 3);
 
-  if (fixedRatio >= 43) {
-    jQuery('.fixed-image').addClass('image-43');
+    if (fixedRatio >= 43) {
+      jQuery('.fixed-image').addClass('image-43');
+    }
   }
+  getRatio();
 
   // Responsive header function
   jQuery(window).scroll(function() {
@@ -72,56 +75,59 @@ document.addEventListener('DOMContentLoaded', function() {
   }); // End responsive header function
 
   // FULLSCREEN FUNCTIONALITY
-
-  // Accordion
-
-  var accordionHidden = jQuery('.accordionInner');
-  var pageLinks = jQuery('.accordion > li > a');
-  var menuLinks = jQuery('#inner-restaurant > li > a');
-  var current_href = jQuery(location).attr('href');
-  var currentPage = jQuery(location).attr('href').split('/')[4];
-  var prevLink = jQuery('.accordionInner').prev('a');
-  var link_href = prevLink.attr('href');
-  var openHeader = jQuery('a[href="' + currentPage + '"]');
-
-  // console.log('current href = ' + current_href);
-  // console.log('current page = ' + currentPage);
-  // console.log('link href = ' + link_href);
-
   if (window.matchMedia('(min-width: 1280px)').matches) {
 
-    // Accordion open
-    if (current_href === 'http://localhost/local_wordpress/') {
-      jQuery('#inner-home').show();
-      jQuery('#link-home > a').addClass('activePage');
-    } else if (current_href === 'http://localhost/local_wordpress/our-story/') {
-      jQuery('#inner-story').show();
-      jQuery('#link-story > a').addClass('activePage');
-    } else if (current_href === 'http://localhost/local_wordpress/our-rooms/') {
-      jQuery('#inner-bnb').show();
-      jQuery('#link-bnb > a').addClass('activePage');
-    } else if (current_href === 'http://localhost/local_wordpress/reservations/') {
-      jQuery('#link-reservations > a').addClass('activePage');
-    } else if (current_href === 'http://localhost/local_wordpress/restaurant-menu/') {
-      jQuery('#inner-restaurant').show();
-      jQuery('#link-menu > a').addClass('activePage');
-      jQuery('#link-restaurant > a').addClass('activePage');
-    } else if (current_href === 'http://localhost/local_wordpress/drinks-desserts-menu/') {
-      jQuery('#inner-restaurant').show();
-      jQuery('#link-menu > a').addClass('activePage');
-      jQuery('#link-drinks > a').addClass('activePage');
-    } else if (current_href === 'http://localhost/local_wordpress/breakfast-menu/') {
-      jQuery('#inner-restaurant').show();
-      jQuery('#link-menu > a').addClass('activePage');
-      jQuery('#link-breakfast > a').addClass('activePage');
-    } else if (current_href === 'http://localhost/local_wordpress/wine-list/') {
-      jQuery('#inner-restaurant').show();
-      jQuery('#link-menu > a').addClass('activePage');
-      jQuery('#link-wine > a').addClass('activePage');
-    } else if (current_href === 'http://localhost/local_wordpress/contact/') {
-      jQuery('#link-contact > a').addClass('activePage');
-    }
+    var current_href = jQuery(location).attr('href');
 
+    // Accordion
+
+    var openAccordion = function() {
+
+      //var accordionHidden = jQuery('.accordionInner');
+      //var pageLinks = jQuery('.accordion > li > a');
+      //var menuLinks = jQuery('#inner-restaurant > li > a');
+      //var currentPage = jQuery(location).attr('href').split('/')[4];
+      //var prevLink = jQuery('.accordionInner').prev('a');
+      //var link_href = prevLink.attr('href');
+      //var openHeader = jQuery('a[href="' + currentPage + '"]');
+
+      // console.log('current href = ' + current_href);
+      // console.log('current page = ' + currentPage);
+      // console.log('link href = ' + link_href);
+
+      // Accordion open
+      if (current_href === 'http://localhost/local_wordpress/') {
+        jQuery('#inner-home').show();
+        jQuery('#link-home > a').addClass('activePage');
+      } else if (current_href === 'http://localhost/local_wordpress/our-story/') {
+        jQuery('#inner-story').show();
+        jQuery('#link-story > a').addClass('activePage');
+      } else if (current_href === 'http://localhost/local_wordpress/our-rooms/') {
+        jQuery('#inner-bnb').show();
+        jQuery('#link-bnb > a').addClass('activePage');
+      } else if (current_href === 'http://localhost/local_wordpress/reservations/') {
+        jQuery('#link-reservations > a').addClass('activePage');
+      } else if (current_href === 'http://localhost/local_wordpress/restaurant-menu/') {
+        jQuery('#inner-restaurant').show();
+        jQuery('#link-menu > a').addClass('activePage');
+        jQuery('#link-restaurant > a').addClass('activePage');
+      } else if (current_href === 'http://localhost/local_wordpress/drinks-desserts-menu/') {
+        jQuery('#inner-restaurant').show();
+        jQuery('#link-menu > a').addClass('activePage');
+        jQuery('#link-drinks > a').addClass('activePage');
+      } else if (current_href === 'http://localhost/local_wordpress/breakfast-menu/') {
+        jQuery('#inner-restaurant').show();
+        jQuery('#link-menu > a').addClass('activePage');
+        jQuery('#link-breakfast > a').addClass('activePage');
+      } else if (current_href === 'http://localhost/local_wordpress/wine-list/') {
+        jQuery('#inner-restaurant').show();
+        jQuery('#link-menu > a').addClass('activePage');
+        jQuery('#link-wine > a').addClass('activePage');
+      } else if (current_href === 'http://localhost/local_wordpress/contact/') {
+        jQuery('#link-contact > a').addClass('activePage');
+      }
+    }; // End accordion function
+    openAccordion();
     // Consider using switch statement
 
     // Fullscreen scroll //
@@ -162,7 +168,8 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 
       // Smooth scrolling menu links
-      var scrollLink = jQuery('.scroll');
+      var scrollLink = jQuery('a[href="' + current_href + '"]').siblings('.accordionInner').find('.scroll');
+      console.log(scrollLink);
 
       scrollLink.click(function(e) {
         e.preventDefault();
@@ -170,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
           scrollTop: jQuery(this.hash).offset().top
         }, 1000);
       });
-    }
+    } // End page if statement
 
     // Background image and room info swapping
 
@@ -215,11 +222,105 @@ document.addEventListener('DOMContentLoaded', function() {
       alert('Room jasmine');
     });
 
+    var pageName = function() {
+      if (current_href === 'http://localhost/local_wordpress/') {
+        return 'home';
+      } else if (current_href === 'http://localhost/local_wordpress/our-rooms/') {
+        return 'bnb';
+      }
+    };
+
     jQuery(window).scroll(function() {
 
       var scrollbarLocation = jQuery(this).scrollTop();
 
-      //console.log("scroll location = " + scrollbarLocation);
+      var viewportSection = function() {
+        if (scrollbarLocation <= sectionHeight / 2) {
+          return 0;
+        } else if (scrollbarLocation > sectionHeight / 2 && scrollbarLocation <= sectionHeight + (sectionHeight / 2)) {
+          return 1;
+        } else if (scrollbarLocation > sectionHeight + windowHalf && scrollbarLocation <= (sectionHeight * 2) + windowHalf) {
+          return 2;
+        } else if (scrollbarLocation > (sectionHeight * 2) + windowHalf && scrollbarLocation <= (sectionHeight * 3) + windowHalf) {
+          return 3;
+        } else if (scrollbarLocation > (sectionHeight * 3) + windowHalf && scrollbarLocation <= (sectionHeight * 4) + windowHalf) {
+          return 4;
+        } else if (scrollbarLocation > (sectionHeight * 4) + windowHalf && scrollbarLocation <= (sectionHeight * 5) + windowHalf) {
+          return 5;
+        } else if (scrollbarLocation > (sectionHeight * 5) + windowHalf && scrollbarLocation <= (sectionHeight * 6) + windowHalf) {
+          return 6;
+        }
+      }; // End viewport section function
+
+      var viewportBackground = function() {
+        jQuery(backgroundFigure[viewportSection()]).fadeIn(1000);
+        jQuery(backgroundFigure).not(jQuery(backgroundFigure)[viewportSection()]).fadeOut(2000);
+      };
+
+      var viewportLinkHighlight = function() {
+        if (current_href === 'http://localhost/local_wordpress/') {
+          jQuery(scrollLink[viewportSection()]).addClass('activeSection');
+          jQuery(scrollLink).not(jQuery(scrollLink)[viewportSection()]).removeClass('activeSection');
+        } else if (current_href === 'http://localhost/local_wordpress/our-rooms/') {
+          jQuery(scrollLink[viewportSection() - 2]).addClass('activeSection');
+          jQuery(scrollLink).not(jQuery(scrollLink)[viewportSection() - 2]).removeClass('activeSection');
+        }
+      };
+
+      var viewportRoom = function() {
+        var ourRooms = jQuery('.flex-container-room');
+        var roomSection = viewportSection() - 2;
+        jQuery(ourRooms[roomSection]).fadeIn();
+        jQuery(ourRooms).not(jQuery(ourRooms[roomSection])).fadeOut();
+        //console.log(roomSection);
+      };
+
+      switch (viewportSection()) {
+        case 0:
+          //console.log('section one');
+          viewportBackground();
+          viewportLinkHighlight();
+          viewportRoom();
+          break;
+        case 1:
+          //console.log('section two');
+          viewportBackground();
+          viewportLinkHighlight();
+          viewportRoom();
+          break;
+        case 2:
+          //console.log('section three');
+          viewportBackground();
+          viewportLinkHighlight();
+          viewportRoom();
+          break;
+        case 3:
+          //console.log('section four');
+          viewportBackground();
+          viewportLinkHighlight();
+          viewportRoom();
+          jQuery('#home-atmosphere .ribbon-container').fadeIn(500);
+          break;
+        case 4:
+          //console.log('section five');
+          viewportBackground();
+          viewportLinkHighlight();
+          viewportRoom();
+          jQuery('#home-atmosphere .ribbon-container').fadeOut(500);
+          break;
+        case 5:
+          //console.log('section six');
+          viewportBackground();
+          viewportLinkHighlight();
+          viewportRoom();
+          break;
+        case 6:
+          //console.log('section seven');
+          viewportBackground();
+          viewportLinkHighlight();
+          viewportRoom();
+          break;
+      } // End veiwport switch statement
 
       if (scrollbarLocation > windowHeight + windowHalf) {
         jQuery('.room-button-container').fadeIn();
@@ -227,55 +328,79 @@ document.addEventListener('DOMContentLoaded', function() {
         jQuery('.room-button-container').fadeOut();
         jQuery('.flex-container-room').fadeOut();
       }
-
+/*
       if (scrollbarLocation <= sectionHeight / 2) {
-        jQuery(backgroundFigure[0]).fadeIn(1000);
-        jQuery(backgroundFigure).not(jQuery(backgroundFigure)[0]).fadeOut(2000);
-        //jQuery(scrollLink[0]).addClass('activeSection');
-        //jQuery(scrollLink).not(jQuery(scrollLink)[0]).removeClass('activeSection');
+        if (scrollPage === 'home') {
+          jQuery(scrollLink[0]).addClass('activeSection');
+          jQuery(scrollLink).not(jQuery(scrollLink)[0]).removeClass('activeSection');
+        }
       } else if (scrollbarLocation > sectionHeight / 2 && scrollbarLocation <= sectionHeight + (sectionHeight / 2)) {
-        jQuery(backgroundFigure[1]).fadeIn(1000);
-        jQuery(backgroundFigure).not(jQuery(backgroundFigure)[1]).fadeOut(2000);
-        //jQuery(scrollLink[1]).addClass('activeSection');
-        //jQuery(scrollLink).not(jQuery(scrollLink)[1]).removeClass('activeSection');
+        //jQuery(backgroundFigure[1]).fadeIn(1000);
+        //jQuery(backgroundFigure).not(jQuery(backgroundFigure)[1]).fadeOut(2000);
+        if (scrollPage === 'home') {
+          jQuery(scrollLink[1]).addClass('activeSection');
+          jQuery(scrollLink).not(jQuery(scrollLink)[1]).removeClass('activeSection');
+        }
       } else if (scrollbarLocation > sectionHeight + windowHalf && scrollbarLocation <= (sectionHeight * 2) + windowHalf) {
-        jQuery(backgroundFigure[2]).fadeIn(1000);
-        jQuery(backgroundFigure).not(jQuery(backgroundFigure)[2]).fadeOut(2000);
+        //jQuery(backgroundFigure[2]).fadeIn(1000);
+        //jQuery(backgroundFigure).not(jQuery(backgroundFigure)[2]).fadeOut(2000);
         jQuery('#rooms-ivy .flex-container-room').fadeIn();
         jQuery('.flex-container-room').not(jQuery('#rooms-ivy .flex-container-room')).fadeOut();
-        //jQuery(scrollLink[2]).addClass('activeSection');
-        //jQuery(scrollLink).not(jQuery(scrollLink)[2]).removeClass('activeSection');
+        if (scrollPage === 'home') {
+          jQuery(scrollLink[2]).addClass('activeSection');
+          jQuery(scrollLink).not(jQuery(scrollLink)[2]).removeClass('activeSection');
+        } else if (scrollPage === 'bnb') {
+          jQuery(scrollLink[0]).addClass('activeSection');
+          jQuery(scrollLink).not(jQuery(scrollLink)[0]).removeClass('activeSection');
+        }
       } else if (scrollbarLocation > (sectionHeight * 2) + windowHalf && scrollbarLocation <= (sectionHeight * 3) + windowHalf) {
-        jQuery(backgroundFigure[3]).fadeIn(1000);
-        jQuery(backgroundFigure).not(jQuery(backgroundFigure)[3]).fadeOut(2000);
+        //jQuery(backgroundFigure[3]).fadeIn(1000);
+        //jQuery(backgroundFigure).not(jQuery(backgroundFigure)[3]).fadeOut(2000);
         jQuery('#rooms-clara .flex-container-room').fadeIn();
         jQuery('.flex-container-room').not(jQuery('#rooms-clara .flex-container-room')).fadeOut();
         jQuery('#home-atmosphere .ribbon-container').fadeIn(500);
-        //jQuery(scrollLink[3]).addClass('activeSection');
-        //jQuery(scrollLink).not(jQuery(scrollLink)[3]).removeClass('activeSection');
+        if (scrollPage === 'home') {
+          jQuery(scrollLink[3]).addClass('activeSection');
+          jQuery(scrollLink).not(jQuery(scrollLink)[3]).removeClass('activeSection');
+        } else if (scrollPage === 'bnb') {
+          jQuery(scrollLink[1]).addClass('activeSection');
+          jQuery(scrollLink).not(jQuery(scrollLink)[1]).removeClass('activeSection');
+        }
       } else if (scrollbarLocation > (sectionHeight * 3) + windowHalf && scrollbarLocation <= (sectionHeight * 4) + windowHalf) {
-        jQuery(backgroundFigure[4]).fadeIn(1000);
-        jQuery(backgroundFigure).not(jQuery(backgroundFigure)[4]).fadeOut(2000);
+        ////jQuery(backgroundFigure[4]).fadeIn(1000);
+        ////jQuery(backgroundFigure).not(jQuery(backgroundFigure)[4]).fadeOut(2000);
         jQuery('#rooms-may .flex-container-room').fadeIn();
         jQuery('.flex-container-room').not(jQuery('#rooms-may .flex-container-room')).fadeOut();
         jQuery('#home-atmosphere .ribbon-container').fadeOut(200);
-        //jQuery(scrollLink[4]).addClass('activeSection');
-        //jQuery(scrollLink).not(jQuery(scrollLink)[4]).removeClass('activeSection');
+        if (scrollPage === 'home') {
+          jQuery(scrollLink[4]).addClass('activeSection');
+          jQuery(scrollLink).not(jQuery(scrollLink)[4]).removeClass('activeSection');
+        } else if (scrollPage === 'bnb') {
+          jQuery(scrollLink[2]).addClass('activeSection');
+          jQuery(scrollLink).not(jQuery(scrollLink)[2]).removeClass('activeSection');
+        }
       } else if (scrollbarLocation > (sectionHeight * 4) + windowHalf && scrollbarLocation <= (sectionHeight * 5) + windowHalf) {
-        jQuery(backgroundFigure[5]).fadeIn(1000);
-        jQuery(backgroundFigure).not(jQuery(backgroundFigure)[5]).fadeOut(2000);
+        //jQuery(backgroundFigure[5]).fadeIn(1000);
+        //jQuery(backgroundFigure).not(jQuery(backgroundFigure)[5]).fadeOut(2000);
         jQuery('#rooms-lila .flex-container-room').fadeIn();
         jQuery('.flex-container-room').not(jQuery('#rooms-lila .flex-container-room')).fadeOut();
-        //jQuery(scrollLink[5]).addClass('activeSection');
-        //jQuery(scrollLink).not(jQuery(scrollLink)[5]).removeClass('activeSection');
+        if (scrollPage === 'bnb') {
+          jQuery(scrollLink[3]).addClass('activeSection');
+          jQuery(scrollLink).not(jQuery(scrollLink)[3]).removeClass('activeSection');
+        }
       } else if (scrollbarLocation > (sectionHeight * 5) + windowHalf && scrollbarLocation <= (sectionHeight * 6) + windowHalf) {
-        jQuery(backgroundFigure[6]).fadeIn(1000);
-        jQuery(backgroundFigure).not(jQuery(backgroundFigure)[6]).fadeOut(2000);
+        //jQuery(backgroundFigure[6]).fadeIn(1000);
+        //jQuery(backgroundFigure).not(jQuery(backgroundFigure)[6]).fadeOut(2000);
         jQuery('#rooms-jasmine .flex-container-room').fadeIn();
         jQuery('.flex-container-room').not(jQuery('#rooms-jasmine .flex-container-room')).fadeOut();
+        if (scrollPage === 'bnb') {
+          jQuery(scrollLink[4]).addClass('activeSection');
+          jQuery(scrollLink).not(jQuery(scrollLink)[4]).removeClass('activeSection');
+        }
       }
-
+    */
     }); // End scroll function
+
   } // End match query
 
 }); // End document load function
