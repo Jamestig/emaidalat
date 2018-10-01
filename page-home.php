@@ -39,7 +39,7 @@
 				<p>Using the finest of Dalat's clean produce and chess imported from Italy, we passionately homecook dishes that blend Italian customs and contemporary dining, delivering a truly unforgettable experience.</p>
 
 				<div class="link-button">
-					<a href="">View menu</a>
+					<a href="https://emaidalat.com/restaurant-menu/">View menu</a>
 				</div>
 
 				<button class="scrollDown">
@@ -72,7 +72,7 @@
 				<p>Have a taste of heaven with our handpicked selection of special homemade cakes and desserts</p>
 
 				<div class="link-button">
-					<a href="">View cafe menu</a>
+					<a href="https://emaidalat.com/drinks-desserts-menu/">View cafe menu</a>
 				</div>
 
 				<button class="scrollDown">
@@ -105,7 +105,7 @@
 				<p>Our cozy guest rooms recall the picturesque charm of the Dalat countryside, with a touch of Zen and contemporary aesthetics from Europe and Japan.</p>
 
 				<div class="link-button">
-					<a href="">View<span class="hidden-mobile"> or book</span> rooms</a>
+					<a href="https://emaidalat.com/our-rooms/">View<span class="hidden-mobile"> or book</span> rooms</a>
 				</div>
 
 				<button class="scrollDown">
@@ -135,11 +135,11 @@
 
 				<p>Nestled in Vietnam's most romantic city, émai is a dream born out of our love for nature, beauty, and good food, all housed together in a rustic little garden home.</p>
 				<p>We hope you'll find deep contentment in our selection of jazz and classical music, garden flowers and candles, all handpicked to give you a poetic authentically European atmosphere of warmth, togetherness, and gentle beauty</p>
-
+<!--
 				<div class="link-button">
 					<a href="">View Gallery</a>
 				</div>
-
+-->
 				<button class="scrollDown">
 					<span></span>
 					<span>Scroll down</span>
@@ -169,11 +169,11 @@
 
 					<div class="button-container">
 						<div class="link-button-light">
-							<a href="reservations.html">Reserve a table</a>
+							<a href="https://emaidalat.com/reservations/">Reserve a table</a>
 						</div>
 
 						<div class="link-button-light">
-							<a href="contact.html">Book your stay</a>
+							<a href="https://emaidalat.com/contact/">Book your stay</a>
 						</div>
 					</div>
 

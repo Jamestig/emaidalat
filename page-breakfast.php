@@ -13,10 +13,10 @@
 				<nav class="menu-select">
 					<h3>Select menu:</h3>
 					<ul>
-						<li><a href="http://localhost/local_wordpress/restaurant-menu/">Restaurant</a><span>&#183;</span></li>
-						<li><a href="http://localhost/local_wordpress/drinks-desserts-menu/">Drinks &amp; Desserts</a></li><br>
-						<li><a href="http://localhost/local_wordpress/breakfast-menu/">Breakfast</a><span>&#183;</span></li>
-						<li><a href="http://localhost/local_wordpress/wine-list/">Wine list</a></li>
+						<li><a href="https://emaidalat.com/restaurant-menu/">Restaurant</a><span>&#183;</span></li>
+						<li><a href="https://emaidalat.com/drinks-desserts-menu/">Drinks &amp; Desserts</a></li><br>
+						<li><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a><span>&#183;</span></li>
+						<li><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
 					</ul>
 				</nav>
 
@@ -62,9 +62,9 @@
 			<section class="menu-select-bottom">
 				<nav class="menu-select">
 					<ul>
-						<li><a href="http://localhost/local_wordpress/restaurant-menu/">Restaurant menu</a></li><br>
-						<li><a href="http://localhost/local_wordpress/drinks-desserts-menu/">Drinks &amp; Desserts</a><span>&#183;</span></li>
-						<li><a href="http://localhost/local_wordpress/wine-list/">Wine list</a></li>
+						<li><a href="https://emaidalat.com/restaurant-menu/">Restaurant menu</a></li><br>
+						<li><a href="https://emaidalat.com/drinks-desserts-menu/">Drinks &amp; Desserts</a><span>&#183;</span></li>
+						<li><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
 					</ul>
 				</nav>
 			</section>

@@ -50,21 +50,6 @@ main {
 
 /*// FONTS //*/
 
-@font-face {
-	font-family: antro;
-	src: url(/fonts/antro-webfont.woff);
-}
-
-@font-face {
-	font-family: coffee;
-	src: url(../fonts/coffee+tea.ttf);
-}
-
-@font-face {
-	font-family: oldstyle;
-	src: url(../fonts/old_style_italics.ttf);
-}
-
 h1,
 h2,
 h3,
@@ -385,7 +370,7 @@ html {
 
 .link-button-light {
 	text-align: center;
-	margin: 3em 2em;
+	margin: 2em 2em;
 }
 
 .link-button-light a {
@@ -1464,10 +1449,6 @@ html {
 		z-index: 1000;
 	}
 
-	.room-button:hover {
-		filter: brightness(0);
-	}
-
 	.previousRoom {
 		margin-bottom: 1em;
 	}
@@ -1603,8 +1584,8 @@ html {
 }
 
 .menu-title {
-	font-family: antro;
-	font-size: 2.5em;
+	font-family: Amiri;
+	font-size: 2em;
 	text-transform: none;
 	text-align: center;
 	margin: .8em 5vw .5em 5vw;
@@ -1665,7 +1646,7 @@ html {
 }
 
 .dish-title {
-	font-family: oldstyle;
+	font-family: Amiri;
 	margin: auto;
 	text-align: center;
 	font-weight: normal;
@@ -1774,6 +1755,10 @@ html {
 
 /*// BREAKFAST MENU PAGE //*/
 
+#menu-breakfast .content {
+	padding: 0 6vw;
+}
+
 .menu-breakfast-information p:nth-child(1) {
 	color: var(--font-light);
 	font-style: italic;
@@ -1789,9 +1774,11 @@ html {
 }
 
 .menu-breakfast-sets h6 {
-	font-family: antro;
-	font-size: 2em;
-	margin: 1.2em 0 0 0;
+	font-family: Amiri;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	letter-spacing: .02em;
+	margin: 2.2em 0 1.2em 0;
 }
 
 

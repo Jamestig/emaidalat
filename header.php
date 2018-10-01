@@ -37,7 +37,7 @@
 			<nav class="header-nav">
 				<ul class="accordion">
 					<li id="link-home">
-						<a href="http://localhost/local_wordpress/">Home</a>
+						<a href="https://emaidalat.com/">Home</a>
 						<ul id="inner-home" class="accordionInner">
 							<li><a href="#home-restaurant" class="scroll">Restaurant</a></li>
 							<li><a href="#home-cafe" class="scroll">Cafe</a></li>
@@ -48,7 +48,7 @@
 					</li>
 
 					<li id="link-story">
-						<a href="http://localhost/local_wordpress/our-story/">Our Story</a>
+						<a href="https://emaidalat.com/our-story/">Our Story</a>
 						<!--
 						<ul id="inner-story" class="accordionInner">
 							<li><a href="story.html#story-about" class="scroll">About Us</a></li>
@@ -59,7 +59,7 @@
 					</li>
 
 					<li id="link-bnb">
-						<a href="http://localhost/local_wordpress/our-rooms/">Our Rooms</a>
+						<a href="https://emaidalat.com/our-rooms/">Our Rooms</a>
 						<ul id="inner-bnb" class="accordionInner">
 							<li><a href="#rooms-ivy" class="scroll">Ivy</a></li>
 							<li><a href="#rooms-clara" class="scroll">Clara</a></li>
@@ -70,22 +70,22 @@
 					</li>
 
 					<li id="link-reservations">
-						<a href="http://localhost/local_wordpress/reservations/">Reservations</a>
+						<a href="https://emaidalat.com/reservations/">Reservations</a>
 					</li>
 
 
 					<li id="link-menu">
-						<a id="restaurantLink" href="http://localhost/local_wordpress/restaurant-menu/">Menu</a>
+						<a id="restaurantLink" href="https://emaidalat.com/restaurant-menu/">Menu</a>
 						<ul id="inner-restaurant" class="accordionInner">
-							<li id="link-restaurant"><a href="http://localhost/local_wordpress/restaurant-menu/">Restaurant</a></li>
-							<li id="link-drinks"><a href="http://localhost/local_wordpress/drinks-desserts-menu/">Drinks &amp; Desserts</a></li>
-							<li id="link-breakfast"><a href="http://localhost/local_wordpress/breakfast-menu/">Breakfast</a></li>
-							<li id="link-wine"><a href="http://localhost/local_wordpress/wine-list/">Wine list</a></li>
+							<li id="link-restaurant"><a href="https://emaidalat.com/restaurant-menu/">Restaurant</a></li>
+							<li id="link-drinks"><a href="https://emaidalat.com/drinks-desserts-menu/">Drinks &amp; Desserts</a></li>
+							<li id="link-breakfast"><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a></li>
+							<li id="link-wine"><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
 						</ul>
 					</li>
 
 					<li id="link-contact">
-						<a href="http://localhost/local_wordpress/contact/">Contact</a>
+						<a href="https://emaidalat.com/contact/">Contact</a>
 					</li>
 				</ul>
 			</nav>
