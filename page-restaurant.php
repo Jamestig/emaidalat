@@ -283,7 +283,7 @@
 		<section class="menu-select-bottom">
 				<nav class="menu-select">
 					<ul>
-						<li><a href="https://emaidalat.com/drinks-menu/">Drinks &amp; Desserts</a></li><br>
+						<li><a href="https://emaidalat.com/drinks-desserts-menu/">Drinks &amp; Desserts</a></li><br>
 						<li><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a><span>&#183;</span></li>
 						<li><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
 					</ul>
