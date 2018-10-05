@@ -14,7 +14,7 @@
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/reservations_4k.jpg" media="(min-width: 1921px)">
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/tables_1920_01.jpg" media="(min-width: 1025px)">
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/tables_1024_01.jpg" media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/tables_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/tables_480_01.jpg" alt="Dining room tables in émai restaurant">
 				</picture>
 			</figure>
 
@@ -31,8 +31,8 @@
 				<h4 class="header-caps">Make a booking at Emai homestay</h4>
 				<p>To book your stay in one of guestrooms, please either:</p>
 				<ul>
-					<li>make your selection on <a href="bnb.html"><span class="link-underline" >Our Rooms</span></a> page to book on AirBnb,</li>
-					<li>contact us on our <a class="link-underline" href="">Facebook page</a>, or</li>
+					<li>make your selection on <a href="https://emaidalat.com/our-rooms/"><span class="link-underline" >Our Rooms</span></a> page to book on AirBnb,</li>
+					<li>contact us on our <a class="link-underline" href="https://www.facebook.com/emaidalat/">Facebook page</a>, or</li>
 					<li>email us at <a class="link-underline" href="mailto:family@emaidalat.com">family@emaidalat.com</a> at any time and we will respond as soon as possible.</li>
 				</ul>
 			</div>

@@ -1031,41 +1031,32 @@ html {
 	text-transform: uppercase;
 }
 
-#home-booking .fixed-image {
-	filter: brightness(.6);
-}
-
 #main-home .double-header h3 {
 	font-size: 1.6em;
 }
 
+#home-booking .fixed-image {
+	background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url(images/photos/mobile/flower_480_01.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+}
 
 /* Home page below widescreen */
 
-@media screen and (max-width:1279px) {
-
-	.image-tall {
-		overflow: hidden;
-		height: 50vh;
-	}
-
-	.image-tall img {
-		width: auto;
-		height: 100%;
-		margin-left: 50%;
-		transform: translateX(-50%);
+@media screen and (min-width: 481px) {
+	#home-booking .fixed-image {
+		background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url(images/photos/tablet/flower_800_01.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 }
 
-@media screen and (max-width: 1279px) and (orientation: landscape) {
-
-	.image-tall {
-		min-height: 80vh;
-	}
-
-	.image-tall img {
-		width: 100%;
-		height: auto;
+@media screen and (min-width: 481px) and (orientation: landscape) {
+	#home-booking .fixed-image {
+		height: 90vh;
 	}
 }
 
@@ -1091,16 +1082,9 @@ html {
 	}
 
 	#home-booking .content {
-		width: 100%;
-	}
-
-	#homeRestaurantBG {
-		display: block;
-	}
-
-	#home-booking .position-overlay {
-		height: 100vh;
-		position: static;
+		width: auto;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 
 	#home-booking .content p {
@@ -1108,6 +1092,11 @@ html {
 		line-height: 1.5em;
 		font-size: 1.4em;
 		text-align: center;
+	}
+
+	#home-booking .fixed-image {
+		background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url(images/photos/hd/flower_1920_01.jpg);
+		height: 100vh;
 	}
 }
 

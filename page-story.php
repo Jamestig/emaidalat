@@ -28,7 +28,7 @@
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/story_4k.jpg" media="(min-width: 1921px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/story_1920_01.jpg" media="(min-width: 1025px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/story_1024_01.jpg" media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/story_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/story_480_01.jpg" alt="First impression of entering émai home, dining room seen through painted archway.">
 					</picture>
 				</figure>
 

@@ -75,6 +75,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }); // End responsive header function
 
   // FULLSCREEN FUNCTIONALITY
+
+  /*
+    jQuery('.fixed-image').click(function(event){
+      jQuery(event.currentTarget).css('display', 'none');
+    });
+  */
   if (window.matchMedia('(min-width: 1280px)').matches) {
 
     var current_href = jQuery(location).attr('href');
@@ -114,7 +120,6 @@ document.addEventListener('DOMContentLoaded', function() {
       //var prevLink = jQuery('.accordionInner').prev('a');
       //var link_href = prevLink.attr('href');
       //var openHeader = jQuery('a[href="' + currentPage + '"]');
-
       // console.log('current href = ' + current_href);
       // console.log('current page = ' + currentPage);
       // console.log('link href = ' + link_href);
@@ -270,8 +275,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }; // End viewport section function
 
       var viewportBackground = function() {
-        jQuery(backgroundFigure[viewportSection()]).fadeIn(1000);
-        jQuery(backgroundFigure).not(jQuery(backgroundFigure)[viewportSection()]).fadeOut(2000);
+        jQuery(backgroundFigure[viewportSection()]).fadeIn(800);
+        jQuery(backgroundFigure).not(jQuery(backgroundFigure)[viewportSection()]).fadeOut(1000);
       };
 
       var viewportLinkHighlight = function() {
@@ -315,12 +320,14 @@ document.addEventListener('DOMContentLoaded', function() {
           viewportRoom();
           jQuery('#home-atmosphere .ribbon-container').fadeIn(500);
           jQuery('.previousRoom').css('visibility', 'visible');
+          jQuery('#home-booking .fixed-image').children().fadeOut(100);
           break;
         case 4:
           viewportBackground();
           viewportLinkHighlight();
           viewportRoom();
           jQuery('#home-atmosphere .ribbon-container').fadeOut(500);
+          jQuery('#home-booking .fixed-image').children().fadeIn(300);
           break;
         case 5:
           viewportBackground();
@@ -342,77 +349,6 @@ document.addEventListener('DOMContentLoaded', function() {
         jQuery('.room-button-container').fadeOut();
         jQuery('.flex-container-room').fadeOut();
       }
-      /*
-            if (scrollbarLocation <= sectionHeight / 2) {
-              if (scrollPage === 'home') {
-                jQuery(scrollLink[0]).addClass('activeSection');
-                jQuery(scrollLink).not(jQuery(scrollLink)[0]).removeClass('activeSection');
-              }
-            } else if (scrollbarLocation > sectionHeight / 2 && scrollbarLocation <= sectionHeight + (sectionHeight / 2)) {
-              //jQuery(backgroundFigure[1]).fadeIn(1000);
-              //jQuery(backgroundFigure).not(jQuery(backgroundFigure)[1]).fadeOut(2000);
-              if (scrollPage === 'home') {
-                jQuery(scrollLink[1]).addClass('activeSection');
-                jQuery(scrollLink).not(jQuery(scrollLink)[1]).removeClass('activeSection');
-              }
-            } else if (scrollbarLocation > sectionHeight + windowHalf && scrollbarLocation <= (sectionHeight * 2) + windowHalf) {
-              //jQuery(backgroundFigure[2]).fadeIn(1000);
-              //jQuery(backgroundFigure).not(jQuery(backgroundFigure)[2]).fadeOut(2000);
-              jQuery('#rooms-ivy .flex-container-room').fadeIn();
-              jQuery('.flex-container-room').not(jQuery('#rooms-ivy .flex-container-room')).fadeOut();
-              if (scrollPage === 'home') {
-                jQuery(scrollLink[2]).addClass('activeSection');
-                jQuery(scrollLink).not(jQuery(scrollLink)[2]).removeClass('activeSection');
-              } else if (scrollPage === 'bnb') {
-                jQuery(scrollLink[0]).addClass('activeSection');
-                jQuery(scrollLink).not(jQuery(scrollLink)[0]).removeClass('activeSection');
-              }
-            } else if (scrollbarLocation > (sectionHeight * 2) + windowHalf && scrollbarLocation <= (sectionHeight * 3) + windowHalf) {
-              //jQuery(backgroundFigure[3]).fadeIn(1000);
-              //jQuery(backgroundFigure).not(jQuery(backgroundFigure)[3]).fadeOut(2000);
-              jQuery('#rooms-clara .flex-container-room').fadeIn();
-              jQuery('.flex-container-room').not(jQuery('#rooms-clara .flex-container-room')).fadeOut();
-              jQuery('#home-atmosphere .ribbon-container').fadeIn(500);
-              if (scrollPage === 'home') {
-                jQuery(scrollLink[3]).addClass('activeSection');
-                jQuery(scrollLink).not(jQuery(scrollLink)[3]).removeClass('activeSection');
-              } else if (scrollPage === 'bnb') {
-                jQuery(scrollLink[1]).addClass('activeSection');
-                jQuery(scrollLink).not(jQuery(scrollLink)[1]).removeClass('activeSection');
-              }
-            } else if (scrollbarLocation > (sectionHeight * 3) + windowHalf && scrollbarLocation <= (sectionHeight * 4) + windowHalf) {
-              ////jQuery(backgroundFigure[4]).fadeIn(1000);
-              ////jQuery(backgroundFigure).not(jQuery(backgroundFigure)[4]).fadeOut(2000);
-              jQuery('#rooms-may .flex-container-room').fadeIn();
-              jQuery('.flex-container-room').not(jQuery('#rooms-may .flex-container-room')).fadeOut();
-              jQuery('#home-atmosphere .ribbon-container').fadeOut(200);
-              if (scrollPage === 'home') {
-                jQuery(scrollLink[4]).addClass('activeSection');
-                jQuery(scrollLink).not(jQuery(scrollLink)[4]).removeClass('activeSection');
-              } else if (scrollPage === 'bnb') {
-                jQuery(scrollLink[2]).addClass('activeSection');
-                jQuery(scrollLink).not(jQuery(scrollLink)[2]).removeClass('activeSection');
-              }
-            } else if (scrollbarLocation > (sectionHeight * 4) + windowHalf && scrollbarLocation <= (sectionHeight * 5) + windowHalf) {
-              //jQuery(backgroundFigure[5]).fadeIn(1000);
-              //jQuery(backgroundFigure).not(jQuery(backgroundFigure)[5]).fadeOut(2000);
-              jQuery('#rooms-lila .flex-container-room').fadeIn();
-              jQuery('.flex-container-room').not(jQuery('#rooms-lila .flex-container-room')).fadeOut();
-              if (scrollPage === 'bnb') {
-                jQuery(scrollLink[3]).addClass('activeSection');
-                jQuery(scrollLink).not(jQuery(scrollLink)[3]).removeClass('activeSection');
-              }
-            } else if (scrollbarLocation > (sectionHeight * 5) + windowHalf && scrollbarLocation <= (sectionHeight * 6) + windowHalf) {
-              //jQuery(backgroundFigure[6]).fadeIn(1000);
-              //jQuery(backgroundFigure).not(jQuery(backgroundFigure)[6]).fadeOut(2000);
-              jQuery('#rooms-jasmine .flex-container-room').fadeIn();
-              jQuery('.flex-container-room').not(jQuery('#rooms-jasmine .flex-container-room')).fadeOut();
-              if (scrollPage === 'bnb') {
-                jQuery(scrollLink[4]).addClass('activeSection');
-                jQuery(scrollLink).not(jQuery(scrollLink)[4]).removeClass('activeSection');
-              }
-            }
-          */
     }); // End scroll function
 
   } // End match query

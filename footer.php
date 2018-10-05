@@ -1,6 +1,6 @@
 	<footer class="mobile-footer vertical-center">
 		<header>
-			<h2><a href="#">émai dalat</a></h2>
+			<h2><a href="https://emaidalat.com">émai dalat</a></h2>
 		</header>
 
 		<ul class="sm-list">

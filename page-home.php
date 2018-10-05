@@ -19,9 +19,10 @@
 
 	<section class="scrollSection pageSection" id="home-restaurant">
 		<div class="fixed-image gradient-down">
-			<figure id="homeRestaurantBG" class="">
+			<figure>
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/duck_4k_01.jpg" media="(min-width: 1921px)">
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1025px)">
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 				</picture>
@@ -52,9 +53,9 @@
 
 	<section class="pageSection scrollSection" id="home-cafe">
 		<div class="fixed-image gradient-down">
-			<figure id="homeCafeBG">
+			<figure>
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/panna_1500_01.jpg" media="(min-width: 1600px)">
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/panna_1500_01.jpg" media="(min-width: 1025px)">
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/panna_800_01.jpg" media="(min-width: 600px)">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/panna_480_01.jpg" alt="Panna Cotta with Dalat Berries Cooked in Mulled Wine">
 				</picture>
@@ -85,9 +86,10 @@
 
 	<section class="pageSection scrollSection" id="home-bnb">
 		<div class="fixed-image gradient-down">
-			<figure id="homeBnbBG">
+			<figure>
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/lila_1920_01.jpg" media="(min-width: 1600px)">
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/lila_4k_01.jpg" media="(min-width: 1921px)">
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/lila_1920_01.jpg" media="(min-width: 1025px)">
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/lila_800_01.jpg" media="(min-width: 600px)">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/lila_480_01.jpg" alt="Emai Homestay Room Four: Lila">
 				</picture>
@@ -118,9 +120,10 @@
 
 	<section class="pageSection scrollSection" id="home-atmosphere">
 		<div class="fixed-image gradient-down">
-			<figure id="homeAtmosphereBG">
+			<figure>
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/table_1920_01.jpg" media="(min-width: 1600px)">
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/table_4k_01.jpg" media="(min-width: 1921px)">
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/table_1920_01.jpg" media="(min-width: 1025px)">
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/table_800_01.jpg" media="(min-width: 600px)">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/table_480_01.jpg" alt="Dining Room Table Setting with Candles and Flowers">
 				</picture>
@@ -149,20 +152,7 @@
 	</section>
 
 	<section class="pageSection scrollSection" id="home-booking">
-		<div class="position-underlay">
-			<div class="fixed-image">
-				<figure class="image-tall" id="homeBookingBG">
-					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/flower_1920_01.jpg" media="(min-width: 1600px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/flower_800_01.jpg" media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/flower_480_01.jpg" alt="Pink Flowers from the Emai Garden">
-					</picture>
-				</figure>
-			</div>
-
-			<div class="position-overlay">
-				<div class="content-white vertical-center content">
-
+				<div class="content-white vertical-center content fixed-image">
 					<div>
 						<p>Amidst the sublimity, let émai be your nook for comfort and beauty, delighting your senses and palate in the most tender of ways.</p>
 					</div>
@@ -176,10 +166,7 @@
 							<a href="https://emaidalat.com/contact/">Book your stay</a>
 						</div>
 					</div>
-
 				</div>
-			</div>
-		</div>
 	</section>
 </main>
 

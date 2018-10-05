@@ -63,7 +63,7 @@
 						</li>
 						<li>Red Beet Cream Soup with Galangal and Fresh Coconut Milk
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
-							<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegan.png" alt="Vegan"></span>
+							<!--<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegan.png" alt="Vegan"></span>-->
 							<span class="dish-price">120</span>
 						</li>
 					</ul>
@@ -75,7 +75,7 @@
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/salad_pomelo_1920.jpg" media="(min-width: 1600px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/salad_pomelo_800.jpg" media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/salad_pomelo_480.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/salad_pomelo_480.jpg" alt="Pomelo Salad with Cinnamon, Star Anise and Orange Blossom Water">
 					</picture>
 				</figure>
 
@@ -93,10 +93,12 @@
 							<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegan.png" alt="Vegan"></span>
 							<span class="dish-price">160</span>
 						</li>
+						<!--
 						<li>Pomelo Salad with Cinnamon, Star Anise and Orange Blossom Water
 							<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegan.png" alt="Vegan"></span>
 							<span class="dish-price">190</span>
 						</li>
+					-->
 						<li>Salad of Green Asparagus and Courgettes, with Lime Vinegrette and sprinkled with Pecorino Cheese
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">230</span>
@@ -113,7 +115,7 @@
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/food_ravioli_1600.jpg" media="(min-width: 1600px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/food_ravioli_1024.jpg" media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/food_ravioli_480.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/food_ravioli_480.jpg" alt="Sun-dried Tomato and Feta Cheese Ravioli with Roasted Chilies">
 					</picture>
 				</figure>
 
@@ -152,7 +154,7 @@
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/pasta_tomato_1920.jpg" media="(min-width: 1600px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/pasta_tomato_1024.jpg" media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/pasta_tomato_480.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/pasta_tomato_480.jpg" alt="Spaghetti with Garden-fresh and Sun-dried Tomatoes">
 					</picture>
 				</figure>
 
@@ -204,7 +206,7 @@
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/pizza_margherita_1920.jpg" media="(min-width: 1600px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/pizza_margherita_800.jpg" media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/pizza_margherita_480.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/pizza_margherita_480.jpg" alt="Margherita Pizza with Sun-dried Tomatoes">
 					</picture>
 				</figure>
 
