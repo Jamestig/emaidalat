@@ -3,6 +3,14 @@
 			<h2><a href="https://emaidalat.com">émai dalat</a></h2>
 		</header>
 
+		<div id="mobile-footer-widget-area">
+			<?php if ( is_active_sidebar( 'mobile-footer-widget' ) ) : ?>
+			<div>
+				<?php dynamic_sidebar ('mobile-footer-widget'); ?>
+			</div>
+			<?php endif; ?>
+		</div>
+
 		<ul class="sm-list">
 			<li><a href="https://www.facebook.com/emaidalat/" target="_blank" class="fa fa-facebook-square"></a></li>
 			<li><a href="https://www.instagram.com/emaidalat/" target="_blank" class="fa fa-instagram"></a></li>

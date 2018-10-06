@@ -34,7 +34,20 @@
 		</h1>
 
 		<div class="nav-overlay">
-			<nav class="header-nav">
+				<nav class="header-nav">
+
+				<?php
+					$defaults = array(
+						'container' => true,
+						'theme_location'  => 'header-menu',
+						'menu_class'  => 'accordion'
+					);
+
+					wp_nav_menu( $defaults );
+				?>
+				</nav>
+				<!--
+
 				<ul class="accordion">
 					<li id="link-home">
 						<a href="https://emaidalat.com/">Home</a>
@@ -49,13 +62,6 @@
 
 					<li id="link-story">
 						<a href="https://emaidalat.com/our-story/">Our Story</a>
-						<!--
-						<ul id="inner-story" class="accordionInner">
-							<li><a href="story.html#story-about" class="scroll">About Us</a></li>
-							<li><a href="story.html#story-dalat" class="scroll">Dalat</a></li>
-							<li><a href="story.html#story-team" class="scroll">The Team</a></li>
-						</ul>
-						-->
 					</li>
 
 					<li id="link-bnb">
@@ -88,9 +94,19 @@
 						<a href="https://emaidalat.com/contact/">Contact</a>
 					</li>
 				</ul>
-			</nav>
 
-			<div class="header-footer">
+			-->
+
+			<div class="side-footer">
+
+				<div id="side-footer-widget-area">
+					<?php if ( is_active_sidebar( 'side-footer-widget' ) ) : ?>
+					<div>
+						<?php dynamic_sidebar ('side-footer-widget'); ?>
+					</div>
+					<?php endif; ?>
+				</div>
+
 				<ul class="sm-list">
 					<li><a href="https://www.facebook.com/emaidalat/" target="_blank" class="fa fa-facebook-square"></a></li>
 					<li><a href="https://www.instagram.com/emaidalat/" target="_blank" class="fa fa-instagram"></a></li>

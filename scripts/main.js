@@ -74,6 +74,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }); // End responsive header function
 
+  // Refresh page on resize
+
+  var responseSize;
+  var windowSize = jQuery(window);
+
+  if (windowSize.width() < 1280) {
+      responseSize = 'small';
+  } else {
+      responseSize = 'large';
+  }
+
+  jQuery(window).resize(function() {
+      if((windowSize.width() < 1280) && (responseSize != 'small')) {
+          location.reload();
+      } else if ((windowSize.width() >= 1280) && (responseSize != 'large')) {
+          location.reload();
+      }
+  });
+
   // FULLSCREEN FUNCTIONALITY
 
   /*
@@ -126,34 +145,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Accordion open
       if (pageName() === 'home') {
-        jQuery('#inner-home').show();
-        jQuery('#link-home > a').addClass('activePage');
+        jQuery('.link-home > ul').show();
+        jQuery('.link-home > a').addClass('activePage');
       } else if (pageName() === 'story') {
-        jQuery('#inner-story').show();
-        jQuery('#link-story > a').addClass('activePage');
+        jQuery('.link-story > a').addClass('activePage');
       } else if (pageName() === 'rooms') {
-        jQuery('#inner-bnb').show();
-        jQuery('#link-bnb > a').addClass('activePage');
+        jQuery('.link-bnb > ul').show();
+        jQuery('.link-bnb > a').addClass('activePage');
       } else if (pageName() === 'reservations') {
-        jQuery('#link-reservations > a').addClass('activePage');
+        jQuery('.link-reservations > a').addClass('activePage');
       } else if (pageName() === 'restaurant') {
-        jQuery('#inner-restaurant').show();
-        jQuery('#link-menu > a').addClass('activePage');
-        jQuery('#link-restaurant > a').addClass('activePage');
+        jQuery('.link-menu > ul').show();
+        jQuery('.link-menu > a').addClass('activePage');
+        jQuery('.link-restaurant > a').addClass('activePage');
       } else if (pageName() === 'drinks') {
-        jQuery('#inner-restaurant').show();
-        jQuery('#link-menu > a').addClass('activePage');
-        jQuery('#link-drinks > a').addClass('activePage');
+        jQuery('.link-menu > ul').show();
+        jQuery('.link-menu > a').addClass('activePage');
+        jQuery('.link-drinks > a').addClass('activePage');
       } else if (pageName() === 'breakfast') {
-        jQuery('#inner-restaurant').show();
-        jQuery('#link-menu > a').addClass('activePage');
-        jQuery('#link-breakfast > a').addClass('activePage');
+        jQuery('.link-menu > ul').show();
+        jQuery('.link-menu > a').addClass('activePage');
+        jQuery('.link-breakfast > a').addClass('activePage');
       } else if (pageName() === 'wine') {
-        jQuery('#inner-restaurant').show();
-        jQuery('#link-menu > a').addClass('activePage');
-        jQuery('#link-wine > a').addClass('activePage');
+        jQuery('.link-menu > ul').show();
+        jQuery('.link-menu > a').addClass('activePage');
+        jQuery('.link-wine > a').addClass('activePage');
       } else if (pageName() === 'contact') {
-        jQuery('#link-contact > a').addClass('activePage');
+        jQuery('.link-contact > a').addClass('activePage');
       }
     }; // End accordion function
     openAccordion();
@@ -198,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Smooth scrolling menu links
-    var scrollLink = jQuery('a[href="' + current_href + '"]').siblings('.accordionInner').find('.scroll');
+    var scrollLink = jQuery('.activePage').siblings('ul').find('a');
 
     scrollLink.click(function(e) {
       e.preventDefault();

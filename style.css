@@ -777,21 +777,21 @@ html {
 	color: black;
 }
 
-.accordionInner {
+.accordion > li > ul {
 	overflow: hidden;
 	display: none;
 	margin-left: 5%;
-	margin-top: .5em;
+	margin-top: .3em;
 }
 
-.accordionInner > li > a {
+.accordion > li > ul > li > a {
 	display: block;
-	padding: .4em;
+	padding: .2em;
 }
 
 /*// HEADER FOOTER //*/
 
-.header-footer {
+.side-footer {
 	text-align: center;
 	height: 20%;
 	display: flex;
@@ -799,17 +799,16 @@ html {
 	justify-content: center;
 }
 
-.header-footer .sm-list {
+.side-footer .sm-list {
 	display: flex;
 	flex-flow: row;
 	align-items: center;
 	justify-content: center;
-	margin: 0;
-	margin-bottom: 1em;
+	margin: .4em 0;
 	height: 20%;
 }
 
-.header-footer address a {
+.side-footer address a {
 	font-style: normal;
 	color: var(--font-light);
 }
@@ -893,7 +892,7 @@ html {
 		display: none;
 	}
 
-	.header-footer {
+	.side-footer {
 		margin-left: 80px;
 	}
 }
@@ -918,7 +917,7 @@ html {
 		/* IE6-9 */
 	}
 
-	.header-footer .footer-phone {
+	.side-footer .footer-phone {
 		display: block;
 	}
 }
@@ -980,7 +979,7 @@ html {
 	}
 
 	.header-nav {
-		height: 80%;
+		height: 75%;
 	}
 
 	.accordion {
@@ -993,30 +992,41 @@ html {
 
 	.accordion > li {
 		flex: 0 0 auto;
-		padding: .5em 0;
+		padding: .3em 0;
 	}
 
 	.accordion > li > a {
 		padding: .5em;
 	}
 
-	.header-footer {
+	#side-footer-widget-area,
+	#mobile-footer-widget-area {
+	}
+
+	#side-footer-widget a,
+	#mobile-footer-widget a {
+		color: var(--font-header)!important;
+	}
+
+	.side-footer {
+		justify-content: flex-start;
 		margin-left: 15%;
-		height: 20%;
+		height: 25%;
 		text-align: left;
 	}
 
-	.header-footer .sm-list {
+	.side-footer .sm-list {
 		flex-flow: row;
 		align-items: center;
 		justify-content: flex-start;
 	}
 
-	.header-footer .sm-list a {
-		padding: .3em;
+	.side-footer .sm-list a {
+		padding-left: 0;
+		padding-right: .6em;
 	}
 
-	.header-footer address a {
+	.side-footer address a {
 		display: block;
 		letter-spacing: .01em;
 	}
@@ -1033,6 +1043,10 @@ html {
 
 #main-home .double-header h3 {
 	font-size: 1.6em;
+}
+
+#home-booking .content {
+	z-index: 100;
 }
 
 #home-booking .fixed-image {
