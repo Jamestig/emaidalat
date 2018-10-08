@@ -736,7 +736,7 @@ html {
 }
 
 .header-nav {
-	height: 80%;
+	height: 75%;
 }
 
 /*// ACCORDION //*/
@@ -793,7 +793,7 @@ html {
 
 .side-footer {
 	text-align: center;
-	height: 20%;
+	height: 25%;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
@@ -983,7 +983,7 @@ html {
 	}
 
 	.accordion {
-		margin-left: 15%;
+		margin-left: 18%;
 		flex-flow: column;
 		justify-content: center;
 		text-align: left;

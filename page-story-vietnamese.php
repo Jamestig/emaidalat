@@ -19,7 +19,7 @@
 					</header>
 
 					<p>
-						Viet Nestled in Vietnam's most romantic city, émai is a dream born out of a small family’s love for nature, beauty, and good food, all housed together in a rustic little garden home.
+						Nestled in Vietnam's most romantic city, émai is a dream born out of a small family’s love for nature, beauty, and good food, all housed together in a rustic little garden home.
 					</p>
 				</div>
 

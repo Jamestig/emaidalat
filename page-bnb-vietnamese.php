@@ -1,6 +1,6 @@
 <?php
 /*
-  Template Name: Bnb Page
+  Template Name: Bnb Page Vietnamese
 */
 ?>
 
@@ -30,12 +30,13 @@
 			<div class="ribbon-container">
 				<div class="content">
 					<header class="double-header">
-						<h2 class="header-full">Our Rooms</h2>
+						<h2 class="header-full">Homestay</h2>
 						<hr class="hr-left">
-						<h3>émai bed &amp; breakfast</h3>
+						<h3>Phòng trọ tại Émai</h3>
 					</header>
 
-					<p>Comprising an intimate 5-room bed & breakfast, a contemporary Italian restaurant and café, this little abode is brimming with cosiness, good food, and soothing music, always ready to treat you to a beautiful time no matter the occasion.</p>
+					<p>Ngôi nhà của émai gồm phòng ngủ 5 phòng trọ thân mật, một nhà hàng và café mang âm hưởng Địa Trung Hải đương đại. Nơi nghỉ dưỡng nhỏ bé émai có đầy đủ các tiện nghi, đồ ăn ngon, và âm nhạc nhẹ nhàng, luôn sẵn sàng để dành cho bạn một thời gian thật đẹp dù là vào dịp nào.</p>
+					<p>Tất cả các phong của émai đều được ôm ấp trong gỗ, trong vải dệt tự nhiên, trong những tán cây xanh và hoa thơm từ khu vườn nhỏ.</p>
 
 					<button class="scrollDown">
 						<span></span>
@@ -60,12 +61,13 @@
 			<div class="ribbon-container">
 				<div class="content">
 					<header class="double-header">
-						<h2 class="header-full">Our Rooms</h2>
+						<h2 class="header-full">Homestay</h2>
 						<hr class="hr-left">
-						<h3>Free homemade<br>European Breakfast</h3>
+						<h3>Bữa sáng kiểu Au miễn phí</h3>
 					</header>
 
-					<p>A wonderful homemade European breakfast is included, with fresh juice and the best coffee you can find to start your day with.</p>
+					<p>Giá phòng ở émai bao gồm bữa ăn sáng phong phú và ngon miệng do đầu bếp thật giỏi sửa soạn. Bạn sẽ thưởng thức nó trong art café đẹp và có nhạc hay, hoặc trong khu vườn xanh mướt bên hoa - cách êm ái nhất để bạn bắt đầu ngày của mình trên thành phố Đà lạt….</p>
+					<p>Bạn có thể chọn một trong ba món ăn sáng kiểu  u, hoặc một món bún ngon kiểu Việt thay đổi hàng ngày. Có cà phê hoặc trà theo ý bạn, thêm trái cây, nước ép trái cây tươi.</p>
 
 					<button class="scrollDown">
 						<span></span>
@@ -105,16 +107,19 @@
 					</div>
 
 					<div class="room-info">
-						<p>Accomodates two &#183; Double bed (140cm)<br> Garden view &#183; Bathroom with wooden bathtub<br> Heavenly soft bedsheets from Portugal<br> Free breakfast &#183; 970,000 / 43 USD per night
+						<p>Dành cho tối đa 2 khách và 1 trẻ em &#183; Giường đôi (140cm)<br>
+							View sân vườn &#183; Phòng tắm riêng trong phòng với bồn tắm gỗ kiểu Nhật<br>
+							Khăn trải giường từ Au châu mềm mại diệu kỳ<br>
+							Bữa sáng miễn phí &#183; 970,000 VND / 43 USD per night
 						</p>
 					</div>
 
 					<div class="room-description">
-						<p>With a view of our gorgeous garden and vine-covered wall down below, Ivy is a delight to eyes that are sensitive to the greeneries of life.</p>
+						<p>Với khung cửa sổ nhìn ra khu vườn xinh đẹp và những bức tường xưa cũ được bao phủ bởi cây dây leo, Ivy là căn phòng dành cho những bạn yêu thích sự xanh mát từ cỏ cây.</p>
 					</div>
 
 				<div class="link-button-light link-button-airbnb">
-					<a target="_blank" href="https://www.airbnb.com/rooms/21901899">Book now on Airbnb</a>
+					<a target="_blank" href="https://www.airbnb.com/rooms/21901899">Đặt phòng qua Airbnb</a>
 				</div>
 
 			</div>
@@ -139,16 +144,19 @@
 				</div>
 
 				<div id="clara-info" class="room-info">
-					<p>Accomodates two &#183; King Single Bed (120cm)<br> Balcony &#183; Bathroom with wooden bathtub<br> Heavenly soft bedsheets from Portugal<br> Free breakfast &#183; 990,000 / 44 USD per night
+					<p>Dành cho tối đa 2 khách &#183; Giường King Single (120cm)<br>
+						Ban công &#183; Phòng tắm riêng trong phòng với bồn tắm gỗ kiểu Nhật<br>
+						Khăn trải giường từ Au châu mềm mại diệu kỳ<br>
+						Bữa sáng miễn phí &#183; 990,000 VND / 44 USD per night
 					</p>
 				</div>
 
 				<div id="clara-description" class="room-description">
-					<p>Clara is the only room which offers an expansive balcony on which you can read a book, sip a coffee, or unwind with good company.</p>
+					<p>Clara là căn phòng duy nhất trong nhà có ban công riêng. Vào những ngày nắng ấm, bạn có thể ngồi ban công đọc một cuốn sách hay, nhâm nhi cốc café hoặc thư thả tận hưởng tiết trời Đà lạt cùng người yêu thương.</p>
 				</div>
 
 				<div class="link-button-light link-button-airbnb">
-					<a target="_blank" href="https://www.airbnb.com/rooms/21858606">Book now on Airbnb</a>
+					<a target="_blank" href="https://www.airbnb.com/rooms/21858606">Đặt phòng qua Airbnb</a>
 				</div>
 			</div>
 		</section>
@@ -172,16 +180,19 @@
 				</div>
 
 				<div class="room-info">
-					<p>Accomodates two &#183; Double bed (140cm)<br> Side garden view &#183; Bathroom with wooden bathtub<br> Heavenly soft bedsheets from Portugal<br> Free breakfast &#183; 890,000 / 40 USD per night
+					<p>Dành cho tối đa 2 khách và 1 trẻ em &#183; Giường Đôi (140cm)<br>
+						View vườn &#183; Phòng tắm riêng trong phòng với bồn tắm gỗ kiểu Nhật<br>
+						Khăn trải giường từ Au châu mềm mại diệu kỳ<br>
+						Bữa sáng miễn phí &#183; 890,000 VND / 40 USD per night
 					</p>
 				</div>
 
 				<div class="room-description">
-					<p>May offers a view of our smaller, serene garden, with a pond and lush plants and trees to soothe the eyes.</p>
+					<p>May nhìn ra khu vườn xinh xắn phía sau nhà với cảnh quan dịu dàng từ những cây cỏ và cây thân gỗ xanh mát trồng quanh ao nhỏ thanh bình.</p>
 				</div>
 
 				<div class="link-button-light link-button-airbnb">
-					<a target="_blank" href="https://www.airbnb.com/rooms/21872453">Book now on Airbnb</a>
+					<a target="_blank" href="https://www.airbnb.com/rooms/21872453">Đặt phòng qua Airbnb</a>
 				</div>
 
 			</div>
@@ -206,16 +217,21 @@
 				</div>
 
 				<div class="room-info">
-					<p>Accomodates two-four &#183; Two King single beds (120cm)<br> Skylight &#183; Private bathroom with wooden bathtub<br> Heavenly soft bedsheets from Portugal<br> Free breakfast &#183; 1,400,000 / 60 USD per night (extra PAX 250,000)
+					<p>Dành cho 2 đến 4 khách &#183;  2 x Giường King Single (120cm)<br>
+						View vườn &#183; Cửa sổ nhình lên trời<br>
+						Phòng tắm riêng rộng rãi nằm đối diện, với bồn tắm gỗ kiểu Nhật<br>
+						Khăn trải giường từ Au châu mềm mại diệu kỳ<br>
+						Bữa sáng miễn phí &#183; 1,400,000 VND / 60 USD per night<br>
+						(Giá phòng cho 2 người, phụ thu 250,000 VND cho mỗi người từ người thứ 3 trở lên)
 					</p>
 				</div>
 
 				<div class="room-description">
-					<p>Inspired by Japanese architecture, our attic rooms are tucked snugly under the roof, with a skylight through which you can watch the clouds drift or see the stars.</p>
+					<p>Phòng áp mái của émai nằm nép mình dưới trần nhà bằng gỗ có gắn khung cửa sổ nhỏ. Bạn có thể nằm nhìn ngắm những đám mấy trôi hay những vì sao vào những hôm trời quang đãng. Lấy cảm hứng từ kiến trúc Nhật Bản, émai sử dụng tấm đệm dày trải trên sàn gỗ tạo thành chỗ nghỉ ngơi êm ái và ấm áp cho bạn.</p>
 				</div>
 
 				<div class="link-button-light link-button-airbnb">
-					<a target="_blank" href="https://www.airbnb.com/rooms/21900394">Book now on Airbnb</a>
+					<a target="_blank" href="https://www.airbnb.com/rooms/21900394">Đặt phòng qua Airbnb</a>
 				</div>
 
 			</div>
@@ -240,16 +256,20 @@
 				</div>
 
 				<div class="room-info">
-					<p>Accomodates two-four &#183; Two King beds (160cm)<br> Skylight &#183; Bathroom with wooden bathtub<br> Heavenly soft bedsheets from Portugal<br> Free breakfast &#183; 1,600,000 / 70 USD per night (extra PAX 250,000)
+					<p>Dành cho 2 đến 4 khách &#183; 2 x Giường King Size (160cm)<br> View vườn &#183; Cửa sổ nhình lên trời<br>
+						Phòng tắm riêng trong phòng với bồn tắm gỗ kiểu Nhật<br>
+						Khăn trải giường từ Au châu mềm mại diệu kỳ<br>
+						Bữa sáng miễn phí &#183; 1,600,000 VND / 70 USD per night<br>
+						(Giá phòng cho 2 người, phụ thu 250,000 VND cho mỗi người từ người thứ 3 trở lên)
 					</p>
 				</div>
 
 				<div class="room-description">
-					<p>Inspired by Japanese architecture, our attic rooms are tucked snugly under the roof, with a skylight through which you can watch the clouds drift or see the stars.</p>
+					<p>Phòng áp mái của émai nằm nép mình dưới trần nhà bằng gỗ có gắn khung cửa sổ nhỏ. Bạn có thể nằm nhìn ngắm những đám mấy trôi hay những vì sao vào những hôm trời quang đãng. Lấy cảm hứng từ kiến trúc Nhật Bản, émai sử dụng tấm đệm dày trải trên sàn gỗ tạo thành chỗ nghỉ ngơi êm ái và ấm áp cho bạn.</p>
 				</div>
 
 				<div class="link-button-light link-button-airbnb">
-					<a target="_blank" href="https://www.airbnb.com/rooms/21901538">Book now on Airbnb</a>
+					<a target="_blank" href="https://www.airbnb.com/rooms/21901538">Đặt phòng qua Airbnb</a>
 				</div>
 
 			</div>

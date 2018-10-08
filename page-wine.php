@@ -39,7 +39,7 @@
 					<li>Italy, Puglia, Primo Sangiovese-Merlot, red
 						<span class="dish-price">126</span>
 					</li>
-					<li>Italy, Montipagano, Trebbiano d’Abruzzo, organic white
+					<li>Argentina, Cuma Torrontes, organic white
 						<span class="dish-price">126</span>
 					</li>
 				</ul>

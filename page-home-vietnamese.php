@@ -32,15 +32,16 @@
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">Viet émai restaurant</h2>
+					<h2 class="header-full">Nhà hàng Émai</h2>
 					<hr class="hr-left">
-					<h3>Sensational, authentic European flavours in the heart of Dalat, Vietnam</h3>
+					<h3>Hương vị món Ý truyền thống trong<br>
+						lòng Đà Lạt, Việt Nam</h3>
 				</header>
 
-				<p>Using the finest of Dalat's clean produce and chess imported from Italy, we passionately homecook dishes that blend Italian customs and contemporary dining, delivering a truly unforgettable experience.</p>
+				<p>Lấy cảm hứng từ sự đơn giản thanh lịch của vùng nông thôn Tuscan, thức ăn ở émai là sự pha trộn tinh tế của phong cách truyền thống và hiện đại nhằm mang lại trải nghiệm ẩm thực độc đáo cho thực khách.</p>
 
 				<div class="link-button">
-					<a href="https://emaidalat.com/restaurant-menu/">View menu</a>
+					<a href="https://emaidalat.com/vi/nha-hang/">Xem Menu</a>
 				</div>
 
 				<button class="scrollDown">
@@ -65,15 +66,15 @@
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">émai cafe</h2>
+					<h2 class="header-full">Émai quán cà phê</h2>
 					<hr class="hr-left">
-					<h3>Wholesome and indulgent homemade desserts and drinks</h3>
+					<h3>Bánh & Thức uống nhà làm thơm lành</h3>
 				</header>
 
-				<p>Have a taste of heaven with our handpicked selection of special homemade cakes and desserts</p>
+				<p>Mời bạn cùng émai thưởng thức hương vị ngọt ngào của thiên đường với với thực đơn bánh và món ăn tráng miệng nhà làm được chúng mình tự tay chọn lựa tỉ mỉ.</p>
 
 				<div class="link-button">
-					<a href="https://emaidalat.com/drinks-desserts-menu/">View cafe menu</a>
+					<a href="https://emaidalat.com/vi/quan-ca-phe/">Menu Café</a>
 				</div>
 
 				<button class="scrollDown">
@@ -99,15 +100,15 @@
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">émai homestay</h2>
+					<h2 class="header-full">Émai homestay</h2>
 					<hr class="hr-left">
-					<h3>Gorgeous and rustic little rooms</h3>
+					<h3>Những căn phòng nhỏ xinh đẹp và mộc mạc</h3>
 				</header>
 
-				<p>Our cozy guest rooms recall the picturesque charm of the Dalat countryside, with a touch of Zen and contemporary aesthetics from Europe and Japan.</p>
+				<p>Những phòng trọ ấm cúng của émai gợi nên nét đẹp nên thơ của vùng nông thôn Đà Lạt, với sự chấm phá của phong cách mỹ thuật Thiền và thẩm mỹ đương đại từ Châu  u và Nhật Bản.</p>
 
 				<div class="link-button">
-					<a href="https://emaidalat.com/our-rooms/">View<span class="hidden-mobile"> or book</span> rooms</a>
+					<a href="https://emaidalat.com/vi/homestay/"><span class="hidden-mobile">Xem và </span>đặt phòng</a>
 				</div>
 
 				<button class="scrollDown">
@@ -133,14 +134,14 @@
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h3>A cosy nest, a joie de vivre.</h3>
+					<h3>Quán trọ ấm cúng</h3>
 				</header>
 
-				<p>Nestled in Vietnam's most romantic city, émai is a dream born out of our love for nature, beauty, and good food, all housed together in a rustic little garden home.</p>
-				<p>We hope you'll find deep contentment in our selection of jazz and classical music, garden flowers and candles, all handpicked to give you a poetic authentically European atmosphere of warmth, togetherness, and gentle beauty</p>
+				<p>Nằm nép mình trong thành phố lãng mạn nhất của Việt Nam, Émai là một giấc mơ của tình yêu với thiên nhiên và với những vẻ đep đơn sơ trong ngôi nhà nhỏ giữa khu vườn xanh mộc mạc.</p>
+				<p>Émai mong bạn sẽ cảm thấy thật êm ái và hài lòng với những bản nhạc jazz và nhạc cổ điển, với hoa thơm hái từ vườn xinh và nến ấm, tất cả được châm chút tỉ mỉ để mang đến cho bạn không gian châu Âu thuần túy đầy thơ mộng với sự ấm áp, gần gũi và những vẻ đep dịu dàng.</p>
 <!--
 				<div class="link-button">
-					<a href="">View Gallery</a>
+					<a href="">Xem album hình</a>
 				</div>
 -->
 				<button class="scrollDown">
@@ -154,16 +155,16 @@
 	<section class="pageSection scrollSection" id="home-booking">
 				<div class="content-white vertical-center content fixed-image">
 					<div>
-						<p>Amidst the sublimity, let émai be your nook for comfort and beauty, delighting your senses and palate in the most tender of ways.</p>
+						<p>Giữa Đà Lạt hung vĩ, hãy để cho émai làm góc nhỏ mang đến với bạn sự thoải mái và nét đẹp, đánh thức các giác quan và khẩu vị của bạn bằng những cách nhẹ nhàng nhất.</p>
 					</div>
 
 					<div class="button-container">
 						<div class="link-button-light">
-							<a href="https://emaidalat.com/reservations/">Reserve a table</a>
+							<a href="https://emaidalat.com/reservations/">Đặt phòng</a>
 						</div>
 
 						<div class="link-button-light">
-							<a href="https://emaidalat.com/contact/">Book your stay</a>
+							<a href="https://emaidalat.com/contact/">Đặt bàn</a>
 						</div>
 					</div>
 				</div>

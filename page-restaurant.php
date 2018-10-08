@@ -44,6 +44,10 @@
 					</header>
 
 					<ul class="list-soups">
+						<li>Émai's Signature Artichoke Cream Soup
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span class="dish-price">220</span>
+						</li>
 						<li>Italian Garden-fresh &amp; Sun-dried Tomato Soup with Rosemary Cream
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">120</span>
@@ -57,11 +61,7 @@
 							<span><img class="icon-seasonal" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/seasonal.png" alt="Seasonal"></span>
 							<span class="dish-price">190</span>
 						</li>
-						<li>Artichoke Cream Soup with Sauvignon Blanc
-							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
-							<span class="dish-price">220</span>
-						</li>
-						<li>Red Beet Cream Soup with Galangal and Fresh Coconut Milk
+						<li>Red Beet Cream Soup with Galangal
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<!--<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegan.png" alt="Vegan"></span>-->
 							<span class="dish-price">120</span>
@@ -93,12 +93,6 @@
 							<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegan.png" alt="Vegan"></span>
 							<span class="dish-price">160</span>
 						</li>
-						<!--
-						<li>Pomelo Salad with Cinnamon, Star Anise and Orange Blossom Water
-							<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegan.png" alt="Vegan"></span>
-							<span class="dish-price">190</span>
-						</li>
-					-->
 						<li>Salad of Green Asparagus and Courgettes, with Lime Vinegrette and sprinkled with Pecorino Cheese
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">230</span>
@@ -237,9 +231,6 @@
 							<span><img class="icon-spicy" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/spicy.png" alt="Spicy"></span>
 							<span class="dish-price">225</span>
 						</li>
-						<li>Shredded Roasted Chicken with Brandy and Cream Sauce
-							<span class="dish-price">225</span>
-						</li>
 					</ul>
 				</div>
 			</section>
@@ -276,6 +267,21 @@
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span><img class="icon-seasonal" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/seasonal.png" alt="Seasonal"></span>
 							<span class="dish-price">290</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="menu-cheese" class="section-dish">
+				<div class="content">
+					<header class="dish-header">
+						<h4 class="dish-title">Cheese platter</h4>
+					</header>
+
+					<ul class="list-cheese">
+						<li>Cheese Platter with Homemade Jam and Lightly Roasted Nuts
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span class="dish-price">300</span>
 						</li>
 					</ul>
 				</div>

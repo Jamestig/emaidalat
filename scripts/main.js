@@ -95,11 +95,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // FULLSCREEN FUNCTIONALITY
 
-  /*
-    jQuery('.fixed-image').click(function(event){
-      jQuery(event.currentTarget).css('display', 'none');
-    });
-  */
   if (window.matchMedia('(min-width: 1280px)').matches) {
 
     var current_href = jQuery(location).attr('href');
@@ -107,21 +102,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // Page name function
 
     var pageName = function() {
-      if (window.location.href.indexOf("rooms") > -1) {
+      if (window.location.href.indexOf("rooms") > -1 || window.location.href.indexOf("homestay") > -1) {
         return 'rooms';
-      } else if (window.location.href.indexOf("story") > -1) {
+      } else if (window.location.href.indexOf("story") > -1 || window.location.href.indexOf("chuyen") > -1) {
         return 'story';
-      } else if (window.location.href.indexOf("reservations") > -1) {
+      } else if (window.location.href.indexOf("reservations") > -1 || window.location.href.indexOf("dat") > -1) {
         return 'reservations';
-      } else if (window.location.href.indexOf("restaurant") > -1) {
+      } else if (window.location.href.indexOf("restaurant") > -1 || window.location.href.indexOf("hang") > -1) {
         return 'restaurant';
-      } else if (window.location.href.indexOf("drinks") > -1) {
+      } else if (window.location.href.indexOf("drinks") > -1 || window.location.href.indexOf("phe") > -1) {
         return 'drinks';
-      } else if (window.location.href.indexOf("breakfast") > -1) {
+      } else if (window.location.href.indexOf("breakfast") > -1 || window.location.href.indexOf("sang") > -1) {
         return 'breakfast';
-      } else if (window.location.href.indexOf("wine") > -1) {
+      } else if (window.location.href.indexOf("wine") > -1 || window.location.href.indexOf("ruou") > -1) {
         return 'wine';
-      } else if (window.location.href.indexOf("contact") > -1) {
+      } else if (window.location.href.indexOf("contact") > -1 || window.location.href.indexOf("lien") > -1) {
         return 'contact';
       } else {
         return 'home';
@@ -219,10 +214,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var scrollLink = jQuery('.activePage').siblings('ul').find('a');
 
     scrollLink.click(function(e) {
-      e.preventDefault();
-      jQuery('body,html').animate({
-        scrollTop: jQuery(this.hash).offset().top
-      }, 1000);
+      if (pageName() === 'home' || pageName() === 'rooms') {
+        e.preventDefault();
+        jQuery('body,html').animate({
+          scrollTop: jQuery(this.hash).offset().top
+        }, 1000);
+      }
     });
 
     var windowHeight = jQuery(window).height();

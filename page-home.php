@@ -32,7 +32,7 @@
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">émai restaurant</h2>
+					<h2 class="header-full">Émai restaurant</h2>
 					<hr class="hr-left">
 					<h3>Sensational, authentic European flavours in the heart of Dalat, Vietnam</h3>
 				</header>
@@ -65,7 +65,7 @@
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">émai cafe</h2>
+					<h2 class="header-full">Émai cafe</h2>
 					<hr class="hr-left">
 					<h3>Wholesome and indulgent homemade desserts and drinks</h3>
 				</header>
@@ -99,7 +99,7 @@
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">émai homestay</h2>
+					<h2 class="header-full">Émai homestay</h2>
 					<hr class="hr-left">
 					<h3>Gorgeous and rustic little rooms</h3>
 				</header>
@@ -159,11 +159,11 @@
 
 					<div class="button-container">
 						<div class="link-button-light">
-							<a href="https://emaidalat.com/reservations/">Reserve a table</a>
+							<a href="https://emaidalat.com/reservations/">Book your stay</a>
 						</div>
 
 						<div class="link-button-light">
-							<a href="https://emaidalat.com/contact/">Book your stay</a>
+							<a href="https://emaidalat.com/contact/">Reserve a table</a>
 						</div>
 					</div>
 				</div>
