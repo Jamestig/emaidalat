@@ -15,7 +15,6 @@
 			<li><a href="https://www.facebook.com/emaidalat/" target="_blank" class="fa fa-facebook-square"></a></li>
 			<li><a href="https://www.instagram.com/emaidalat/" target="_blank" class="fa fa-instagram"></a></li>
 			<li><a href="mailto:family@emaidalat.com" class="fa fa-envelope"></a></li>
-			<li><a href="https://twitter.com/emaidalat" target="_blank" class="fa fa-twitter-square"></a></li>
 		</ul>
 
 		<address>
@@ -24,8 +23,9 @@
 			<span>&vert;</span>
 			<a class="footer-phone" href="tel: +842633839001">+84 2633 839 001</a>
 		</address>
-	</footer>
+	</footer
 
 	<?php wp_footer(); ?>
+
 </body>
 </html>

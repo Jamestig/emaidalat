@@ -15,7 +15,8 @@ Tags: emai, italian, restaurant, bnb, homestay, cafe
 ////////////////////*/
 
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 ul {
@@ -38,6 +39,30 @@ figure {
 
 html {
 	font-size: 16px;
+}
+
+@media screen and (min-width: 1280px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 2560px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 3840px) {
+	html {
+		font-size: 26px;
+	}
 }
 
 main {
@@ -180,6 +205,7 @@ html {
 	--background-light: #f8f8f6;
 	--background-dark: #f2f4f1;
 	--background-navbar: #ebebe6;
+	--background-black: #191919;
 	--font-main: #393836;
 	--font-header: #484843;
 	--font-light: #8b8b88;
@@ -237,22 +263,39 @@ html {
 	}
 
 	.ribbon-container {
-		flex: 0 0 40%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 40%;
+		        flex: 0 0 40%;
 		max-width: 40%;
 		height: 100vh;
 		background: rgba(255, 255, 255, .85);
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: column;
-		align-items: center;
-		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: column;
+		        flex-flow: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		z-index: 10;
 	}
 
 	.ribbon-container-bottom {
-		flex: 0 0 30%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 30%;
+		        flex: 0 0 30%;
 		background: rgba(0, 0, 0, .3);
-		align-items: flex-end;
-		justify-content: flex-end;
+		-webkit-box-align: end;
+		    -ms-flex-align: end;
+		        align-items: flex-end;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
 	}
 
 	.ribbon-container-right {
@@ -277,6 +320,12 @@ html {
 
 @media screen and (max-width: 450px) {
 	.hidden-mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1279px) {
+	.hidden-tablet {
 		display: none;
 	}
 }
@@ -314,6 +363,7 @@ html {
 .hr-center {
 	border: 0;
 	height: 1px;
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
 	margin: 1rem auto;
 	max-width: 400px;
@@ -343,9 +393,16 @@ html {
 /*// BUTTONS //*/
 
 .button-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .link-button {
@@ -358,6 +415,7 @@ html {
 	padding: .5em 1em;
 	letter-spacing: .15em;
 	color: var(--font-light);
+	-webkit-transition: border-color .3s linear, color .3s linear, background .3s linear;
 	transition: border-color .3s linear, color .3s linear, background .3s linear;
 	white-space: nowrap;
 	text-transform: uppercase;
@@ -379,6 +437,7 @@ html {
 	background-color: rgba(244, 244, 240, .35);
 	padding: .5em 1em;
 	letter-spacing: .15em;
+	-webkit-transition: border-color .3s linear, color .3s linear, background .3s linear;
 	transition: border-color .3s linear, color .3s linear, background .3s linear;
 	white-space: nowrap;
 	text-transform: uppercase;
@@ -407,7 +466,8 @@ html {
 
 .scrollDown span:first-of-type {
 	background-image: url(images/icon/arrow_down_grey.png);
-	filter: brightness(0);
+	-webkit-filter: brightness(0);
+	        filter: brightness(0);
 }
 
 .scrollDown span:last-of-type {
@@ -540,7 +600,8 @@ html {
 		height: 100vh;
 		width: auto;
 		margin-left: 50%;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 		z-index: -100;
 	}
 
@@ -555,7 +616,9 @@ html {
 .center {
 	margin: 0 auto;
 	text-align: center;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .position-underlay {
@@ -583,10 +646,19 @@ html {
 }
 
 .vertical-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	height: 100%;
 }
 
@@ -601,12 +673,8 @@ html {
 	height: 24px;
 	margin-right: 5%;
 	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
 	transform: rotate(0deg);
 	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
 	cursor: pointer;
 }
@@ -621,43 +689,31 @@ html {
 	opacity: 1;
 	left: 0;
 	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
 	transform: rotate(0deg);
 	-webkit-transition: .25s ease-in-out;
-	-moz-transition: .25s ease-in-out;
-	-o-transition: .25s ease-in-out;
 	transition: .25s ease-in-out;
 }
 
 #burger-icon span:nth-child(1) {
 	top: 0px;
 	-webkit-transform-origin: left center;
-	-moz-transform-origin: left center;
-	-o-transform-origin: left center;
 	transform-origin: left center;
 }
 
 #burger-icon span:nth-child(2) {
 	top: 10px;
 	-webkit-transform-origin: left center;
-	-moz-transform-origin: left center;
-	-o-transform-origin: left center;
 	transform-origin: left center;
 }
 
 #burger-icon span:nth-child(3) {
 	top: 20px;
 	-webkit-transform-origin: left center;
-	-moz-transform-origin: left center;
-	-o-transform-origin: left center;
 	transform-origin: left center;
 }
 
 #burger-icon.open span:nth-child(1) {
 	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 	top: 0px;
 	left: 4px;
@@ -671,8 +727,6 @@ html {
 
 #burger-icon.open span:nth-child(3) {
 	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	top: 21px;
 	left: 4px;
@@ -685,11 +739,21 @@ html {
 	top: 0;
 	width: 100%;
 	height: 80px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row;
-	align-items: center;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row;
+	        flex-flow: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	z-index: 8;
+	-webkit-transition: background-color .4s linear;
 	transition: background-color .4s linear;
 }
 
@@ -710,10 +774,19 @@ html {
 .main-logo {
 	height: 50vh;
 	margin: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .main-logo a {
@@ -736,16 +809,22 @@ html {
 }
 
 .header-nav {
-	height: 75%;
+	height: 70%;
 }
 
 /*// ACCORDION //*/
 
 .accordion {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column wrap;
+	        flex-flow: column wrap;
 	height: 100%;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	text-align: center;
 }
 
@@ -757,15 +836,20 @@ html {
 }
 
 .accordion > li {
-	flex: 0 0 auto;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
 	z-index: 11;
 }
 
 .accordion > li > a {
-	flex: 0 0 auto;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
 	z-index: 11;
 	color: var(--font-header);
 	padding: .4em .5em;
+	-webkit-transition: color .3s linear;
 	transition: color .3s linear;
 }
 
@@ -793,17 +877,33 @@ html {
 
 .side-footer {
 	text-align: center;
-	height: 25%;
+	height: 30%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .side-footer .sm-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row;
+	        flex-flow: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin: .4em 0;
 	height: 20%;
 }
@@ -839,8 +939,13 @@ html {
 	.navbar {
 		width: 80px;
 		height: 100%;
-		flex-flow: column-reverse;
-		justify-content: flex-end;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		    -ms-flex-flow: column-reverse;
+		        flex-flow: column-reverse;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
 		background-color: var(--background-navbar);
 	}
 
@@ -867,10 +972,9 @@ html {
 
 	.nav-overlay {
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebebe6+0,ebebe6+100&1+15,0.9+30 */
-		background: -moz-linear-gradient(left, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
 		/* FF3.6-15 */
-		background: -webkit-linear-gradient(left, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
 		/* Chrome10-25,Safari5.1-6 */
+		background: -webkit-gradient(linear, left top, right top, from(rgba(235, 235, 230, 1)), color-stop(15%, rgba(235, 235, 230, 1)), color-stop(30%, rgba(235, 235, 230, 0.9)), to(rgba(235, 235, 230, 0.9)));
 		background: linear-gradient(to right, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
 		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebe6', endColorstr='#e6ebebe6', GradientType=1);
@@ -879,13 +983,20 @@ html {
 
 	.accordion {
 		margin-left: 80px;
-		flex-flow: row wrap;
-		justify-content: space-around;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row wrap;
+		        flex-flow: row wrap;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 	}
 
 	.accordion > li {
-		flex: 0 0 50%;
-		align-self: center;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 50%;
+		        flex: 0 0 50%;
+		-ms-flex-item-align: center;
+		    align-self: center;
 	}
 
 	.accordion > li:last-child {
@@ -907,10 +1018,9 @@ html {
 
 	.nav-overlay {
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebebe6+0,ebebe6+100&1+15,0.9+30 */
-		background: -moz-linear-gradient(top, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
 		/* FF3.6-15 */
-		background: -webkit-linear-gradient(top, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
 		/* Chrome10-25,Safari5.1-6 */
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(235, 235, 230, 1)), color-stop(15%, rgba(235, 235, 230, 1)), color-stop(30%, rgba(235, 235, 230, 0.9)), to(rgba(235, 235, 230, 0.9)));
 		background: linear-gradient(to bottom, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
 		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebe6', endColorstr='#e6ebebe6', GradientType=0);
@@ -959,7 +1069,9 @@ html {
 		height: 100%;
 		max-width: 50%;
 		margin: 10% auto 5% auto;
-		justify-content: flex-end;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
 	}
 
 	.main-logo img {
@@ -973,9 +1085,15 @@ html {
 		background: none;
 		height: 70vh;
 		padding-top: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: column;
-		justify-content: space-around;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: column;
+		        flex-flow: column;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 	}
 
 	.header-nav {
@@ -984,14 +1102,21 @@ html {
 
 	.accordion {
 		margin-left: 18%;
-		flex-flow: column;
-		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: column;
+		        flex-flow: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		text-align: left;
 		padding-top: 0;
 	}
 
 	.accordion > li {
-		flex: 0 0 auto;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 auto;
+		        flex: 0 0 auto;
 		padding: .3em 0;
 	}
 
@@ -1009,16 +1134,25 @@ html {
 	}
 
 	.side-footer {
-		justify-content: flex-start;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 		margin-left: 15%;
 		height: 25%;
 		text-align: left;
 	}
 
 	.side-footer .sm-list {
-		flex-flow: row;
-		align-items: center;
-		justify-content: flex-start;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row;
+		        flex-flow: row;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 	}
 
 	.side-footer .sm-list a {
@@ -1050,6 +1184,7 @@ html {
 }
 
 #home-booking .fixed-image {
+	background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2)) ), url(images/photos/mobile/flower_480_01.jpg);
 	background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url(images/photos/mobile/flower_480_01.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1061,6 +1196,7 @@ html {
 
 @media screen and (min-width: 481px) {
 	#home-booking .fixed-image {
+		background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2)) ), url(images/photos/tablet/flower_800_01.jpg);
 		background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url(images/photos/tablet/flower_800_01.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -1109,6 +1245,7 @@ html {
 	}
 
 	#home-booking .fixed-image {
+		background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2)) ), url(images/photos/hd/flower_1920_01.jpg);
 		background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url(images/photos/hd/flower_1920_01.jpg);
 		height: 100vh;
 	}
@@ -1179,9 +1316,16 @@ html {
 
 
 	#main-story section {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: column;
-		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: column;
+		        flex-flow: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 
 	#main-story .content {
@@ -1219,10 +1363,19 @@ html {
 }
 
 .flex-container-room {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	position: relative;
 	margin: 0 1em;
 	margin-top: -50px;
@@ -1231,10 +1384,9 @@ html {
 	border-bottom: 1px solid var(--border-light);
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
-	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
 	/* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
 	/* Chrome10-25,Safari5.1-6 */
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 1)));
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
@@ -1253,10 +1405,7 @@ html {
 	.flex-container-room:after {
 		content: "";
 		position: absolute;
-		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#e1e2e0));
-		background-image: -webkit-linear-gradient(transparent, #e1e2e0);
-		background-image: -moz-linear-gradient(transparent, #e1e2e0);
-		background-image: -o-linear-gradient(transparent, #e1e2e0);
+		background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#e1e2e0));
 		background-image: linear-gradient(transparent, #e1e2e0);
 		top: 0;
 		bottom: -1px;
@@ -1333,7 +1482,10 @@ html {
 @media screen and (min-width: 768px) {
 
 	.flex-container-room {
-		flex-flow: row wrap;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row wrap;
+		        flex-flow: row wrap;
 		margin-top: -20px;
 	}
 
@@ -1342,11 +1494,15 @@ html {
 	}
 
 	.room-logo {
-		flex: 0 0 40%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 40%;
+		        flex: 0 0 40%;
 	}
 
 	.room-info {
-		flex: 0 0 55%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 55%;
+		        flex: 0 0 55%;
 	}
 
 	.room-info p {
@@ -1354,7 +1510,9 @@ html {
 	}
 
 	.room-description {
-		flex: 0 0 100%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 100%;
+		        flex: 0 0 100%;
 	}
 }
 
@@ -1388,21 +1546,37 @@ html {
 
 	#bnb-intro,
 	#bnb-breakfast {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row;
+		        flex-flow: row;
 	}
 
 	.section-room {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: column;
-		justify-content: flex-end;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: column;
+		        flex-flow: column;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
 	}
 
 	.flex-container-room {
 		position: fixed;
 		bottom: 0;
-		flex-flow: row;
-		justify-content: space-around;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row;
+		        flex-flow: row;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 		height: 20vh;
 		margin: 0;
 		margin-left: 12vw;
@@ -1431,10 +1605,19 @@ html {
 	}
 
 	.room-button-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: column;
-		align-items: flex-start;
-		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: column;
+		        flex-flow: column;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		position: fixed;
 		bottom: 0;
 		background: rgba(0, 0, 0, .5);
@@ -1482,16 +1665,23 @@ html {
 	}
 
 	.room-logo {
-		flex: 0 0 20%
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 20%;
+		        flex: 0 0 20%
 	}
 
 	.room-logo img {
-		filter: brightness(100);
+		-webkit-filter: brightness(100);
+		        filter: brightness(100);
 	}
 
 	.room-info {
-		flex: 0 0 40%;
-		order: 5;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 40%;
+		        flex: 0 0 40%;
+		-webkit-box-ordinal-group: 6;
+		    -ms-flex-order: 5;
+		        order: 5;
 	}
 
 	.room-info p {
@@ -1499,8 +1689,12 @@ html {
 	}
 
 	.room-description {
-		flex: 0 0 40%;
-		order: 4;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 40%;
+		        flex: 0 0 40%;
+		-webkit-box-ordinal-group: 5;
+		    -ms-flex-order: 4;
+		        order: 4;
 	}
 
 	.room-description p {
@@ -1723,10 +1917,9 @@ html {
 		width: 45vw;
 		height: 40vh;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f7f5+0,f6f7f5+100&0+0,1+95 */
-		background: -moz-linear-gradient(top, rgba(246, 247, 245, 0) 0%, rgba(246, 247, 245, 1) 95%, rgba(246, 247, 245, 1) 100%);
 		/* FF3.6-15 */
-		background: -webkit-linear-gradient(top, rgba(246, 247, 245, 0) 0%, rgba(246, 247, 245, 1) 95%, rgba(246, 247, 245, 1) 100%);
 		/* Chrome10-25,Safari5.1-6 */
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(246, 247, 245, 0)), color-stop(95%, rgba(246, 247, 245, 1)), to(rgba(246, 247, 245, 1)));
 		background: linear-gradient(to bottom, rgba(246, 247, 245, 0) 0%, rgba(246, 247, 245, 1) 95%, rgba(246, 247, 245, 1) 100%);
 		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00f6f7f5', endColorstr='#f6f7f5', GradientType=0);
@@ -1833,14 +2026,97 @@ html {
 	width: auto;
 	height: 100%;
 	margin-left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 }
 
 .contact-sign {
 	margin-top: 2em;
 }
 
-.contact-maps {}
+.contact-form .content {
+	background-color: var(--background-black);
+}
+
+.contact-form .content > h3,
+.contact-form .content > p {
+	color: var(--font-white);
+}
+
+.contact-form .content > p {
+	font-size: 1.3em;
+	text-align: left;
+	padding-top: 2em;
+}
+
+.wpcf7-form-control {
+	width: 100%;
+	line-height: 2rem;
+	padding-left: 10px;
+	font-size: .8em;
+	border: none;
+	background-color: var(--background-dark);
+}
+
+.wpcf7-form p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.wpcf7-form p:first-of-type {
+	display: inline-block;
+	width: 48%;
+	margin-right: 2.5%;
+	margin-bottom: 0;
+}
+
+.wpcf7-form p:nth-of-type(2) {
+	display: inline-block;
+	width: 48%;
+	margin-bottom: 0;
+}
+
+.contact-form .first-name .wpcf7-form-control {
+	width: 100%;
+}
+
+.contact-form .last-name .wpcf7-form-control {
+	width: 100%;
+}
+
+.wpcf7-submit {
+	border: 1px solid var(--font-white);
+	background-color: var(--background-black);
+	padding: .5em 1em;
+	letter-spacing: .15em;
+	color: var(--font-white);
+	-webkit-transition: border-color .3s linear, color .3s linear, background .3s linear;
+	transition: border-color .3s linear, color .3s linear, background .3s linear;
+	white-space: nowrap;
+	text-transform: uppercase;
+	width: 50%;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+}
+
+.wpcf7-submit:hover {
+	border-color: #f4f4f4;
+	color: #f4f4f4;
+}
+
+span.wpcf7-not-valid-tip {
+	color: white;
+	position: absolute;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+    border: 2px solid #f4f4f4;
+		color: #f4f4f4;
+}
 
 @media screen and (min-width: 1280px) {
 
@@ -1849,8 +2125,13 @@ html {
 	}
 
 	.contact-images {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row;
+		        flex-flow: row;
 		margin-top: 2em;
 	}
 
@@ -1867,9 +2148,100 @@ html {
 	}
 
 	.contact-maps {
-		flex: 0 0 40%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 40%;
+		        flex: 0 0 40%;
 		margin-bottom: 0;
 	}
+
+	.contact-form {
+		background: rgba(0,0,0,0.8);
+		position: absolute;
+		left: 20vw;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		font-size: 1em;
+		z-index: 20;
+	}
+
+	.contact-form .content {
+		background-color: var(--background-black);
+		margin: 5%;
+	}
+
+	.contact-form .content > h3 {
+		font-size: 2.5em;
+		margin-bottom: 0;
+	}
+
+	.contact-form .content > p {
+		padding: 0;
+	}
+
+	.wpcf7-form p:first-of-type {
+		margin-right: 3.5%;
+	}
+
+	.wpcf7-form p:last-of-type {
+		text-align: center;
+		margin-bottom: 2em;
+	}
+
+	.wpcf7-submit {
+		width: 25%;
+	}
+}
+
+/* Close button */
+
+.closeButton {
+	width: 30px;
+	height: 24px;
+	position: relative;
+	top: 20px;
+	right: -6%;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+	margin-left: auto;
+}
+
+.closeButton span {
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: var(--font-white);
+	border-radius: 8px;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+
+.closeButton span:nth-child(1) {
+	top: 0px;
+	-webkit-transform-origin: left center;
+	transform-origin: left center;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 0px;
+	left: 4px;
+}
+
+.closeButton span:nth-child(2) {
+	top: 0px;
+	-webkit-transform-origin: left center;
+	transform-origin: left center;
+		-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: 21px;
+	left: 4px;
 }
 
 /*////////////////////
@@ -1897,6 +2269,7 @@ html {
 .mobile-footer h2:hover,
 .mobile-footer a:hover,
 .mobile-footer span:hover {
+	-webkit-transition: color .3s linear;
 	transition: color .3s linear;
 	color: var(--dark-grey);
 }

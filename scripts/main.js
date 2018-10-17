@@ -80,17 +80,43 @@ document.addEventListener('DOMContentLoaded', function() {
   var windowSize = jQuery(window);
 
   if (windowSize.width() < 1280) {
-      responseSize = 'small';
+    responseSize = 'small';
   } else {
-      responseSize = 'large';
+    responseSize = 'large';
   }
 
   jQuery(window).resize(function() {
-      if((windowSize.width() < 1280) && (responseSize != 'small')) {
-          location.reload();
-      } else if ((windowSize.width() >= 1280) && (responseSize != 'large')) {
-          location.reload();
-      }
+    if ((windowSize.width() < 1280) && (responseSize != 'small')) {
+      location.reload();
+    } else if ((windowSize.width() >= 1280) && (responseSize != 'large')) {
+      location.reload();
+    }
+  });
+
+  // Contact Form
+
+  jQuery('.contact-form').hide();
+  jQuery('.closeButton').hide();
+
+  jQuery('#openContactForm').on('click', function() {
+    if (responseSize === 'small') {
+      jQuery('.contact-form').slideToggle();
+    } else {
+      jQuery('.contact-form').fadeIn();
+      jQuery('.closeButton').fadeIn();
+    }
+  });
+
+  jQuery('.closeButton').on('click', function() {
+    jQuery('.contact-form').fadeOut();
+    jQuery('.closeButton').fadeOut();
+  });
+
+  jQuery('input, textarea').focus(function(event) {
+    jQuery(event.target).css('background-color', 'white');
+    jQuery(event.target).focusout(function(event) {
+      jQuery(event.target).css('background-color', 'var(--background-dark)');
+    });
   });
 
   // FULLSCREEN FUNCTIONALITY
@@ -256,16 +282,11 @@ document.addEventListener('DOMContentLoaded', function() {
     jQuery('.flex-container-room').hide();
     jQuery('.room-button-container').hide();
 
-    jQuery('#rooms-ivy .flex-container-room').click(function() {
-    });
-    jQuery('#rooms-clara .flex-container-room').click(function() {
-    });
-    jQuery('#rooms-may .flex-container-room').click(function() {
-    });
-    jQuery('#rooms-lila .flex-container-room').click(function() {
-    });
-    jQuery('#rooms-jasmine .flex-container-room').click(function() {
-    });
+    jQuery('#rooms-ivy .flex-container-room').click(function() {});
+    jQuery('#rooms-clara .flex-container-room').click(function() {});
+    jQuery('#rooms-may .flex-container-room').click(function() {});
+    jQuery('#rooms-lila .flex-container-room').click(function() {});
+    jQuery('#rooms-jasmine .flex-container-room').click(function() {});
 
     jQuery(window).scroll(function() {
 
@@ -365,7 +386,6 @@ document.addEventListener('DOMContentLoaded', function() {
         jQuery('.flex-container-room').fadeOut();
       }
     }); // End scroll function
-
   } // End match query
 
 }); // End document load function
