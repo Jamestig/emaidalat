@@ -97,6 +97,10 @@
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">230</span>
 						</li>
+						<li>Sà lách khoai tây với trứng cút và sốt pesto hạnh nhân
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span class="dish-price">180</span>
+						</li>
 						<li>Salad Caesar truyền thống
 							<span class="dish-price">190</span>
 						</li>
@@ -126,10 +130,6 @@
 						<li>Ravioli kiểu Ý với cà chua phơi nắng Dịa Trung Hải, phô mai feta và ớt nướng
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">210</span>
-						</li>
-						<li>Sà lách khoai tây với trứng cút và sốt pesto hạnh nhân
-							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
-							<span class="dish-price">180</span>
 						</li>
 						<li>Bánh nướng kiểu pháp với tỏi ướp dấm Ý cháy đường với phô mai sữa dê, hương thảo và lá thyme
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>

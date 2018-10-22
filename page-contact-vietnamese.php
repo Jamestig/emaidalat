@@ -30,13 +30,25 @@
 				<p>Émai mở cửa mỗi ngày trong tuần từ 7 giờ sang đến 10 giờ đêm.</p>
 
 				<div class="link-button">
-					<a href=""><span class="hidden-mobile">Mở </span>Contact Form</a>
+					<a id="openContactForm"><span class="hidden-mobile">Mở </span>Phiếu Liên Hệ</a>
 				</div>
+			</div>
 
-				<div class="contact-form">
+			<section class="contact-form" id="contact-en">
+				<div class="content">
+				<div class="closeButton">
+					<span></span>
+					<span></span>
+				</div>
+					<h3 class="hidden-tablet">Phiếu liên hệ</h3>
+					<p>Chúng tôi sẽ trả lời bạn sớm nhất có thể.</p>
+
+					<?php echo do_shortcode('[contact-form-7 id="123" title="Contact VI"]'); ?>
 
 				</div>
+			</section>
 
+			<div class="content">
 				<h4 class="header-caps">TÌM ĐẾN ÉMAI</h4>
 				<p>Nhà mình ở số 1 Thi Sách, Đà Lạt, Lâm Đồng. Nhà dễ nhận ra nhờ khu vườn xanh mướt bao quanh.</p>
 

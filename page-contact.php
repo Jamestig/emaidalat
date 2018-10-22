@@ -43,7 +43,7 @@
 				<h3 class="hidden-tablet">Contact form</h3>
 				<p>We will get back to you as soon as we can.</p>
 
-				<?php echo do_shortcode('[contact-form-7 id="62" title="Contact EN"]'); ?>
+				<?php echo do_shortcode('[contact-form-7 id="122" title="Contact EN"]'); ?>
 
 			</div>
 		</section>

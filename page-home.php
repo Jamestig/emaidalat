@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<main id="main-home">
+<main id="main-home fullscreen">
 	<!--
 		<div class="fullscreen-container">
 			<div class="fullscreen-button-container">
@@ -17,7 +17,7 @@
 		</div>
 	-->
 
-	<section class="scrollSection pageSection" id="home-restaurant">
+	<section class="section active pageSection scrollSection" id="home-restaurant">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
@@ -37,7 +37,7 @@
 					<h3>Sensational, authentic European flavours in the heart of Dalat, Vietnam</h3>
 				</header>
 
-				<p>Using the finest of Dalat's clean produce and chess imported from Italy, we passionately homecook dishes that blend Italian customs and contemporary dining, delivering a truly unforgettable experience.</p>
+				<p>Using the finest of Dalat's clean produce and cheese imported from Italy, we passionately homecook dishes that blend Italian customs and contemporary dining, delivering a truly unforgettable experience.</p>
 
 				<div class="link-button">
 					<a href="https://emaidalat.com/restaurant-menu/">View menu</a>
@@ -51,7 +51,7 @@
 		</div>
 	</section>
 
-	<section class="pageSection scrollSection" id="home-cafe">
+	<section class="section pageSection scrollSection" id="home-cafe">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
@@ -84,7 +84,7 @@
 		</div>
 	</section>
 
-	<section class="pageSection scrollSection" id="home-bnb">
+	<section class="section pageSection scrollSection" id="home-bnb">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
@@ -118,7 +118,7 @@
 		</div>
 	</section>
 
-	<section class="pageSection scrollSection" id="home-atmosphere">
+	<section class="section pageSection scrollSection" id="home-atmosphere">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
@@ -151,7 +151,7 @@
 		</div>
 	</section>
 
-	<section class="pageSection scrollSection" id="home-booking">
+	<section class="section pageSection scrollSection" id="home-booking">
 				<div class="content-white vertical-center content fixed-image">
 					<div>
 						<p>Amidst the sublimity, let émai be your nook for comfort and beauty, delighting your senses and palate in the most tender of ways.</p>

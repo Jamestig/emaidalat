@@ -97,6 +97,10 @@
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">230</span>
 						</li>
+						<li>Potato Salad with Quail Eggs and Almond Basil Pesto
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span class="dish-price">180</span>
+						</li>
 						<li>Classic Caesar Salad
 							<span class="dish-price">190</span>
 						</li>
@@ -126,10 +130,6 @@
 						<li>Sun-dried Tomato and Feta Cheese Ravioli with Roasted Chilies
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">210</span>
-						</li>
-						<li>Potato Salad with Quail Eggs and Basil/Rucola Almond Pesto
-							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
-							<span class="dish-price">180</span>
 						</li>
 						<li>Quiche of Caramelized Garlic Marinated in Balsamic Vinegar with Goat Cheese, Rosemary &amp; Thyme
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
@@ -163,7 +163,7 @@
 							<span><img class="icon-spicy" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/spicy.png" alt="Spicy"></span>
 							<span class="dish-price">230</span>
 						</li>
-						<li>Spaghetti Aglio Olio
+						<li>Spaghetti Aglio e Olio
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span><img class="icon-spicy" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/spicy.png" alt="Spicy"></span>
 							<span class="dish-price">160</span>
@@ -177,18 +177,18 @@
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">190</span>
 						</li>
-						<li>Homemade Gnocchi with Mushroom and Thyme Sauce with Cream and Brandy
+						<li>Homemade Gnocchi with Mushroom and Thyme Sauce with Cream
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">190</span>
 						</li>
 						<li>Spaghetti Carbonara
 							<span class="dish-price">180</span>
 						</li>
-						<li>Homemade Fettucine with Gorgonzola or Blue Cheese Cream Sauce and Thyme
+						<li>Homemade Tagliatella with Gorgonzola Cream Sauce and Thyme
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">210</span>
 						</li>
-						<li>Homemade Tagliatella with Basil/Rucola Pesto and Chicken
+						<li>Homemade Tagliatella with Almond Basil Pesto and Chicken
 							<span class="dish-price">245</span>
 						</li>
 					</ul>
@@ -250,16 +250,16 @@
 					</header>
 
 					<ul class="list-mains">
-						<li>Beef in Red Wine with French Herbs, served with Bread
+						<li>Beef Bourguignon in Red Wine with French Herbs, served with Bread
 							<span class="dish-price">340</span>
 						</li>
-						<li>Rosemary Smoked Duck Filet with Balsamic Sage &amp; Berries Gravy, Baby Potatoes and Seasonal Vegetables
+						<li>Rosemary Smoked Duck Filet with Balsamic Sage Gravy, Baby Potatoes and Seasonal Vegetables
 							<span class="dish-price">340</span>
 						</li>
-						<li>Sea Prawns in Thyme &amp; Lime Butter Sauce, with Water Cress and Young Potatoes
+						<li>Sea Prawns in Thyme &amp; Lime Butter Sauce, with Water Cress and Baby Potatoes
 							<span class="dish-price">320</span>
 						</li>
-						<li>Tarragon Vinegar Chicken, with Green Beans and Young Potatoes
+						<li>Tarragon Vinegar Chicken, with Green Beans and Baby Potatoes
 							<span class="dish-price">290</span>
 						</li>
 

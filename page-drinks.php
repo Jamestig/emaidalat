@@ -42,13 +42,16 @@
 					<section id="menu-italian-coffee">
 						<h5 class="header-caps">Italian Coffee (Iced/Hot)</h5>
 						<ul>
-							<li>Espresso/Hot Americano <span class="dish-price">20</span></li>
+							<li>Espresso <span class="dish-price">20</span></li>
+							<li>Americano <span class="dish-price">25</span></li>
 							<li>Iced Americano with Orange Peel <span class="dish-price">40</span></li>
 							<li>Cappuccino <span class="dish-price">45</span></li>
-							<li>Latte/Mocha <span class="dish-price">70</span></li>
-							<li>Affogato <span class="dish-price">55</span></li>
+							<li>Latte <span class="dish-price">60</span></li>
+							<li>Mocha <span class="dish-price">70</span></li>
+							<li>Affogato <span class="dish-price">60</span></li>
 							<li>Classic Macchiatto <span class="dish-price">45</span></li>
-							<li>Extra shot <span class="dish-price">10</span></li>
+							<li>Extra shot <span class="dish-price">+15</span></li>
+							<li>With Pistachio or Walnut Milk <span class="dish-price">+20</span></li>
 						</ul>
 					</section>
 
@@ -81,7 +84,7 @@
 					<section id="menu-hot-tea">
 						<h5 class="header-caps">Hot tea (pot)</h5>
 						<ul>
-							<li>Earl Grey (served with cream or lime) <span class="dish-price">70</span></li>
+							<li>Earl Grey <span class="dish-price">70</span></li>
 							<li>Cau Dat Green Oolong <span class="dish-price">70</span></li>
 							<li>Orange Pekoe with Fresh Orange, Ginger &amp; Wild Honey <span class="dish-price">90</span></li>
 							<li>Green Tea <span class="dish-price">30</span></li>
@@ -98,7 +101,7 @@
 					<section id="menu-chocolate">
 						<h5 class="header-caps">Chocolate</h5>
 						<ul>
-							<li>Hot Chocolate <span class="dish-price">70</span></li>
+							<li>Hot Cacao <span class="dish-price">70</span></li>
 						</ul>
 					</section>
 				</div>
@@ -133,7 +136,7 @@
 						<ul>
 							<li>Fresh Orange or Watermelon Juice <span class="dish-price">70</span></li>
 							<li>Fresh Strawberry or Mango Smoothie <span class="dish-price">70</span></li>
-							<li>Mulberry, Passion Fruit, or Raspberry Homemade Soda <span class="dish-price">50</span></li>
+							<li>Mulberry, Passion Fruit, Raspberry or Strawberry Homemade Soda <span class="dish-price">50</span></li>
 						</ul>
 					</section>
 				</div>
@@ -158,7 +161,7 @@
 						<li>Chocolate Mousse Cake with Candied Orange Puree and Orange Liqueur <span class="dish-price">95</span></li>
 						<li>Panna Cotta with Dalat Berries Cooked in Mulled Wine <span class="dish-price">95</span></li>
 						<li>Ultimate New York Cheesecake with Fresh Strawberry Sauce <span class="dish-price">95</span></li>
-						<li>Gooey Butter Almond Cake <span class="dish-price">95</span></li>
+						<li>Almond Butter Cake <span class="dish-price">95</span></li>
 						<li>Dalat Berries in Yoghurt Cream Cake <span class="dish-price">95</span></li>
 						<li>Passion Fruit Cheese Cake <span class="dish-price">95</span></li>
 					</ul>
@@ -184,12 +187,12 @@
 						<h5 class="header-caps">Wine by the glass</h5>
 						<ul>
 							<li>Primo Sangiovese-Merlot, red <span class="dish-price">126</span></li>
-							<li>Trebianno d'Abruzzo, organic white <span class="dish-price">126</span></li>
-							<li>Special Homemade Mulled Wine* <span class="dish-price">126</span>
+							<li>Argentina, Cuma Torrontes, organic white <span class="dish-price">126</span></li>
+							<li>Mulled Wine* <span class="dish-price">126</span>
 								<p>with 8 exotic spices, orange, and lime</p>
 							</li>
 						</ul>
-						<p class="text-condition">*made occasionally when it is cold outside, to keep you warm and cosy in the emai home</p>
+						<p class="text-condition">*Available during colder months</p>
 					</section>
 
 					<section id="menu-beer">
