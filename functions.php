@@ -6,12 +6,16 @@
 		wp_enqueue_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 		wp_enqueue_style( 'emai_fonts', "https://fonts.googleapis.com/css?family=Amiri|Marcellus+SC|Mrs+Saint+Delafield" );
 		wp_enqueue_style('normalize_css', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
-		wp_enqueue_style('main_css', get_template_directory_uri() . '/style.css');
+		wp_enqueue_style('main_css', get_template_directory_uri() . '/style.css', array('normalize_css'));
 	}
 
 	add_action('wp_enqueue_scripts', 'emai_theme_styles');
 
 	function emai_theme_js() {
+		wp_enqueue_script('fp_main', get_template_directory_uri() . '/scripts/fullpage.js', array('jquery'), '', true );
+		wp_enqueue_script('fp_extensions', get_template_directory_uri() . '/scripts/fullpage.extensions.min.js', array('jquery'), '', true );
+		wp_enqueue_script('fp_fading', get_template_directory_uri() . '/scripts/fullpage.fadingEffect.min.js', array('jquery', 'fp_extensions'), '', true );
+		wp_enqueue_script('fp_init', get_template_directory_uri() . '/scripts/fullpageInit.js', array('fp_main', 'fp_extensions', 'fp_fading'), '', true );
 		wp_enqueue_script('main_js', get_template_directory_uri() . '/scripts/main.js', array('jquery'), '', true );
 	}
 

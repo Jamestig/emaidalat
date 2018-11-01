@@ -4,6 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Copyright (c) 2018 Timothy Ringuet">
+	<meta name="description" content="Website for Emai Italian Restaurant & Gardens in Dalat." />
+	<meta name="keywords" content="emai, dalat, italian, restaurant, garden, homestay, cafe" />
 	<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(); ?></title>
 
 	<?php wp_head(); ?>

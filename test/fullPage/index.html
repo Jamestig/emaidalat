@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Active Slide - fullPage.js</title>
+	<meta name="author" content="Matthew Howell" />
+	<meta name="description" content="fullPage continuous scrolling demo." />
+	<meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+	<!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+
+	<ul id="menu">
+		<li data-menuanchor="homestay" class="active hidden"><a href="#homestay">First slide</a></li>
+		<li data-menuanchor="breakfast" class="hidden"><a href="#breakfast">First slide</a></li>
+		<li data-menuanchor="room-ivy"><a href="#room-ivy">First slide</a></li>
+		<li data-menuanchor="room-clara"><a href="#room-clara">Second slide</a></li>
+		<li data-menuanchor="room-may"><a href="#room-may">Third slide</a></li>
+		<li data-menuanchor="room-lila"><a href="#room-lila">Fourth slide</a></li>
+		<li data-menuanchor="room-jasmine"><a href="#room-jasmine">Fifth slide</a></li>
+		<a id="moveSectionUp" href="#">moveSectionUp</a>
+		<a id="moveSectionDown" href="#">moveSectionDown</a>
+	</ul>
+
+	<div id="fullpage">
+
+		<section class="fp-section" data-anchor="homestay">
+			<div class="side-content">
+				<h1>Homestay</h1>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos distinctio quod aut neque voluptatibus deserunt
+					esse reiciendis quidem fuga aliquam! Explicabo quisquam voluptas ad. A est dicta sapiente in facilis?</p>
+			</div>
+			<div class="fixed-image" data-anchor="breakfast">
+				<figure><img src="img/bar_1920_01.jpg" alt=""></figure>
+			</div>
+		</section>
+
+		<section class="fp-section">
+			<div class="side-content">
+				<h1>Breakfast</h1>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos distinctio quod aut neque voluptatibus deserunt
+					esse reiciendis quidem fuga aliquam! Explicabo quisquam voluptas ad. A est dicta sapiente in facilis?</p>
+			</div>
+			<div class="fixed-image">
+				<figure><img src="img/flower_1920_01.jpg" alt=""></figure>
+			</div>
+		</section>
+
+		<section class="fp-section" data-anchor="room-ivy">
+			<div class="fp-slidesContainer">
+				<div class="content">
+					<h1>Ivy</h1>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos distinctio quod aut neque voluptatibus deserunt
+						esse reiciendis quidem fuga aliquam! Explicabo quisquam voluptas ad. A est dicta sapiente in facilis?</p>
+				</div>
+				<div class="fp-slide">
+					<div class="fixed-image">
+						<figure><img src="img/bar_1920_01.jpg" alt=""></figure>
+					</div>
+				</div>
+				<div class="fp-slide">
+					<div class="fixed-image">
+						<figure><img src="img/flower_1920_01.jpg" alt=""></figure>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="fp-section" data-anchor="room-clara">
+			<div class="fp-slidesContainer">
+				<div class="content">
+					<h1>Clara</h1>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos distinctio quod aut neque voluptatibus deserunt
+						esse reiciendis quidem fuga aliquam! Explicabo quisquam voluptas ad. A est dicta sapiente in facilis?</p>
+				</div>
+				<div class="fp-slide">
+					<div class="fixed-image">
+						<figure><img src="img/bar_1920_01.jpg" alt=""></figure>
+					</div>
+				</div>
+				<div class="fp-slide">
+					<div class="fixed-image">
+						<figure><img src="img/flower_1920_01.jpg" alt=""></figure>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section" id="section2">
+			<div class="fp-slidesContainer">
+				<div class="content">
+					<h1>Section 2</h1>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos distinctio quod aut neque voluptatibus deserunt
+						esse reiciendis quidem fuga aliquam! Explicabo quisquam voluptas ad. A est dicta sapiente in facilis?</p>
+				</div>
+				<div class="slide fp-slide">
+					<div class="fixed-image">
+						<figure><img src="img/bar_1920_01.jpg" alt=""></figure>
+					</div>
+				</div>
+				<div class="slide fp-slide">
+					<div class="fixed-image">
+						<figure><img src="img/flower_1920_01.jpg" alt=""></figure>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section" id="section3">
+			<h1>Section 4</h1>
+		</section>
+		<section class="section" id="section4">
+			<h1>Section 5</h1>
+		</section>
+	</div>
+
+
+	<script type="text/javascript" src="js/fullpage.fadingEffect.min.js"></script>
+	<script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
+	<script type="text/javascript">
+		function initialization() {
+			var myFullpage = new fullpage('#fullpage', {
+				fadingEffect: false,
+				licenseKey: 'A3290806-C2474DD7-B7A3D34F-92B6E4CD',
+				fadingEffectKey: 'ZW1haWRhbGF0LmNvbV9LQ2JabUZrYVc1blJXWm1aV04wcGp2',
+				anchors: ['homestay', 'breakfast', 'room-ivy', 'room-clara', 'room-may', 'room-lila', 'room-jasmine'],
+				menu: '#menu',
+				lazyLoad: true,
+
+				onLeave: function (origin, destination, direction) {
+					var leavingSection = this;
+
+					//after leaving section 2
+					if (origin.index == 1 && direction == 'down') {
+						alert("Going to section 3!");
+					} else if (origin.index == 1 && direction == 'up') {
+						alert("Going to section 1!");
+					}
+				}
+			});
+		}
+
+		//fullPage.js initialization
+		initialization();
+		fullpage_api.setScrollingSpeed(1500);
+		fullpage_api.getActiveSection();
+
+		document.querySelector('#moveSectionUp').addEventListener('click', function (e) {
+			e.preventDefault();
+			fullpage_api.moveSectionUp();
+		});
+
+		document.querySelector('#moveSectionDown').addEventListener('click', function (e) {
+			e.preventDefault();
+			fullpage_api.moveSectionDown();
+		});
+	</script>
+
+</body>
+
+</html>
