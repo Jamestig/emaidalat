@@ -5,22 +5,22 @@ function initialization() {
 		fadingEffectKey: 'ZW1haWRhbGF0LmNvbV9LQ2JabUZrYVc1blJXWm1aV04wcGp2',
 		anchors: ['homestay', 'breakfast', 'room-ivy', 'room-clara', 'room-may', 'room-lila', 'room-jasmine'],
 		menu: '#menu',
-		lazyLoad: true
+		lazyLoad: true,
+		controlArrows: true
 	});
 }
 
 //fullPage.js initialization
 initialization();
-/*
-fullpage_api.setScrollingSpeed(1500);
 
-document.querySelector('#moveSectionUp').addEventListener('click', function (e) {
-	e.preventDefault();
-	fullpage_api.moveSectionUp();
-});
+fullpage_api.setScrollingSpeed(1500);
 
 document.querySelector('#moveSectionDown').addEventListener('click', function (e) {
 	e.preventDefault();
 	fullpage_api.moveSectionDown();
 });
-*/
+
+document.querySelector('#moveSectionUp').addEventListener('click', function (e) {
+	e.preventDefault();
+	fullpage_api.moveSectionUp();
+});

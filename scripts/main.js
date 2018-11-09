@@ -170,19 +170,50 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		}; // End accordion function
 		openAccordion();
-		// Consider using switch statement
+
+		if (pageName() === 'rooms') {
+			function initialization() {
+				var myFullpage = new fullpage('#fullpage', {
+					fadingEffect: true,
+					licenseKey: 'A3290806-C2474DD7-B7A3D34F-92B6E4CD',
+					fadingEffectKey: 'ZW1haWRhbGF0LmNvbV9LQ2JabUZrYVc1blJXWm1aV04wcGp2',
+					anchors: ['bnb-intro', 'bnb-breakfast', 'rooms-ivy', 'rooms-clara', 'rooms-may', 'rooms-lila', 'rooms-jasmine'],
+					//menu: '#menu',
+					lazyLoad: true,
+					controlArrows: true,
+					slidesNavigation: true
+				});
+			}
+
+			//fullPage.js initialization
+			initialization();
+
+			fullpage_api.setScrollingSpeed(1500);
+
+			document.querySelector('#moveSectionDown').addEventListener('click', function (e) {
+				e.preventDefault();
+				fullpage_api.moveSectionDown();
+			});
+
+			document.querySelector('#moveSectionUp').addEventListener('click', function (e) {
+				e.preventDefault();
+				fullpage_api.moveSectionUp();
+			});
+
+			console.log(fullpage_api.getActiveSection());
+		}
 
 		/*
 		    jQuery(window).resize(function() {
 		      jQuery('html,body').scrollTop(divs.eq(div).offset().top);
-		    });
-		*/
+				});
+				
+				
 		// Smooth scrolling menu links
 		var scrollLink = jQuery('.activePage').siblings('ul').find('a');
 
 		scrollLink.click(function (e) {
 			if (pageName() === 'home' || pageName() === 'rooms') {
-				e.preventDefault();
 				jQuery('body,html').animate({
 					scrollTop: jQuery(this.hash).offset().top
 				}, 1000);
@@ -220,8 +251,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 
 		jQuery(bookButtons).hide();
-		jQuery('.flex-container-room').hide();
-		jQuery('.room-button-container').hide();
+		//jQuery('.flex-container-room').hide();
+		//jQuery('.room-button-container').hide();
 
 		jQuery('#rooms-ivy .flex-container-room').click(function () {});
 		jQuery('#rooms-clara .flex-container-room').click(function () {});
@@ -326,8 +357,9 @@ document.addEventListener('DOMContentLoaded', function () {
 				jQuery('.room-button-container').fadeOut();
 				jQuery('.flex-container-room').fadeOut();
 			}
-		}); // End scroll function
 
+		}); // End scroll function
+*/
 	} // End match query
 
 }); // End document load function

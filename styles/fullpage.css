@@ -121,7 +121,7 @@ html.fp-enabled,
     margin: 0 auto !important;
 }
 .fp-slidesNav.fp-bottom {
-    bottom: 17px;
+    bottom: 22vh;
 }
 .fp-slidesNav.fp-top {
     top: 17px;
@@ -129,7 +129,8 @@ html.fp-enabled,
 #fp-nav ul,
 .fp-slidesNav ul {
   margin: 0;
-  padding: 0;
+	padding: 0;
+	text-align: center;
 }
 #fp-nav ul li,
 .fp-slidesNav ul li {
@@ -169,7 +170,7 @@ html.fp-enabled,
     height: 4px;
     width: 4px;
     border: 0;
-    background: #333;
+    background: white;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;

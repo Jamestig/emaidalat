@@ -1214,7 +1214,7 @@ html {
 	BNB PAGE
 ////////////////////*/
 
-#main-bnb .double-header h3 {
+.main-bnb .double-header h3 {
 	font-size: 2em;
 }
 
@@ -1246,7 +1246,7 @@ html {
 }
 
 @media screen and (max-width: 1279px) {
-	#main-bnb section {
+	.main-bnb section {
 		margin: 10% 0;
 	}
 
@@ -1290,15 +1290,15 @@ html {
 	max-width: 100%;
 }
 
-#rooms-ivy .flex-container-room {
+.rooms-ivy .flex-container-room {
 	margin-top: -80px;
 }
 
-#rooms-ivy .room-logo img {
+.rooms-ivy .room-logo img {
 	max-height: 160px;
 }
 
-#room-jasmine .room-logo img {
+.room-jasmine .room-logo img {
 	max-width: 280px;
 }
 
@@ -1367,7 +1367,7 @@ html {
 
 @media screen and (max-width: 1279px) and (orientation: landscape) {
 
-	#main-bnb section:first-of-type {
+	.main-bnb section:first-of-type {
 		margin: 0;
 	}
 }
@@ -1376,16 +1376,18 @@ html {
 
 @media screen and (min-width: 1280px) {
 
-	#main-bnb > section {
-		height: 100vh;
-	}
-
-	#main-bnb .ribbon-container {
+	.main-bnb .ribbon-container {
 		height: 90vh;
 		margin: 5vh;
 		text-align: left;
 	}
 
+	.main-bnb .fixed-image {
+		left: 0;
+	}
+	.main-bnb .fixed-image img {
+		width: 100%;
+	}
 	#bnb-intro,
 	#bnb-breakfast {
 		display: flex;
@@ -1405,10 +1407,12 @@ html {
 		justify-content: space-around;
 		height: 20vh;
 		margin: 0;
-		margin-left: 12vw;
-		padding: 0;
+		padding-left: 12vw;
 		border: none;
-		background: none;
+		background: rgba(0, 0, 0, .5);
+		left: 0;
+		right: 0;
+		z-index: 10;
 	}
 
 	.flex-container-room p {
@@ -1418,7 +1422,7 @@ html {
 	.link-button-airbnb {
 		position: fixed;
 		right: 50px;
-		bottom: 25vh;
+		bottom: 20vh;
 	}
 
 	.link-button-airbnb a {
@@ -1437,9 +1441,9 @@ html {
 		justify-content: center;
 		position: fixed;
 		bottom: 0;
-		background: rgba(0, 0, 0, .5);
 		height: 20vh;
 		width: 100%;
+		z-index: 50;
 	}
 
 	.room-button {
@@ -1450,6 +1454,12 @@ html {
 		margin-left: 3%;
 		white-space: nowrap;
 		z-index: 1000;
+		transition: filter .2s ease-in-out;
+	}
+
+	.room-button:hover {
+		filter: brightness(.8);
+		cursor: pointer;
 	}
 
 	.previousRoom {
@@ -1518,18 +1528,18 @@ html {
 
 /* BNB page image slider */
 
-#main-bnb .fullscreen-container {
+.main-bnb .fullscreen-container {
 	left: 20vw;
 	right: 0;
 }
 
-#main-bnb .fullscreen-button-container {
+.main-bnb .fullscreen-button-container {
 	width: 100%;
 }
 
-#main-bnb #previousImage {}
+.main-bnb #previousImage {}
 
-#main-bnb #nextImage {}
+.main-bnb #nextImage {}
 
 .room-slide {
 	display: none;

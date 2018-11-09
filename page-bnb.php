@@ -6,16 +6,20 @@
 
 <?php get_header(); ?>
 
-	<main id="main-bnb">
-		<!--
-		<div class="fullscreen-container">
-			<div class="fullscreen-button-container">
-				<button class="fullscreen-button" id="previousImage">L</button>
-				<button class="fullscreen-button" id="nextImage">R</button>
-			</div>
+	<main id="fullpage" class="main-bnb">
+
+		<div class="room-button-container">
+			<button id="moveSectionUp" class="previousRoom room-button">
+				<span></span>
+				<span>Previous<br>Room</span>
+			</button>
+			<button id="moveSectionDown" class="nextRoom room-button">
+				<span class="down-arrow"></span>
+				<span>Next<br>Room</span>
+			</button>
 		</div>
-	-->
-		<section class="pageSection scrollSection" id="bnb-intro">
+
+		<section class="fp-section pageSection" data-anchor="bnb-intro">
 			<div class="fixed-image gradient-down">
 				<figure>
 					<picture>
@@ -37,7 +41,7 @@
 
 					<p>Comprising an intimate 5-room bed & breakfast, a contemporary Italian restaurant and café, this little abode is brimming with cosiness, good food, and soothing music, always ready to treat you to a beautiful time no matter the occasion.</p>
 
-					<button class="scrollDown">
+					<button id="moveSectionDown" class="scrollDown">
 						<span></span>
 						<span>Scroll down</span>
 					</button>
@@ -45,7 +49,7 @@
 			</div>
 		</section>
 
-		<section class="pageSection scrollSection" id="bnb-breakfast">
+		<section class="fp-section pageSection" data-anchor="bnb-breakfast">
 			<div class="fixed-image gradient-down">
 				<figure>
 					<picture>
@@ -67,7 +71,7 @@
 
 					<p>A wonderful homemade European breakfast is included, with fresh juice and the best coffee you can find to start your day with.</p>
 
-					<button class="scrollDown">
+					<button id="moveSectionDown" class="scrollDown">
 						<span></span>
 						<span>Scroll down</span>
 					</button>
@@ -75,27 +79,37 @@
 			</div>
 		</section>
 
-		<div class="room-button-container">
-			<button class="previousRoom room-button">
-				<span></span>
-				<span>Previous<br>Room</span>
-			</button>
-			<button class="nextRoom room-button">
-				<span class="down-arrow"></span>
-				<span>Next<br>Room</span>
-			</button>
-		</div>
+		<section class="fp-section pageSection section-room rooms-ivy" data-anchor="rooms-ivy">
+			<div class="fp-slides">
+				<div class="fp-slidesContainer">
 
-		<section class="pageSection scrollSection section-room" id="rooms-ivy">
-			<div class="fixed-image gradient-down">
-				<figure>
-					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/room_ivy_4k_01.jpg" media="(min-width: 1921px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/room_ivy_1920_01.jpg" media="(min-width: 1025px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_ivy_1024_01.jpg" media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/room_ivy_480_01.jpg" alt="émai homestay room one: Ivy">
-					</picture>
-				</figure>
+					<div class="fp-slide">
+						<div class="fixed-image gradient-down">
+							<figure>
+								<picture>
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/ivy_4k_01.jpg" media="(min-width: 1921px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/ivy_1920_01.jpg" media="(min-width: 1025px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_ivy_1024_01.jpg" media="(min-width: 600px)">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/room_ivy_480_01.jpg" alt="émai homestay room one: Ivy">
+								</picture>
+							</figure>
+						</div>
+					</div>
+
+					<div class="fp-slide">
+						<div class="fixed-image gradient-down">
+							<figure>
+								<picture>
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/ivy_4k_02.jpg" media="(min-width: 1921px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/ivy_1920_02.jpg" media="(min-width: 1025px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_clara_1024_01.jpg" media="(min-width: 600px)">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/room_clara_480_01.jpg" alt="émai homestay room two: Clara">
+								</picture>
+							</figure>
+						</div>
+					</div>
+
+				</div>
 			</div>
 
 			<div class="center flex-container-room">
@@ -120,16 +134,37 @@
 			</div>
 		</section>
 
-		<section class="pageSection scrollSection section-room" id="rooms-clara">
-			<div class="fixed-image gradient-down">
-				<figure>
-					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/room_clara_4k_01.jpg" media="(min-width: 1921px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/room_clara_1920_01.jpg" media="(min-width: 1025px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_clara_1024_01.jpg" media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/room_clara_480_01.jpg" alt="émai homestay room two: Clara">
-					</picture>
-				</figure>
+		<section class="fp-section pageSection section-room rooms-clara" data-anchor="rooms-clara">
+			<div class="fp-slides">
+				<div class="fp-slidesContainer">
+
+					<div class="fp-slide">
+						<div class="fixed-image gradient-down">
+							<figure>
+							<picture>
+								<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/room_clara_4k_01.jpg" media="(min-width: 1921px)">
+								<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/room_clara_1920_01.jpg" media="(min-width: 1025px)">
+								<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_clara_1024_01.jpg" media="(min-width: 600px)">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/room_clara_480_01.jpg" alt="émai homestay room two: Clara">
+							</picture>
+							</figure>
+						</div>
+					</div>
+
+					<div class="fp-slide">
+						<div class="fixed-image gradient-down">
+							<figure>
+								<picture>
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/room_clara_4k_01.jpg" media="(min-width: 1921px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/room_clara_1920_01.jpg" media="(min-width: 1025px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_clara_1024_01.jpg" media="(min-width: 600px)">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/room_clara_480_01.jpg" alt="émai homestay room two: Clara">
+								</picture>
+							</figure>
+						</div>
+					</div>
+
+				</div>
 			</div>
 
 			<div class="center flex-container-room">
@@ -153,16 +188,37 @@
 			</div>
 		</section>
 
-		<section class="pageSection scrollSection section-room" id="rooms-may">
-			<div class="fixed-image gradient-down">
-				<figure>
-					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/room_may_4k_01.jpg" media="(min-width: 1921px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/room_may_1920_01.jpg" media="(min-width: 1025px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_may_1024_01.jpg" media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/room_may_480_01.jpg" alt="émai homestay room three: May">
-					</picture>
-				</figure>
+		<section class="fp-section pageSection section-room rooms-may" data-anchor="rooms-may">
+			<div class="fp-slides">
+				<div class="fp-slidesContainer">
+
+					<div class="fp-slide">
+						<div class="fixed-image gradient-down">
+							<figure>
+								<picture>
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/room_may_4k_01.jpg" media="(min-width: 1921px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/room_may_1920_01.jpg" media="(min-width: 1025px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_may_1024_01.jpg" media="(min-width: 600px)">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/room_may_480_01.jpg" alt="émai homestay room three: May">
+								</picture>
+							</figure>
+						</div>
+					</div>
+
+					<div class="fp-slide">
+						<div class="fixed-image gradient-down">
+							<figure>
+								<picture>
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/room_clara_4k_01.jpg" media="(min-width: 1921px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/room_clara_1920_01.jpg" media="(min-width: 1025px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_clara_1024_01.jpg" media="(min-width: 600px)">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/room_clara_480_01.jpg" alt="émai homestay room two: Clara">
+								</picture>
+							</figure>
+						</div>
+					</div>
+
+				</div>
 			</div>
 
 			<div class="center flex-container-room">
@@ -187,16 +243,37 @@
 			</div>
 		</section>
 
-		<section class="pageSection scrollSection section-room" id="rooms-lila">
-			<div class="fixed-image gradient-down">
-				<figure>
-					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/room_lila_4k_01.jpg" media="(min-width: 1921px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/lila_1920_01.jpg" media="(min-width: 1025px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/lila_800_01.jpg" media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/lila_480_01.jpg" alt="émai homestay room four: Lila">
-					</picture>
-				</figure>
+		<section class="fp-section pageSection section-room rooms-lila" data-anchor="rooms-lila">
+			<div class="fp-slides">
+				<div class="fp-slidesContainer">
+
+					<div class="fp-slide">
+						<div class="fixed-image gradient-down">
+							<figure>
+								<picture>
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/lila_4k_01.jpg" media="(min-width: 1921px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/lila_1920_01.jpg" media="(min-width: 1025px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/lila_800_01.jpg" media="(min-width: 600px)">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/lila_480_01.jpg" alt="émai homestay room four: Lila">
+								</picture>
+							</figure>
+						</div>
+					</div>
+
+					<div class="fp-slide">
+						<div class="fixed-image gradient-down">
+							<figure>
+								<picture>
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/lila_4k_02.jpg" media="(min-width: 1921px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/lila_1920_02.jpg" media="(min-width: 1025px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_clara_1024_01.jpg" media="(min-width: 600px)">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/room_clara_480_01.jpg" alt="émai homestay room two: Clara">
+								</picture>
+							</figure>
+						</div>
+					</div>
+
+				</div>
 			</div>
 
 			<div class="center flex-container-room">
@@ -221,16 +298,76 @@
 			</div>
 		</section>
 
-		<section class="pageSection scrollSection section-room" id="rooms-jasmine">
-			<div class="fixed-image gradient-down">
-				<figure>
-					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/room_jasmine_4k_03.jpg" media="(min-width: 1921px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/room_jasmine_1920_01.jpg" media="(min-width: 1025px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_jasmine_1024_01.jpg" media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/jasmine_480_03.jpg" alt="émai homestay room five: Jasmine">
-					</picture>
-				</figure>
+		<section class="fp-section pageSection section-room rooms-jasmine" data-anchor="rooms-jasmine">
+			<div class="fp-slides">
+				<div class="fp-slidesContainer">
+
+					<div class="fp-slide">
+						<div class="fixed-image gradient-down">
+							<figure>
+							<picture>
+								<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/jasmine_4k_01.jpg" media="(min-width: 1921px)">
+								<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/jasmine_1920_01.jpg" media="(min-width: 1025px)">
+								<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_jasmine_1024_01.jpg" media="(min-width: 600px)">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/jasmine_480_03.jpg" alt="émai homestay room five: Jasmine">
+							</picture>
+							</figure>
+						</div>
+					</div>
+
+					<div class="fp-slide">
+						<div class="fixed-image gradient-down">
+							<figure>
+								<picture>
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/jasmine_4k_02.jpg" media="(min-width: 1921px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/jasmine_1920_02.jpg" media="(min-width: 1025px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_jasmine_1024_01.jpg" media="(min-width: 600px)">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/jasmine_480_03.jpg" alt="émai homestay room five: Jasmine">
+								</picture>
+							</figure>
+						</div>
+					</div>
+
+					<div class="fp-slide">
+						<div class="fixed-image gradient-down">
+							<figure>
+								<picture>
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/jasmine_4k_03.jpg" media="(min-width: 1921px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/jasmine_1920_03.jpg" media="(min-width: 1025px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_jasmine_1024_01.jpg" media="(min-width: 600px)">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/jasmine_480_03.jpg" alt="émai homestay room five: Jasmine">
+								</picture>
+							</figure>
+						</div>
+					</div>
+
+					<div class="fp-slide">
+						<div class="fixed-image gradient-down">
+							<figure>
+								<picture>
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/jasmine_4k_04.jpg" media="(min-width: 1921px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/jasmine_1920_04.jpg" media="(min-width: 1025px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_jasmine_1024_01.jpg" media="(min-width: 600px)">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/jasmine_480_03.jpg" alt="émai homestay room five: Jasmine">
+								</picture>
+							</figure>
+						</div>
+					</div>
+
+					<div class="fp-slide">
+						<div class="fixed-image gradient-down">
+							<figure>
+								<picture>
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/jasmine_4k_05.jpg" media="(min-width: 1921px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/jasmine_1920_05.jpg" media="(min-width: 1025px)">
+									<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/room_jasmine_1024_01.jpg" media="(min-width: 600px)">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/jasmine_480_03.jpg" alt="émai homestay room five: Jasmine">
+								</picture>
+							</figure>
+						</div>
+					</div>
+
+				</div>
 			</div>
 
 			<div class="center flex-container-room">
