@@ -6,18 +6,9 @@
 
 <?php get_header(); ?>
 
-<main id="main-home">
-	<!--
-		<div class="fullscreen-container">
-			<div class="fullscreen-button-container">
-				<button class="fullscreen-button" id="fullscreenIcon">[ ]</button>
-				<button class="fullscreen-button" id="previousImage">L</button>
-				<button class="fullscreen-button" id="nextImage">R</button>
-			</div>
-		</div>
-	-->
+<main id="fullpage" class="main-home">
 
-	<section class="scrollSection pageSection" id="home-restaurant">
+	<section class="fp-section pageSection home-cuisine" data-anchor="home-cuisine">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
@@ -43,7 +34,7 @@
 					<a href="https://emaidalat.com/restaurant-menu/">View menu</a>
 				</div>
 
-				<button class="scrollDown">
+				<button class="scrollDown moveSectionDown">
 					<span></span>
 					<span>Scroll down</span>
 				</button>
@@ -51,7 +42,7 @@
 		</div>
 	</section>
 
-	<section class="pageSection scrollSection" id="home-cafe">
+	<section class="fp-section pageSection home-cafe" data-anchor="home-cafe">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
@@ -76,7 +67,7 @@
 					<a href="https://emaidalat.com/drinks-desserts-menu/">View cafe menu</a>
 				</div>
 
-				<button class="scrollDown">
+				<button class="scrollDown moveSectionDown">
 					<span></span>
 					<span>Scroll down</span>
 				</button>
@@ -84,7 +75,7 @@
 		</div>
 	</section>
 
-	<section class="pageSection scrollSection" id="home-bnb">
+	<section class="fp-section pageSection home-bnb" data-anchor="home-bnb">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
@@ -110,7 +101,7 @@
 					<a href="https://emaidalat.com/our-rooms/">View<span class="hidden-mobile"> or book</span> rooms</a>
 				</div>
 
-				<button class="scrollDown">
+				<button class="scrollDown moveSectionDown">
 					<span></span>
 					<span>Scroll down</span>
 				</button>
@@ -118,7 +109,7 @@
 		</div>
 	</section>
 
-	<section class="pageSection scrollSection" id="home-atmosphere">
+	<section class="fp-section pageSection home-atmosphere" data-anchor="home-atmosphere">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
@@ -138,12 +129,8 @@
 
 				<p>Nestled in Vietnam's most romantic city, émai is a dream born out of our love for nature, beauty, and good food, all housed together in a rustic little garden home.</p>
 				<p>We hope you'll find deep contentment in our selection of jazz and classical music, garden flowers and candles, all handpicked to give you a poetic authentically European atmosphere of warmth, togetherness, and gentle beauty</p>
-<!--
-				<div class="link-button">
-					<a href="">View Gallery</a>
-				</div>
--->
-				<button class="scrollDown">
+
+				<button class="scrollDown moveSectionDown">
 					<span></span>
 					<span>Scroll down</span>
 				</button>
@@ -151,7 +138,7 @@
 		</div>
 	</section>
 
-	<section class="pageSection scrollSection" id="home-booking">
+	<section class="fp-section pageSection home-booking" data-anchor="home-booking">
 				<div class="content-white vertical-center content fixed-image">
 					<div>
 						<p>Amidst the sublimity, let émai be your nook for comfort and beauty, delighting your senses and palate in the most tender of ways.</p>
@@ -168,6 +155,10 @@
 					</div>
 				</div>
 	</section>
+
 </main>
+
+<div class="home-background">
+	</div>
 
 <?php get_footer(); ?>

@@ -172,16 +172,29 @@ document.addEventListener('DOMContentLoaded', function () {
 		openAccordion();
 
 		if (pageName() === 'rooms') {
+
 			function initialization() {
 				var myFullpage = new fullpage('#fullpage', {
 					fadingEffect: true,
 					licenseKey: 'A3290806-C2474DD7-B7A3D34F-92B6E4CD',
 					fadingEffectKey: 'ZW1haWRhbGF0LmNvbV9LQ2JabUZrYVc1blJXWm1aV04wcGp2',
-					anchors: ['bnb-intro', 'bnb-breakfast', 'rooms-ivy', 'rooms-clara', 'rooms-may', 'rooms-lila', 'rooms-jasmine'],
-					//menu: '#menu',
+					anchors: ['bnb-intro', 'rooms-ivy', 'rooms-clara', 'rooms-may', 'rooms-lila', 'rooms-jasmine'],
 					lazyLoad: true,
 					controlArrows: true,
-					slidesNavigation: true
+					slidesNavigation: true,
+
+					onLeave: function(origin, destination, direction){
+						var leavingSection = this;
+				
+						//after leaving section 2
+						if(origin.index == 0 && direction =='down'){
+							jQuery('.room-button-container').css('opacity', 1);
+						}
+				
+						else if(origin.index == 1 && direction == 'up'){
+							jQuery('.room-button-container').css('opacity', 0);
+						}
+					}
 				});
 			}
 
@@ -190,18 +203,51 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			fullpage_api.setScrollingSpeed(1500);
 
-			document.querySelector('#moveSectionDown').addEventListener('click', function (e) {
-				e.preventDefault();
-				fullpage_api.moveSectionDown();
-			});
-
 			document.querySelector('#moveSectionUp').addEventListener('click', function (e) {
 				e.preventDefault();
 				fullpage_api.moveSectionUp();
 			});
-
-			console.log(fullpage_api.getActiveSection());
 		}
+
+		if (pageName() === 'home') {
+			function initialization() {
+				var myFullpage = new fullpage('#fullpage', {
+					fadingEffect: false,
+					licenseKey: 'A3290806-C2474DD7-B7A3D34F-92B6E4CD',
+					fadingEffectKey: 'ZW1haWRhbGF0LmNvbV9LQ2JabUZrYVc1blJXWm1aV04wcGp2',
+					anchors: ['home-cuisine', 'home-cafe', 'home-bnb', 'home-atmosphere', 'home-booking'],
+					lazyLoad: true,
+					
+					onLeave: function(origin, destination, direction){
+						var leavingSection = this;
+				
+						//after leaving section 2
+						if(destination.index == 0){
+							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/duck_1920_01.jpg)');
+						} else if (destination.index == 1){
+							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/brioche_1920.jpg)');
+						} else if(destination.index == 2){
+							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/lila_1920_01.jpg)');
+						} else if(destination.index == 3){
+							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/table_1920_01.jpg)');
+						} else if(destination.index == 4){
+							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/flower_1920_01.jpg)');
+						}
+					}
+				});
+			}
+
+			//fullPage.js initialization
+			initialization();
+
+			fullpage_api.setScrollingSpeed(1500);
+		}
+
+		jQuery('.moveSectionDown').each(function () {
+			jQuery(this).on('click', function () {
+				fullpage_api.moveSectionDown();
+			});
+		});
 
 		/*
 		    jQuery(window).resize(function() {

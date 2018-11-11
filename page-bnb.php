@@ -13,7 +13,7 @@
 				<span></span>
 				<span>Previous<br>Room</span>
 			</button>
-			<button id="moveSectionDown" class="nextRoom room-button">
+			<button class="nextRoom room-button moveSectionDown">
 				<span class="down-arrow"></span>
 				<span>Next<br>Room</span>
 			</button>
@@ -41,37 +41,7 @@
 
 					<p>Comprising an intimate 5-room bed & breakfast, a contemporary Italian restaurant and café, this little abode is brimming with cosiness, good food, and soothing music, always ready to treat you to a beautiful time no matter the occasion.</p>
 
-					<button id="moveSectionDown" class="scrollDown">
-						<span></span>
-						<span>Scroll down</span>
-					</button>
-				</div>
-			</div>
-		</section>
-
-		<section class="fp-section pageSection" data-anchor="bnb-breakfast">
-			<div class="fixed-image gradient-down">
-				<figure>
-					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/breakfast_4k_01.jpg" media="(min-width: 1921px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/breakfast_1920_01.jpg" media="(min-width: 1025px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/breakfast_1024_01.jpg" media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/breakfast_480_01.jpg" alt="Breakfast table set in the émai garden">
-					</picture>
-				</figure>
-			</div>
-
-			<div class="ribbon-container">
-				<div class="content">
-					<header class="double-header">
-						<h2 class="header-full">Our Rooms</h2>
-						<hr class="hr-left">
-						<h3>Free homemade<br>European Breakfast</h3>
-					</header>
-
-					<p>A wonderful homemade European breakfast is included, with fresh juice and the best coffee you can find to start your day with.</p>
-
-					<button id="moveSectionDown" class="scrollDown">
+					<button class="scrollDown moveSectionDown">
 						<span></span>
 						<span>Scroll down</span>
 					</button>
