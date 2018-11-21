@@ -29,10 +29,10 @@
 				</p>
 			</header>
 
-			<section id="menu-soups" class="pageSection section-dish">
+			<section id="menu-soups" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920_01.jpg" media="(min-width: 1600px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
@@ -70,7 +70,7 @@
 				</div>
 			</section>
 
-			<section id="menu-salads" class="pageSection section-dish">
+			<section id="menu-salads" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/salad_pomelo_1920.jpg" media="(min-width: 1600px)">
@@ -104,7 +104,7 @@
 				</div>
 			</section>
 
-			<section id="menu-appetisers" class="pageSection section-dish">
+			<section id="menu-appetisers" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/food_ravioli_1600.jpg" media="(min-width: 1600px)">
@@ -143,7 +143,7 @@
 				</div>
 			</section>
 
-			<section id="menu-pasta" class="pageSection section-dish">
+			<section id="menu-pasta" class="menuSection section-dish">
 				<figure id="" class="first-image fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/pasta_tomato_1920.jpg" media="(min-width: 1600px)">
@@ -195,7 +195,7 @@
 				</div>
 			</section>
 
-			<section id="menu-pizza" class="pageSection section-dish">
+			<section id="menu-pizza" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/pizza_margherita_1920.jpg" media="(min-width: 1600px)">
@@ -235,10 +235,10 @@
 				</div>
 			</section>
 
-			<section id="menu-mains" class="pageSection section-dish">
+			<section id="menu-mains" class="menuSection section-dish">
 				<figure id="" class="first-image fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920_01.jpg" media="(min-width: 1600px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>

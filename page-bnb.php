@@ -120,7 +120,7 @@
 							</figure>
 						</div>
 					</div>
-
+<!--
 					<div class="fp-slide">
 						<div class="fixed-image gradient-down">
 							<figure>
@@ -133,7 +133,7 @@
 							</figure>
 						</div>
 					</div>
-
+-->
 				</div>
 			</div>
 
@@ -174,7 +174,7 @@
 							</figure>
 						</div>
 					</div>
-
+<!--
 					<div class="fp-slide">
 						<div class="fixed-image gradient-down">
 							<figure>
@@ -187,7 +187,7 @@
 							</figure>
 						</div>
 					</div>
-
+-->
 				</div>
 			</div>
 

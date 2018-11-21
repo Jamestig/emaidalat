@@ -93,12 +93,37 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 
-	// LANGUAGE DETECTION
+	// Language Detection
 	var currentLang = jQuery('html').attr('lang');
 	if (currentLang === 'vi') {
 		jQuery('.accordion a, .double-header > h2').css('font-family', 'EB Garamond');
 		jQuery('.accordion a').css('font-size', '.9em');
 	}
+	// Contact Form
+
+	jQuery('.contact-form').hide();
+	jQuery('.closeButton').hide();
+
+	jQuery('#openContactForm').on('click', function () {
+		if (responseSize === 'small') {
+			jQuery('.contact-form').slideToggle();
+		} else {
+			jQuery('.contact-form').fadeIn();
+			jQuery('.closeButton').fadeIn();
+		}
+	});
+
+	jQuery('.closeButton').on('click', function () {
+		jQuery('.contact-form').fadeOut();
+		jQuery('.closeButton').fadeOut();
+	});
+
+	jQuery('input, textarea').focus(function (event) {
+		jQuery(event.target).css('background-color', 'white');
+		jQuery(event.target).focusout(function (event) {
+			jQuery(event.target).css('background-color', 'var(--background-dark)');
+		});
+	});
 
 	// FULLSCREEN FUNCTIONALITY
 
@@ -134,17 +159,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		var openAccordion = function () {
 
-			//var accordionHidden = jQuery('.accordionInner');
-			//var pageLinks = jQuery('.accordion > li > a');
-			//var menuLinks = jQuery('#inner-restaurant > li > a');
-			//var currentPage = jQuery(location).attr('href').split('/')[4];
-			//var prevLink = jQuery('.accordionInner').prev('a');
-			//var link_href = prevLink.attr('href');
-			//var openHeader = jQuery('a[href="' + currentPage + '"]');
-			// console.log('current href = ' + current_href);
-			// console.log('current page = ' + currentPage);
-			// console.log('link href = ' + link_href);
-
 			// Accordion open
 			if (pageName() === 'home') {
 				jQuery('.link-home > ul').show();
@@ -177,6 +191,75 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		}; // End accordion function
 		openAccordion();
+
+		// Home fullpage.js
+
+		if (pageName() === 'home') {
+
+			var homeLinks = jQuery('.link-home > ul > li');
+
+			jQuery('.home-booking .content').removeClass('content-white');
+			jQuery('.home-booking .link-button-light').addClass('link-button');
+			jQuery('.home-booking .link-button-light').removeClass('link-button-light');
+
+			function initialization() {
+				var myFullpage = new fullpage('#fullpage', {
+					fadingEffect: false,
+					licenseKey: 'A3290806-C2474DD7-B7A3D34F-92B6E4CD',
+					fadingEffectKey: 'ZW1haWRhbGF0LmNvbV9LQ2JabUZrYVc1blJXWm1aV04wcGp2',
+					anchors: ['home-cuisine', 'home-cafe', 'home-bnb', 'home-atmosphere', 'home-booking'],
+					lazyLoad: true,
+					verticalCentered: false,
+
+					onLeave: function (origin, destination, direction) {
+						var leavingSection = this;
+
+						// Highlight menu links and change backgrounds
+						if (destination.index == 0) {
+							jQuery('.home-background').css('background-image', 'url(https://emaidalat.com/wp-content/uploads/2018/11/duck_1920_01.jpg)');
+							jQuery(homeLinks[0]).addClass('activeSection');
+							jQuery(homeLinks).not(homeLinks[0]).removeClass('activeSection');
+						} else if (destination.index == 1) {
+							jQuery('.home-background').css('background-image', 'url(https://emaidalat.com/wp-content/uploads/2018/11/brioche_1920.jpg)');
+							jQuery(homeLinks).not(homeLinks[1]).removeClass('activeSection');
+							jQuery(homeLinks[1]).addClass('activeSection');
+						} else if (destination.index == 2) {
+							jQuery('.home-background').css('background-image', 'url(https://emaidalat.com/wp-content/uploads/2018/11/lila_1920_01.jpg)');
+							jQuery(homeLinks).not(homeLinks[2]).removeClass('activeSection');
+							jQuery(homeLinks[2]).addClass('activeSection');
+						} else if (destination.index == 3) {
+							jQuery('.home-background').css('background-image', 'url(https://emaidalat.com/wp-content/uploads/2018/11/table_1920_01.jpg)');
+							jQuery(homeLinks).not(homeLinks[3]).removeClass('activeSection');
+							jQuery(homeLinks[3]).addClass('activeSection');
+						} else if (destination.index == 4) {
+							jQuery('.home-background').css('background-image', 'url(https://emaidalat.com/wp-content/uploads/2018/11/flower_1920_01.jpg)');
+							jQuery(homeLinks).not(homeLinks[4]).removeClass('activeSection');
+							jQuery(homeLinks[4]).addClass('activeSection');
+						}
+					},
+					afterRender: function(){
+						var firstSection = fullpage_api.getActiveSection();
+						if (firstSection.index === 0) {
+							jQuery('.home-background').css('background-image', 'url(https://emaidalat.com/wp-content/uploads/2018/11/duck_1920_01.jpg)');
+							jQuery(homeLinks[0]).addClass('activeSection');
+						};
+					}
+				});
+			}
+
+			//fullPage.js initialization
+			initialization();
+
+			fullpage_api.setScrollingSpeed(1500);
+		}
+
+		jQuery('.moveSectionDown').each(function () {
+			jQuery(this).on('click', function () {
+				fullpage_api.moveSectionDown();
+			});
+		});
+
+		// BNB fullpage.js
 
 		if (pageName() === 'rooms') {
 
@@ -219,6 +302,18 @@ document.addEventListener('DOMContentLoaded', function () {
 							jQuery(bnbLinks).not(bnbLinks[4]).removeClass('activeSection');
 							jQuery(bnbLinks[4]).addClass('activeSection');
 						}
+
+						if (destination.index == 1) {
+							jQuery('#moveSectionUp').css('opacity', 0);
+						} else {
+							jQuery('#moveSectionUp').css('opacity', 1);
+						}
+						
+						if (destination.index == 5) {
+							jQuery('.moveSectionDown').css('opacity', 0);
+						} else {
+							jQuery('.moveSectionDown').css('opacity', 1);
+						}
 					}
 				});
 			}
@@ -234,64 +329,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			});
 		}
 
-		if (pageName() === 'home') {
-
-			var homeLinks = jQuery('.link-home > ul > li');
-			console.log(homeLinks);
-
-			jQuery('.home-booking .content').removeClass('content-white');
-			jQuery('.home-booking .link-button-light').addClass('link-button');
-			jQuery('.home-booking .link-button-light').removeClass('link-button-light');
-
-			function initialization() {
-				var myFullpage = new fullpage('#fullpage', {
-					fadingEffect: false,
-					licenseKey: 'A3290806-C2474DD7-B7A3D34F-92B6E4CD',
-					fadingEffectKey: 'ZW1haWRhbGF0LmNvbV9LQ2JabUZrYVc1blJXWm1aV04wcGp2',
-					anchors: ['home-cuisine', 'home-cafe', 'home-bnb', 'home-atmosphere', 'home-booking'],
-					lazyLoad: true,
-					verticalCentered: false,
-
-					onLeave: function (origin, destination, direction) {
-						var leavingSection = this;
-
-						// Highlight menu links
-						if (destination.index == 0) {
-							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/duck_1920_01.jpg)');
-							jQuery(homeLinks[0]).addClass('activeSection');
-							jQuery(homeLinks).not(homeLinks[0]).removeClass('activeSection');
-						} else if (destination.index == 1) {
-							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/brioche_1920.jpg)');
-							jQuery(homeLinks).not(homeLinks[1]).removeClass('activeSection');
-							jQuery(homeLinks[1]).addClass('activeSection');
-						} else if (destination.index == 2) {
-							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/lila_1920_01.jpg)');
-							jQuery(homeLinks).not(homeLinks[2]).removeClass('activeSection');
-							jQuery(homeLinks[2]).addClass('activeSection');
-						} else if (destination.index == 3) {
-							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/table_1920_01.jpg)');
-							jQuery(homeLinks).not(homeLinks[3]).removeClass('activeSection');
-							jQuery(homeLinks[3]).addClass('activeSection');
-						} else if (destination.index == 4) {
-							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/flower_1920_01.jpg)');
-							jQuery(homeLinks).not(homeLinks[4]).removeClass('activeSection');
-							jQuery(homeLinks[4]).addClass('activeSection');
-						}
-					}
-				});
-			}
-
-			//fullPage.js initialization
-			initialization();
-
-			fullpage_api.setScrollingSpeed(1500);
-		}
-
-		jQuery('.moveSectionDown').each(function () {
-			jQuery(this).on('click', function () {
-				fullpage_api.moveSectionDown();
-			});
-		});
+		// Menu page scrolling
 
 		if (pageName() === 'restaurant' || pageName() === 'drinks') {
 
@@ -300,15 +338,15 @@ document.addEventListener('DOMContentLoaded', function () {
 				console.log("element top " + elementTop);
 				var elementBottom = elementTop + jQuery(this).outerHeight();
 				console.log("element bottom " + elementBottom);
-			
+
 				var viewportTop = jQuery(window).scrollTop();
 				console.log("viewport top " + viewportTop);
 				var viewportBottom = viewportTop + jQuery(window).height() / 2.5;
 				console.log("viewport bottom " + viewportBottom);
-			
+
 				return elementBottom > viewportTop && elementTop < viewportBottom;
 			};
-			
+
 			jQuery(window).on('resize scroll', function () {
 				jQuery('.menuSection').each(function () {
 					var activeColor = jQuery(this).attr('id');
