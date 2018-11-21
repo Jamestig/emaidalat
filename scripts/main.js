@@ -93,6 +93,13 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 
+	// LANGUAGE DETECTION
+	var currentLang = jQuery('html').attr('lang');
+	if (currentLang === 'vi') {
+		jQuery('.accordion a, .double-header > h2').css('font-family', 'EB Garamond');
+		jQuery('.accordion a').css('font-size', '.9em');
+	}
+
 	// FULLSCREEN FUNCTIONALITY
 
 	if (window.matchMedia('(min-width: 1280px)').matches) {
@@ -110,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				return 'reservations';
 			} else if (window.location.href.indexOf("restaurant") > -1 || window.location.href.indexOf("hang") > -1) {
 				return 'restaurant';
-			} else if (window.location.href.indexOf("drinks") > -1 || window.location.href.indexOf("phe") > -1) {
+			} else if (window.location.href.indexOf("drinks") > -1 || window.location.href.indexOf("ca phe") > -1) {
 				return 'drinks';
 			} else if (window.location.href.indexOf("breakfast") > -1 || window.location.href.indexOf("sang") > -1) {
 				return 'breakfast';
@@ -173,6 +180,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		if (pageName() === 'rooms') {
 
+			var bnbLinks = jQuery('.link-bnb > ul > li');
+
 			function initialization() {
 				var myFullpage = new fullpage('#fullpage', {
 					fadingEffect: true,
@@ -182,17 +191,33 @@ document.addEventListener('DOMContentLoaded', function () {
 					lazyLoad: true,
 					controlArrows: true,
 					slidesNavigation: true,
+					verticalCentered: false,
 
-					onLeave: function(origin, destination, direction){
+					onLeave: function (origin, destination, direction) {
 						var leavingSection = this;
-				
-						//after leaving section 2
-						if(origin.index == 0 && direction =='down'){
+
+						if (origin.index == 0 && direction == 'down') {
 							jQuery('.room-button-container').css('opacity', 1);
-						}
-				
-						else if(origin.index == 1 && direction == 'up'){
+						} else if (origin.index == 1 && direction == 'up') {
 							jQuery('.room-button-container').css('opacity', 0);
+						}
+
+						// Highlight menu links
+						if (destination.index == 1) {
+							jQuery(bnbLinks[0]).addClass('activeSection');
+							jQuery(bnbLinks).not(bnbLinks[0]).removeClass('activeSection');
+						} else if (destination.index == 2) {
+							jQuery(bnbLinks).not(bnbLinks[1]).removeClass('activeSection');
+							jQuery(bnbLinks[1]).addClass('activeSection');
+						} else if (destination.index == 3) {
+							jQuery(bnbLinks).not(bnbLinks[2]).removeClass('activeSection');
+							jQuery(bnbLinks[2]).addClass('activeSection');
+						} else if (destination.index == 4) {
+							jQuery(bnbLinks).not(bnbLinks[3]).removeClass('activeSection');
+							jQuery(bnbLinks[3]).addClass('activeSection');
+						} else if (destination.index == 5) {
+							jQuery(bnbLinks).not(bnbLinks[4]).removeClass('activeSection');
+							jQuery(bnbLinks[4]).addClass('activeSection');
 						}
 					}
 				});
@@ -210,6 +235,14 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 
 		if (pageName() === 'home') {
+
+			var homeLinks = jQuery('.link-home > ul > li');
+			console.log(homeLinks);
+
+			jQuery('.home-booking .content').removeClass('content-white');
+			jQuery('.home-booking .link-button-light').addClass('link-button');
+			jQuery('.home-booking .link-button-light').removeClass('link-button-light');
+
 			function initialization() {
 				var myFullpage = new fullpage('#fullpage', {
 					fadingEffect: false,
@@ -217,21 +250,32 @@ document.addEventListener('DOMContentLoaded', function () {
 					fadingEffectKey: 'ZW1haWRhbGF0LmNvbV9LQ2JabUZrYVc1blJXWm1aV04wcGp2',
 					anchors: ['home-cuisine', 'home-cafe', 'home-bnb', 'home-atmosphere', 'home-booking'],
 					lazyLoad: true,
-					
-					onLeave: function(origin, destination, direction){
+					verticalCentered: false,
+
+					onLeave: function (origin, destination, direction) {
 						var leavingSection = this;
-				
-						//after leaving section 2
-						if(destination.index == 0){
+
+						// Highlight menu links
+						if (destination.index == 0) {
 							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/duck_1920_01.jpg)');
-						} else if (destination.index == 1){
+							jQuery(homeLinks[0]).addClass('activeSection');
+							jQuery(homeLinks).not(homeLinks[0]).removeClass('activeSection');
+						} else if (destination.index == 1) {
 							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/brioche_1920.jpg)');
-						} else if(destination.index == 2){
+							jQuery(homeLinks).not(homeLinks[1]).removeClass('activeSection');
+							jQuery(homeLinks[1]).addClass('activeSection');
+						} else if (destination.index == 2) {
 							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/lila_1920_01.jpg)');
-						} else if(destination.index == 3){
+							jQuery(homeLinks).not(homeLinks[2]).removeClass('activeSection');
+							jQuery(homeLinks[2]).addClass('activeSection');
+						} else if (destination.index == 3) {
 							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/table_1920_01.jpg)');
-						} else if(destination.index == 4){
+							jQuery(homeLinks).not(homeLinks[3]).removeClass('activeSection');
+							jQuery(homeLinks[3]).addClass('activeSection');
+						} else if (destination.index == 4) {
 							jQuery('.home-background').css('background-image', 'url(wp-content/themes/emaidalat/images/photos/hd/flower_1920_01.jpg)');
+							jQuery(homeLinks).not(homeLinks[4]).removeClass('activeSection');
+							jQuery(homeLinks[4]).addClass('activeSection');
 						}
 					}
 				});
@@ -249,163 +293,34 @@ document.addEventListener('DOMContentLoaded', function () {
 			});
 		});
 
-		/*
-		    jQuery(window).resize(function() {
-		      jQuery('html,body').scrollTop(divs.eq(div).offset().top);
+		if (pageName() === 'restaurant' || pageName() === 'drinks') {
+
+			jQuery.fn.isInViewport = function () {
+				var elementTop = jQuery(this).offset().top;
+				console.log("element top " + elementTop);
+				var elementBottom = elementTop + jQuery(this).outerHeight();
+				console.log("element bottom " + elementBottom);
+			
+				var viewportTop = jQuery(window).scrollTop();
+				console.log("viewport top " + viewportTop);
+				var viewportBottom = viewportTop + jQuery(window).height() / 2.5;
+				console.log("viewport bottom " + viewportBottom);
+			
+				return elementBottom > viewportTop && elementTop < viewportBottom;
+			};
+			
+			jQuery(window).on('resize scroll', function () {
+				jQuery('.menuSection').each(function () {
+					var activeColor = jQuery(this).attr('id');
+					if (jQuery(this).isInViewport()) {
+						jQuery(this).find('.fixed-image').css('opacity', 1);
+					} else {
+						jQuery(this).find('.fixed-image').css('opacity', 0);
+					}
 				});
-				
-				
-		// Smooth scrolling menu links
-		var scrollLink = jQuery('.activePage').siblings('ul').find('a');
+			});
+		};
 
-		scrollLink.click(function (e) {
-			if (pageName() === 'home' || pageName() === 'rooms') {
-				jQuery('body,html').animate({
-					scrollTop: jQuery(this.hash).offset().top
-				}, 1000);
-			}
-		});
-
-		var windowHeight = jQuery(window).height();
-		var windowHalf = (windowHeight / 2) - 50;
-		var clientHeight = document.body.clientHeight;
-		var pageSections = jQuery('.pageSection').length;
-		var sectionHeight = clientHeight / pageSections;
-		var backgroundFigure = jQuery('.fixed-image');
-		var bookButtons = jQuery('.flex-container-room');
-
-		//console.log("page sections = " + pageSections);
-		//console.log("window height = " + windowHeight);
-		//console.log("client height = " + clientHeight);
-		//console.log("section height = " + sectionHeight);
-
-		// Initial page load actions
-
-		jQuery(backgroundFigure).not(jQuery(backgroundFigure)[0]).hide();
-
-		if (pageName() === 'home') {
-			var scrollbarLocation = jQuery(this).scrollTop();
-			if (scrollbarLocation < 2) {
-				jQuery(scrollLink[0]).addClass('activeSection');
-			}
-		}
-
-		if (pageName() === 'restaurant') {
-			sectionHeight -= (sectionHeight / 5);
-		} else if (pageName() === 'drinks') {
-			sectionHeight -= (sectionHeight / 6);
-		}
-
-		jQuery(bookButtons).hide();
-		//jQuery('.flex-container-room').hide();
-		//jQuery('.room-button-container').hide();
-
-		jQuery('#rooms-ivy .flex-container-room').click(function () {});
-		jQuery('#rooms-clara .flex-container-room').click(function () {});
-		jQuery('#rooms-may .flex-container-room').click(function () {});
-		jQuery('#rooms-lila .flex-container-room').click(function () {});
-		jQuery('#rooms-jasmine .flex-container-room').click(function () {});
-
-		jQuery(window).scroll(function () {
-
-			var scrollbarLocation = jQuery(this).scrollTop();
-
-			var viewportSection = function () {
-				if (scrollbarLocation <= sectionHeight / 2) {
-					return 0;
-				} else if (scrollbarLocation > sectionHeight / 2 && scrollbarLocation <= sectionHeight + (sectionHeight / 2)) {
-					return 1;
-				} else if (scrollbarLocation > sectionHeight + windowHalf && scrollbarLocation <= (sectionHeight * 2) + windowHalf) {
-					return 2;
-				} else if (scrollbarLocation > (sectionHeight * 2) + windowHalf && scrollbarLocation <= (sectionHeight * 3) + windowHalf) {
-					return 3;
-				} else if (scrollbarLocation > (sectionHeight * 3) + windowHalf && scrollbarLocation <= (sectionHeight * 4) + windowHalf) {
-					return 4;
-				} else if (scrollbarLocation > (sectionHeight * 4) + windowHalf && scrollbarLocation <= (sectionHeight * 5) + windowHalf) {
-					return 5;
-				} else if (scrollbarLocation > (sectionHeight * 5) + windowHalf && scrollbarLocation <= (sectionHeight * 6) + windowHalf) {
-					return 6;
-				}
-			}; // End viewport section function
-
-			var viewportBackground = function () {
-				jQuery(backgroundFigure[viewportSection()]).fadeIn(800);
-				jQuery(backgroundFigure).not(jQuery(backgroundFigure)[viewportSection()]).fadeOut(1000);
-			};
-
-			var viewportLinkHighlight = function () {
-				if (pageName() === 'home') {
-					jQuery(scrollLink[viewportSection()]).addClass('activeSection');
-					jQuery(scrollLink).not(jQuery(scrollLink)[viewportSection()]).removeClass('activeSection');
-				} else if (pageName() === 'rooms') {
-					jQuery(scrollLink[viewportSection() - 2]).addClass('activeSection');
-					jQuery(scrollLink).not(jQuery(scrollLink)[viewportSection() - 2]).removeClass('activeSection');
-				}
-			};
-
-			var viewportRoom = function () {
-				var ourRooms = jQuery('.flex-container-room');
-				var roomSection = viewportSection() - 2;
-				jQuery(ourRooms[roomSection]).fadeIn();
-				jQuery(ourRooms).not(jQuery(ourRooms[roomSection])).fadeOut();
-				//console.log(roomSection);
-			};
-
-			switch (viewportSection()) {
-				case 0:
-					viewportBackground();
-					viewportLinkHighlight();
-					viewportRoom();
-					break;
-				case 1:
-					viewportBackground();
-					viewportLinkHighlight();
-					viewportRoom();
-					break;
-				case 2:
-					viewportBackground();
-					viewportLinkHighlight();
-					viewportRoom();
-					jQuery('.previousRoom').css('visibility', 'hidden');
-					break;
-				case 3:
-					viewportBackground();
-					viewportLinkHighlight();
-					viewportRoom();
-					jQuery('#home-atmosphere .ribbon-container').fadeIn(500);
-					jQuery('.previousRoom').css('visibility', 'visible');
-					jQuery('#home-booking .fixed-image').children().fadeOut(100);
-					break;
-				case 4:
-					viewportBackground();
-					viewportLinkHighlight();
-					viewportRoom();
-					jQuery('#home-atmosphere .ribbon-container').fadeOut(500);
-					jQuery('#home-booking .fixed-image').children().fadeIn(300);
-					break;
-				case 5:
-					viewportBackground();
-					viewportLinkHighlight();
-					viewportRoom();
-					jQuery('.nextRoom').css('visibility', 'visible');
-					break;
-				case 6:
-					viewportBackground();
-					viewportLinkHighlight();
-					viewportRoom();
-					jQuery('.nextRoom').css('visibility', 'hidden');
-					break;
-			} // End veiwport switch statement
-
-			if (scrollbarLocation > windowHeight + windowHalf) {
-				jQuery('.room-button-container').fadeIn();
-			} else {
-				jQuery('.room-button-container').fadeOut();
-				jQuery('.flex-container-room').fadeOut();
-			}
-
-		}); // End scroll function
-*/
 	} // End match query
 
 }); // End document load function

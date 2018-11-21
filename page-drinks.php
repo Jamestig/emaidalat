@@ -23,7 +23,7 @@
 				<h2 class="menu-title">Drinks &amp; Desserts</h2>
 			</header>
 
-			<section id="menu-coffee" class="pageSection section-dish">
+			<section id="menu-coffee" class="menuSection section-dish">
 				<div class="fixed-image mobile-image gradient-down">
 					<figure id="">
 						<picture>
@@ -64,7 +64,7 @@
 				</div>
 			</section>
 
-			<section id="menu-tea" class="pageSection section-dish">
+			<section id="menu-tea" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/tea_4k_01.jpg" media="(min-width: 1921px)">
@@ -104,7 +104,7 @@
 				</div>
 			</section>
 
-			<section id="menu-drinks" class="pageSection section-dish">
+			<section id="menu-drinks" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/coffee_4k_01.jpg" media="(min-width: 1921px)">
@@ -139,7 +139,7 @@
 				</div>
 			</section>
 
-			<section id="menu-cakes" class="pageSection section-dish">
+			<section id="menu-cakes" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/dessert_panna_4k.jpg" media="(min-width: 1921px)">
@@ -165,7 +165,7 @@
 				</div>
 			</section>
 
-			<section id="menu-liquor" class="pageSection section-dish">
+			<section id="menu-liquor" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/wine_4k_01.jpg" media="(min-width: 1921px)">

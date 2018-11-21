@@ -40,7 +40,7 @@
 					</header>
 
 					<p>Comprising an intimate 5-room bed & breakfast, a contemporary Italian restaurant and café, this little abode is brimming with cosiness, good food, and soothing music, always ready to treat you to a beautiful time no matter the occasion.</p>
-
+					<p>A wonderful homemade European breakfast is included, with fresh juice and the best coffee you can find to start your day with.</p>
 					<button class="scrollDown moveSectionDown">
 						<span></span>
 						<span>Scroll down</span>

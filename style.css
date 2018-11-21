@@ -59,7 +59,7 @@ h6,
 p,
 a,
 li {
-	font-family: 'Amiri', serif;
+	font-family: 'EB Garamond', serif;
 	color: var(--font-main);
 }
 
@@ -88,6 +88,7 @@ h6 {
 	margin-top: 2rem;
 	text-transform: uppercase;
 	color: var(--font-light);
+	font-family: Marcellus SC;
 }
 
 .double-header>h3 {
@@ -548,6 +549,7 @@ html {
 		right: 0;
 		z-index: -100;
 		overflow: hidden;
+		transition: opacity 1s linear;
 	}
 
 	.fixed-image img {
@@ -731,7 +733,7 @@ html {
 }
 
 .main-logo a {
-	height: 60%;
+	height: 220px;
 }
 
 .main-logo img {
@@ -1057,31 +1059,11 @@ html {
 
 .home-booking .content {
 	z-index: 100;
-}
-
-.home-booking .fixed-image {
 	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(images/photos/mobile/flower_480_01.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 60vh;
-}
-
-/* Home page below widescreen */
-
-@media screen and (min-width: 481px) {
-	.home-booking .fixed-image {
-		background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(images/photos/tablet/flower_800_01.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-	}
-}
-
-@media screen and (min-width: 481px) and (orientation: landscape) {
-	.home-booking .fixed-image {
-		height: 90vh;
-	}
+	height: 450px;
 }
 
 /* Home page widescreen response */
@@ -1107,20 +1089,16 @@ html {
 
 	.home-booking .content {
 		width: auto;
+		height: 100vh;
 		padding-top: 0;
 		padding-bottom: 0;
+		background: none;
 	}
 
 	.home-booking .content p {
-		padding-left: 0;
 		line-height: 1.5em;
 		font-size: 1.4em;
-		text-align: center;
-	}
-
-	.home-booking .fixed-image {
-		background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(images/photos/hd/flower_1920_01.jpg);
-		height: 100vh;
+		text-align: left;
 	}
 
 	.home-background {
@@ -1272,6 +1250,9 @@ html {
 	.main-bnb section {
 		margin: 10% 0;
 	}
+	.main-bnb section:first-of-type {
+		margin-top: 0;
+	}
 
 	.flex-container-room:after {
 		content: "";
@@ -1313,12 +1294,9 @@ html {
 	max-width: 100%;
 }
 
-.rooms-ivy .flex-container-room {
-	margin-top: -80px;
-}
-
 .rooms-ivy .room-logo img {
 	max-height: 160px;
+	margin-top: -0px;
 }
 
 .room-jasmine .room-logo img {
@@ -1326,7 +1304,6 @@ html {
 }
 
 .room-info p {
-	white-space: nowrap;
 	font-size: 1.1em;
 }
 
@@ -1399,6 +1376,10 @@ html {
 
 @media screen and (min-width: 1280px) {
 
+	.main-bnb .double-header h3 {
+		font-size: 3em;
+	}
+
 	.main-bnb .ribbon-container {
 		height: 90vh;
 		margin: 5vh;
@@ -1411,6 +1392,7 @@ html {
 
 	.main-bnb .fixed-image img {
 		width: 100%;
+		height: auto;
 	}
 
 	#bnb-intro,
@@ -1591,6 +1573,14 @@ html {
 	MENU PAGES
 ////////////////////*/
 
+.menuSection .fixed-image {
+	opacity: 0;
+}
+
+.menuSection:first-of-type .fixed-image {
+	opacity: 1;
+}
+
 .main-menu .content {
 	text-align: center;
 }
@@ -1639,7 +1629,6 @@ html {
 }
 
 .menu-title {
-	font-family: Amiri;
 	font-size: 2em;
 	text-transform: none;
 	text-align: center;
@@ -1701,7 +1690,6 @@ html {
 }
 
 .dish-title {
-	font-family: Amiri;
 	margin: auto;
 	text-align: center;
 	font-weight: normal;
@@ -1829,7 +1817,6 @@ html {
 }
 
 .menu-breakfast-sets h6 {
-	font-family: Amiri;
 	text-transform: uppercase;
 	font-size: 1.2em;
 	letter-spacing: .02em;
@@ -1991,5 +1978,16 @@ html {
 	.mobile-footer {
 		height: 300px;
 		margin-left: 20vw;
+	}
+}
+
+/* Fullpage.js overrides */
+
+@media screen and (max-width: 1279px) {
+	.fp-slidesContainer .fp-slide {
+		display: none;
+	}
+	.fp-slidesContainer .fp-slide:first-child {
+		display: block;
 	}
 }
