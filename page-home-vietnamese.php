@@ -80,8 +80,8 @@
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
-				<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/lila_4k_01.jpg" media="(min-width: 1921px)">
-					<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/lila_1920_01.jpg" media="(min-width: 1025px)">
+				<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/room_4k.jpg" media="(min-width: 1921px)">
+					<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/room_1920.jpg" media="(min-width: 1025px)">
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/lila_800_01.jpg" media="(min-width: 600px)">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/lila_480_01.jpg" alt="Emai Homestay Room Four: Lila">
 				</picture>

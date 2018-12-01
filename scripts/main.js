@@ -97,7 +97,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	var currentLang = jQuery('html').attr('lang');
 	if (currentLang === 'vi') {
 		jQuery('.accordion a, .double-header > h2').css('font-family', 'EB Garamond');
-		jQuery('.accordion a').css('font-size', '.9em');
 	}
 	// Contact Form
 
@@ -142,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				return 'reservations';
 			} else if (window.location.href.indexOf("restaurant") > -1 || window.location.href.indexOf("hang") > -1) {
 				return 'restaurant';
-			} else if (window.location.href.indexOf("drinks") > -1 || window.location.href.indexOf("ca phe") > -1) {
+			} else if (window.location.href.indexOf("drinks") > -1 || window.location.href.indexOf("quan") > -1) {
 				return 'drinks';
 			} else if (window.location.href.indexOf("breakfast") > -1 || window.location.href.indexOf("sang") > -1) {
 				return 'breakfast';
@@ -161,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			// Accordion open
 			if (pageName() === 'home') {
-				jQuery('.link-home > ul').show();
+				// jQuery('.link-home > ul').show();
 				jQuery('.link-home > a').addClass('activePage');
 			} else if (pageName() === 'story') {
 				jQuery('.link-story > a').addClass('activePage');
@@ -224,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function () {
 							jQuery(homeLinks).not(homeLinks[1]).removeClass('activeSection');
 							jQuery(homeLinks[1]).addClass('activeSection');
 						} else if (destination.index == 2) {
-							jQuery('.home-background').css('background-image', 'url(https://emaidalat.com/wp-content/uploads/2018/11/lila_1920_01.jpg)');
+							jQuery('.home-background').css('background-image', 'url(https://emaidalat.com/wp-content/uploads/2018/11/room_1920.jpg)');
 							jQuery(homeLinks).not(homeLinks[2]).removeClass('activeSection');
 							jQuery(homeLinks[2]).addClass('activeSection');
 						} else if (destination.index == 3) {
@@ -335,14 +334,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			jQuery.fn.isInViewport = function () {
 				var elementTop = jQuery(this).offset().top;
-				console.log("element top " + elementTop);
+				// console.log("element top " + elementTop);
 				var elementBottom = elementTop + jQuery(this).outerHeight();
-				console.log("element bottom " + elementBottom);
+				// console.log("element bottom " + elementBottom);
 
 				var viewportTop = jQuery(window).scrollTop();
-				console.log("viewport top " + viewportTop);
+				// console.log("viewport top " + viewportTop);
 				var viewportBottom = viewportTop + jQuery(window).height() / 2.5;
-				console.log("viewport bottom " + viewportBottom);
+				// console.log("viewport bottom " + viewportBottom);
 
 				return elementBottom > viewportTop && elementTop < viewportBottom;
 			};

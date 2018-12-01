@@ -142,8 +142,8 @@
 			<section id="menu-cakes" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/dessert_panna_4k.jpg" media="(min-width: 1921px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/panna_1500_01.jpg" media="(min-width: 1025px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/brioche_4k.jpg" media="(min-width: 1921px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/brioche_1920.jpg" media="(min-width: 1025px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/panna_800_01.jpg" media="(min-width: 600px)">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/panna_480_01.jpg" alt="Panna Cotta with Dalat Berries Cooked in Mulled Wine ">
 					</picture>
