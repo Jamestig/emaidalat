@@ -179,13 +179,13 @@
 					<header class="dish-header">
 						<h4 class="dish-title">liquor</h4>
 					</header>
-					<p class="text-condition">Please ask for our full, curated list for wines by the bottle.</p>
+					<a href="https://emaidalat.com/vi/ruou/" class="text-condition">Click here for our full, curated list for wines by the bottle.</a>
 					<section id="menu-wine-glass">
 						<h5 class="header-caps">Wine by the glass</h5>
 						<ul>
 							<li>Primo Sangiovese-Merlot, red <span class="dish-price">126</span></li>
 							<li>Trebianno d'Abruzzo, organic white <span class="dish-price">126</span></li>
-							<li>Special Homemade Mulled Wine* <span class="dish-price">126</span>
+							<li class="mulled-wine">Special Homemade Mulled Wine* <span class="dish-price">126</span>
 								<p>with 8 exotic spices, orange, and lime</p>
 							</li>
 						</ul>

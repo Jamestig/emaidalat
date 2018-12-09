@@ -97,7 +97,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	var currentLang = jQuery('html').attr('lang');
 	if (currentLang === 'vi') {
 		jQuery('.accordion a, .double-header > h2').css('font-family', 'EB Garamond');
+		jQuery('.link-button-vi > a').css('padding', '.5em 2.1em');
 	}
+
 	// Contact Form
 
 	jQuery('.contact-form').hide();

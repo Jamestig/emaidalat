@@ -147,12 +147,12 @@
 					</div>
 
 					<div class="button-container">
-						<div class="link-button-light">
-							<a href="https://emaidalat.com/reservations/">Đặt phòng</a>
+						<div class="link-button">
+							<a href="https://emaidalat.com/vi/dat-ban-phong/">Đặt phòng</a>
 						</div>
 
-						<div class="link-button-light">
-							<a href="https://emaidalat.com/contact/">Đặt bàn</a>
+						<div class="link-button link-button-vi">
+							<a href="https://emaidalat.com/vi/lien-he/">Đặt bàn</a>
 						</div>
 					</div>
 				</div>

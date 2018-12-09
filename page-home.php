@@ -147,11 +147,11 @@
 					</div>
 
 					<div class="button-container">
-						<div class="link-button-light">
+						<div class="link-button">
 							<a href="https://emaidalat.com/reservations/">Book your stay</a>
 						</div>
 
-						<div class="link-button-light">
+						<div class="link-button">
 							<a href="https://emaidalat.com/contact/">Reserve a table</a>
 						</div>
 					</div>
