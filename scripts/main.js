@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Language Detection
 	var currentLang = jQuery('html').attr('lang');
+
 	if (currentLang === 'vi') {
 		jQuery('.accordion a, .double-header > h2').css('font-family', 'EB Garamond');
 		jQuery('.link-button-vi > a').css('padding', '.5em 2.1em');
@@ -131,6 +132,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	if (window.matchMedia('(min-width: 1280px)').matches) {
 
 		var current_href = jQuery(location).attr('href');
+
+		if (currentLang === 'vi') {
+			jQuery('.rooms-lila .room-info').css('font-size', '.9em');
+			jQuery('.rooms-jasmine .room-info').css('font-size', '.9em');
+		}
 
 		// Page name function
 

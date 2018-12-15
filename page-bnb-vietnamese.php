@@ -268,7 +268,7 @@
 						Phòng tắm riêng rộng rãi nằm đối diện, với bồn tắm gỗ kiểu Nhật<br>
 						Khăn trải giường từ Âu Châu mềm mại diệu kỳ<br>
 						Bữa sáng miễn phí &#183; 1,400,000 VND / 60 USD per night<br>
-						(Giá phòng cho 2 người, phụ thu 250,000 VND cho mỗi người từ người thứ 3 trở lên)
+						(Phụ thu 250,000 VND cho mỗi người từ người thứ 3 trở lên)
 					</p>
 			</div>
 
@@ -366,7 +366,7 @@
 						Phòng tắm riêng trong phòng với bồn tắm gỗ kiểu Nhật<br>
 						Khăn trải giường từ Âu Châu mềm mại diệu kỳ<br>
 						Bữa sáng miễn phí &#183; 1,600,000 VND / 70 USD per night<br>
-						(Giá phòng cho 2 người, phụ thu 250,000 VND cho mỗi người từ người thứ 3 trở lên)
+						(Phụ thu 250,000 VND cho mỗi người từ người thứ 3 trở lên)
 					</p>
 			</div>
 

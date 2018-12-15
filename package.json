@@ -4,7 +4,8 @@
   "description": "package for emaidalat.com",
   "main": "index.js",
   "scripts": {
-    "sync": "browser-sync start --server --config bs-config.js"
+    "sync": "browser-sync start --server --config bs-config.js",
+    "autoprefixer": "postcss DEV/*.css --use autoprefixer -d DEV/"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,12 @@
     "url": "https://github.com/Jamestig/emaidalat/issues"
   },
   "homepage": "https://github.com/Jamestig/emaidalat#readme",
-  "dependencies": {}
+  "dependencies": {
+    "autoprefixer": "^9.3.1",
+    "clean-css": "^4.2.1",
+    "postcss-cli": "^6.0.1"
+  },
+  "directories": {
+    "test": "test"
+  }
 }
