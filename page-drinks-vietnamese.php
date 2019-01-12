@@ -23,7 +23,7 @@
 				<h2 class="menu-title">Drinks &amp; Desserts</h2>
 			</header>
 
-			<section id="menu-coffee" class="pageSection section-dish">
+			<section id="menu-coffee" class="menuSection section-dish">
 				<div class="fixed-image mobile-image gradient-down">
 					<figure id="">
 						<picture>
@@ -64,7 +64,7 @@
 				</div>
 			</section>
 
-			<section id="menu-tea" class="pageSection section-dish">
+			<section id="menu-tea" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/tea_4k_01.jpg" media="(min-width: 1921px)">
@@ -104,7 +104,7 @@
 				</div>
 			</section>
 
-			<section id="menu-drinks" class="pageSection section-dish">
+			<section id="menu-drinks" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/coffee_4k_01.jpg" media="(min-width: 1921px)">
@@ -139,11 +139,11 @@
 				</div>
 			</section>
 
-			<section id="menu-cakes" class="pageSection section-dish">
+			<section id="menu-cakes" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/dessert_panna_4k.jpg" media="(min-width: 1921px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/panna_1500_01.jpg" media="(min-width: 1025px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/brioche_4k.jpg" media="(min-width: 1921px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/brioche_1920.jpg" media="(min-width: 1025px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/panna_800_01.jpg" media="(min-width: 600px)">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/panna_480_01.jpg" alt="Panna Cotta with Dalat Berries Cooked in Mulled Wine ">
 					</picture>
@@ -165,7 +165,7 @@
 				</div>
 			</section>
 
-			<section id="menu-liquor" class="pageSection section-dish">
+			<section id="menu-liquor" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/wine_4k_01.jpg" media="(min-width: 1921px)">
@@ -179,13 +179,13 @@
 					<header class="dish-header">
 						<h4 class="dish-title">liquor</h4>
 					</header>
-					<p class="text-condition">Please ask for our full, curated list for wines by the bottle.</p>
+					<a href="https://emaidalat.com/vi/ruou/" class="text-condition">Click here for our full, curated list for wines by the bottle.</a>
 					<section id="menu-wine-glass">
 						<h5 class="header-caps">Wine by the glass</h5>
 						<ul>
 							<li>Primo Sangiovese-Merlot, red <span class="dish-price">126</span></li>
 							<li>Trebianno d'Abruzzo, organic white <span class="dish-price">126</span></li>
-							<li>Special Homemade Mulled Wine* <span class="dish-price">126</span>
+							<li class="mulled-wine">Special Homemade Mulled Wine* <span class="dish-price">126</span>
 								<p>with 8 exotic spices, orange, and lime</p>
 							</li>
 						</ul>

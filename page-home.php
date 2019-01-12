@@ -6,24 +6,15 @@
 
 <?php get_header(); ?>
 
-<main id="main-home fullscreen">
-	<!--
-		<div class="fullscreen-container">
-			<div class="fullscreen-button-container">
-				<button class="fullscreen-button" id="fullscreenIcon">[ ]</button>
-				<button class="fullscreen-button" id="previousImage">L</button>
-				<button class="fullscreen-button" id="nextImage">R</button>
-			</div>
-		</div>
-	-->
+<main id="fullpage" class="main-home">
 
-	<section class="section active pageSection scrollSection" id="home-restaurant">
+	<section class="fp-section pageSection home-cuisine" data-anchor="home-cuisine">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/duck_4k_01.jpg" media="(min-width: 1921px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
+				<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/duck_4k_01.jpg" media="(min-width: 1921px)">
+					<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/duck_1920_01.jpg" media="(min-width: 1025px)">
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)  and (max-width: 1024px)">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 				</picture>
 			</figure>
@@ -32,7 +23,7 @@
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">Émai restaurant</h2>
+					<h2 class="header-full">Émai Italian<br>Restaurant &amp; Gardens</h2>
 					<hr class="hr-left">
 					<h3>Sensational, authentic European flavours in the heart of Dalat, Vietnam</h3>
 				</header>
@@ -43,7 +34,7 @@
 					<a href="https://emaidalat.com/restaurant-menu/">View menu</a>
 				</div>
 
-				<button class="scrollDown">
+				<button class="scrollDown moveSectionDown">
 					<span></span>
 					<span>Scroll down</span>
 				</button>
@@ -51,11 +42,12 @@
 		</div>
 	</section>
 
-	<section class="section pageSection scrollSection" id="home-cafe">
+	<section class="fp-section pageSection home-cafe" data-anchor="home-cafe">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/panna_1500_01.jpg" media="(min-width: 1025px)">
+				<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/brioche_4k.jpg" media="(min-width: 1921px)">
+					<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/brioche_1920.jpg" media="(min-width: 1025px)">
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/panna_800_01.jpg" media="(min-width: 600px)">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/panna_480_01.jpg" alt="Panna Cotta with Dalat Berries Cooked in Mulled Wine">
 				</picture>
@@ -76,7 +68,7 @@
 					<a href="https://emaidalat.com/drinks-desserts-menu/">View cafe menu</a>
 				</div>
 
-				<button class="scrollDown">
+				<button class="scrollDown moveSectionDown">
 					<span></span>
 					<span>Scroll down</span>
 				</button>
@@ -84,12 +76,12 @@
 		</div>
 	</section>
 
-	<section class="section pageSection scrollSection" id="home-bnb">
+	<section class="fp-section pageSection home-bnb" data-anchor="home-bnb">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/lila_4k_01.jpg" media="(min-width: 1921px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/lila_1920_01.jpg" media="(min-width: 1025px)">
+				<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/room_4k.jpg" media="(min-width: 1921px)">
+					<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/room_1920.jpg" media="(min-width: 1025px)">
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/lila_800_01.jpg" media="(min-width: 600px)">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/lila_480_01.jpg" alt="Emai Homestay Room Four: Lila">
 				</picture>
@@ -110,7 +102,7 @@
 					<a href="https://emaidalat.com/our-rooms/">View<span class="hidden-mobile"> or book</span> rooms</a>
 				</div>
 
-				<button class="scrollDown">
+				<button class="scrollDown moveSectionDown">
 					<span></span>
 					<span>Scroll down</span>
 				</button>
@@ -118,12 +110,12 @@
 		</div>
 	</section>
 
-	<section class="section pageSection scrollSection" id="home-atmosphere">
+	<section class="fp-section pageSection home-atmosphere" data-anchor="home-atmosphere">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/table_4k_01.jpg" media="(min-width: 1921px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/table_1920_01.jpg" media="(min-width: 1025px)">
+				<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/dining_4k_01.jpg" media="(min-width: 1921px)">
+					<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/table_1920_01.jpg" media="(min-width: 1025px)">
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/table_800_01.jpg" media="(min-width: 600px)">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/table_480_01.jpg" alt="Dining Room Table Setting with Candles and Flowers">
 				</picture>
@@ -138,12 +130,8 @@
 
 				<p>Nestled in Vietnam's most romantic city, émai is a dream born out of our love for nature, beauty, and good food, all housed together in a rustic little garden home.</p>
 				<p>We hope you'll find deep contentment in our selection of jazz and classical music, garden flowers and candles, all handpicked to give you a poetic authentically European atmosphere of warmth, togetherness, and gentle beauty</p>
-<!--
-				<div class="link-button">
-					<a href="">View Gallery</a>
-				</div>
--->
-				<button class="scrollDown">
+
+				<button class="scrollDown moveSectionDown">
 					<span></span>
 					<span>Scroll down</span>
 				</button>
@@ -151,23 +139,28 @@
 		</div>
 	</section>
 
-	<section class="section pageSection scrollSection" id="home-booking">
-				<div class="content-white vertical-center content fixed-image">
+	<section class="fp-section pageSection home-booking" data-anchor="home-booking">
+		<div class="ribbon-container">
+				<div class="content-white vertical-center content">
 					<div>
 						<p>Amidst the sublimity, let émai be your nook for comfort and beauty, delighting your senses and palate in the most tender of ways.</p>
 					</div>
 
 					<div class="button-container">
-						<div class="link-button-light">
+						<div class="link-button">
 							<a href="https://emaidalat.com/reservations/">Book your stay</a>
 						</div>
 
-						<div class="link-button-light">
+						<div class="link-button">
 							<a href="https://emaidalat.com/contact/">Reserve a table</a>
 						</div>
 					</div>
 				</div>
+			</div>
 	</section>
+
 </main>
+
+<div class="home-background"></div>
 
 <?php get_footer(); ?>

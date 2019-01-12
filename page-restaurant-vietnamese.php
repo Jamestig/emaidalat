@@ -29,10 +29,10 @@
 				</p>
 			</header>
 
-			<section id="menu-soups" class="pageSection section-dish">
+			<section id="menu-soups" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920_01.jpg" media="(min-width: 1025px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
@@ -70,10 +70,10 @@
 				</div>
 			</section>
 
-			<section id="menu-salads" class="pageSection section-dish">
+			<section id="menu-salads" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/salad_pomelo_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/salad_pomelo_1920.jpg" media="(min-width: 1025px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/salad_pomelo_800.jpg" media="(min-width: 600px)">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/salad_pomelo_480.jpg" alt="Pomelo Salad with Cinnamon, Star Anise and Orange Blossom Water">
 					</picture>
@@ -97,10 +97,6 @@
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">230</span>
 						</li>
-						<li>Sà lách khoai tây với trứng cút và sốt pesto hạnh nhân
-							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
-							<span class="dish-price">180</span>
-						</li>
 						<li>Salad Caesar truyền thống
 							<span class="dish-price">190</span>
 						</li>
@@ -108,10 +104,10 @@
 				</div>
 			</section>
 
-			<section id="menu-appetisers" class="pageSection section-dish">
+			<section id="menu-appetisers" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/food_ravioli_1600.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/food_ravioli_1600.jpg" media="(min-width: 1025px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/food_ravioli_1024.jpg" media="(min-width: 600px)">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/food_ravioli_480.jpg" alt="Sun-dried Tomato and Feta Cheese Ravioli with Roasted Chilies">
 					</picture>
@@ -131,6 +127,10 @@
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">210</span>
 						</li>
+						<li>Sà lách khoai tây với trứng cút và sốt pesto hạnh nhân
+							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+							<span class="dish-price">180</span>
+						</li>
 						<li>Bánh nướng kiểu pháp với tỏi ướp dấm Ý cháy đường với phô mai sữa dê, hương thảo và lá thyme
 							<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory'); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 							<span class="dish-price">180</span>
@@ -143,10 +143,10 @@
 				</div>
 			</section>
 
-			<section id="menu-pasta" class="pageSection section-dish">
+			<section id="menu-pasta" class="menuSection section-dish">
 				<figure id="" class="first-image fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/pasta_tomato_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/pasta_tomato_1920.jpg" media="(min-width: 1025px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/pasta_tomato_1024.jpg" media="(min-width: 600px)">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/pasta_tomato_480.jpg" alt="Spaghetti with Garden-fresh and Sun-dried Tomatoes">
 					</picture>
@@ -195,10 +195,10 @@
 				</div>
 			</section>
 
-			<section id="menu-pizza" class="pageSection section-dish">
+			<section id="menu-pizza" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/pizza_margherita_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/pizza_margherita_1920.jpg" media="(min-width: 1025px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/pizza_margherita_800.jpg" media="(min-width: 600px)">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/pizza_margherita_480.jpg" alt="Margherita Pizza with Sun-dried Tomatoes">
 					</picture>
@@ -235,10 +235,10 @@
 				</div>
 			</section>
 
-			<section id="menu-mains" class="pageSection section-dish">
+			<section id="menu-mains" class="menuSection section-dish">
 				<figure id="" class="first-image fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1600px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/duck_1920_01.jpg" media="(min-width: 1025px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>

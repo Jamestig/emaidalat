@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Copyright (c) 2018 Timothy Ringuet">
+	<meta name="description" content="Website for Emai Italian Restaurant & Gardens in Dalat." />
+	<meta name="keywords" content="emai, dalat, italian, restaurant, garden, homestay, cafe" />
 	<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(); ?></title>
 
 	<?php wp_head(); ?>
@@ -46,57 +49,7 @@
 					wp_nav_menu( $defaults );
 				?>
 				</nav>
-				<!--
-
-				<ul class="accordion">
-					<li id="link-home">
-						<a href="https://emaidalat.com/">Home</a>
-						<ul id="inner-home" class="accordionInner">
-							<li><a href="#home-restaurant" class="scroll">Restaurant</a></li>
-							<li><a href="#home-cafe" class="scroll">Cafe</a></li>
-							<li><a href="#home-bnb" class="scroll">Bed &amp; Breakfast</a></li>
-							<li><a href="#home-atmosphere" class="scroll">Atmosphere</a></li>
-							<li><a href="#home-booking" class="scroll">Booking</a></li>
-						</ul>
-					</li>
-
-					<li id="link-story">
-						<a href="https://emaidalat.com/our-story/">Our Story</a>
-					</li>
-
-					<li id="link-bnb">
-						<a href="https://emaidalat.com/our-rooms/">Our Rooms</a>
-						<ul id="inner-bnb" class="accordionInner">
-							<li><a href="#rooms-ivy" class="scroll">Ivy</a></li>
-							<li><a href="#rooms-clara" class="scroll">Clara</a></li>
-							<li><a href="#rooms-may" class="scroll">May</a></li>
-							<li><a href="#rooms-lila" class="scroll">Lila</a></li>
-							<li><a href="#rooms-jasmine" class="scroll">Jasmine</a></li>
-						</ul>
-					</li>
-
-					<li id="link-reservations">
-						<a href="https://emaidalat.com/reservations/">Reservations</a>
-					</li>
-
-
-					<li id="link-menu">
-						<a id="restaurantLink" href="https://emaidalat.com/restaurant-menu/">Menu</a>
-						<ul id="inner-restaurant" class="accordionInner">
-							<li id="link-restaurant"><a href="https://emaidalat.com/restaurant-menu/">Restaurant</a></li>
-							<li id="link-drinks"><a href="https://emaidalat.com/drinks-desserts-menu/">Drinks &amp; Desserts</a></li>
-							<li id="link-breakfast"><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a></li>
-							<li id="link-wine"><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
-						</ul>
-					</li>
-
-					<li id="link-contact">
-						<a href="https://emaidalat.com/contact/">Contact</a>
-					</li>
-				</ul>
-
-			-->
-
+				
 			<div class="side-footer">
 
 				<div id="side-footer-widget-area">

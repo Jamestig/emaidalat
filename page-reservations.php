@@ -26,7 +26,7 @@
 				</header>
 
 				<h4 class="header-caps">Reserve a table at Restaurant Emai</h4>
-				<p>To make reservations at our Italian restaurant, please call us on <a class="footer-phone link-bold" href="tel: +842633839001">+84 2633 839 001</a> (English and Vietnamese) between 7:00am - 10:00pm.</p>
+				<p>To make reservations at our Italian restaurant, please call us on <a class="footer-phone link-bold" href="tel: +842633839001">+84 2633 839 001</a> (English and Vietnamese) between 8:00am - 5:00pm.</p>
 
 				<h4 class="header-caps">Make a booking at Emai homestay</h4>
 				<p>To book your stay in one of guestrooms, please either:</p>

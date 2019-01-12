@@ -1,0 +1,12 @@
+[15-Oct-2018 13:56:53 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/clayandi/public_html/wp-content/themes/emai-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/clayandi/public_html/wp-content/themes/emai-theme/index.php on line 1
+[16-Nov-2018 11:01:36 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/clayandi/public_html/wp-content/themes/emai-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/clayandi/public_html/wp-content/themes/emai-theme/index.php on line 1
+[17-Dec-2018 15:01:26 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/clayandi/public_html/wp-content/themes/emai-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/clayandi/public_html/wp-content/themes/emai-theme/index.php on line 1

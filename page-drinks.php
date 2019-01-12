@@ -23,7 +23,7 @@
 				<h2 class="menu-title">Drinks &amp; Desserts</h2>
 			</header>
 
-			<section id="menu-coffee" class="pageSection section-dish">
+			<section id="menu-coffee" class="menuSection section-dish">
 				<div class="fixed-image mobile-image gradient-down">
 					<figure id="">
 						<picture>
@@ -42,16 +42,13 @@
 					<section id="menu-italian-coffee">
 						<h5 class="header-caps">Italian Coffee (Iced/Hot)</h5>
 						<ul>
-							<li>Espresso <span class="dish-price">20</span></li>
-							<li>Americano <span class="dish-price">25</span></li>
+							<li>Espresso/Hot Americano <span class="dish-price">20</span></li>
 							<li>Iced Americano with Orange Peel <span class="dish-price">40</span></li>
 							<li>Cappuccino <span class="dish-price">45</span></li>
-							<li>Latte <span class="dish-price">60</span></li>
-							<li>Mocha <span class="dish-price">70</span></li>
-							<li>Affogato <span class="dish-price">60</span></li>
+							<li>Latte/Mocha <span class="dish-price">70</span></li>
+							<li>Affogato <span class="dish-price">55</span></li>
 							<li>Classic Macchiatto <span class="dish-price">45</span></li>
-							<li>Extra shot <span class="dish-price">+15</span></li>
-							<li>With Pistachio or Walnut Milk <span class="dish-price">+20</span></li>
+							<li>Extra shot <span class="dish-price">10</span></li>
 						</ul>
 					</section>
 
@@ -67,7 +64,7 @@
 				</div>
 			</section>
 
-			<section id="menu-tea" class="pageSection section-dish">
+			<section id="menu-tea" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/tea_4k_01.jpg" media="(min-width: 1921px)">
@@ -84,7 +81,7 @@
 					<section id="menu-hot-tea">
 						<h5 class="header-caps">Hot tea (pot)</h5>
 						<ul>
-							<li>Earl Grey <span class="dish-price">70</span></li>
+							<li>Earl Grey (served with cream or lime) <span class="dish-price">70</span></li>
 							<li>Cau Dat Green Oolong <span class="dish-price">70</span></li>
 							<li>Orange Pekoe with Fresh Orange, Ginger &amp; Wild Honey <span class="dish-price">90</span></li>
 							<li>Green Tea <span class="dish-price">30</span></li>
@@ -101,13 +98,13 @@
 					<section id="menu-chocolate">
 						<h5 class="header-caps">Chocolate</h5>
 						<ul>
-							<li>Hot Cacao <span class="dish-price">70</span></li>
+							<li>Hot Chocolate <span class="dish-price">70</span></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 
-			<section id="menu-drinks" class="pageSection section-dish">
+			<section id="menu-drinks" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/coffee_4k_01.jpg" media="(min-width: 1921px)">
@@ -136,17 +133,17 @@
 						<ul>
 							<li>Fresh Orange or Watermelon Juice <span class="dish-price">70</span></li>
 							<li>Fresh Strawberry or Mango Smoothie <span class="dish-price">70</span></li>
-							<li>Mulberry, Passion Fruit, Raspberry or Strawberry Homemade Soda <span class="dish-price">50</span></li>
+							<li>Mulberry, Passion Fruit, or Raspberry Homemade Soda <span class="dish-price">50</span></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 
-			<section id="menu-cakes" class="pageSection section-dish">
+			<section id="menu-cakes" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/dessert_panna_4k.jpg" media="(min-width: 1921px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/panna_1500_01.jpg" media="(min-width: 1025px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/brioche_4k.jpg" media="(min-width: 1921px)">
+						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/brioche_1920.jpg" media="(min-width: 1025px)">
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/panna_800_01.jpg" media="(min-width: 600px)">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/panna_480_01.jpg" alt="Panna Cotta with Dalat Berries Cooked in Mulled Wine ">
 					</picture>
@@ -161,14 +158,14 @@
 						<li>Chocolate Mousse Cake with Candied Orange Puree and Orange Liqueur <span class="dish-price">95</span></li>
 						<li>Panna Cotta with Dalat Berries Cooked in Mulled Wine <span class="dish-price">95</span></li>
 						<li>Ultimate New York Cheesecake with Fresh Strawberry Sauce <span class="dish-price">95</span></li>
-						<li>Almond Butter Cake <span class="dish-price">95</span></li>
+						<li>Gooey Butter Almond Cake <span class="dish-price">95</span></li>
 						<li>Dalat Berries in Yoghurt Cream Cake <span class="dish-price">95</span></li>
 						<li>Passion Fruit Cheese Cake <span class="dish-price">95</span></li>
 					</ul>
 				</div>
 			</section>
 
-			<section id="menu-liquor" class="pageSection section-dish">
+			<section id="menu-liquor" class="menuSection section-dish">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/wine_4k_01.jpg" media="(min-width: 1921px)">
@@ -182,17 +179,17 @@
 					<header class="dish-header">
 						<h4 class="dish-title">liquor</h4>
 					</header>
-					<p class="text-condition">Please ask for our full, curated list for wines by the bottle.</p>
+					<a href="https://emaidalat.com/wine-list/" class="text-condition">Click here for our full, curated list for wines by the bottle.</a>
 					<section id="menu-wine-glass">
 						<h5 class="header-caps">Wine by the glass</h5>
 						<ul>
 							<li>Primo Sangiovese-Merlot, red <span class="dish-price">126</span></li>
-							<li>Argentina, Cuma Torrontes, organic white <span class="dish-price">126</span></li>
-							<li>Mulled Wine* <span class="dish-price">126</span>
+							<li>Trebianno d'Abruzzo, organic white <span class="dish-price">126</span></li>
+							<li class="mulled-wine">Special Homemade Mulled Wine* <span class="dish-price">126</span>
 								<p>with 8 exotic spices, orange, and lime</p>
 							</li>
 						</ul>
-						<p class="text-condition">*Available during colder months</p>
+						<p class="text-condition">*made occasionally when it is cold outside, to keep you warm and cosy in the emai home</p>
 					</section>
 
 					<section id="menu-beer">
