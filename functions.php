@@ -5,7 +5,7 @@
 	function emai_theme_styles() {
 		wp_enqueue_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 		wp_enqueue_style( 'emai_fonts', "https://fonts.googleapis.com/css?family=EB+Garamond|Marcellus+SC" );
-		wp_enqueue_style('main_css', get_template_directory_uri() . '/style.css');
+		wp_enqueue_style('main_css', get_template_directory_uri() . '/style.min.css');
 	}
 
 	add_action('wp_enqueue_scripts', 'emai_theme_styles');

@@ -14,7 +14,7 @@ Tags: emai, italian, restaurant, bnb, homestay, cafe
 	MODERN NORMALIZE
 ////////////////////*/
 
- html {
+html {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -312,10 +312,6 @@ h6 {
 .text-condition {
 	color: var(--font-light);
 	font-size: 1.1em;
-}
-
-.font--light {
-	color: var(--font-light);
 }
 
 /*////////////////////
@@ -1198,6 +1194,10 @@ html {
 	-webkit-justify-content: center;
 	   -moz-box-pack: center;
 	        justify-content: center;
+}
+
+.main-logo a {
+	height: 220px;
 }
 
 .main-logo img {
@@ -2340,21 +2340,25 @@ html {
 
 /*////////////////////
 	MENU PAGES
-
-menu course section
-	menu course header
-	menu course sub-header
-	menu meal section
-		menu meal header
-		meal content
-			dish title
-			dish ingredients
-
 ////////////////////*/
 
-/* Menu navigation */
+.menuSection .fixed-image {
+	opacity: 0;
+}
 
-.menu__select {
+.menuSection:first-of-type .fixed-image {
+	opacity: 1;
+}
+
+.main-menu .content {
+	text-align: center;
+}
+
+.main-menu .content li {
+	line-height: 1.4em;
+}
+
+.menu-select {
 	text-align: center;
 	background-color: var(--background-dark);
 	border-top: 1px solid var(--border-light);
@@ -2362,22 +2366,22 @@ menu course section
 	padding-bottom: 1em;
 }
 
-.menu__select h3 {
+.menu-select h3 {
 	font-style: italic;
 	margin-bottom: 0;
 }
 
-.menu__select li {
+.menu-select li {
 	padding: .5em 0;
 	display: inline-block;
 	text-transform: uppercase;
 }
 
-.menu__select li>span {
+.menu-select li>span {
 	padding-left: .5em;
 }
 
-.menu__select a {
+.menu-select a {
 	border-bottom: 1px solid #b3b3b3;
 	font-size: .8em;
 	color: var(--font-main);
@@ -2385,45 +2389,43 @@ menu course section
 	line-height: 1em;
 }
 
-.menu__select-bottom {
+.menu-select-bottom {
 	margin-top: 3em;
 }
 
-.menu__select-bottom ul {
+.menu-select-bottom ul {
 	margin-top: 1em;
 }
 
-/* Menu top header and legend */
-
-.menu__title {
+.menu-title {
 	font-size: 2em;
 	text-transform: none;
 	text-align: center;
 	margin: .8em 5vw .5em 5vw;
 }
 
-.menu__legend {
+.menu-legend {
 	margin: 0 5vw 2em 5vw;
 	text-align: center;
 	letter-spacing: .1em;
 	font-size: .9em;
 }
 
-.menu__legend img {
+.menu-legend img {
 	padding: 0 .3em 0 .5em;
 	vertical-align: middle;
 }
 
-.menu__legend .icon-vegetarian {
+.menu-legend .icon-vegetarian {
 	padding-left: 0;
 }
 
 @media screen and (max-width: 380px) {
-	.menu__legend {
+	.menu-legend {
 		font-size: .8em;
 	}
 
-	.menu__legend img {
+	.menu-legend img {
 		padding: 0 .2em 0 .3em;
 	}
 }
@@ -2448,66 +2450,47 @@ menu course section
 	vertical-align: middle;
 }
 
-/* Menu courses */
-
-.menu__course {
-	text-align: center;
-	padding: 0 5vw;
-}
-
-.menu__course-header {
-	margin: 3em auto;
-}
-
-.menu__course-header h2 {
-	font-size: 1.8em;
-	font-style: italic;
-}
-
-.menu__course-header h4 {
-	color: var(--font-light);
-}
-
-.menu__course-header .header-caps {
-	font-size: .9rem;
-}
-
-.menu__sub-course {
+.section-dish {
 	margin-bottom: 2.5em;
 }
 
-.menu__sub-course-header h3 {
+.dish-header {
+	padding-bottom: 1em;
+}
+
+.dish-title {
+	margin: auto;
 	text-align: center;
 	font-weight: normal;
 	font-size: 1.5em;
+	font-style: italic;
 	text-transform: capitalize;
 	white-space: nowrap;
 	letter-spacing: .02em;
-	color: var(--font-light);
 }
 
-.menu__sub-course-header h3::before {
+.dish-title::before {
 	content: url(images/icon/line_left_short.png);
 	position: relative;
 	top: -5px;
 	padding-right: 10px;
 }
 
-.menu__sub-course-header h3::after {
+.dish-title::after {
 	content: url(images/icon/line_right_short.png);
 	position: relative;
 	top: -5px;
 	padding-left: 10px;
 }
 
-.menu__dish-item {
-	font-weight: bold;
-	margin: 1.5em 0;
-}
+@media screen and (min-width: 500px) {
+	.dish-title::before {
+		content: url(images/icon/line_left.png);
+	}
 
-.menu__dish-ingredients {
-	font-weight: normal;
-	margin: 0;
+	.dish-title::after {
+		content: url(images/icon/line_right.png);
+	}
 }
 
 .dish-price {
@@ -2515,51 +2498,33 @@ menu course section
 	color: var(--font-light)
 }
 
-@media screen and (min-width: 500px) {
-	.menu__sub-course-header h3::before {
-		content: url(images/icon/line_left.png);
-	}
-
-	.menu__sub-course-header h3::after {
-		content: url(images/icon/line_right.png);
-	}
-}
 
 /* Menu pages widescreen response */
 
 @media screen and (min-width: 1280px) {
 
-	.menuSection .fixed-image {
-		opacity: 0;
-	}
-	
-	.menuSection:first-of-type .fixed-image {
-		opacity: 1;
-	}
-
-	.menu .ribbon-container-right {
+	.main-menu .ribbon-container-right {
 		margin-left: 35vw;
 	}
 
-	.menu .ribbon-container-right .fixed-image {
+	.main-menu .ribbon-container-right .fixed-image {
 		width: 35vw;
 	}
 
-	.menu__select {
+	.menu-select {
 		display: none;
 	}
 
-	.menu__title {
+	.menu-title {
 		background-color: var(--background-main);
 		margin-top: 0;
 	}
 
-	.menu__course {
-		padding: 0 8vw;
-		margin: 5em 0;
+	.dish-title {
+		padding: 2em 0 1em 0;
 	}
 
-	.menu::after {
+	.main-menu::after {
 		content: '';
 		position: fixed;
 		bottom: 0;
@@ -2581,20 +2546,8 @@ menu course section
 
 /*// DRINK MENU PAGE //*/
 
-.drinks-menu {
-	text-align: center;
-}
-
-.drinks-menu__list {
-	padding: 0 5vw;
-}
-
-.drinks-menu__item {
-	padding: .4em 0;
-}
-
-.chai-tea {
-	margin-top: 0;
+#menu-drinks .section-dish li {
+	padding: .25em 0;
 }
 
 @media screen and (min-width: 1280px) {
@@ -2605,10 +2558,6 @@ menu course section
 	#menu-cakes img {
 		margin-left: 0;
 	}
-
-	.drinks-menu__list {
-		padding: 0 8vw;
-	}
 }
 
 /*// WINE LIST PAGE //*/
@@ -2617,11 +2566,11 @@ menu course section
 	padding: 0 8vw;
 }
 
-#main-menu-wine .menu__sub-course-header {
+#main-menu-wine .dish-title {
 	margin: 2em 0 .5em 0;
 }
 
-#main-menu-wine .menu__sub-course-header:first-child {
+#main-menu-wine .dish-title:first-child {
 	margin-top: 0;
 }
 
