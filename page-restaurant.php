@@ -12,14 +12,14 @@ Template Name: Restaurant Page
 		<header class="menu__header">
 			<nav class="menu__select">
 				<h3>Select menu:</h3>
-				<ul>
-					<li class="menu__dish-item"><a href="https://emaidalat.com/restaurant-menu/">Restaurant</a><span>&#183;</span>
+				<ul class="menu__list">
+					<li><a href="https://emaidalat.com/restaurant-menu/">Restaurant</a><span>&#183;</span>
 					</li>
-					<li class="menu__dish-item"><a href="https://emaidalat.com/drinks-desserts-menu/">Drinks &amp; Desserts</a>
+					<li><a href="https://emaidalat.com/drinks-desserts-menu/">Drinks &amp; Desserts</a>
 					</li><br>
-					<li class="menu__dish-item"><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a><span>&#183;</span>
+					<li><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a><span>&#183;</span>
 					</li>
-					<li class="menu__dish-item"><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
+					<li><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
 				</ul>
 			</nav>
 
@@ -46,7 +46,7 @@ Template Name: Restaurant Page
 			</hgroup>
 
 			<section class="menuSection menu__sub-course">
-				<figure class="fixed-image mobile-image gradient-down">
+				<figure class="fixed-image mobile-image">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/hd/food_ravioli_1600.jpg"
 							media="(min-width: 1025px)">
@@ -61,7 +61,7 @@ Template Name: Restaurant Page
 					<h3>Appetisers</h3>
 				</header>
 
-				<ul>
+				<ul class="menu__list">
 					<li class="menu__dish-item">Crostata di Caponata
 						<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegan.png"
 								alt="Vegan"></span>
@@ -95,7 +95,7 @@ Template Name: Restaurant Page
 			</section>
 
 			<section class="menuSection menu__sub-course">
-				<figure class="fixed-image mobile-image gradient-down">
+				<figure class="fixed-image mobile-image">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/hd/salad_pomelo_1920.jpg"
 							media="(min-width: 1025px)">
@@ -110,7 +110,7 @@ Template Name: Restaurant Page
 					<h3>Salads</h3>
 				</header>
 
-				<ul>
+				<ul class="menu__list">
 					<li class="menu__dish-item">Summer Salad
 						<span><img class="icon-vegetarian"
 								src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
@@ -142,7 +142,7 @@ Template Name: Restaurant Page
 			</hgroup>
 
 			<section class="menuSection menu__sub-course">
-				<figure class="fixed-image mobile-image gradient-down">
+				<figure class="fixed-image mobile-image">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/hd/duck_1920.jpg"
 							media="(min-width: 1025px)">
@@ -157,7 +157,7 @@ Template Name: Restaurant Page
 					<h3>Soups</h3>
 				</header>
 
-				<ul>
+				<ul class="menu__list">
 					<li class="menu__dish-item"><span class="menu__dish-ingredients">Émai's Signature </span>Artichoke Soup
 						<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegan.png"
 								alt="Vegan"></span>
@@ -180,7 +180,7 @@ Template Name: Restaurant Page
 			</section>
 
 			<section class="menuSection menu__sub-course">
-				<figure class="fixed-image mobile-image gradient-down">
+				<figure class="fixed-image mobile-image">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/hd/pasta_tomato_1920.jpg"
 							media="(min-width: 1025px)">
@@ -195,7 +195,7 @@ Template Name: Restaurant Page
 					<h3>Pasta</h3>
 				</header>
 
-				<ul>
+				<ul class="menu__list">
 					<li class="menu__dish-item">Linguine con bisque di gamberi
 						<span><img class="icon-spicy" src="<?php bloginfo('stylesheet_directory');?>/images/icon/spicy.png"
 								alt="Spicy"></span>
@@ -259,7 +259,7 @@ Template Name: Restaurant Page
 				<h4>Pizza is usually to be shared, and can be substituted for a primo or secondo</h4>
 			</hgroup>
 
-			<figure class="fixed-image mobile-image gradient-down">
+			<figure class="fixed-image mobile-image">
 				<picture>
 					<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/hd/pizza_margherita_1920.jpg"
 						media="(min-width: 1025px)">
@@ -270,7 +270,7 @@ Template Name: Restaurant Page
 				</picture>
 			</figure>
 
-			<ul>
+			<ul class="menu__list">
 				<li class="menu__dish-item">Margherita
 					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
@@ -323,7 +323,7 @@ Template Name: Restaurant Page
 				<h4>The most substantial and meticulously prepared dish of the meal.</h4>
 			</hgroup>
 
-			<figure class="first-image fixed-image mobile-image gradient-down">
+			<figure class="first-image fixed-image mobile-image">
 				<picture>
 					<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/hd/duck_1920.jpg"
 						media="(min-width: 1025px)">
@@ -334,7 +334,7 @@ Template Name: Restaurant Page
 				</picture>
 			</figure>
 
-			<ul>
+			<ul class="menu__list">
 				<li class="menu__dish-item">Rosemary Smoked Duck Fillet
 					<span class="dish-price">340</span>
 					<p class="menu__dish-ingredients">With Roasted Carrots & Orange Almond Relish</p>
@@ -368,7 +368,7 @@ Template Name: Restaurant Page
 				<h4>A curated blend of complementary flavours, perfect when paired with a fine wine.</h4>
 			</hgroup>
 
-			<figure class="fixed-image mobile-image gradient-down">
+			<figure class="fixed-image mobile-image">
 				<picture>
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/wine_4k_01.jpg"
 						media="(min-width: 1921px)">
@@ -381,7 +381,7 @@ Template Name: Restaurant Page
 				</picture>
 			</figure>
 
-			<ul>
+			<ul class="menu__list">
 				<li class="menu__dish-item">Cheese Platter
 					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
@@ -398,7 +398,7 @@ Template Name: Restaurant Page
 				<p class="header-caps">EVERY DAY WE FRESHLY PREPARE 3 - 4 OF THE FOLLOWING:</p>
 			</hgroup>
 
-			<figure class="fixed-image mobile-image gradient-down">
+			<figure class="fixed-image mobile-image">
 				<picture>
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/dessert_panna_4k.jpg"
 						media="(min-width: 1921px)">
@@ -411,7 +411,7 @@ Template Name: Restaurant Page
 				</picture>
 			</figure>
 
-			<ul>
+			<ul class="menu__list">
 				<li class="menu__dish-item">Chocolate Mousse Cake
 					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
@@ -481,15 +481,13 @@ Template Name: Restaurant Page
 		</section>
 	</div>
 
-	<section>
-		<nav class="menu__select">
-			<ul>
+		<nav class="menu__select menu__select-bottom">
+			<ul class="menu__list">
 				<li><a href="https://emaidalat.com/drinks-desserts-menu/">Drinks &amp; Desserts</a></li><br>
 				<li><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a><span>&#183;</span></li>
 				<li><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
 			</ul>
 		</nav>
-	</section>
 </main>
 
 <?php get_footer();?>

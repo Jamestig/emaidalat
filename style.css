@@ -318,6 +318,10 @@ h6 {
 	color: var(--font-light);
 }
 
+.font--italic {
+	font-style: italic;
+}
+
 /*////////////////////
 	GLOBAL COLOUR
 ////////////////////*/
@@ -2452,7 +2456,7 @@ menu course section
 
 .menu__course {
 	text-align: center;
-	padding: 0 5vw;
+	padding: 0 3vw;
 }
 
 .menu__course-header {
@@ -2473,7 +2477,12 @@ menu course section
 }
 
 .menu__sub-course {
-	margin-bottom: 2.5em;
+	margin-bottom: 4em;
+}
+
+.menu__sub-course-header {
+	margin-bottom: 2em;
+	margin-top: 3em;
 }
 
 .menu__sub-course-header h3 {
@@ -2498,6 +2507,10 @@ menu course section
 	position: relative;
 	top: -5px;
 	padding-left: 10px;
+}
+
+.menu__list {
+	padding: 0 3vw;
 }
 
 .menu__dish-item {
@@ -2555,8 +2568,13 @@ menu course section
 	}
 
 	.menu__course {
-		padding: 0 8vw;
-		margin: 5em 0;
+		padding: 0 5vw;
+		margin-bottom: 5em;
+		margin-top: 3em;
+	}
+
+	.menu__list {
+		padding: 0;
 	}
 
 	.menu::after {
@@ -2585,10 +2603,6 @@ menu course section
 	text-align: center;
 }
 
-.drinks-menu__list {
-	padding: 0 5vw;
-}
-
 .drinks-menu__item {
 	padding: .4em 0;
 }
@@ -2613,47 +2627,35 @@ menu course section
 
 /*// WINE LIST PAGE //*/
 
-#main-menu-wine .content {
-	padding: 0 8vw;
+.wine-menu {
+	text-align: center;
 }
 
-#main-menu-wine .menu__sub-course-header {
-	margin: 2em 0 .5em 0;
+.wine-menu__item {
+	padding: .5em 0;
 }
 
-#main-menu-wine .menu__sub-course-header:first-child {
-	margin-top: 0;
-}
-
-.mulled-wine > p{
-	margin-top: 0;
+.wine-menu-description {
+	color: var(--font-light);
+	padding: 0 3vw;
 }
 
 /*// BREAKFAST MENU PAGE //*/
 
-#menu-breakfast .content {
-	padding: 0 8vw;
+.breakfast-menu__course {
+	margin: 3em 0;
 }
 
-.menu-breakfast-information p:nth-child(1) {
-	color: var(--font-light);
-	font-style: italic;
-}
-
-.menu-breakfast-information p:nth-of-type(2),
-.menu-breakfast-information p:nth-of-type(4) {
-	color: var(--font-light);
-}
-
-.menu-breakfast-sets p {
+.menu-breakfast__sets p {
 	margin: .5em 0;
 }
 
-.menu-breakfast-sets h6 {
+.menu-breakfast__sets h6 {
 	font-size: 1.5em;
 	font-style: italic;
 	letter-spacing: .02em;
 	margin: 2.2em 0 1.2em 0;
+	color: var(--font-light);
 }
 
 

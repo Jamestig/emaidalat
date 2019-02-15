@@ -28,7 +28,7 @@
 		"sync": "browser-sync start --proxy \"localhost/wp_emai/\" --files \"**/*\" ",
 		"css:prefix": "postcss css/main.css --use=autoprefixer --map=false --output=style.css",
 		"css:minify": "cleancss --level=1 --source-map --source-map-inline-sources --output style.min.css style.css",
-		"watch:css": "chokidar \"css/*.css\" -c \"npm run build:css\" --initial",
+		"watch:css": "chokidar \"**/*.css\" -c \"npm run build:css\" --initial",
 		"build:css": "run-s css:*",
 		"dev": "run-p watch:css sync"
 	},

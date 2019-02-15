@@ -12,7 +12,7 @@
 		<header class="menu__header">
 			<nav class="menu__select">
 				<h3>Select menu:</h3>
-				<ul class="drinks-menu__list">
+				<ul class="menu__list">
 					<li class="drinks-menu__item"><a
 							href="https://emaidalat.com/restaurant-menu/">Restaurant</a><span>&#183;</span>
 					</li>
@@ -27,9 +27,9 @@
 			<h1 class="menu__title">Bevande &#183; Drinks</h1>
 		</header>
 
-		<section class="menuSection drinks-menu__course">
-			<div class="fixed-image mobile-image gradient-down">
-				<figure class="fixed-image mobile-image gradient-down">
+		<section class="menuSection menu__course">
+			<div class="fixed-image mobile-image">
+				<figure class="fixed-image mobile-image">
 					<picture>
 						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/coffee_4k_01.jpg"
 							media="(min-width: 1921px)">
@@ -53,7 +53,7 @@
 					<h3>Italian Coffee (Iced/Hot)</h3>
 				</header>
 
-				<ul class="drinks-menu__list">
+				<ul class="menu__list">
 					<li class="drinks-menu__item">Espresso <span class="dish-price">20</span></li>
 					<li class="drinks-menu__item">Hot Americano <span class="dish-price">25</span></li>
 					<li class="drinks-menu__item">Iced Americano with Orange Peel <span class="dish-price">40</span></li>
@@ -70,7 +70,7 @@
 				<header class="menu__sub-course-header">
 					<h3>Vietnamese Coffee</h3>
 				</header>
-				<ul class="drinks-menu__list">
+				<ul class="menu__list">
 					<li class="drinks-menu__item">Hot/Iced Black Coffee <span class="dish-price">25</span></li>
 					<li class="drinks-menu__item">Hot/Iced Coffee with Condensed Milk <span class="dish-price">28</span></li>
 					<li class="drinks-menu__item">Ha Noi Egg Coffee <span class="dish-price">70</span></li>
@@ -82,14 +82,14 @@
 				<header class="menu__sub-course-header">
 					<h3>Cacao</h3>
 				</header>
-				<ul class="drinks-menu__list">
+				<ul class="menu__list">
 					<li class="drinks-menu__item">Hot Chocolate <span class="dish-price">70</span></li>
 				</ul>
 			</section>
 		</section>
 
-		<section class="menuSection drinks-menu__course">
-			<figure class="fixed-image mobile-image gradient-down">
+		<section class="menuSection menu__course">
+			<figure class="fixed-image mobile-image">
 				<picture>
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/tea_4k_01.jpg"
 						media="(min-width: 1921px)">
@@ -111,7 +111,7 @@
 					<h3>Hot tea (pot)</h3>
 				</header>
 
-				<ul class="drinks-menu__list">
+				<ul class="menu__list">
 					<li class="drinks-menu__item">Homemade Chai Tea <span class="dish-price">90</span>
 						<p class="chai-tea font--light">*can be served with milk or coconut cream</p>
 					</li>
@@ -129,15 +129,15 @@
 				<header class="menu__sub-course-header">
 					<h3>Iced tea (glass)</h3>
 				</header>
-				<ul class="drinks-menu__list">
+				<ul class="menu__list">
 					<li class="drinks-menu__item">Thin Oolong Tea with Grass Jelly, Chia Seeds, Lime, Mint &amp; Wild Honey <span
 							class="dish-price">70</span></li>
 				</ul>
 			</section>
 		</section>
 
-		<section class="menuSection drinks-menu__course">
-			<figure class="fixed-image mobile-image gradient-down">
+		<section class="menuSection menu__course">
+			<figure class="fixed-image mobile-image">
 				<picture>
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/coffee_4k_01.jpg"
 						media="(min-width: 1921px)">
@@ -159,7 +159,7 @@
 					<h3>Juices, Smoothies &amp; Italian Sodas</h3>
 				</header>
 				<p class="font--light">We only use fresh fruits</p>
-				<ul class="drinks-menu__list">
+				<ul class="menu__list">
 					<li class="drinks-menu__item">Juices: Orange or Watermelon <span class="dish-price">70</span></li>
 					<li class="drinks-menu__item">Smoothies: Strawberry, Banana or Mango <span class="dish-price">70</span></li>
 					<li class="drinks-menu__item">Homemade Italian Sodas: Passion Fruit, Mulberry, Raspberry or Strawberry <span
@@ -172,15 +172,15 @@
 					<h3>Soft drinks &amp; Waters</h3>
 				</header>
 				<p class="font--light">Vinh Hao is the oldest and most renowned pure mineral water brand in Vietnam</p>
-				<ul class="drinks-menu__list">
+				<ul class="menu__list">
 					<li class="drinks-menu__item">Vinh Hao Sparkling Water <span class="dish-price">40</span></li>
 					<li class="drinks-menu__item">Coca Cola / 7 Up <span class="dish-price">50</span></li>
 				</ul>
 			</section>
 		</section>
 
-		<section class="menuSection drinks-menu__course">
-			<figure class="fixed-image mobile-image gradient-down">
+		<section class="menuSection menu__course">
+			<figure class="fixed-image mobile-image">
 				<picture>
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/wine_4k_01.jpg"
 						media="(min-width: 1921px)">
@@ -204,7 +204,7 @@
 					<h3>Wine by the glass</h3>
 				</header>
 
-				<ul class="drinks-menu__list">
+				<ul class="menu__list">
 					<li class="drinks-menu__item">Sangiovese-Merlot, red, Italy <span class="dish-price">126</span></li>
 					<li class="drinks-menu__item">Torrontes, organic white, Argentina <span class="dish-price">126</span></li>
 					<li class="mulled-wine">Special Homemade Mulled Wine* <span class="dish-price">126</span>
@@ -219,7 +219,7 @@
 					<h3>Beers</h3>
 				</header>
 
-				<ul class="drinks-menu__list">
+				<ul class="menu__list">
 					<li class="drinks-menu__item">Leffe / Hoegaarden <span class="dish-price">100</span></li>
 					<li class="drinks-menu__item">Corona <span class="dish-price">70</span></li>
 					<li class="drinks-menu__item">Saigon Special / Heineken / Sapporo <span class="dish-price">50</span></li>
@@ -227,16 +227,14 @@
 			</section>
 		</section>
 
-		<section>
-			<nav class="menu__select">
-				<ul class="drinks-menu__list">
-					<li class="drinks-menu__item"><a href="https://emaidalat.com/restaurant-menu/">Restaurant Menu</a></li><br>
-					<li class="drinks-menu__item"><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a><span>&#183;</span>
-					</li>
-					<li class="drinks-menu__item"><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
-				</ul>
-			</nav>
-		</section>
+		<nav class="menu__select menu__select-bottom">
+			<ul class="menu__list">
+				<li class="drinks-menu__item"><a href="https://emaidalat.com/restaurant-menu/">Restaurant Menu</a></li><br>
+				<li class="drinks-menu__item"><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a><span>&#183;</span>
+				</li>
+				<li class="drinks-menu__item"><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
+			</ul>
+		</nav>
 	</div>
 </main>
 
