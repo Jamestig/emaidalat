@@ -13,13 +13,10 @@ Template Name: Restaurant Page
 			<nav class="menu__select">
 				<h3>Select menu:</h3>
 				<ul class="menu__list">
-					<li><a href="https://emaidalat.com/restaurant-menu/">Restaurant</a><span>&#183;</span>
-					</li>
-					<li><a href="https://emaidalat.com/drinks-desserts-menu/">Drinks &amp; Desserts</a>
-					</li><br>
-					<li><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a><span>&#183;</span>
-					</li>
-					<li><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
+					<li><a href="https://emaidalat.com/restaurant-menu/">Restaurant</a><span>&#183;</span></li>
+					<li><a href="https://emaidalat.com/drinks-menu/">Drinks</a></li><br>
+					<li><a href="https://emaidalat.com/wine-list/">Wine list</a><span>&#183;</span></li>
+					<li><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a></li>
 				</ul>
 			</nav>
 
@@ -403,7 +400,7 @@ Template Name: Restaurant Page
 				<picture>
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/dessert_panna_4k.jpg"
 						media="(min-width: 1921px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/panna_1500_01.jpg"
+					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/dessert_panna_1920.jpg"
 						media="(min-width: 1025px)">
 					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/panna_800_01.jpg"
 						media="(min-width: 600px)">
@@ -484,9 +481,9 @@ Template Name: Restaurant Page
 
 		<nav class="menu__select menu__select-bottom">
 			<ul class="menu__list">
-				<li><a href="https://emaidalat.com/drinks-desserts-menu/">Drinks &amp; Desserts</a></li><br>
-				<li><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a><span>&#183;</span></li>
-				<li><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
+				<li><a href="https://emaidalat.com/drinks-menu/">Drinks</a></li><br>
+				<li><a href="https://emaidalat.com/wine-list/">Wine list</a><span>&#183;</span></li>
+				<li><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a></li>
 			</ul>
 		</nav>
 </main>

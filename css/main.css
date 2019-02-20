@@ -2466,6 +2466,7 @@ menu course section
 
 .menu__course-header h4 {
 	color: var(--font-light);
+	font-size: 1.2em;
 }
 
 .menu__course-header .header-caps {

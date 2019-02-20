@@ -31,7 +31,7 @@
 				<p>Lấy cảm hứng từ sự đơn giản thanh lịch của vùng nông thôn Tuscan, thức ăn ở émai là sự pha trộn tinh tế của phong cách truyền thống và hiện đại nhằm mang lại trải nghiệm ẩm thực độc đáo cho thực khách.</p>
 
 				<div class="link-button">
-					<a href="https://emaidalat.com/restaurant-menu/">Xem Menu</a>
+					<a href="https://emaidalat.com/vi/nha-hang/">Xem Menu</a>
 				</div>
 
 				<button class="scrollDown moveSectionDown">
@@ -65,7 +65,7 @@
 				<p>Mời bạn cùng émai thưởng thức hương vị ngọt ngào của thiên đường với với thực đơn bánh và món ăn tráng miệng nhà làm được chúng mình tự tay chọn lựa tỉ mỉ.</p>
 
 				<div class="link-button">
-					<a href="https://emaidalat.com/drinks-desserts-menu/">View cafe menu</a>
+					<a href="https://emaidalat.com/vi/quan-ca-phe/">View cafe menu</a>
 				</div>
 
 				<button class="scrollDown moveSectionDown">

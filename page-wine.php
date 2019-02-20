@@ -13,13 +13,10 @@
 			<nav class="menu__select">
 				<h3>Select menu:</h3>
 				<ul class="menu__list">
-					<li class="wine-menu__item"><a href="https://emaidalat.com/restaurant-menu/">Restaurant</a><span>&#183;</span>
-					</li>
-					<li class="wine-menu__item"><a href="https://emaidalat.com/drinks-desserts-menu/">Drinks &amp; Desserts</a>
-					</li><br>
-					<li class="wine-menu__item"><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a><span>&#183;</span>
-					</li>
-					<li class="wine-menu__item"><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
+					<li class="wine-menu__item"><a href="https://emaidalat.com/restaurant-menu/">Restaurant</a><span>&#183;</span></li>
+					<li class="wine-menu__item"><a href="https://emaidalat.com/drinks-menu/">Drinks</a></li><br>
+					<li class="wine-menu__item"><a href="https://emaidalat.com/wine-list/">Wine list</a><span>&#183;</span></li>
+					<li class="wine-menu__item"><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a></li>
 				</ul>
 			</nav>
 
@@ -151,8 +148,7 @@
 	<nav class="menu__select menu__select-bottom">
 		<ul class=" menu__list">
 			<li class="wine-menu__item"><a href="https://emaidalat.com/restaurant-menu/">Restaurant Menu</a></li><br>
-			<li class="wine-menu__item"><a href="https://emaidalat.com/drinks-desserts-menu/">Drinks</a><span>&#183;</span>
-			</li>
+			<li class="wine-menu__item"><a href="https://emaidalat.com/drinks-menu/">Drinks</a><span>&#183;</span></li>
 			<li class="wine-menu__item"><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a></li>
 		</ul>
 	</nav>

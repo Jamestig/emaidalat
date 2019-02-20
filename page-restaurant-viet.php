@@ -13,13 +13,10 @@ Template Name: Restaurant Page Viet
 			<nav class="menu__select">
 				<h3>Chọn menu:</h3>
 				<ul class="menu__list">
-					<li><a href="https://emaidalat.com/vi/nha-hang/">Nhà hàng</a><span>&#183;</span>
-					</li>
-					<li><a href="https://emaidalat.com/vi/quan-ca-phe/">Quán cà phê</a>
-					</li><br>
-					<li><a href="https://emaidalat.com/vi/an-sang/">Ăn sáng</a><span>&#183;</span>
-					</li>
-					<li><a href="https://emaidalat.com/vi/ruou/">Danh sách rượu</a></li>
+					<li><a href="https://emaidalat.com/vi/nha-hang/">Nhà hàng</a><span>&#183;</span></li>
+					<li><a href="https://emaidalat.com/vi/quan-ca-phe/">Thức uống</a></li><br>
+					<li><a href="https://emaidalat.com/vi/ruou/">Danh sách rượu</a><span>&#183;</span></li>
+					<li><a href="https://emaidalat.com/vi/an-sang/">Ăn sáng</a></li>
 				</ul>
 			</nav>
 
@@ -401,7 +398,7 @@ Template Name: Restaurant Page Viet
 				<picture>
 					<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/4k/dessert_panna_4k.jpg"
 						media="(min-width: 1921px)">
-					<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/hd/panna_1500_01.jpg"
+					<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/hd/dessert_panna_1920.jpg"
 						media="(min-width: 1025px)">
 					<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/tablet/panna_800_01.jpg"
 						media="(min-width: 600px)">
@@ -482,9 +479,9 @@ Template Name: Restaurant Page Viet
 
 	<nav class="menu__select menu__select-bottom">
 		<ul>
-			<li><a href="https://emaidalat.com/vi/quan-ca-phe/">Quán cà phê</a></li><br>
-			<li><a href="https://emaidalat.com/vi/an-sang/">Ăn sáng</a><span>&#183;</span></li>
-			<li><a href="https://emaidalat.com/vi/ruou/">Danh sách rượu</a></li>
+			<li><a href="https://emaidalat.com/vi/quan-ca-phe/">Thức uống</a></li><br>
+			<li><a href="https://emaidalat.com/vi/ruou/">Danh sách rượu</a><span>&#183;</span></li>
+			<li><a href="https://emaidalat.com/vi/an-sang/">Ăn sáng</a></li>
 		</ul>
 	</nav>
 </main>

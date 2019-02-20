@@ -14,13 +14,10 @@
 				<h3>Select menu:</h3>
 				<ul class="menu__list">
 					<li class="drinks-menu__item"><a
-							href="https://emaidalat.com/restaurant-menu/">Restaurant</a><span>&#183;</span>
-					</li>
-					<li class="drinks-menu__item"><a href="https://emaidalat.com/drinks-desserts-menu/">Drinks &amp; Desserts</a>
-					</li><br>
-					<li class="drinks-menu__item"><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a><span>&#183;</span>
-					</li>
-					<li class="drinks-menu__item"><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
+							href="https://emaidalat.com/restaurant-menu/">Restaurant</a><span>&#183;</span></li>
+					<li class="drinks-menu__item"><a href="https://emaidalat.com/drinks-menu/">Drinks</a></li><br>
+					<li class="drinks-menu__item"><a href="https://emaidalat.com/wine-list/">Wine list</a><span>&#183;</span></li>
+					<li class="drinks-menu__item"><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a></li>
 				</ul>
 			</nav>
 
@@ -45,7 +42,7 @@
 
 			<header class="menu__course-header">
 				<h2>Coffee &#183; Cacao</h2>
-				<p class="menu__dish-ingredients">Plant milk alternatives (almond or macadamia milk) are available for +20.</p>
+				<p class="font--light">Plant milk alternatives (almond or macadamia milk) are available for +20.</p>
 			</header>
 
 			<section class="menu__sub-course">
@@ -230,8 +227,7 @@
 		<nav class="menu__select menu__select-bottom">
 			<ul class="menu__list">
 				<li class="drinks-menu__item"><a href="https://emaidalat.com/restaurant-menu/">Restaurant Menu</a></li><br>
-				<li class="drinks-menu__item"><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a><span>&#183;</span>
-				</li>
+				<li class="drinks-menu__item"><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a><span>&#183;</span></li>
 				<li class="drinks-menu__item"><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
 			</ul>
 		</nav>

@@ -13,13 +13,10 @@
 			<nav class="menu__select">
 				<h3>Chọn menu:</h3>
 				<ul class="menu__list">
-					<li><a href="https://emaidalat.com/vi/nha-hang/">Nhà hàng</a><span>&#183;</span>
-					</li>
-					<li><a href="https://emaidalat.com/vi/quan-ca-phe/">Quán cà phê</a>
-					</li><br>
-					<li><a href="https://emaidalat.com/vi/an-sang/">Ăn sáng</a><span>&#183;</span>
-					</li>
-					<li><a href="https://emaidalat.com/vi/ruou/">Danh sách rượu</a></li>
+					<li><a href="https://emaidalat.com/vi/nha-hang/">Nhà hàng</a><span>&#183;</span></li>
+					<li><a href="https://emaidalat.com/vi/quan-ca-phe/">Thức uống</a></li><br>
+					<li><a href="https://emaidalat.com/vi/ruou/">Danh sách rượu</a><span>&#183;</span></li>
+					<li><a href="https://emaidalat.com/vi/an-sang/">Ăn sáng</a></li>
 				</ul>
 			</nav>
 
@@ -79,7 +76,7 @@
 			<nav class="menu__select menu__select-bottom">
 				<ul>
 					<li><a href="https://emaidalat.com/vi/nha-hang/">Nhà hàng</a></li><br>
-					<li><a href="https://emaidalat.com/vi/quan-ca-phe/">Quán cà phê</a><span>&#183;</span></li>
+					<li><a href="https://emaidalat.com/vi/quan-ca-phe/">Thức uống</a><span>&#183;</span></li>
 					<li><a href="https://emaidalat.com/vi/ruou/">Danh sách rượu</a></li>
 				</ul>
 			</nav>

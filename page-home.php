@@ -65,7 +65,7 @@
 				<p>Have a taste of heaven with our handpicked selection of special homemade cakes and desserts</p>
 
 				<div class="link-button">
-					<a href="https://emaidalat.com/drinks-desserts-menu/">View cafe menu</a>
+					<a href="https://emaidalat.com/drinks-menu/">View cafe menu</a>
 				</div>
 
 				<button class="scrollDown moveSectionDown">
