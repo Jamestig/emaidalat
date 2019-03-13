@@ -23,7 +23,7 @@
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">Émai Italian<br>Restaurant &amp; Gardens</h2>
+					<h2 class="header-full">Émai Restaurant</h2>
 					<hr class="hr-left">
 					<h3>Sensational, authentic European flavours in the heart of Dalat, Vietnam</h3>
 				</header>

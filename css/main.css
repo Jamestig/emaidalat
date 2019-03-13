@@ -1058,7 +1058,7 @@ html {
 #burger-icon {
 	width: 30px;
 	height: 24px;
-	margin-right: 5%;
+	margin-right: 6%;
 	-webkit-transform: rotate(0deg);
 	-ms-transform: rotate(0deg);
 	transform: rotate(0deg);
@@ -1204,13 +1204,17 @@ html {
 	        justify-content: center;
 }
 
+.main-logo a {
+	height: 70%;
+}
+
 .main-logo img {
 	height: 100%;
 }
 
 .nav-overlay {
 	z-index: 6;
-	padding-top: 80px;
+	padding-top: 60px;
 	position: fixed;
 	top: 0;
 	bottom: 0;
