@@ -1,24 +1,18 @@
 <?php
-/*
-  Template Name: Breakfast Page Viet
-*/
-?>
+/**
+ * Template Name: Breakfast Page Viet
+ *
+ * @package emaidalat
+ */
 
-<?php get_header(); ?>
+get_header(); ?>
 
 <main class="breakfast-menu">
 
 	<div class="ribbon-container-right">
-		<header class="menu__header">
-			<nav class="menu__select">
-				<h3>Chọn menu:</h3>
-				<ul class="menu__list">
-					<li><a href="https://emaidalat.com/vi/nha-hang/">Nhà hàng</a><span>&#183;</span></li>
-					<li><a href="https://emaidalat.com/vi/quan-ca-phe/">Thức uống</a></li><br>
-					<li><a href="https://emaidalat.com/vi/ruou/">Danh sách rượu</a><span>&#183;</span></li>
-					<li><a href="https://emaidalat.com/vi/an-sang/">Ăn sáng</a></li>
-				</ul>
-			</nav>
+		<header class="menus__header">
+
+			<?php get_template_part( 'template-parts/menus-navigation' ); ?>
 
 			<h1 class="menu__title">Set ăn sáng</h1>
 		</header>
@@ -26,11 +20,11 @@
 		<section class="menu__course">
 			<figure class="fixed-image mobile-image">
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/breakfast_1920_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/breakfast_1920_01.jpg"
 						media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/breakfast_1024_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/breakfast_1024_01.jpg"
 						media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/breakfast_480_01.jpg"
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/breakfast_480_01.jpg"
 						alt="Sunny-Side-Up Eggs and a Croissant, served with Buttered Baby Potatoes and Salad, plus coffee.">
 				</picture>
 			</figure>
@@ -73,13 +67,8 @@
 				</div>
 			</div>
 
-			<nav class="menu__select menu__select-bottom">
-				<ul>
-					<li><a href="https://emaidalat.com/vi/nha-hang/">Nhà hàng</a></li><br>
-					<li><a href="https://emaidalat.com/vi/quan-ca-phe/">Thức uống</a><span>&#183;</span></li>
-					<li><a href="https://emaidalat.com/vi/ruou/">Danh sách rượu</a></li>
-				</ul>
-			</nav>
+			<?php get_template_part( 'template-parts/menus-navigation' ); ?>
+
 		</section>
 	</div>
 </main>

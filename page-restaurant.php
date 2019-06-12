@@ -1,37 +1,32 @@
 <?php
-/*
-Template Name: Restaurant Page
+/**
+ * Template Name: Restaurant Page
+ *
+ * @package emaidalat
  */
-?>
 
-<?php get_header();?>
+get_header();
+?>
 
 <main class="menu">
 
 	<div class="ribbon-container-right">
-		<header class="menu__header">
-			<nav class="menu__select">
-				<h3>Select menu:</h3>
-				<ul class="menu__list">
-					<li><a href="https://emaidalat.com/restaurant-menu/">Restaurant</a><span>&#183;</span></li>
-					<li><a href="https://emaidalat.com/drinks-menu/">Drinks</a></li><br>
-					<li><a href="https://emaidalat.com/wine-list/">Wine list</a><span>&#183;</span></li>
-					<li><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a></li>
-				</ul>
-			</nav>
+		<header class="menus__header">
+
+			<?php get_template_part( 'template-parts/menus-navigation-viet' ); ?>
 
 			<h1 class="menu__title">Restaurant Menu</h1>
 
 			<p class="menu__legend">
 				<span><img class="icon-vegetarian" class="icon-vegetarian"
-						src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
+						src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 						alt="Vegetarian icon"></span>Vegetarian
 				<span><img class="icon-vegan" class="icon-vegan"
-						src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegan.png" alt="Vegan icon"></span>Vegan
+						src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegan.png" alt="Vegan icon"></span>Vegan
 				<span><img class="icon-seasonal" class="icon-seasonal"
-						src="<?php bloginfo('stylesheet_directory');?>/images/icon/seasonal.png" alt="Seasonal icon"></span>Seasonal
+						src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/seasonal.png" alt="Seasonal icon"></span>Seasonal
 				<span><img class="icon-spicy" class="icon-spicy"
-						src="<?php bloginfo('stylesheet_directory');?>/images/icon/spicy.png" alt="Spicy icon"></span>Spicy
+						src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/spicy.png" alt="Spicy icon"></span>Spicy
 			</p>
 		</header>
 
@@ -45,11 +40,11 @@ Template Name: Restaurant Page
 			<section class="menuSection menu__sub-course">
 				<figure class="fixed-image mobile-image">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/hd/food_ravioli_1600.jpg"
+						<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/food_ravioli_1600.jpg"
 							media="(min-width: 1025px)">
-						<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/tablet/food_ravioli_1024.jpg"
+						<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/food_ravioli_1024.jpg"
 							media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory');?>/images/photos/mobile/food_ravioli_480.jpg"
+						<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/food_ravioli_480.jpg"
 							alt="Sun-dried Tomato and Feta Cheese Ravioli with Roasted Chilies">
 					</picture>
 				</figure>
@@ -60,7 +55,7 @@ Template Name: Restaurant Page
 
 				<ul class="menu__list">
 					<li class="menu__dish-item">Crostata di Caponata
-						<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegan.png"
+						<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegan.png"
 								alt="Vegan"></span>
 						<span class="dish-price">240</span>
 						<p class="menu__dish-ingredients">Eggplant Caponata Tart with Nuts & Tomato Relish</p>
@@ -68,14 +63,14 @@ Template Name: Restaurant Page
 
 					<li class="menu__dish-item">Fresh Mozzarella with 4 Relishes
 						<span><img class="icon-vegetarian"
-								src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+								src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 						<span class="dish-price">210</span>
 						<p class="menu__dish-ingredients">Basil Pesto, Salsa Romesco, Tapenade and Grape Tomato Sauce, with Toasted
 							Nuts</p>
 					</li>
 
 					<li class="menu__dish-item">Mista
-						<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegan.png"
+						<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegan.png"
 								alt="Vegan"></span>
 						<span class="dish-price">190</span>
 						<p class="menu__dish-ingredients">Marinated Fresh Broad Beans, Sun-Dried Tomatoes, and Mushroom Paté or
@@ -84,7 +79,7 @@ Template Name: Restaurant Page
 
 					<li class="menu__dish-item">Pumpkin Wedges
 						<span><img class="icon-vegetarian"
-								src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+								src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 						<span class="dish-price">150</span>
 						<p class="menu__dish-ingredients">Crusted with Parmesan and Herbs, Served with Yoghurt Cream</p>
 					</li>
@@ -94,11 +89,11 @@ Template Name: Restaurant Page
 			<section class="menuSection menu__sub-course">
 				<figure class="fixed-image mobile-image">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/hd/salad_pomelo_1920.jpg"
+						<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/salad_pomelo_1920.jpg"
 							media="(min-width: 1025px)">
-						<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/tablet/salad_pomelo_800.jpg"
+						<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/salad_pomelo_800.jpg"
 							media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory');?>/images/photos/mobile/salad_pomelo_480.jpg"
+						<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/salad_pomelo_480.jpg"
 							alt="Pomelo Salad with Cinnamon, Star Anise and Orange Blossom Water">
 					</picture>
 				</figure>
@@ -110,13 +105,13 @@ Template Name: Restaurant Page
 				<ul class="menu__list">
 					<li class="menu__dish-item">Summer Salad
 						<span><img class="icon-vegetarian"
-								src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+								src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 						<span class="dish-price">220</span>
 						<p class="menu__dish-ingredients">Green Beans, Snow Peas with Feta with Coriander Seeds and Tarragon</p>
 					</li>
 
 					<li class="menu__dish-item">Red Beet Salad
-						<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegan.png"
+						<span><img class="icon-vegan" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegan.png"
 								alt="Vegan"></span>
 						<span class="dish-price">160</span>
 						<p class="menu__dish-ingredients">With Fresh Oranges, and Strawberries, Sprinkled with Cashews</p>
@@ -124,7 +119,7 @@ Template Name: Restaurant Page
 
 					<li class="menu__dish-item">Baby Green Asparagus
 						<span><img class="icon-vegetarian"
-								src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+								src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 						<span class="dish-price">240</span>
 						<p class="menu__dish-ingredients">With Lime Vinaigrette and Pecorino</p>
 					</li>
@@ -141,11 +136,11 @@ Template Name: Restaurant Page
 			<section class="menuSection menu__sub-course">
 				<figure class="fixed-image mobile-image">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/hd/duck_1920.jpg"
+						<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/duck_1920.jpg"
 							media="(min-width: 1025px)">
-						<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/tablet/duck_800_01.jpg"
+						<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/duck_800_01.jpg"
 							media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory');?>/images/photos/mobile/duck_480_01.jpg"
+						<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/duck_480_01.jpg"
 							alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 					</picture>
 				</figure>
@@ -156,21 +151,21 @@ Template Name: Restaurant Page
 
 				<ul class="menu__list">
 					<li class="menu__dish-item"><span class="menu__dish-ingredients">Émai's Signature </span>Artichoke Soup
-						<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegan.png"
+						<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegan.png"
 								alt="Vegan"></span>
 						<span class="dish-price">220</span>
 					</li>
 
 					<li class="menu__dish-item">Tomato Soup <span class="menu__dish-ingredients">with Rosemary Cream</span>
 						<span><img class="icon-vegetarian"
-								src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+								src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 						<span class="dish-price">120</span>
 					</li>
 
 					<li class="menu__dish-item">Potato &amp; Leek Soup <span class="menu__dish-ingredients">with Garlic
 							Cream</span>
 						<span><img class="icon-vegetarian"
-								src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+								src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
 						<span class="dish-price">120</span>
 					</li>
 				</ul>
@@ -179,11 +174,11 @@ Template Name: Restaurant Page
 			<section class="menuSection menu__sub-course">
 				<figure class="fixed-image mobile-image">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/hd/pasta_tomato_1920.jpg"
+						<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/pasta_tomato_1920.jpg"
 							media="(min-width: 1025px)">
-						<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/tablet/pasta_tomato_1024.jpg"
+						<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/pasta_tomato_1024.jpg"
 							media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory');?>/images/photos/mobile/pasta_tomato_480.jpg"
+						<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/pasta_tomato_480.jpg"
 							alt="Spaghetti with Garden-fresh and Sun-dried Tomatoes">
 					</picture>
 				</figure>
@@ -194,7 +189,7 @@ Template Name: Restaurant Page
 
 				<ul class="menu__list">
 					<li class="menu__dish-item">Linguine con bisque di gamberi
-						<span><img class="icon-spicy" src="<?php bloginfo('stylesheet_directory');?>/images/icon/spicy.png"
+						<span><img class="icon-spicy" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/spicy.png"
 								alt="Spicy"></span>
 						<span class="dish-price">230</span>
 						<p class="menu__dish-ingredients">with Sea Prawns in White Wine Bisque Sauce</p>
@@ -207,10 +202,10 @@ Template Name: Restaurant Page
 
 					<li class="menu__dish-item">Spaghetti aglio, olio e peperoncino
 						<span><img class="icon-vegetarian"
-								src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
-						<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegan.png"
+								src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+						<span><img class="icon-vegan" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegan.png"
 								alt="Vegan"></span>
-						<span><img class="icon-spicy" src="<?php bloginfo('stylesheet_directory');?>/images/icon/spicy.png"
+						<span><img class="icon-spicy" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/spicy.png"
 								alt="Spicy"></span>
 						<span class="dish-price">190</span>
 						<p class="menu__dish-ingredients">with Garlic, Olive Oil, with a hint of Chili and Pecorino Shavings</p>
@@ -218,17 +213,17 @@ Template Name: Restaurant Page
 
 					<li class="menu__dish-item">Ravioli di feta
 						<span><img class="icon-vegetarian"
-								src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
-						<span><img class="icon-spicy" src="<?php bloginfo('stylesheet_directory');?>/images/icon/spicy.png"
+								src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png" alt="Vegetarian"></span>
+						<span><img class="icon-spicy" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/spicy.png"
 								alt="Spicy"></span>
 						<span class="dish-price">240</span>
 						<p class="menu__dish-ingredients">With Feta Cheese and Roasted Chilis</p>
 					</li>
 
 					<li class="menu__dish-item">Penne alle peperoncino sott'aceto
-						<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegan.png"
+						<span><img class="icon-vegan" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegan.png"
 								alt="Vegan"></span>
-						<span><img class="icon-spicy" src="<?php bloginfo('stylesheet_directory');?>/images/icon/spicy.png"
+						<span><img class="icon-spicy" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/spicy.png"
 								alt="Spicy"></span>
 						<span class="dish-price">190</span>
 						<span>with bacon +40</span>
@@ -236,7 +231,7 @@ Template Name: Restaurant Page
 					</li>
 
 					<li class="menu__dish-item">Orecchiette alle carciofo
-						<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegan.png"
+						<span><img class="icon-vegan" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegan.png"
 								alt="Vegan"></span>
 						<span class="dish-price">290</span>
 						<p class="menu__dish-ingredients">With Fresh Artichoke, Fresh Herbs and Pine Nuts</p>
@@ -258,25 +253,25 @@ Template Name: Restaurant Page
 
 			<figure class="fixed-image mobile-image">
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/hd/pizza_margherita_1920.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/pizza_margherita_1920.jpg"
 						media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/tablet/pizza_margherita_800.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/pizza_margherita_800.jpg"
 						media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory');?>/images/photos/mobile/pizza_margherita_480.jpg"
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/pizza_margherita_480.jpg"
 						alt="Margherita Pizza with Sun-dried Tomatoes">
 				</picture>
 			</figure>
 
 			<ul class="menu__list">
 				<li class="menu__dish-item">Margherita
-					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
+					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
 					<span class="dish-price">165</span>
 					<p class="menu__dish-ingredients">Mozzarella, Tomato, Basil</p>
 				</li>
 
 				<li class="menu__dish-item">Quattro Formaggi
-					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
+					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
 					<span class="dish-price">260</span>
 					<p class="menu__dish-ingredients">Mozzarella, Gorgonzola, Gouda, Parmesan</p>
@@ -288,24 +283,17 @@ Template Name: Restaurant Page
 				</li>
 
 				<li class="menu__dish-item">Funghi e camembert
-					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
+					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
-					<span class="dish-price">230</span>
+					<span class="dish-price">260</span>
 					<p class="menu__dish-ingredients">Grilled Mushrooms, Baked Camembert, Caramelised Onion</p>
 				</li>
 
-				<li class="menu__dish-item">Tonno
-					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
-							alt="Vegetarian"></span>
-					<span class="dish-price">160</span>
-					<p class="menu__dish-ingredients">Tuna, Onion, Black Olives</p>
-				</li>
-
 				<li class="menu__dish-item">Vegana
-					<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegan.png"
+					<span><img class="icon-vegan" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegan.png"
 							alt="Vegan"></span>
 					/ Vegetariana
-					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
+					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
 					<span class="dish-price">170</span>
 					<p class="menu__dish-ingredients">Grilled Dalat Vegetables, Black Olives, Sun-Dried Tomatoes (with Cheeses
@@ -322,11 +310,11 @@ Template Name: Restaurant Page
 
 			<figure class="first-image fixed-image mobile-image">
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/hd/duck_1920.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/duck_1920.jpg"
 						media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory');?>/images/photos/tablet/duck_800_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/duck_800_01.jpg"
 						media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory');?>/images/photos/mobile/duck_480_01.jpg"
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/duck_480_01.jpg"
 						alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 				</picture>
 			</figure>
@@ -368,20 +356,20 @@ Template Name: Restaurant Page
 
 			<figure class="fixed-image mobile-image">
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/wine_4k_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/4k/wine_4k_01.jpg"
 						media="(min-width: 1921px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/wine_1920_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/wine_1920_01.jpg"
 						media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/wine_1024_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/wine_1024_01.jpg"
 						media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/wine_480_01.jpg"
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/wine_480_01.jpg"
 						alt="A glass of white wine illuminated by candlelight, Summer Salad in foreground.">
 				</picture>
 			</figure>
 
 			<ul class="menu__list">
 				<li class="menu__dish-item">Cheese Platter
-					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
+					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
 					<span class="dish-price">350</span>
 					<p class="menu__dish-ingredients">With Fresh and Dried Fruits, Homemade Jam and Lightly Roasted Nuts</p>
@@ -398,80 +386,80 @@ Template Name: Restaurant Page
 
 			<figure class="fixed-image mobile-image">
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/dessert_panna_4k.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/4k/dessert_panna_4k.jpg"
 						media="(min-width: 1921px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/dessert_panna_1920.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/dessert_panna_1920.jpg"
 						media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/panna_800_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/panna_800_01.jpg"
 						media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/panna_480_01.jpg"
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/panna_480_01.jpg"
 						alt="Panna Cotta with Dalat Berries Cooked in Mulled Wine ">
 				</picture>
 			</figure>
 
 			<ul class="menu__list">
 				<li class="menu__dish-item">Chocolate Mousse Cake
-					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
+					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
 					<span class="dish-price">115</span>
 					<p class="menu__dish-ingredients">With Candied Orange Purée and Orange Liqueur</p>
 				</li>
 
 				<li class="menu__dish-item">Panna Cotta
-					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
+					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
 					<span class="dish-price">95</span>
 					<p class="menu__dish-ingredients">with Dalat Berries Cooked in Mulled Wine</p>
 				</li>
 
 				<li class="menu__dish-item">Budino
-					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
+					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
 					<span class="dish-price">95</span>
 					<p class="menu__dish-ingredients">Butterscotch Crème Caramel</p>
 				</li>
 
 				<li class="menu__dish-item">Waffle
-					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
+					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
 					<span class="dish-price">95</span>
 					<p class="menu__dish-ingredients">with Lime Custard, Dalat-Berries Marmalade and Ice Cream</p>
 				</li>
 
 				<li class="menu__dish-item">Carrot Cake Creation
-					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
+					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
 					<span class="dish-price">180</span>
 					<p class="menu__dish-ingredients">With Pineapple-Kumquat Sorbet and Walnut Brittle</p>
 				</li>
 
 				<li class="menu__dish-item">Strawberry Cheesecake Creation
-					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
+					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
 					<span class="dish-price">180</span>
 					<p class="menu__dish-ingredients">With Peach Lime Ice Cream</p>
 				</li>
 
 				<li class="menu__dish-item">Gelato &amp; Sorbet
-					<span><img class="icon-vegetarian" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegetarian.png"
+					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
 					<span class="dish-price">70</span><span> PER SCOOP</span>
 					<p class="menu__dish-ingredients">
 						Artichoke
-						<span><img class="icon-seasonal" src="<?php bloginfo('stylesheet_directory');?>/images/icon/seasonal.png"
+						<span><img class="icon-seasonal" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/seasonal.png"
 								alt="Seasonal"></span>
 						&#183; Avocado
-						<span><img class="icon-seasonal" src="<?php bloginfo('stylesheet_directory');?>/images/icon/seasonal.png"
+						<span><img class="icon-seasonal" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/seasonal.png"
 								alt="Seasonal"></span>
 						&#183; Peach Lime
 						&#183; Mulberry
 						&#183; Persimmon
-						<span><img class="icon-seasonal" src="<?php bloginfo('stylesheet_directory');?>/images/icon/seasonal.png"
+						<span><img class="icon-seasonal" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/seasonal.png"
 								alt="Seasonal"></span>
-						<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegan.png"
+						<span><img class="icon-vegan" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegan.png"
 								alt="Vegan"></span>
 						&#183; Fresh Coconut
-						<span><img class="icon-vegan" src="<?php bloginfo('stylesheet_directory');?>/images/icon/vegan.png"
+						<span><img class="icon-vegan" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegan.png"
 								alt="Vegan"></span>
 					</p>
 				</li>
@@ -479,13 +467,8 @@ Template Name: Restaurant Page
 		</section>
 	</div>
 
-		<nav class="menu__select menu__select-bottom">
-			<ul class="menu__list">
-				<li><a href="https://emaidalat.com/drinks-menu/">Drinks</a></li><br>
-				<li><a href="https://emaidalat.com/wine-list/">Wine list</a><span>&#183;</span></li>
-				<li><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a></li>
-			</ul>
-		</nav>
+	<?php get_template_part( 'template-parts/menus-navigation-viet' ); ?>
+
 </main>
 
-<?php get_footer();?>
+<?php get_footer(); ?>

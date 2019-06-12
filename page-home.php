@@ -1,10 +1,15 @@
 <?php
-/*
-  Template Name: Home Page
-*/
-?>
+/**
+ * Template Name: Home Page
+ * The template for displaying the front page
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Emai_Dalat
+ */
 
-<?php get_header(); ?>
+get_header();
+?>
 
 <main id="fullpage" class="main-home">
 
@@ -14,8 +19,8 @@
 				<picture>
 				<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/duck_4k_01.jpg" media="(min-width: 1921px)">
 					<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/duck_1920_01.jpg" media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)  and (max-width: 1024px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/duck_800_01.jpg" media="(min-width: 600px)  and (max-width: 1024px)">
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/duck_480_01.jpg" alt="Rosemary Smoked Duck Filet with Balsamic Sage and Berries Gravy">
 				</picture>
 			</figure>
 		</div>
@@ -31,7 +36,7 @@
 				<p>Using the finest of Dalat's clean produce and cheese imported from Italy, we passionately homecook dishes that blend Italian customs and contemporary dining, delivering a truly unforgettable experience.</p>
 
 				<div class="link-button">
-					<a href="https://emaidalat.com/restaurant-menu/">View menu</a>
+					<a href="https://emaidalat.com/menus-nav/">View menu</a>
 				</div>
 
 				<button class="scrollDown moveSectionDown">
@@ -48,8 +53,8 @@
 				<picture>
 				<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/brioche_4k.jpg" media="(min-width: 1921px)">
 					<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/brioche_1920.jpg" media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/panna_800_01.jpg" media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/panna_480_01.jpg" alt="Panna Cotta with Dalat Berries Cooked in Mulled Wine">
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/panna_800_01.jpg" media="(min-width: 600px)">
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/panna_480_01.jpg" alt="Panna Cotta with Dalat Berries Cooked in Mulled Wine">
 				</picture>
 			</figure>
 		</div>
@@ -82,8 +87,8 @@
 				<picture>
 				<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/room_4k.jpg" media="(min-width: 1921px)">
 					<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/room_1920.jpg" media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/lila_800_01.jpg" media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/lila_480_01.jpg" alt="Emai Homestay Room Four: Lila">
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/lila_800_01.jpg" media="(min-width: 600px)">
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/lila_480_01.jpg" alt="Emai Homestay Room Four: Lila">
 				</picture>
 			</figure>
 		</div>
@@ -116,8 +121,8 @@
 				<picture>
 				<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/dining_4k_01.jpg" media="(min-width: 1921px)">
 					<source srcset="https://emaidalat.com/wp-content/uploads/2018/11/table_1920_01.jpg" media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/table_800_01.jpg" media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/table_480_01.jpg" alt="Dining Room Table Setting with Candles and Flowers">
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/table_800_01.jpg" media="(min-width: 600px)">
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/table_480_01.jpg" alt="Dining Room Table Setting with Candles and Flowers">
 				</picture>
 			</figure>
 		</div>

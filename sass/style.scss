@@ -1,0 +1,79 @@
+/*
+Theme Name: Emai
+Theme URI: https://emaidalat.com
+Author: James
+Description: Theme for emaidalat.com
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: side-header
+*/
+
+// RESET
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+figure {
+	margin: 0;
+}
+
+button:focus {
+	outline: 0;
+}
+
+// NORMALIZE
+@import 'normalize';
+
+// FULLPAGE
+@import 'fullpage';
+
+// TYPOGRAPHY
+@import 'typography';
+
+// COLOUR
+@import 'colour';
+
+// CLASSES
+@import 'classes';
+
+// BUTTONS
+@import 'buttons';
+
+// PARTS
+
+// Header
+@import 'parts/header';
+// Footer
+@import 'parts/footer';
+// Menu navigation
+@import 'parts/menus-nav';
+
+// PAGES
+
+// Homepage
+@import 'pages/homepage';
+// Story
+@import 'pages/story';
+// Bnb
+@import 'pages/bnb';
+// Menus
+@import 'pages/menus';
+// Reservations
+@import 'pages/reservations';
+// Contact
+@import 'pages/contact';
+
+// MODIFIERS
+@import 'modifiers';

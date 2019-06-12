@@ -1,25 +1,18 @@
 <?php
-/*
-  Template Name: Drinks Page
-*/
-?>
+/**
+ * Template Name: Drinks Page
+ *
+ * @package emaidalat
+ */
 
-<?php get_header(); ?>
+get_header(); ?>
 
 <main class="drinks-menu">
 
 	<div class="ribbon-container-right">
-		<header class="menu__header">
-			<nav class="menu__select">
-				<h3>Select menu:</h3>
-				<ul class="menu__list">
-					<li class="drinks-menu__item"><a
-							href="https://emaidalat.com/restaurant-menu/">Restaurant</a><span>&#183;</span></li>
-					<li class="drinks-menu__item"><a href="https://emaidalat.com/drinks-menu/">Drinks</a></li><br>
-					<li class="drinks-menu__item"><a href="https://emaidalat.com/wine-list/">Wine list</a><span>&#183;</span></li>
-					<li class="drinks-menu__item"><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a></li>
-				</ul>
-			</nav>
+		<header class="menus__header">
+
+			<?php get_template_part( 'template-parts/menus-navigation' ); ?>
 
 			<h1 class="menu__title">Bevande &#183; Drinks</h1>
 		</header>
@@ -28,13 +21,13 @@
 			<div class="fixed-image mobile-image">
 				<figure class="fixed-image mobile-image">
 					<picture>
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/coffee_4k_01.jpg"
+						<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/4k/coffee_4k_01.jpg"
 							media="(min-width: 1921px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/coffee_1920_01.jpg"
+						<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/coffee_1920_01.jpg"
 							media="(min-width: 1025px)">
-						<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/coffee_1024_01.jpg"
+						<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/coffee_1024_01.jpg"
 							media="(min-width: 600px)">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/coffee_480_01.jpg"
+						<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/coffee_480_01.jpg"
 							alt="Cappuccino on a bed-top tray, with a book.">
 					</picture>
 				</figure>
@@ -88,13 +81,13 @@
 		<section class="menuSection menu__course">
 			<figure class="fixed-image mobile-image">
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/tea_4k_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/4k/tea_4k_01.jpg"
 						media="(min-width: 1921px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/tea_1920_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/tea_1920_01.jpg"
 						media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/tea_1024_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/tea_1024_01.jpg"
 						media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/tea_480_01.jpg"
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/tea_480_01.jpg"
 						alt="Tea pot and cup made by Authentique">
 				</picture>
 			</figure>
@@ -128,7 +121,7 @@
 				</header>
 				<ul class="menu__list">
 					<li class="drinks-menu__item">Thin Oolong Tea with Grass Jelly, Chia Seeds, Lime, Mint &amp; Wild Honey <span
-							class="dish-price">70</span></li>
+							class="dish-price">80</span></li>
 				</ul>
 			</section>
 		</section>
@@ -136,13 +129,13 @@
 		<section class="menuSection menu__course">
 			<figure class="fixed-image mobile-image">
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/coffee_4k_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/4k/coffee_4k_01.jpg"
 						media="(min-width: 1921px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/coffee_1920_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/coffee_1920_01.jpg"
 						media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/coffee_1024_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/coffee_1024_01.jpg"
 						media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/coffee_480_01.jpg"
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/coffee_480_01.jpg"
 						alt="Cappuccino on a bed-top tray, with a book.">
 				</picture>
 			</figure>
@@ -179,13 +172,13 @@
 		<section class="menuSection menu__course">
 			<figure class="fixed-image mobile-image">
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/wine_4k_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/4k/wine_4k_01.jpg"
 						media="(min-width: 1921px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/wine_1920_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/wine_1920_01.jpg"
 						media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/wine_1024_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/wine_1024_01.jpg"
 						media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/wine_480_01.jpg"
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/wine_480_01.jpg"
 						alt="A glass of white wine illuminated by candlelight, Summer Salad in foreground.">
 				</picture>
 			</figure>
@@ -224,13 +217,7 @@
 			</section>
 		</section>
 
-		<nav class="menu__select menu__select-bottom">
-			<ul class="menu__list">
-				<li class="drinks-menu__item"><a href="https://emaidalat.com/restaurant-menu/">Restaurant Menu</a></li><br>
-				<li class="drinks-menu__item"><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a><span>&#183;</span></li>
-				<li class="drinks-menu__item"><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
-			</ul>
-		</nav>
+		<?php get_template_part( 'template-parts/menus-navigation' ); ?>
 	</div>
 </main>
 

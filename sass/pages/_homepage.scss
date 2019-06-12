@@ -1,0 +1,87 @@
+
+.main-home a,
+.main-home li {
+	text-transform: uppercase;
+}
+
+.home-booking .content {
+	z-index: 100;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.2))), url(images/photos/mobile/flower_480_01.jpg);
+	background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(images/photos/mobile/flower_480_01.jpg);
+	background: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(images/photos/mobile/flower_480_01.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(images/photos/mobile/flower_480_01.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 450px;
+}
+
+/* Home page widescreen response */
+
+@media screen and (min-width: 1280px) {
+
+	.main-home .double-header>h3 {
+		font-size: 1.9em;
+	}
+
+	.main-home .fixed-image {
+		display: none;
+	}
+
+	.main-home .content p {
+		padding-left: 2em;
+		text-align: left;
+	}
+
+	.main-home .content {
+		width: 90%;
+	}
+
+	.home-booking .content {
+		width: auto;
+		height: 100vh;
+		padding-top: 0;
+		padding-bottom: 0;
+		background: none;
+	}
+
+	.home-booking .content p {
+		padding: 0 2em;
+		line-height: 1.3em;
+		font-size: 1.4em;
+		text-align: left;
+	}
+
+	.home-booking .button-container {
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		-webkit-justify-content: flex-start;
+		   -moz-box-pack: start;
+		        justify-content: flex-start;
+	}
+
+	.home-booking .link-button {
+		margin: 1.5em 3em;
+	}
+
+	.home-booking .link-button a {
+		border: none;
+		background-color: #676762;
+		color: var(--font-white);
+	}
+
+	.home-background {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 20vw;
+		right: 0;
+		-webkit-transition: background-image 1s linear;
+		-o-transition: background-image 1s linear;
+		transition: background-image 1s linear;
+		background-image: url(https://emaidalat.com/wp-content/uploads/2018/11/flower_1920_01.jpg);
+		background-position: center;
+		background-size: cover;
+		z-index: -10;
+	}
+}

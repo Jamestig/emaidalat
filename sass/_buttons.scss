@@ -1,0 +1,107 @@
+.button-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.link-button {
+	text-align: center;
+	margin: 3em 2em;
+}
+
+.link-button a {
+	border: 1px solid var(--font-light);
+	padding: .5em 1.2em;
+	letter-spacing: .15em;
+	color: var(--font-light);
+	-webkit-transition: border-color .3s linear, color .3s linear, background .3s linear;
+	-o-transition: border-color .3s linear, color .3s linear, background .3s linear;
+	transition: border-color .3s linear, color .3s linear, background .3s linear;
+	white-space: nowrap;
+	text-transform: uppercase;
+}
+
+.link-button a:hover {
+	border-color: var(--dark-grey);
+	color: var(--dark-grey);
+}
+
+.link-button-light {
+	text-align: center;
+	margin: 2em 2em;
+}
+
+.link-button-light a {
+	color: var(--font-white);
+	border: 1px solid var(--font-white);
+	background-color: rgba(244, 244, 240, .35);
+	padding: .5em 1em;
+	letter-spacing: .15em;
+	-webkit-transition: border-color .3s linear, color .3s linear, background .3s linear;
+	-o-transition: border-color .3s linear, color .3s linear, background .3s linear;
+	transition: border-color .3s linear, color .3s linear, background .3s linear;
+	white-space: nowrap;
+	text-transform: uppercase;
+}
+
+.link-button-light a:hover {
+	background-color: rgba(244, 244, 240, .4);
+}
+
+.scrollDown {
+	display: none;
+	position: relative;
+	background: none;
+	border: none;
+	margin-top: 6em;
+	padding-left: 2em;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.scrollDown span:first-of-type {
+	display: block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.scrollDown span:first-of-type {
+	background-image: url(images/icon/arrow_down_grey.png);
+	-webkit-filter: brightness(0);
+	filter: brightness(0);
+}
+
+.scrollDown span:last-of-type {
+	font-style: italic;
+	font-size: .8em;
+	color: var(--font-light);
+}
+
+.scrollDown:hover {
+	-webkit-filter: brightness(.5);
+	filter: brightness(.5);
+	-webkit-transition: -webkit-filter .3s ease-in-out;
+	transition: -webkit-filter .3s ease-in-out;
+	-o-transition: filter .3s ease-in-out;
+	transition: filter .3s ease-in-out;
+	transition: filter .3s ease-in-out, -webkit-filter .3s ease-in-out;
+}
+
+@media screen and (max-width: 620px) {
+	.button-container .link-button {
+		margin: 1.5em 1em;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.link-button {
+		text-align: left;
+	}
+
+	.scrollDown {
+		display: block;
+	}
+}

@@ -1,0 +1,29 @@
+#main-reservations ul {
+	padding-left: 2em;
+	text-indent: -.8em;
+}
+
+#main-reservations li::before {
+	content: '• ';
+	color: var(--font-light);
+}
+
+@media screen and (max-width: 1279px) {
+
+	#main-reservations {
+		margin-bottom: 4em;
+	}
+
+	#main-reservations li {
+		text-align: left;
+	}
+}
+
+/* Reservations page widescreen response */
+
+@media screen and (min-width: 1280px) {
+
+	#main-reservations .ribbon-container-right {
+		padding-bottom: 0;
+	}
+}

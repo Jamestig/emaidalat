@@ -12,10 +12,10 @@
 
 			<figure id="" class="fixed-image mobile-image gradient-down">
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/bar_4k_01.jpg" media="(min-width: 1920px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/bar_1920_01.jpg" media="(min-width: 1024px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/bar_1024_01.jpg" media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/bar_480_01.jpg" alt="émai cafe bar at night, illuminated by a hanging light.">
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/4k/bar_4k_01.jpg" media="(min-width: 1920px)">
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/bar_1920_01.jpg" media="(min-width: 1024px)">
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/bar_1024_01.jpg" media="(min-width: 600px)">
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/bar_480_01.jpg" alt="émai cafe bar at night, illuminated by a hanging light.">
 				</picture>
 			</figure>
 
@@ -54,10 +54,10 @@
 
 				<div class="contact-images">
 					<figure class="contact-sign">
-						<a href=""><img src="<?php bloginfo('stylesheet_directory'); ?>/images/info/street_sign.jpg" alt="émai street sign"></a>
+						<a href=""><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/info/street_sign.jpg" alt="émai street sign"></a>
 					</figure>
 					<figure class="contact-maps">
-						<a href="https://goo.gl/maps/rfoB76bXZLM2"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/info/map_grey.jpg" alt="google map image of émai's location"></a>
+						<a href="https://goo.gl/maps/rfoB76bXZLM2"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/info/map_grey.jpg" alt="google map image of émai's location"></a>
 					</figure>
 				</div>
 			</div>

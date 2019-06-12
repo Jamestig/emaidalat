@@ -1,0 +1,58 @@
+html {
+	background-color: var(--background-main);
+}
+
+.content-white,
+.content-white a,
+.content-white li,
+.content-white p,
+.content-white h1,
+.content-white h2,
+.content-white h3,
+.content-white h4,
+.content-white h5,
+.content-white h6 {
+	color: var(--font-white);
+}
+
+// Variables
+
+:root {
+	--background-main: #f5f5f2;
+	--background-light: #f8f8f6;
+	--background-dark: #f2f4f1;
+	--background-navbar: #ebebe6;
+	--font-main: #393836;
+	--font-header: #484843;
+	--font-light: #8b8b88;
+	--font-white: #f4f4f0;
+	--font-green: #919583;
+	--border-light: #e1e2e0;
+}
+
+// Gradients
+
+.gradient-down::after {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 50%;
+	width: 100%;
+	content: '';
+	background-image: url(images/icon/line_fade.png);
+	background-repeat: repeat-x;
+	background-size: contain;
+}
+
+@media screen and (orientation:landscape) {
+	.gradient-down::after {
+		height: 50vh;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.gradient-down::after {
+		display: none;
+	}
+}

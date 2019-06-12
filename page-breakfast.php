@@ -1,24 +1,15 @@
 <?php
-/*
-  Template Name: Breakfast Page
-*/
-?>
-
-<?php get_header(); ?>
+/**
+ * Template Name: Breakfast Page
+ */
+get_header(); ?>
 
 <main class="breakfast-menu">
 
 	<div class="ribbon-container-right">
-		<header class="menu__header">
-			<nav class="menu__select">
-				<h3>Select menu:</h3>
-				<ul>
-					<li><a href="https://emaidalat.com/restaurant-menu/">Restaurant</a><span>&#183;</span></li>
-					<li><a href="https://emaidalat.com/drinks-menu/">Drinks</a></li><br>
-					<li><a href="https://emaidalat.com/wine-list/">Wine list</a><span>&#183;</span></li>
-					<li><a href="https://emaidalat.com/breakfast-menu/">Breakfast</a></li>
-				</ul>
-			</nav>
+		<header class="menus__header">
+
+			<?php get_template_part('template-parts/menus-navigation' ); ?>
 
 			<h1 class="menu__title">Breakfast Sets</h1>
 		</header>
@@ -26,11 +17,11 @@
 		<section class="menu__course">
 			<figure class="fixed-image mobile-image">
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/breakfast_1920_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/breakfast_1920_01.jpg"
 						media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/breakfast_1024_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/breakfast_1024_01.jpg"
 						media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/breakfast_480_01.jpg"
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/breakfast_480_01.jpg"
 						alt="Sunny-Side-Up Eggs and a Croissant, served with Buttered Baby Potatoes and Salad, plus coffee.">
 				</picture>
 			</figure>
@@ -76,13 +67,8 @@
 				</div>
 			</div>
 
-			<nav class="menu__select menu__select-bottom">
-				<ul>
-					<li><a href="https://emaidalat.com/restaurant-menu/">Restaurant menu</a></li><br>
-					<li><a href="https://emaidalat.com/drinks-menu/">Drinks</a><span>&#183;</span></li>
-					<li><a href="https://emaidalat.com/wine-list/">Wine list</a></li>
-				</ul>
-			</nav>
+			<?php get_template_part('template-parts/menus-navigation' ); ?>
+
 		</section>
 	</div>
 </main>

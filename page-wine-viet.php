@@ -1,24 +1,18 @@
 <?php
-/*
-  Template Name: Wine Page Viet
-*/
-?>
+/**
+ * Template Name: Wine Page Viet
+ *
+ * @package emaidalat
+ */
 
-<?php get_header(); ?>
+get_header(); ?>
 
 <main class="wine-menu">
 
 	<div class="ribbon-container-right">
-		<header class="menu__header">
-			<nav class="menu__select">
-				<h3>Chọn menu:</h3>
-				<ul class="menu__list">
-					<li><a href="https://emaidalat.com/vi/nha-hang/">Nhà hàng</a><span>&#183;</span></li>
-					<li><a href="https://emaidalat.com/vi/quan-ca-phe/">Thức uống</a></li><br>
-					<li><a href="https://emaidalat.com/vi/ruou/">Danh sách rượu</a><span>&#183;</span></li>
-					<li><a href="https://emaidalat.com/vi/an-sang/">Ăn sáng</a></li>
-				</ul>
-			</nav>
+		<header class="menus__header">
+
+			<?php get_template_part( 'template-parts/menus-navigation' ); ?>
 
 			<h1 class="menu__title">Danh sách rượu</h1>
 		</header>
@@ -26,13 +20,13 @@
 		<section class="menu__course">
 			<figure class="fixed-image mobile-image">
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/wine_4k_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/4k/wine_4k_01.jpg"
 						media="(min-width: 1920px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/wine_1920_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/wine_1920_01.jpg"
 						media="(min-width: 1024px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/wine_1024_01.jpg"
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/wine_1024_01.jpg"
 						media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/wine_480_01.jpg"
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/wine_480_01.jpg"
 						alt="A glass of white wine illuminated by candlelight, Summer Salad in foreground.">
 				</picture>
 			</figure>
@@ -145,13 +139,8 @@
 		</section>
 	</div>
 
-	<nav class="menu__select menu__select-bottom">
-		<ul>
-			<li><a href="https://emaidalat.com/vi/nha-hang/">Nhà hàng</a></li><br>
-			<li><a href="https://emaidalat.com/vi/quan-ca-phe/">Thức uống</a><span>&#183;</span></li>
-			<li><a href="https://emaidalat.com/vi/an-sang/">Ăn sáng</a></li>
-		</ul>
-	</nav>
+	<?php get_template_part( 'template-parts/menus-navigation' ); ?>
+
 </main>
 
 <?php get_footer(); ?>

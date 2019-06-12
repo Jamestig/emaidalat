@@ -1,0 +1,369 @@
+.main-bnb .double-header h3 {
+	font-size: 2em;
+}
+
+.flex-container-room {
+	display: flex;
+
+
+
+	flex-flow: column;
+
+
+
+
+	justify-content: center;
+
+
+
+
+	align-items: center;
+	position: relative;
+	margin: 0 1em;
+	margin-top: -50px;
+	padding: 0 1em;
+	background-color: white;
+	border-bottom: 1px solid var(--border-light);
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 1)));
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
+	/* IE6-9 */
+}
+
+.room-button-container {
+	display: none;
+}
+
+@media screen and (max-width: 1279px) {
+	.main-bnb section {
+		margin: 10% 0;
+	}
+
+	.main-bnb section:first-of-type {
+		margin-top: 0;
+	}
+
+	.flex-container-room:after {
+		content: "";
+		position: absolute;
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#e1e2e0));
+		background-image: -webkit-linear-gradient(transparent, #e1e2e0);
+		background-image: -o-linear-gradient(transparent, #e1e2e0);
+		background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#e1e2e0));
+		background-image: linear-gradient(transparent, #e1e2e0);
+		top: 0;
+		bottom: -1px;
+		width: 1px;
+	}
+
+	.flex-container-room:after {
+		right: -1px;
+	}
+}
+
+.room-button-container {
+	display: none;
+}
+
+.link-button-airbnb {
+	margin: 2.5em 0 3em 0;
+}
+
+.link-button-airbnb a {
+	background: rgba(0, 0, 0, .3);
+	white-space: nowrap;
+}
+
+.room-logo {
+	z-index: 5;
+}
+
+.room-logo img {
+	max-height: 100px;
+	max-width: 100%;
+}
+
+.rooms-ivy .room-logo img {
+	max-height: 160px;
+	margin-top: -0px;
+}
+
+.room-jasmine .room-logo img {
+	max-width: 280px;
+}
+
+.room-info p {
+	font-size: 1.1em;
+}
+
+.room-description p {
+	max-width: 600px;
+	margin: auto;
+}
+
+/* BnB page extra small response */
+
+@media screen and (max-width: 360px) {
+	.flex-container-room {
+		margin-left: .5em;
+		margin-right: .5em;
+		padding: 0 .5em;
+	}
+
+	.room-info p {
+		font-size: 1em;
+		white-space: normal;
+	}
+
+}
+
+/* BnB page tablet response */
+
+@media screen and (min-width: 768px) {
+
+	.flex-container-room {
+		flex-flow: row wrap;
+		margin-top: -20px;
+	}
+
+	#bnb-ivy .flex-container-room {
+		margin-top: -40px;
+	}
+
+	.room-logo {
+		flex: 0 0 40%;
+	}
+
+	.room-info {
+		flex: 0 0 55%;
+	}
+
+	.room-info p {
+		text-align: right;
+	}
+
+	.room-description {
+		flex: 0 0 100%;
+	}
+}
+
+@media screen and (max-width: 1279px) {
+
+	.section-room:last-of-type {
+		margin-bottom: 2em;
+	}
+}
+
+@media screen and (max-width: 1279px) and (orientation: landscape) {
+
+	.main-bnb section:first-of-type {
+		margin: 0;
+	}
+}
+
+/* BnB page widescreen response */
+
+@media screen and (min-width: 1280px) {
+
+	.main-bnb .double-header h3 {
+		font-size: 3em;
+	}
+
+	.main-bnb .ribbon-container {
+		height: 90vh;
+		margin: 5vh;
+		text-align: left;
+	}
+
+	.main-bnb .fixed-image {
+		left: 0;
+	}
+
+	.main-bnb .fixed-image img {
+		width: 100%;
+		height: auto;
+	}
+
+	#bnb-intro,
+	#bnb-breakfast {
+		display: flex;
+		flex-flow: row;
+	}
+
+	.section-room {
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+	}
+
+	.flex-container-room {
+		position: fixed;
+		bottom: 0;
+		flex-flow: row;
+		justify-content: space-around;
+		height: 20vh;
+		margin: 0;
+		padding-left: 10vw;
+		border: none;
+		background: rgba(0, 0, 0, .5);
+		left: 0;
+		right: 0;
+		z-index: 10;
+	}
+
+	.flex-container-room p {
+		color: white;
+	}
+
+	.link-button-airbnb {
+		position: fixed;
+		right: 50px;
+		bottom: 20vh;
+	}
+
+	.link-button-airbnb a {
+		background: rgba(0, 0, 0, .3);
+	}
+
+	.link-button-airbnb a:hover {
+		border: 1px solid var(white);
+		color: var(white);
+	}
+
+	.room-button-container {
+		display: flex;
+		flex-flow: column;
+		align-items: flex-start;
+		justify-content: center;
+		position: fixed;
+		bottom: 0;
+		height: 20vh;
+		width: 100%;
+		z-index: 50;
+		transition: opacity 1s ease-in-out;
+		opacity: 0;
+	}
+
+	.room-button {
+		background: none;
+		border: none;
+		color: white;
+		display: block;
+		margin-left: 3%;
+		white-space: nowrap;
+		z-index: 1000;
+		transition: filter .2s ease-in-out;
+	}
+
+	.room-button:hover {
+		filter: brightness(1.3);
+		cursor: pointer;
+	}
+
+	.previousRoom,
+	.nextRoom {
+		transition: opacity .5s linear;
+	}
+
+	.previousRoom {
+		margin-bottom: 1em;
+	}
+
+	.previousRoom span:first-of-type,
+	.nextRoom span:first-of-type {
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 30px;
+		height: 30px;
+		vertical-align: bottom;
+	}
+
+	.previousRoom span:first-of-type {
+		background-image: url(images/icon/arrow_up.png);
+	}
+
+	.nextRoom span:first-of-type {
+		background-image: url(images/icon/arrow_down.png);
+	}
+
+	.previousRoom span:nth-child(2),
+	.nextRoom span:nth-child(2) {
+		display: inline-block;
+		text-align: left;
+		padding-left: 1em;
+		color: var(--font-light);
+		font-size: .7em;
+		font-family: Marcellus SC;
+		text-transform: uppercase;
+		letter-spacing: .12em;
+	}
+
+	.room-logo {
+		flex: 0 0 20%
+	}
+
+	.room-logo img {
+		-webkit-filter: brightness(100);
+		filter: brightness(100);
+	}
+
+	.room-info {
+		flex: 0 0 40%;
+		order: 5;
+	}
+
+	.room-info p {
+		text-align: left;
+	}
+
+	.room-description {
+		flex: 0 0 40%;
+		order: 4;
+	}
+
+	.room-description p {
+		text-align: left;
+		padding: 0 2vw;
+	}
+
+	.room-content {
+		position: fixed;
+		z-index: 1000;
+	}
+
+	.fp-controlArrow {
+		position: absolute;
+		z-index: 4;
+		top: 50%;
+		cursor: pointer;
+		border-radius: 50%;
+		width: 45px;
+		height: 45px;
+		background-color: rgba(0, 0, 0, .5);
+		background-repeat: no-repeat;
+		background-size: 60%;
+		background-position-x: center;
+	}
+
+	.fp-controlArrow.fp-prev {
+		left: 40px;
+		background-image: url(images/icon/arrow_down.png);
+		background-position-y: 60%;
+		transform: rotate(90deg);
+	}
+
+	.fp-controlArrow.fp-next {
+		right: 40px;
+		background-image: url(images/icon/arrow_up.png);
+		background-position-y: 40%;
+		transform: rotate(90deg);
+	}
+}

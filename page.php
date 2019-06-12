@@ -1,6 +1,6 @@
 <?php
 /**
- * Index.php
+ * Page.php
  *
  * @package emaidalat
  */
@@ -17,7 +17,7 @@ get_header(); ?>
 					the_post();
 					?>
 
-					<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; else : ?>
 
@@ -25,12 +25,8 @@ get_header(); ?>
 
 			<?php endif; ?>
 
-			<p>Template: index.php</p>
-
 		</main>
 
 	</div>
-
-	<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

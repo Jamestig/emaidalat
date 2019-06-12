@@ -11,10 +11,10 @@
 		<section class="ribbon-container-right">
 			<figure id="" class="fixed-image mobile-image gradient-down">
 				<picture>
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/4k/reservations_4k.jpg" media="(min-width: 1921px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/hd/tables_1920_01.jpg" media="(min-width: 1025px)">
-					<source srcset="<?php bloginfo('stylesheet_directory'); ?>/images/photos/tablet/tables_1024_01.jpg" media="(min-width: 600px)">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/photos/mobile/tables_480_01.jpg" alt="Dining room tables in émai restaurant">
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/4k/reservations_4k.jpg" media="(min-width: 1921px)">
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/tables_1920_01.jpg" media="(min-width: 1025px)">
+					<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/tables_1024_01.jpg" media="(min-width: 600px)">
+					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/tables_480_01.jpg" alt="Dining room tables in émai restaurant">
 				</picture>
 			</figure>
 

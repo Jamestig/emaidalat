@@ -1,6 +1,6 @@
 <?php
 /**
- * Index.php
+ * Single.php
  *
  * @package emaidalat
  */
@@ -25,12 +25,8 @@ get_header(); ?>
 
 			<?php endif; ?>
 
-			<p>Template: index.php</p>
-
 		</main>
 
 	</div>
-
-	<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

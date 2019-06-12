@@ -1,0 +1,422 @@
+// Nav burger
+
+#burger-icon {
+	width: 30px;
+	height: 24px;
+	margin-right: 6%;
+	transform: rotate(0deg);
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+
+#burger-icon span {
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: var(--font-light);
+	border-radius: 8px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+
+#burger-icon span:nth-child(1) {
+	top: 0px;
+	transform-origin: left center;
+}
+
+#burger-icon span:nth-child(2) {
+	top: 10px;
+	transform-origin: left center;
+}
+
+#burger-icon span:nth-child(3) {
+	top: 20px;
+	transform-origin: left center;
+}
+
+#burger-icon.open span:nth-child(1) {
+	transform: rotate(45deg);
+	top: 0px;
+	left: 4px;
+}
+
+#burger-icon.open span:nth-child(2) {
+	width: 0%;
+	opacity: 0;
+	left: 5px;
+}
+
+#burger-icon.open span:nth-child(3) {
+	transform: rotate(-45deg);
+	top: 21px;
+	left: 4px;
+}
+
+/*// HEADER NAVIGATION //*/
+
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 8;
+	-webkit-transition: background-color .4s linear;
+	-o-transition: background-color .4s linear;
+	transition: background-color .4s linear;
+}
+
+.navbar-logo {
+	display: none;
+	z-index: 10;
+}
+
+#navbarLogo {
+	height: 40px;
+}
+
+#navbarRose {
+	width: 70px;
+	padding: .6em;
+}
+
+.main-logo {
+	height: 50vh;
+	margin: 0;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-logo a {
+	height: 70%;
+}
+
+.main-logo img {
+	height: 100%;
+}
+
+.nav-overlay {
+	z-index: 6;
+	padding-top: 60px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
+.header-nav {
+	height: 75%;
+}
+
+/*// ACCORDION //*/
+
+.accordion {
+	display: flex;
+	flex-flow: column wrap;
+	height: 100%;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.accordion a {
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	font-size: .8em;
+	font-family: Marcellus SC;
+}
+
+.accordion>li {
+	flex: 0 0 auto;
+	z-index: 11;
+}
+
+.accordion>li>a {
+	flex: 0 0 auto;
+	z-index: 11;
+	color: var(--font-header);
+	padding: .4em .5em;
+	-webkit-transition: color .3s linear;
+	-o-transition: color .3s linear;
+	transition: color .3s linear;
+}
+
+.accordion a:hover {
+	color: var(--font-light);
+}
+
+.accordion .toggle:hover {
+	color: black;
+}
+
+.accordion>li>ul {
+	overflow: hidden;
+	display: none;
+	margin-left: 5%;
+	margin-top: .3em;
+}
+
+.accordion>li>ul>li>a {
+	display: block;
+	padding: .2em;
+}
+
+/*// HEADER FOOTER //*/
+
+.sm-list {
+	text-align: center;
+}
+
+.sm-list li {
+	display: inline-block;
+	font-size: 1.3em;
+}
+
+.sm-list li a {
+	padding: 0 .5em;
+	color: var(--font-light);
+}
+
+.side-footer {
+	text-align: center;
+	height: 25%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.side-footer .sm-list {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+	margin: .4em 0;
+	height: 20%;
+}
+
+.side-footer address a {
+	font-style: normal;
+	color: var(--font-light);
+}
+
+/*// HEADER NAV TOGGLE CLASSES //*/
+
+.activeSection {
+	font-weight: bold;
+}
+
+.activePage {
+	font-weight: bold;
+}
+
+/* Header nav landscape response */
+
+@media screen and (max-height: 450px) and (orientation: landscape) {
+	.nav-overlay {
+		padding-top: 40px;
+	}
+}
+
+@media screen and (orientation:landscape) and (max-width: 1279px) {
+	main {
+		margin-left: 80px;
+	}
+
+	.navbar {
+		width: 80px;
+		height: 100%;
+		flex-flow: column-reverse;
+		justify-content: flex-end;
+		background-color: var(--background-navbar);
+	}
+
+	.navbar-logo-container {
+		position: fixed;
+		bottom: 0;
+	}
+
+	#burger-icon {
+		margin: 30% 0 0 0;
+	}
+
+	#navbarLogo {
+		display: none;
+	}
+
+	.main-logo {
+		min-height: 80vh;
+	}
+
+	.main-logo img {
+		margin-left: 80px;
+	}
+
+	.nav-overlay {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebebe6+0,ebebe6+100&1+15,0.9+30 */
+		/* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: -webkit-gradient(linear, left top, right top, from(rgba(235, 235, 230, 1)), color-stop(15%, rgba(235, 235, 230, 1)), color-stop(30%, rgba(235, 235, 230, 0.9)), to(rgba(235, 235, 230, 0.9)));
+		background: -o-linear-gradient(left, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
+		background: linear-gradient(to right, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebe6', endColorstr='#e6ebebe6', GradientType=1);
+		/* IE6-9 */
+	}
+
+	.accordion {
+		margin-left: 80px;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	.accordion>li {
+		flex: 0 0 50%;
+		align-self: center;
+	}
+
+	.side-footer {
+		margin-left: 80px;
+	}
+}
+
+/* Header nav portrait response */
+
+@media screen and (orientation:portrait) {
+
+	#navbarLogo {
+		margin-left: 30%;
+	}
+
+	.nav-overlay {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebebe6+0,ebebe6+100&1+15,0.9+30 */
+		/* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(235, 235, 230, 1)), color-stop(15%, rgba(235, 235, 230, 1)), color-stop(30%, rgba(235, 235, 230, 0.9)), to(rgba(235, 235, 230, 0.9)));
+		background: -o-linear-gradient(top, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
+		background: linear-gradient(to bottom, rgba(235, 235, 230, 1) 0%, rgba(235, 235, 230, 1) 15%, rgba(235, 235, 230, 0.9) 30%, rgba(235, 235, 230, 0.9) 100%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebe6', endColorstr='#e6ebebe6', GradientType=0);
+		/* IE6-9 */
+	}
+
+	.side-footer .footer-phone {
+		display: block;
+	}
+}
+
+/* Header nav widescreen (short) response */
+
+@media screen and (min-width: 1280px) and (max-height: 1023px) {
+	.accordion>li>a {
+		padding: .7em;
+	}
+}
+
+/* Header widescreen response */
+
+@media screen and (min-width:1280px) {
+
+	.side-header {
+		width: 20vw;
+		height: 100vh;
+		position: fixed;
+		z-index: 20;
+		background-color: #f6f5f7;
+	}
+
+	#burger-icon {
+		display: none;
+	}
+
+	.navbar {
+		display: none;
+	}
+
+	.main-logo {
+		width: 100%;
+		height: 30vh;
+	}
+
+	.main-logo a {
+		height: 100%;
+		max-width: 60%;
+		margin: 10% auto 0 auto;
+		justify-content: flex-end;
+	}
+
+	.main-logo img {
+		height: auto;
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	.nav-overlay {
+		position: static;
+		background: none;
+		height: 70vh;
+		padding-top: 0;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-around;
+	}
+
+	.header-nav {
+		height: 75%;
+	}
+
+	.accordion {
+		margin-left: 18%;
+		flex-flow: column;
+		justify-content: center;
+		text-align: left;
+		padding-top: 0;
+	}
+
+	.accordion>li {
+		flex: 0 0 auto;
+		padding: .3em 0;
+	}
+
+	.accordion>li>a {
+		padding: .5em;
+	}
+
+	#side-footer-widget a,
+	#mobile-footer-widget a {
+		color: var(--font-header) !important;
+	}
+
+	.side-footer {
+		justify-content: flex-start;
+		margin-left: 15%;
+		height: 25%;
+		text-align: left;
+	}
+
+	.side-footer .sm-list {
+		flex-flow: row;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.side-footer .sm-list a {
+		padding-left: 0;
+		padding-right: .6em;
+	}
+
+	.side-footer address a {
+		display: block;
+		letter-spacing: .01em;
+	}
+}

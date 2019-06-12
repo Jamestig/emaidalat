@@ -1,0 +1,261 @@
+/* Menu top header and legend */
+
+.menu__title {
+	font-size: 2em;
+	text-transform: none;
+	text-align: center;
+	margin: .8em 5vw .5em 5vw;
+}
+
+.menu__legend {
+	margin: 0 5vw 2em 5vw;
+	text-align: center;
+	letter-spacing: .1em;
+	font-size: .9em;
+}
+
+.menu__legend img {
+	padding: 0 .3em 0 .5em;
+	vertical-align: middle;
+}
+
+.menu__legend .icon-vegetarian {
+	padding-left: 0;
+}
+
+@media screen and (max-width: 380px) {
+	.menu__legend {
+		font-size: .8em;
+	}
+
+	.menu__legend img {
+		padding: 0 .2em 0 .3em;
+	}
+}
+
+.icon-vegetarian {
+	height: 11px;
+	vertical-align: middle;
+}
+
+.icon-vegan {
+	height: 12px;
+	vertical-align: middle;
+}
+
+.icon-seasonal {
+	height: 16px;
+	vertical-align: middle;
+}
+
+.icon-spicy {
+	height: 15px;
+	vertical-align: middle;
+}
+
+/* Menu courses */
+
+.menu__course {
+	text-align: center;
+	padding: 0 3vw;
+}
+
+.menu__course-header {
+	margin: 3em auto;
+}
+
+.menu__course-header h2 {
+	font-size: 1.8em;
+	font-style: italic;
+}
+
+.menu__course-header h4 {
+	color: var(--font-light);
+	font-size: 1.2em;
+}
+
+.menu__course-header .header-caps {
+	font-size: .9rem;
+}
+
+.menu__sub-course {
+	margin-bottom: 4em;
+}
+
+.menu__sub-course-header {
+	margin-bottom: 2em;
+	margin-top: 3em;
+}
+
+.menu__sub-course-header h3 {
+	text-align: center;
+	font-weight: normal;
+	font-size: 1.5em;
+	text-transform: capitalize;
+	white-space: nowrap;
+	letter-spacing: .02em;
+	color: var(--font-light);
+}
+
+.menu__sub-course-header h3::before {
+	content: url(images/icon/line_left_short.png);
+	position: relative;
+	top: -5px;
+	padding-right: 10px;
+}
+
+.menu__sub-course-header h3::after {
+	content: url(images/icon/line_right_short.png);
+	position: relative;
+	top: -5px;
+	padding-left: 10px;
+}
+
+.menu__list {
+	padding: 0 3vw;
+}
+
+.menu__dish-item {
+	font-weight: bold;
+	margin: 1.5em 0;
+}
+
+.menu__dish-ingredients {
+	font-weight: normal;
+	margin: 0;
+}
+
+.dish-price {
+	font-size: .8em;
+	color: var(--font-light)
+}
+
+@media screen and (min-width: 500px) {
+	.menu__sub-course-header h3::before {
+		content: url(images/icon/line_left.png);
+	}
+
+	.menu__sub-course-header h3::after {
+		content: url(images/icon/line_right.png);
+	}
+}
+
+/* Menu pages widescreen response */
+
+@media screen and (min-width: 1280px) {
+
+	.menuSection .fixed-image {
+		opacity: 0;
+	}
+
+	.menuSection:first-of-type .fixed-image {
+		opacity: 1;
+	}
+
+	.menu .ribbon-container-right {
+		margin-left: 35vw;
+	}
+
+	.menu .ribbon-container-right .fixed-image {
+		width: 35vw;
+	}
+
+	.menus__nav {
+		display: none;
+	}
+
+	.menu__title {
+		background-color: var(--background-main);
+		margin-top: 0;
+	}
+
+	.menu__course {
+		padding: 0 5vw;
+		margin-bottom: 5em;
+		margin-top: 3em;
+	}
+
+	.menu__list {
+		padding: 0;
+	}
+
+	.menu::after {
+		content: '';
+		position: fixed;
+		bottom: 0;
+		left: 55vw;
+		width: 45vw;
+		height: 40vh;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f7f5+0,f6f7f5+100&0+0,1+95 */
+		/* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(246, 247, 245, 0) 0%, rgba(246, 247, 245, 1) 95%, rgba(246, 247, 245, 1) 100%);
+		/* Chrome10-25,Safari5.1-6 */
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(246, 247, 245, 0)), color-stop(95%, rgba(246, 247, 245, 1)), to(rgba(246, 247, 245, 1)));
+		background: -o-linear-gradient(top, rgba(246, 247, 245, 0) 0%, rgba(246, 247, 245, 1) 95%, rgba(246, 247, 245, 1) 100%);
+		background: linear-gradient(to bottom, rgba(246, 247, 245, 0) 0%, rgba(246, 247, 245, 1) 95%, rgba(246, 247, 245, 1) 100%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00f6f7f5', endColorstr='#f6f7f5', GradientType=0);
+		/* IE6-9 */
+	}
+}
+
+// Drink menu
+
+.drinks-menu {
+	text-align: center;
+}
+
+.drinks-menu__item {
+	padding: .4em 0;
+}
+
+.chai-tea {
+	margin-top: 0;
+}
+
+@media screen and (min-width: 1280px) {
+	#menu-coffee img {
+		margin-left: 28%;
+	}
+
+	#menu-cakes img {
+		margin-left: 0;
+	}
+
+	.drinks-menu__list {
+		padding: 0 8vw;
+	}
+}
+
+// Wine list
+
+.wine-menu {
+	text-align: center;
+}
+
+.wine-menu__item {
+	padding: .5em 0;
+}
+
+.wine-menu-description {
+	color: var(--font-light);
+	padding: 0 3vw;
+}
+
+// Breakfast menu
+
+.breakfast-menu__course {
+	margin: 3em 0;
+}
+
+.menu-breakfast__sets p {
+	margin: .5em 0;
+}
+
+.menu-breakfast__sets h6 {
+	font-size: 1.5em;
+	font-style: italic;
+	letter-spacing: .02em;
+	margin: 2.2em 0 1.2em 0;
+	color: var(--font-light);
+}

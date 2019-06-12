@@ -18,8 +18,8 @@
 
 			<div class="navbar-logo-container">
 				<a href="https://emaidalat.com">
-					<img class="navbar-logo" id="navbarLogo" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo/logo_wide.png" alt="émai dalat small logo">
-					<img class="navbar-logo" id="navbarRose" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo/logo_tall.png" alt="émai dalat small logo">
+					<img class="navbar-logo" id="navbarLogo" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/logo/logo_wide.png" alt="émai dalat small logo">
+					<img class="navbar-logo" id="navbarRose" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/logo/logo_tall.png" alt="émai dalat small logo">
 				</a>
 			</div>
 
@@ -32,7 +32,7 @@
 
 		<h1 class="main-logo">
 			<a class="vertical-center" href="https://emaidalat.com">
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo/logo.png" alt="émai dalat">
+				<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/logo/logo.png" alt="émai dalat">
 			</a>
 		</h1>
 
