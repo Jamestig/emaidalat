@@ -10,12 +10,12 @@ get_header(); ?>
 <main class="wine-menu">
 
 	<div class="ribbon-container-right">
-		<header class="menus__header">
 
-			<?php get_template_part( 'template-parts/menus-navigation' ); ?>
+		<?php get_template_part( 'template-parts/menus-navigation' ); ?>
 
+		<!-- <header class="menus__header">
 			<h1 class="menu__title">Wine list</h1>
-		</header>
+		</header> -->
 
 		<section class="menu__course">
 			<figure class="fixed-image mobile-image">
@@ -31,7 +31,7 @@ get_header(); ?>
 				</picture>
 			</figure>
 
-			<p class="wine-menu-description">Our carefully curated range of wines have been imported from all the best regions known for their fine grapes. Enjoy a glass that is perfectly paired with your meal at emai.</p>
+			<!-- <p class="wine-menu-description">Our carefully curated range of wines have been imported from all the best regions known for their fine grapes. Enjoy a glass that is perfectly paired with your meal at emai.</p> -->
 
 			<?php
 			if ( have_posts() ) :
@@ -39,7 +39,7 @@ get_header(); ?>
 					the_post();
 					?>
 
-					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+					<?php get_template_part( 'template-parts/content', 'page-menus' ); ?>
 
 			<?php endwhile; else : ?>
 

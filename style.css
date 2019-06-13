@@ -925,55 +925,6 @@ html {
   height: 100%;
 }
 
-@media screen and (min-width: 1280px) {
-  main {
-    margin-left: 20vw;
-  }
-  .ribbon-container {
-    max-width: 40%;
-    height: 100vh;
-    background: rgba(247, 247, 245, 0.92);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 40%;
-            flex: 0 0 40%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    z-index: 10;
-  }
-  .ribbon-container-bottom {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 30%;
-            flex: 0 0 30%;
-    background: rgba(0, 0, 0, 0.3);
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .ribbon-container-right {
-    margin-left: 37vw;
-    padding-top: 10vh;
-    padding-bottom: 40vh;
-  }
-  .ribbon-container-right .fixed-image {
-    width: 37vw;
-    z-index: 5;
-  }
-}
-
 .button-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1082,6 +1033,44 @@ html {
   }
   .scrollDown {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    margin-left: 20vw;
+  }
+  .ribbon-container {
+    max-width: 40%;
+    height: 100vh;
+    background: rgba(247, 247, 245, 0.92);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 10;
+  }
+  .menus-container {
+    margin-left: 37vw;
+    padding-top: 10vh;
+    padding-bottom: 40vh;
+    background: #f7f7f5;
+  }
+  .menus-container .fixed-image figure {
+    width: 37vw;
+    z-index: 5;
   }
 }
 
@@ -1550,6 +1539,139 @@ html {
   .side-footer address a {
     display: block;
     letter-spacing: .01em;
+  }
+}
+
+.entry-header {
+  text-align: center;
+}
+
+.entry-header h1 {
+  text-transform: capitalize;
+}
+
+.entry-content {
+  padding: 0 3vw;
+  margin-bottom: 2vh;
+}
+
+.entry-content h2 {
+  padding: 0 3vw;
+}
+
+.entry-content h3 {
+  padding: 0 3vw;
+}
+
+.entry-content p {
+  padding: 0 3vw;
+}
+
+.entry-content hr {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-style: none;
+  height: 1px;
+  background-color: black;
+}
+
+.entry-content .wp-block-table {
+  text-align: left;
+  table-layout: fixed;
+  width: 100%;
+  padding: 0 3vw;
+}
+
+.entry-content .wp-block-table tbody td:nth-child(1) {
+  width: 60%;
+}
+
+.entry-content .wp-block-table tbody td:nth-child(2) {
+  width: 30%;
+}
+
+.entry-content .wp-block-table tbody td:nth-child(3) {
+  width: 5%;
+}
+
+.entry-content .wp-block-table tbody td:nth-child(4) {
+  width: 5%;
+  text-align: right;
+}
+
+.entry-content .wp-block-image figure {
+  position: relative;
+  z-index: 4;
+}
+
+.entry-content .wp-block-image figure img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1279px) and (orientation: landscape) {
+  .entry-content .wp-block-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .entry-header {
+    text-align: left;
+    padding: 0 2vw;
+  }
+  .entry-content {
+    padding: 0 2vw;
+  }
+  .entry-content h2 {
+    padding: 0;
+  }
+  .entry-content h3 {
+    padding: 0;
+  }
+  .entry-content p {
+    padding: 0;
+    text-align: left;
+  }
+  .entry-content hr {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .entry-content .wp-block-table {
+    padding: 0;
+  }
+  .entry-content .wp-block-table tbody td:nth-child(1) {
+    width: 60%;
+  }
+  .entry-content .wp-block-table tbody td:nth-child(2) {
+    width: 30%;
+  }
+  .entry-content .wp-block-table tbody td:nth-child(3) {
+    width: 5%;
+  }
+  .entry-content .wp-block-table tbody td:nth-child(4) {
+    width: 5%;
+  }
+  .entry-content .wp-block-image figure {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -100;
+    overflow: hidden;
+    -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+  }
+  .entry-content .wp-block-image figure img {
+    height: 100vh;
+    width: auto;
+    max-width: none;
+    margin-left: 37%;
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
+    z-index: -100;
   }
 }
 
@@ -2185,7 +2307,6 @@ html {
   }
 }
 
-/* Menu top header and legend */
 .menu__title {
   font-size: 2em;
   text-transform: none;
@@ -2238,7 +2359,6 @@ html {
   vertical-align: middle;
 }
 
-/* Menu courses */
 .menu__course {
   text-align: center;
   padding: 0 3vw;

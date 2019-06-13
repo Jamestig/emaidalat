@@ -1,0 +1,30 @@
+@media screen and (min-width: 1280px) {
+
+	main {
+		margin-left: 20vw;
+	}
+
+	.ribbon-container {
+		max-width: 40%;
+		height: 100vh;
+		background: rgba(247, 247, 245, .92);
+		display: flex;
+		flex: 0 0 40%;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+		z-index: 10;
+	}
+
+	.menus-container {
+		margin-left: 37vw;
+		padding-top: 10vh;
+		padding-bottom: 40vh;
+		background: rgb(247, 247, 245);
+
+		.fixed-image figure {
+			width: 37vw;
+			z-index: 5;
+		}
+	}
+}

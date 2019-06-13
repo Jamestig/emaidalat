@@ -51,10 +51,15 @@ button:focus {
 // BUTTONS
 @import 'buttons';
 
+// CONTAINERS
+@import 'containers';
+
 // PARTS
 
 // Header
-@import 'parts/header';
+@import 'parts/site-header';
+// Content
+@import 'parts/content';
 // Footer
 @import 'parts/footer';
 // Menu navigation

@@ -13,7 +13,7 @@ get_header();
 	<div class="ribbon-container-right">
 		<header class="menus__header">
 
-			<?php get_template_part( 'template-parts/menus-navigation-viet' ); ?>
+			<?php get_template_part( 'template-parts/menus-navigation' ); ?>
 
 			<h1 class="menu__title">Restaurant Menu</h1>
 
@@ -465,9 +465,10 @@ get_header();
 				</li>
 			</ul>
 		</section>
-	</div>
 
-	<?php get_template_part( 'template-parts/menus-navigation-viet' ); ?>
+		<?php get_template_part( 'template-parts/menus-navigation' ); ?>
+
+	</div><!-- end ribbon-containen-right -->
 
 </main>
 
