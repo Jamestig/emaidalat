@@ -1,6 +1,6 @@
 <?php
 /**
- * Content.php
+ * Content-page
  *
  * @package emaidalat
  */

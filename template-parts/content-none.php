@@ -1,6 +1,6 @@
 <?php
 /**
- * Content.php
+ * No content to display
  *
  * @package emaidalat
  */
@@ -11,13 +11,13 @@
 
 	<header class="entry-header">
 
-		<?php the_title( '<h1>', '</h1>' ); ?>
+		<h1><?php esc_html_e( 'Page Not Found', 'emai' ); ?></h1>
 
 	</header>
 
 	<div class="entry-content">
 
-		<?php the_content(); ?>
+		<p><?php esc_html_e( 'Sorry, no content here, please try a different link', 'emai' ); ?></p>
 
 	</div>
 

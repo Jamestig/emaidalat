@@ -7,7 +7,8 @@ Description: Theme for emaidalat.com
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: side-header
+Text Domain: emai
+Tags: one-column, two-columns, left-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 */
 ul {
   padding: 0;
@@ -1061,6 +1062,27 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
     z-index: 10;
+  }
+  .ribbon-container-bottom {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .ribbon-container-right {
+    margin-left: 37vw;
+    padding-top: 10vh;
+    padding-bottom: 40vh;
+  }
+  .ribbon-container-right .fixed-image {
+    width: 37vw;
+    z-index: 5;
   }
   .menus-container {
     margin-left: 37vw;

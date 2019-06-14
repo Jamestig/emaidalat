@@ -1,13 +1,13 @@
 <?php
 /**
- * Template Name: Menus Template
+ * Template Name: Ribbon Template
  *
  * @package emaidalat
  */
 
 get_header(); ?>
 
-<main class="menus-main wine-menu">
+<main class="menus-main">
 
 	<div class="menus-container">
 
@@ -17,7 +17,7 @@ get_header(); ?>
 				the_post();
 				?>
 
-				<?php get_template_part( 'template-parts/content', 'menus' ); ?>
+				<?php get_template_part( 'template-parts/content' ); ?>
 
 			<?php endwhile; else : ?>
 
@@ -25,7 +25,7 @@ get_header(); ?>
 
 			<?php endif; ?>
 
-	</div><!-- end menus container -->
+	</div>
 
 </main>
 

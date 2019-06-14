@@ -16,6 +16,24 @@
 		z-index: 10;
 	}
 
+	.ribbon-container-bottom {
+		flex: 0 0 30%;
+		background: rgba(0, 0, 0, .3);
+		align-items: flex-end;
+		justify-content: flex-end;
+	}
+
+	.ribbon-container-right {
+		margin-left: 37vw;
+		padding-top: 10vh;
+		padding-bottom: 40vh;
+	}
+
+	.ribbon-container-right .fixed-image {
+		width: 37vw;
+		z-index: 5;
+	}
+
 	.menus-container {
 		margin-left: 37vw;
 		padding-top: 10vh;

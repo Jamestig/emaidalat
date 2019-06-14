@@ -25,8 +25,6 @@ get_header(); ?>
 
 			<?php endif; ?>
 
-			<p>Template: index.php</p>
-
 		</main>
 
 	</div>
