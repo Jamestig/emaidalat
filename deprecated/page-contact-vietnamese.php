@@ -21,16 +21,16 @@
 
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">Ghé hoặc gửi lời chào</h2>
-					<hr class="hr-left">
+					<h2 class="header--full">Ghé hoặc gửi lời chào</h2>
+					<hr class="hr--left">
 					<h3>Liên hệ</h3>
 				</header>
 
-				<p>Để gửi tin nhắn cho émai, bạn vui lòng mở contact form hoặc gửi email trực tiếp về địa chỉ <a class="link-underline" href="mailto:family@emaidalat.com">family@emaidalat.com</a>, cho chúng mình, hoặc gọi điện thoại: <a class="link-bold footer-phone" href="tel: +842633839001">+84 2633 839 001</a>.</p>
+				<p>Để gửi tin nhắn cho émai, bạn vui lòng mở contact form hoặc gửi email trực tiếp về địa chỉ <a class="link--underline" href="mailto:family@emaidalat.com">family@emaidalat.com</a>, cho chúng mình, hoặc gọi điện thoại: <a class="link--bold footer-phone" href="tel: +842633839001">+84 2633 839 001</a>.</p>
 				<p>Émai mở cửa mỗi ngày trong tuần từ 7 giờ sang đến 10 giờ đêm.</p>
 
 				<div class="link-button">
-					<a id="openContactForm"><span class="hidden-mobile">Mở </span>Phiếu Liên Hệ</a>
+					<a id="openContactForm"><span class="hidden--mobile">Mở </span>Phiếu Liên Hệ</a>
 				</div>
 			</div>
 

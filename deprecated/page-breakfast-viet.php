@@ -34,7 +34,7 @@ get_header(); ?>
 					<p class="font--light font--italic">Được phục vụ từ 7:30 đến 10:30 sáng.</p>
 					<p class="font--light">250,000đ | Miễn phí cho mọi khách trọ tại émai.</p>
 					<p>Mọi bữa sáng bao gồm:</p>
-					<hr class="hr-center">
+					<hr class="hr--center">
 					<p class="font--light">Cà phê hoặc trà tuỳ chọn* hoặc nước trái cây ép, bánh mì Ciabatta nhà làm, mứt trái cây nhà làm, và một dĩa tráy cây tươi tráng miệng</p>
 				</div>
 
@@ -62,7 +62,7 @@ get_header(); ?>
 					<section class="menu__sub-course">
 						<h6>Năm</h6>
 						<h3>Bữa ăn sáng Việt Nam trong ngày</h3>
-						<p class="text-condition">* lựa chọn trong set không bao gồm cà phê trứng, cà phê dừa, trà cam gừng và trà ô long sương sáo</p>
+						<p class="text--condition">* lựa chọn trong set không bao gồm cà phê trứng, cà phê dừa, trà cam gừng và trà ô long sương sáo</p>
 					</section>
 				</div>
 			</div>

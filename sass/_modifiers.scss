@@ -1,3 +1,109 @@
 .dot--after::after {
 	content: ' · ';
 }
+
+.ul--dots {
+	padding-left: 7vw;
+
+	li {
+		list-style-type: disc;
+	}
+}
+
+// Font modifiers
+
+.link--underline {
+	color: var(--font-green);
+}
+
+.link--bold {
+	color: var(--font-main);
+	font-weight: bold;
+}
+
+.text--condition {
+	color: var(--font-light);
+	font-size: 1.1em;
+}
+
+.font--light {
+	color: var(--font-light);
+}
+
+.font--italic {
+	font-style: italic;
+}
+
+// Positioning
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+}
+
+.position-underlay {
+	position: relative;
+}
+
+.position-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
+}
+
+.remove--header {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+.vertical--center {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	height: 100%;
+}
+
+.hr--left {
+	margin-left: 0;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	max-width: 140px;
+	height: 1px;
+	background-color: #bdbdb7;
+	border: 0;
+}
+
+.hr--center {
+	border: 0;
+	height: 1px;
+	background-color: none;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) !important;
+	margin: 1rem auto;
+	max-width: 400px;
+}
+
+@media screen and (max-width: 450px) {
+	.hidden--mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1279px) {
+	.hr--left {
+		display: none;
+	}
+
+	.header--full {
+		display: none
+	}
+}

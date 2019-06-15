@@ -2,6 +2,10 @@ html {
 	background-color: var(--background-main);
 }
 
+main {
+	background-color: var(--background-light);
+}
+
 .content-white,
 .content-white a,
 .content-white li,
@@ -28,6 +32,8 @@ html {
 	--font-white: #f4f4f0;
 	--font-green: #919583;
 	--border-light: #e1e2e0;
+	--border-dark: #484843;
+	--border-hr: #bdbdb7;
 }
 
 // Gradients

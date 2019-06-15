@@ -17,7 +17,7 @@ get_header(); ?>
 					the_post();
 					?>
 
-					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+					<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
 
 			<?php endwhile; else : ?>
 

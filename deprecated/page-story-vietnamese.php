@@ -14,7 +14,7 @@
 				<div class="content">
 					<header class="double-header">
 						<h2>About us</h2>
-						<hr class="hr-left">
+						<hr class="hr--left">
 						<h3>Our Story</h3>
 					</header>
 
@@ -60,7 +60,7 @@
 				<div class="content">
 					<header class="double-header">
 						<h2>About us</h2>
-						<hr class="hr-left">
+						<hr class="hr--left">
 						<h3>Our Story</h3>
 					</header>
 
@@ -90,7 +90,7 @@
 				<div class="content">
 					<header class="double-header">
 						<h2>About us</h2>
-						<hr class="hr-left">
+						<hr class="hr--left">
 						<h3>Our Story</h3>
 					</header>
 

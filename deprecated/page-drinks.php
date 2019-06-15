@@ -185,7 +185,7 @@ get_header(); ?>
 
 			<header class="menu__course-header">
 				<h2>Liquor</h2>
-				<a href="https://emaidalat.com/wine-list/" class="text-condition">Click here for our full, curated list for
+				<a href="https://emaidalat.com/wine-list/" class="text--condition">Click here for our full, curated list for
 					wines by the bottle.</a>
 			</header>
 
@@ -201,7 +201,7 @@ get_header(); ?>
 						<p>with 8 exotic spices, orange, and lime</p>
 					</li>
 				</ul>
-				<p class="text-condition">*available during colder months</p>
+				<p class="text--condition">*available during colder months</p>
 			</section>
 
 			<section class="menu__sub-course">

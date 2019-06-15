@@ -23,8 +23,8 @@
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">Nhà Hàng Émai</h2>
-					<hr class="hr-left">
+					<h2 class="header--full">Nhà Hàng Émai</h2>
+					<hr class="hr--left">
 					<h3>Hương vị món Ý truyền thống trong lòng Đà Lạt, Việt Nam</h3>
 				</header>
 
@@ -57,8 +57,8 @@
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">Émai quán cà phê</h2>
-					<hr class="hr-left">
+					<h2 class="header--full">Émai quán cà phê</h2>
+					<hr class="hr--left">
 					<h3>Bánh & Thức uống nhà làm thơm lành</h3>
 				</header>
 
@@ -91,15 +91,15 @@
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">Émai homestay</h2>
-					<hr class="hr-left">
+					<h2 class="header--full">Émai homestay</h2>
+					<hr class="hr--left">
 					<h3>Những căn phòng nhỏ xinh đẹp và mộc mạc</h3>
 				</header>
 
 				<p>Những phòng trọ ấm cúng của émai gợi nên nét đẹp nên thơ của vùng nông thôn Đà Lạt, với sự chấm phá của phong cách mỹ thuật Thiền và thẩm mỹ đương đại từ Châu  u và Nhật Bản.</p>
 
 				<div class="link-button">
-					<a href="https://emaidalat.com/vi/homestay/"><span class="hidden-mobile">Xem và </span>đặt phòng</a>
+					<a href="https://emaidalat.com/vi/homestay/"><span class="hidden--mobile">Xem và </span>đặt phòng</a>
 				</div>
 
 				<button class="scrollDown moveSectionDown">
@@ -141,7 +141,7 @@
 
 	<section class="fp-section pageSection home-booking" data-anchor="home-booking">
 		<div class="ribbon-container">
-				<div class="content-white vertical-center content">
+				<div class="content-white vertical--center content">
 					<div>
 						<p>Giữa Đà Lạt hung vĩ, hãy để cho émai làm góc nhỏ mang đến với bạn sự thoải mái và nét đẹp, đánh thức các giác quan và khẩu vị của bạn bằng những cách nhẹ nhàng nhất.</p>
 					</div>

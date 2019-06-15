@@ -105,3 +105,24 @@
 		display: block;
 	}
 }
+
+// WP block button
+
+.button--clear {
+	a {
+		border-color: var(--font-light);
+		border-style: solid;
+		border-width: 1px;
+		background: none;
+		letter-spacing: .15em;
+		color: var(--font-light);
+		transition: border-color .3s linear, color .3s linear, background .3s linear;
+		white-space: nowrap;
+		text-transform: uppercase;
+	}
+}
+
+.button--clear a:hover {
+	border-color: var(--border-dark);
+	color: var(--border-dark);
+}

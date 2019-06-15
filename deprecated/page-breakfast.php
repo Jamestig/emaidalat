@@ -31,7 +31,7 @@ get_header(); ?>
 					<p class="font--light font--italic">Served from 7:30 - 10:30AM</p>
 					<p class="font--light">250,000 VND / Complimentary for all homestay guests</p>
 					<p>All our breakfast options are accompanied by:</p>
-					<hr class="hr-center">
+					<hr class="hr--center">
 					<p class="font--light">Your choice of coffee or tea* or fresh juice, homemade Ciabatta bread, homemade fruit
 						jam, and a plate of
 						fresh fruits</p>
@@ -61,7 +61,7 @@ get_header(); ?>
 					<section class="menu__sub-course">
 						<h6>Five</h6>
 						<h3>Vietnamese breakfast of the day</h3>
-						<p class="text-condition">* egg coffee, orange pekoe tea, coconut coffee and grass jelly iced tea are not
+						<p class="text--condition">* egg coffee, orange pekoe tea, coconut coffee and grass jelly iced tea are not
 							included in the breakfast set.</p>
 					</section>
 				</div>

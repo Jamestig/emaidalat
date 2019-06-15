@@ -1,14 +1,29 @@
-.entry-header {
-	text-align: center;
+// Content classes
 
-	h1 {
-		text-transform: capitalize;
+.content {
+	padding-left: 8vw;
+	padding-right: 8vw;
+	text-align: center;
+}
+
+.content li {
+	text-transform: none;
+	padding: .5em 0;
+}
+
+@media screen and (min-width: 1280px) {
+	.content {
+		text-align: left;
+		padding-left: 5vw;
+		padding-right: 5vw;
 	}
 }
 
+// Entry content
+
 .entry-content {
-	padding: 0 3vw;
-	margin-bottom: 2vh;
+	padding: 0 2vw;
+	margin-bottom: 2em;
 
 	h2 {
 		padding: 0 3vw;
@@ -22,12 +37,16 @@
 		padding: 0 3vw;
 	}
 
+	a {
+		color: var(--font-green);
+	}
+
 	hr {
 		margin-left: 3vw;
 		margin-right: 3vw;
 		border-style: none;
 		height: 1px;
-		background-color: black;
+		background-color: var(--border-hr);
 	}
 
 	.wp-block-table {
@@ -38,7 +57,7 @@
 
 		tbody {
 			td:nth-child(1) {
-				width: 60%;
+				width: 55%;
 			}
 
 			td:nth-child(2) {
@@ -46,11 +65,11 @@
 			}
 
 			td:nth-child(3) {
-				width: 5%;
+				width: 7.5%;
 			}
 
 			td:nth-child(4) {
-				width: 5%;
+				width: 7.5%;
 				text-align: right;
 			}
 		}

@@ -34,8 +34,8 @@
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">Homestay</h2>
-					<hr class="hr-left">
+					<h2 class="header--full">Homestay</h2>
+					<hr class="hr--left">
 					<h3>Phòng trọ tại Émai</h3>
 				</header>
 

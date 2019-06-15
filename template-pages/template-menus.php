@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<main class="menus-main wine-menu">
+<main>
 
 	<div class="menus-container">
 

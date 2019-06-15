@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<main class="menus-main">
+<main>
 
 	<div class="menus-container">
 

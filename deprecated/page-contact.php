@@ -21,16 +21,16 @@
 
 		<div class="content">
 			<header class="double-header">
-				<h2 class="header-full">Drop by or say hello</h2>
-				<hr class="hr-left">
+				<h2 class="header--full">Drop by or say hello</h2>
+				<hr class="hr--left">
 				<h3>Contact</h3>
 			</header>
 
-			<p>To send us a message, kindly use the contact form below. You can also email us at <a class="link-underline" href="mailto:family@emaidalat.com">family@emaidalat.com</a>, or over the phone at <a class="link-bold footer-phone" href="tel: +842633839001">+84 2633 839 001</a>.</p>
+			<p>To send us a message, kindly use the contact form below. You can also email us at <a class="link--underline" href="mailto:family@emaidalat.com">family@emaidalat.com</a>, or over the phone at <a class="link--bold footer-phone" href="tel: +842633839001">+84 2633 839 001</a>.</p>
 			<p>We are open from 7am to 10pm, seven days a week.</p>
 
 			<div class="link-button">
-				<a id="openContactForm"><span class="hidden-mobile">Open </span>Contact Form</a>
+				<a id="openContactForm"><span class="hidden--mobile">Open </span>Contact Form</a>
 			</div>
 		</div>
 

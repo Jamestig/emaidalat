@@ -185,7 +185,7 @@ get_header(); ?>
 
 			<header class="menu__course-header">
 				<h2>Rượu</h2>
-				<a href="https://emaidalat.com/vi/ruou/" class="text-condition">Nhấp vào đây để tham khảo danh sách đầy đủ các loại rượu theo chai được émai tuyển chọn.</a>
+				<a href="https://emaidalat.com/vi/ruou/" class="text--condition">Nhấp vào đây để tham khảo danh sách đầy đủ các loại rượu theo chai được émai tuyển chọn.</a>
 			</header>
 
 			<section class="menu__sub-course">
@@ -200,7 +200,7 @@ get_header(); ?>
 						<p>với 8 loại gia vị đặc biệt, cam, và chanh</p>
 					</li>
 				</ul>
-				<p class="text-condition">* vào những tháng lạnh</p>
+				<p class="text--condition">* vào những tháng lạnh</p>
 			</section>
 
 			<section class="menu__sub-course">

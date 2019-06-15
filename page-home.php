@@ -28,8 +28,8 @@ get_header();
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">Émai Restaurant</h2>
-					<hr class="hr-left">
+					<h2 class="header--full">Émai Restaurant</h2>
+					<hr class="hr--left">
 					<h3>Sensational, authentic European flavours in the heart of Dalat, Vietnam</h3>
 				</header>
 
@@ -62,8 +62,8 @@ get_header();
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">Émai cafe</h2>
-					<hr class="hr-left">
+					<h2 class="header--full">Émai cafe</h2>
+					<hr class="hr--left">
 					<h3>Wholesome and indulgent homemade desserts and drinks</h3>
 				</header>
 
@@ -96,15 +96,15 @@ get_header();
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header-full">Émai homestay</h2>
-					<hr class="hr-left">
+					<h2 class="header--full">Émai homestay</h2>
+					<hr class="hr--left">
 					<h3>Gorgeous and rustic little rooms</h3>
 				</header>
 
 				<p>Our cozy guest rooms recall the picturesque charm of the Dalat countryside, with a touch of Zen and contemporary aesthetics from Europe and Japan.</p>
 
 				<div class="link-button">
-					<a href="https://emaidalat.com/our-rooms/">View<span class="hidden-mobile"> or book</span> rooms</a>
+					<a href="https://emaidalat.com/our-rooms/">View<span class="hidden--mobile"> or book</span> rooms</a>
 				</div>
 
 				<button class="scrollDown moveSectionDown">
@@ -146,7 +146,7 @@ get_header();
 
 	<section class="fp-section pageSection home-booking" data-anchor="home-booking">
 		<div class="ribbon-container">
-				<div class="content-white vertical-center content">
+				<div class="content-white vertical--center content">
 					<div>
 						<p>Amidst the sublimity, let émai be your nook for comfort and beauty, delighting your senses and palate in the most tender of ways.</p>
 					</div>

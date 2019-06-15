@@ -11,7 +11,17 @@
 
 	<header class="entry-header">
 
-		<?php the_title( '<h1>', '</h1>' ); ?>
+	<?php
+	if ( has_secondary_title() ) :
+		?>
+
+		<?php the_title(); ?>
+
+		<?php else : ?>
+
+			<?php the_title( '<h1>', '</h1>' ); ?>
+
+	<?php endif; ?>
 
 	</header>
 
