@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Ribbon Template
+ * Template Name: Menus Template
  *
  * @package emaidalat
  */
@@ -9,7 +9,7 @@ get_header(); ?>
 
 <main>
 
-	<div class="menus-container">
+	<div class="container-right">
 
 		<?php
 		if ( have_posts() ) :
@@ -17,7 +17,7 @@ get_header(); ?>
 				the_post();
 				?>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+				<?php get_template_part( 'template-parts/content', 'menus' ); ?>
 
 			<?php endwhile; else : ?>
 
@@ -25,7 +25,7 @@ get_header(); ?>
 
 			<?php endif; ?>
 
-	</div>
+	</div><!-- end menus container -->
 
 </main>
 

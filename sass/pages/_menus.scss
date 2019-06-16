@@ -261,3 +261,14 @@
 	margin: 2.2em 0 1.2em 0;
 	color: var(--font-light);
 }
+
+// Temporary drinks page image
+
+@media screen and (min-width: 1280px) {
+
+	.page-id-165 {
+		.wp-block-image:last-of-type {
+			display: none;
+		}
+	}
+}

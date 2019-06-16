@@ -3,7 +3,8 @@
 }
 
 .ul--dots {
-	padding-left: 7vw;
+	padding-left: 6vw;
+	text-align: left !important;
 
 	li {
 		list-style-type: disc;
@@ -86,9 +87,8 @@
 .hr--center {
 	border: 0;
 	height: 1px;
-	background-color: none;
+	background-color: none !important;
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) !important;
-	margin: 1rem auto;
 	max-width: 400px;
 }
 

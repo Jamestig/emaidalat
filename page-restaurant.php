@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Restaurant Page
+ * Template Name: Restaurant Template
  *
- * @package emaidalat
+ * @package emai
  */
 
 get_header();

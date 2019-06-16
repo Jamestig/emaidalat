@@ -2,7 +2,7 @@
 /**
  * Content.php
  *
- * @package emaidalat
+ * @package emai
  */
 
 ?>

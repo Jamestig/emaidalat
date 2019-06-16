@@ -41,7 +41,11 @@
 		color: var(--font-green);
 	}
 
-	hr {
+	ul {
+		text-align: center;
+	}
+
+	.hr {
 		margin-left: 3vw;
 		margin-right: 3vw;
 		border-style: none;
@@ -94,6 +98,8 @@
 
 	.entry-content {
 		.wp-block-image {
+			margin-top: 24px;
+
 			img {
 				width: 100%;
 				height: auto;
@@ -103,11 +109,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-
-	.entry-header {
-		text-align: left;
-		padding: 0 2vw;
-	}
 
 	.entry-content {
 		padding: 0 2vw;
@@ -123,11 +124,6 @@
 		p {
 			padding: 0;
 			text-align: left;
-		}
-
-		hr {
-			margin-left: 0;
-			margin-right: 0;
 		}
 
 		.wp-block-table {
@@ -168,7 +164,7 @@
 					width: auto;
 					max-width: none;
 					margin-left: 37%;
-					transform: translateX(-60%);
+					transform: translateX(-50%);
 					z-index: -100;
 				}
 			}

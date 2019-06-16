@@ -1,3 +1,8 @@
+.container-right {
+	background-color: var(--background-light);
+	padding-top: 1em;
+}
+
 @media screen and (min-width: 1280px) {
 
 	main {
@@ -34,15 +39,73 @@
 		z-index: 5;
 	}
 
-	.menus-container {
+	.container-right {
+		min-height: 100vh;
 		margin-left: 37vw;
 		padding-top: 10vh;
-		padding-bottom: 40vh;
-		background: rgb(247, 247, 245);
+		padding-bottom: 10vh;
 
 		.fixed-image figure {
 			width: 37vw;
 			z-index: 5;
+		}
+	}
+}
+
+// Image container (deprecated)
+
+.fixed-image {
+	position: relative;
+	z-index: 4;
+}
+
+.fixed-image img {
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 1279px) and (orientation: landscape) {
+
+	.fixed-image img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+
+	.image--43 img {
+		height: auto;
+		width: 100%;
+	}
+
+	.fixed-image {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 20vw;
+		right: 0;
+		z-index: -100;
+		overflow: hidden;
+		-webkit-transition: opacity 1s linear;
+		-o-transition: opacity 1s linear;
+		transition: opacity 1s linear;
+	}
+
+	.fixed-image img {
+		height: 100vh;
+		width: auto;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		z-index: -100;
+	}
+
+	.container-right {
+		.fixed-image {
+			figure {
+				width: 37vw;
+				z-index: 5;
+			}
 		}
 	}
 }

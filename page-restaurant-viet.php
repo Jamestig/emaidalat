@@ -1,10 +1,11 @@
 <?php
-/*
-Template Name: Restaurant Page Viet
+/**
+ * Template Name: Restaurant Template Viet
+ *
+ * @package emai
  */
-?>
 
-<?php get_header(); ?>
+get_header(); ?>
 
 <main class="menu">
 

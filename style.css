@@ -380,49 +380,6 @@ button:focus {
   }
 }
 
-.fixed-image {
-  position: relative;
-  z-index: 4;
-}
-
-.fixed-image img {
-  width: 100%;
-  height: auto;
-}
-
-@media screen and (max-width: 1279px) and (orientation: landscape) {
-  .fixed-image img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .fixed-image {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 20vw;
-    right: 0;
-    z-index: -100;
-    overflow: hidden;
-    -webkit-transition: opacity 1s linear;
-    transition: opacity 1s linear;
-  }
-  .fixed-image img {
-    height: 100vh;
-    width: auto;
-    margin-left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    z-index: -100;
-  }
-  .image-43 img {
-    height: auto;
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 1280px) {
   html.fp-enabled,
   .fp-enabled body {
@@ -711,10 +668,6 @@ html {
   background-color: var(--background-main);
 }
 
-main {
-  background-color: var(--background-light);
-}
-
 .content-white,
 .content-white a,
 .content-white li,
@@ -897,6 +850,11 @@ main {
   color: var(--border-dark);
 }
 
+.container-right {
+  background-color: var(--background-light);
+  padding-top: 1em;
+}
+
 @media screen and (min-width: 1280px) {
   main {
     margin-left: 20vw;
@@ -944,13 +902,60 @@ main {
     width: 37vw;
     z-index: 5;
   }
-  .menus-container {
+  .container-right {
+    min-height: 100vh;
     margin-left: 37vw;
     padding-top: 10vh;
-    padding-bottom: 40vh;
-    background: #f7f7f5;
+    padding-bottom: 10vh;
   }
-  .menus-container .fixed-image figure {
+  .container-right .fixed-image figure {
+    width: 37vw;
+    z-index: 5;
+  }
+}
+
+.fixed-image {
+  position: relative;
+  z-index: 4;
+}
+
+.fixed-image img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1279px) and (orientation: landscape) {
+  .fixed-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .image--43 img {
+    height: auto;
+    width: 100%;
+  }
+  .fixed-image {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 20vw;
+    right: 0;
+    z-index: -100;
+    overflow: hidden;
+    -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+  }
+  .fixed-image img {
+    height: 100vh;
+    width: auto;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: -100;
+  }
+  .container-right .fixed-image figure {
     width: 37vw;
     z-index: 5;
   }
@@ -1473,6 +1478,12 @@ main {
 }
 
 @media screen and (min-width: 1280px) {
+  .entry-header--left {
+    text-align: left;
+  }
+  .entry-header {
+    padding: 0 2vw;
+  }
   .entry-header h1 {
     color: var(--font-main);
     font-family: 'EB Garamond', serif;
@@ -1540,7 +1551,11 @@ main {
   color: var(--font-green);
 }
 
-.entry-content hr {
+.entry-content ul {
+  text-align: center;
+}
+
+.entry-content .hr {
   margin-left: 3vw;
   margin-right: 3vw;
   border-style: none;
@@ -1583,6 +1598,9 @@ main {
 }
 
 @media screen and (max-width: 1279px) and (orientation: landscape) {
+  .entry-content .wp-block-image {
+    margin-top: 24px;
+  }
   .entry-content .wp-block-image img {
     width: 100%;
     height: auto;
@@ -1590,10 +1608,6 @@ main {
 }
 
 @media screen and (min-width: 1280px) {
-  .entry-header {
-    text-align: left;
-    padding: 0 2vw;
-  }
   .entry-content {
     padding: 0 2vw;
   }
@@ -1606,10 +1620,6 @@ main {
   .entry-content p {
     padding: 0;
     text-align: left;
-  }
-  .entry-content hr {
-    margin-left: 0;
-    margin-right: 0;
   }
   .entry-content .wp-block-table {
     padding: 0;
@@ -1642,15 +1652,15 @@ main {
     width: auto;
     max-width: none;
     margin-left: 37%;
-    -webkit-transform: translateX(-60%);
-            transform: translateX(-60%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     z-index: -100;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .mobile-footer {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -1730,7 +1740,7 @@ main {
 
 .menus__nav .menus__nav-list {
   margin: 0 auto;
-  max-width: 200px;
+  max-width: 240px;
 }
 
 .menus__nav .menus__nav-list li {
@@ -2516,6 +2526,12 @@ main {
   color: var(--font-light);
 }
 
+@media screen and (min-width: 1280px) {
+  .page-id-165 .wp-block-image:last-of-type {
+    display: none;
+  }
+}
+
 #main-reservations ul {
   padding-left: 2em;
   text-indent: -.8em;
@@ -2762,7 +2778,8 @@ div.wpcf7-response-output {
 }
 
 .ul--dots {
-  padding-left: 7vw;
+  padding-left: 6vw;
+  text-align: left !important;
 }
 
 .ul--dots li {
@@ -2850,10 +2867,9 @@ div.wpcf7-response-output {
 .hr--center {
   border: 0;
   height: 1px;
-  background-color: none;
+  background-color: none !important;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0))) !important;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) !important;
-  margin: 1rem auto;
   max-width: 400px;
 }
 

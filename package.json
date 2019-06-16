@@ -1,42 +1,35 @@
 {
-	"name": "emaidalat-package",
-	"version": "1.0.0",
-	"description": "package for emaidalat.com",
-	"main": "index.js",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Jamestig/emaidalat.git"
-	},
-	"keywords": [
-		"emai"
-	],
-	"author": "Mothy James <wallacebreen17@gmail.com>",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/Jamestig/emaidalat/issues"
-	},
-	"homepage": "https://github.com/Jamestig/emaidalat#readme",
-	"devDependencies": {
-		"autoprefixer": "^9.4.7",
-		"browser-sync": "^2.26.3",
-		"chokidar-cli": "^1.2.1",
-		"clean-css-cli": "^4.2.1",
-		"npm-run-all": "^4.1.5",
-		"postcss-cli": "^6.1.1"
-	},
-	"scripts": {
-		"sync": "browser-sync start --proxy \"localhost/wp_emai/\" --files \"**/*\" ",
-		"css:prefix": "postcss css/main.css --use=autoprefixer --map=false --output=style.css",
-		"css:minify": "cleancss --level=1 --source-map --source-map-inline-sources --output style.min.css style.css",
-		"watch:css": "chokidar \"css/*.css\" -c \"npm run build:css\" --initial",
-		"build:css": "run-s css:*",
-		"dev": "run-p watch:css sync"
-	},
-	"browserslist": [
-		"> 0.3%",
-		"last 7 versions",
-		"Android >= 4",
-		"Firefox >= 20",
-		"iOS >= 8"
-	]
+  "name": "emaidalat-package",
+  "version": "1.0.0",
+  "description": "package for emaidalat.com",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jamestig/emaidalat.git"
+  },
+  "keywords": [
+    "emai"
+  ],
+  "author": "James <james.ringuet@emaidalat.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jamestig/emaidalat/issues"
+  },
+  "homepage": "https://github.com/Jamestig/emaidalat#readme",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4"
+  },
+  "scripts": {
+    "sync": "browser-sync start --proxy \"localhost/wp_emai/\" --files \"**/*\" ",
+    "watch:css": "chokidar \"css/*.css\" -c \"npm run build:css\" --initial",
+    "build:css": "run-s css:*",
+    "dev": "run-p watch:css sync",
+    "pack": "webpack"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }

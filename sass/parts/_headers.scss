@@ -52,7 +52,13 @@
 }
 
 @media screen and (min-width: 1280px) {
+
+	.entry-header--left {
+		text-align: left;
+	}
+
 	.entry-header {
+		padding: 0 2vw;
 
 		h1 {
 			color: var(--font-main);

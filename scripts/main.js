@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		var fixedRatio = (fixedWidth / 4) - (fixedHeight / 3);
 
 		if (fixedRatio >= 43) {
-			jQuery('.fixed-image').addClass('image-43');
+			jQuery('.fixed-image').addClass('image--43');
 		}
 	}
 	getRatio();

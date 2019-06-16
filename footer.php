@@ -32,8 +32,11 @@
 		<span>&vert;</span>
 		<a class="footer-phone" href="tel: +842633839001">+84 2633 839 001</a>
 	</address>
-</footer <?php wp_footer(); ?>
 
-</body> 
+</footer>
+
+<?php wp_footer(); ?>
+
+</body>
 
 </html>

@@ -2,7 +2,7 @@
 /**
  * Page.php
  *
- * @package emaidalat
+ * @package emai
  */
 
 get_header(); ?>

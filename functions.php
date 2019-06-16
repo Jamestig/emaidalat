@@ -1,8 +1,8 @@
 <?php
 /**
- * Theme main functions
+ * Theme functions
  *
- * @package emaidalat
+ * @package emai
  */
 
 /**
