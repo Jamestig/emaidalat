@@ -4,22 +4,11 @@
 
 .flex-container-room {
 	display: flex;
-
-
-
 	flex-flow: column;
-
-
-
-
 	justify-content: center;
-
-
-
-
 	align-items: center;
 	position: relative;
-	margin: 0 1em;
+	margin: 0 3vw;
 	margin-top: -50px;
 	padding: 0 1em;
 	background-color: white;
@@ -53,10 +42,6 @@
 	.flex-container-room:after {
 		content: "";
 		position: absolute;
-		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#e1e2e0));
-		background-image: -webkit-linear-gradient(transparent, #e1e2e0);
-		background-image: -o-linear-gradient(transparent, #e1e2e0);
-		background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#e1e2e0));
 		background-image: linear-gradient(transparent, #e1e2e0);
 		top: 0;
 		bottom: -1px;
@@ -121,7 +106,6 @@
 		font-size: 1em;
 		white-space: normal;
 	}
-
 }
 
 /* BnB page tablet response */
@@ -129,28 +113,8 @@
 @media screen and (min-width: 768px) {
 
 	.flex-container-room {
-		flex-flow: row wrap;
+		flex-flow: column;
 		margin-top: -20px;
-	}
-
-	#bnb-ivy .flex-container-room {
-		margin-top: -40px;
-	}
-
-	.room-logo {
-		flex: 0 0 40%;
-	}
-
-	.room-info {
-		flex: 0 0 55%;
-	}
-
-	.room-info p {
-		text-align: right;
-	}
-
-	.room-description {
-		flex: 0 0 100%;
 	}
 }
 
@@ -184,11 +148,6 @@
 
 	.main-bnb .fixed-image {
 		left: 0;
-	}
-
-	.main-bnb .fixed-image img {
-		width: 100%;
-		height: auto;
 	}
 
 	#bnb-intro,

@@ -1,6 +1,11 @@
 .container-right {
 	background-color: var(--background-light);
-	padding-top: 1em;
+}
+
+@media screen and (max-width: 1279px) {
+	.page-template-template-ribbon .container-right {
+		padding-top: 1em;
+	}
 }
 
 @media screen and (min-width: 1280px) {

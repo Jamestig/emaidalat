@@ -17,92 +17,7 @@
 	margin-top: 2em;
 }
 
-.contact-form .content {
-	background-color: var(--background-black);
-}
 
-.contact-form .content>h3,
-.contact-form .content>p {
-	color: var(--font-white);
-}
-
-.contact-form .content>p {
-	font-size: 1.3em;
-	text-align: left;
-	padding-top: 2em;
-}
-
-.wpcf7-form-control {
-	width: 100% !important;
-	max-width: 100% !important;
-	line-height: 2rem;
-	padding-left: 10px;
-	font-size: .8em;
-	border: none;
-	background-color: var(--background-dark);
-}
-
-.wpcf7-form p {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-.wpcf7-form p:first-of-type {
-	display: inline-block;
-	width: 48%;
-	margin-right: 2.5%;
-	margin-bottom: 0;
-}
-
-.wpcf7-form p:nth-of-type(2) {
-	display: inline-block;
-	width: 48%;
-	margin-bottom: 0;
-}
-
-.contact-form .first-name .wpcf7-form-control {
-	width: 100%;
-}
-
-.contact-form .last-name .wpcf7-form-control {
-	width: 100%;
-}
-
-.wpcf7-submit {
-	border: 1px solid var(--font-white);
-	background-color: var(--background-black);
-	padding: .5em 1em;
-	letter-spacing: .15em;
-	color: var(--font-white);
-	-webkit-transition: border-color .3s linear, color .3s linear, background .3s linear;
-	-o-transition: border-color .3s linear, color .3s linear, background .3s linear;
-	transition: border-color .3s linear, color .3s linear, background .3s linear;
-	white-space: nowrap;
-	text-transform: uppercase;
-	width: 50% !important;
-	margin-top: 1em;
-	margin-bottom: 1.5em;
-}
-
-.wpcf7-submit:hover {
-	border-color: #f4f4f4;
-	color: #f4f4f4;
-}
-
-span.wpcf7-not-valid-tip {
-	color: white;
-	position: absolute;
-	width: -webkit-max-content;
-	width: -moz-max-content;
-	width: max-content;
-}
-
-div.wpcf7-validation-errors,
-div.wpcf7-acceptance-missing,
-div.wpcf7-response-output {
-	border: 2px solid #f4f4f4;
-	color: #f4f4f4;
-}
 
 @media screen and (min-width: 1280px) {
 
@@ -111,17 +26,7 @@ div.wpcf7-response-output {
 	}
 
 	.contact-images {
-
-
-
-
 		display: flex;
-
-	
-
-
-
-	
 		flex-flow: row;
 		margin-top: 2em;
 	}
@@ -137,108 +42,7 @@ div.wpcf7-response-output {
 	}
 
 	.contact-maps {
-
-		-ms-flex: 0 0 40%;
-		-webkit-flex: 0 0 40%;
-		-moz-box-flex: 0;
 		flex: 0 0 40%;
 		margin-bottom: 0;
 	}
-
-	.contact-form {
-		background: rgba(0, 0, 0, 0.8);
-		position: absolute;
-		left: 20vw;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		font-size: 1em;
-		z-index: 20;
-	}
-
-	.contact-form .content {
-		background-color: var(--background-black);
-		margin: 5%;
-	}
-
-	.contact-form .content>h3 {
-		font-size: 2.5em;
-		margin-bottom: 0;
-	}
-
-	.contact-form .content>p {
-		padding: 0;
-	}
-
-	.wpcf7-form p:first-of-type {
-		margin-right: 3.5%;
-	}
-
-	.wpcf7-form p:last-of-type {
-		text-align: center;
-		margin-bottom: 2em;
-	}
-
-	.wpcf7-submit {
-		width: 25% !important;
-	}
-}
-
-/* Close button */
-
-.closeButton {
-	width: 30px;
-	height: 24px;
-	position: relative;
-	top: 20px;
-	right: -6%;
-	-webkit-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	transform: rotate(0deg);
-	-webkit-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
-	cursor: pointer;
-	margin-left: auto;
-}
-
-.closeButton span {
-	display: block;
-	position: absolute;
-	height: 3px;
-	width: 100%;
-	background: var(--font-white);
-	border-radius: 8px;
-	opacity: 1;
-	left: 0;
-	-webkit-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	transform: rotate(0deg);
-	-webkit-transition: .25s ease-in-out;
-	-o-transition: .25s ease-in-out;
-	transition: .25s ease-in-out;
-}
-
-.closeButton span:nth-child(1) {
-	top: 0px;
-	-webkit-transform-origin: left center;
-	-ms-transform-origin: left center;
-	transform-origin: left center;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-	top: 0px;
-	left: 4px;
-}
-
-.closeButton span:nth-child(2) {
-	top: 0px;
-	-webkit-transform-origin: left center;
-	-ms-transform-origin: left center;
-	transform-origin: left center;
-	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	top: 21px;
-	left: 4px;
 }

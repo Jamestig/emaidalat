@@ -1,0 +1,57 @@
+.wpcf7 {
+	.wpcf7-form {
+		background-color: var(--background-black);
+
+		p {
+			color: var(--font-white);
+			padding: 0 2vw;
+		}
+
+		.wpcf7-form-control {
+			width: 100% !important;
+			max-width: 100% !important;
+			line-height: 2rem;
+			border: none;
+			background-color: var(--background-dark);
+		}
+
+		.wpcf7-submit {
+			border: 1px solid var(--font-white);
+			background-color: var(--background-black);
+			padding: .5em 1em;
+			letter-spacing: .15em;
+			color: var(--font-white);
+			transition: border-color .3s linear, color .3s linear, background .3s linear;
+			white-space: nowrap;
+			text-transform: uppercase;
+			width: 50% !important;
+			margin-top: 1em;
+			margin-bottom: 1.5em;
+		}
+
+		.wpcf7-submit:hover {
+			border-color: var(--font-green);
+			color: var(--font-green);
+		}
+
+		p:first-of-type {
+			margin-top: 0;
+		}
+
+		p:last-of-type {
+			text-align: center;
+		}
+
+		span.wpcf7-not-valid-tip {
+			color: var(--font-green);
+		}
+
+		div.wpcf7-validation-errors,
+		div.wpcf7-acceptance-missing,
+		div.wpcf7-response-output {
+			border: 1px solid var(--font-green);
+			color: var(--font-green);
+			text-align: center;
+		}
+	}
+}

@@ -1,10 +1,11 @@
 <?php
-/*
-  Template Name: Bnb Page Vietnamese
-*/
-?>
+/**
+ * Template Name: Bnb Page Vietnamese
+ *
+ * @package emai
+ */
 
-<?php get_header(); ?>
+get_header(); ?>
 
 <main id="fullpage" class="main-bnb">
 
@@ -34,7 +35,7 @@
 		<div class="ribbon-container">
 			<div class="content">
 				<header class="double-header">
-					<h2 class="header--full">Homestay</h2>
+					<h2>Homestay</h2>
 					<hr class="hr--left">
 					<h3>Phòng trọ tại Émai</h3>
 				</header>
@@ -83,7 +84,7 @@
 			</div>
 		</div>
 
-		<div class="center flex-container-room">
+		<div class="center--mobile flex-container-room">
 
 				<div class="room-logo">
 					<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/logo/ivy-logo.png" alt="Ivy logo">
@@ -124,24 +125,10 @@
 						</figure>
 					</div>
 				</div>
-<!--
-				<div class="fp-slide">
-					<div class="fixed-image gradient-down">
-						<figure>
-							<picture>
-								<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/4k/room_clara_4k_01.jpg" media="(min-width: 1921px)">
-								<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/room_clara_1920_01.jpg" media="(min-width: 1025px)">
-								<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/room_clara_1024_01.jpg" media="(min-width: 600px)">
-								<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/room_clara_480_01.jpg" alt="émai homestay room two: Clara">
-							</picture>
-						</figure>
-					</div>
-				</div>
--->
 			</div>
 		</div>
 
-		<div class="center flex-container-room">
+		<div class="center--mobile flex-container-room">
 
 			<div id="clara-logo" class="room-logo">
 				<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/logo/clara_logo.png" alt="Clara logo">
@@ -181,24 +168,10 @@
 						</figure>
 					</div>
 				</div>
-<!--
-				<div class="fp-slide">
-					<div class="fixed-image gradient-down">
-						<figure>
-							<picture>
-								<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/4k/room_clara_4k_01.jpg" media="(min-width: 1921px)">
-								<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/room_clara_1920_01.jpg" media="(min-width: 1025px)">
-								<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/tablet/room_clara_1024_01.jpg" media="(min-width: 600px)">
-								<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/mobile/room_clara_480_01.jpg" alt="émai homestay room two: Clara">
-							</picture>
-						</figure>
-					</div>
-				</div>
--->
 			</div>
 		</div>
 
-		<div class="center flex-container-room">
+		<div class="center--mobile flex-container-room">
 
 			<div class="room-logo">
 				<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/logo/may_logo.png" alt="May logo">
@@ -256,7 +229,7 @@
 			</div>
 		</div>
 
-		<div class="center flex-container-room">
+		<div class="center--mobile flex-container-room">
 
 			<div class="room-logo">
 				<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/logo/lila_logo.png" alt="Lila logo">
@@ -355,7 +328,7 @@
 			</div>
 		</div>
 
-		<div class="center flex-container-room">
+		<div class="center--mobile flex-container-room">
 
 			<div class="room-logo">
 				<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/logo/jasmine_logo.png" alt="Jasmine logo">
@@ -377,7 +350,6 @@
 			<div class="link-button-light link-button-airbnb">
 				<a target="_blank" href="https://www.airbnb.com/rooms/21901538">Đặt phòng qua Airbnb</a>
 			</div>
-
 		</div>
 	</section>
 

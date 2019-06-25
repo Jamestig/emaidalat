@@ -39,17 +39,24 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 
-	// Fixed image ratio change to fit container
+	/* Fixed image ratio change to fit container
 	function getRatio() {
-		var fixedWidth = jQuery('.fixed-image').width();
+		var fixedWidth = jQuery(window).width();
 		var fixedHeight = jQuery(window).height();
 		var fixedRatio = (fixedWidth / 4) - (fixedHeight / 3);
+		var fixedRatio2 = (fixedWidth / fixedHeight);
 
-		if (fixedRatio >= 43) {
+		console.log(fixedWidth);
+		console.log(fixedHeight);
+		console.log(fixedRatio);
+
+		if (fixedRatio2 > 1.8) {
 			jQuery('.fixed-image').addClass('image--43');
+			console.log(fixedRatio2);
 		}
 	}
 	getRatio();
+	*/
 
 	// Responsive header function
 	jQuery(window).scroll(function () {
@@ -103,6 +110,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Contact Form
 
+	var contactForm = jQuery('.wpcf7');
+	var openContactForm = jQuery('.contact-form-button a');
+
+	contactForm.hide();
+
+	openContactForm.on('click', function() {
+		contactForm.slideToggle();
+	});
+	
+	jQuery('.wpcf7-text, .wpcf7-textarea').focus(function (event) {
+		jQuery(event.target).css('background-color', 'white');
+		jQuery(event.target).focusout(function (event) {
+			jQuery(event.target).css('background-color', 'var(--background-dark)');
+		});
+	});
+
+	/*
 	jQuery('.contact-form').hide();
 	jQuery('.closeButton').hide();
 
@@ -120,12 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		jQuery('.closeButton').fadeOut();
 	});
 
-	jQuery('input, textarea').focus(function (event) {
-		jQuery(event.target).css('background-color', 'white');
-		jQuery(event.target).focusout(function (event) {
-			jQuery(event.target).css('background-color', 'var(--background-dark)');
-		});
-	});
+	*/
 
 	// FULLSCREEN FUNCTIONALITY
 
