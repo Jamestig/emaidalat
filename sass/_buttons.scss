@@ -14,8 +14,6 @@
 	padding: .5em 1.2em;
 	letter-spacing: .15em;
 	color: var(--font-light);
-	-webkit-transition: border-color .3s linear, color .3s linear, background .3s linear;
-	-o-transition: border-color .3s linear, color .3s linear, background .3s linear;
 	transition: border-color .3s linear, color .3s linear, background .3s linear;
 	white-space: nowrap;
 	text-transform: uppercase;
@@ -37,8 +35,6 @@
 	background-color: rgba(244, 244, 240, .35);
 	padding: .5em 1em;
 	letter-spacing: .15em;
-	-webkit-transition: border-color .3s linear, color .3s linear, background .3s linear;
-	-o-transition: border-color .3s linear, color .3s linear, background .3s linear;
 	transition: border-color .3s linear, color .3s linear, background .3s linear;
 	white-space: nowrap;
 	text-transform: uppercase;
@@ -54,7 +50,7 @@
 	background: none;
 	border: none;
 	margin-top: 6em;
-	padding-left: 2em;
+	padding-left: 3vw;
 	cursor: pointer;
 	z-index: 100;
 }
@@ -70,7 +66,6 @@
 
 .scrollDown span:first-of-type {
 	background-image: url(images/icon/arrow_down_grey.png);
-	-webkit-filter: brightness(0);
 	filter: brightness(0);
 }
 
@@ -81,13 +76,8 @@
 }
 
 .scrollDown:hover {
-	-webkit-filter: brightness(.5);
 	filter: brightness(.5);
-	-webkit-transition: -webkit-filter .3s ease-in-out;
-	transition: -webkit-filter .3s ease-in-out;
-	-o-transition: filter .3s ease-in-out;
 	transition: filter .3s ease-in-out;
-	transition: filter .3s ease-in-out, -webkit-filter .3s ease-in-out;
 }
 
 @media screen and (max-width: 620px) {
@@ -125,4 +115,47 @@
 .button--clear a:hover {
 	border-color: var(--border-dark);
 	color: var(--border-dark);
+}
+
+// Close button
+
+.closeButton {
+	width: 30px;
+	height: 24px;
+	position: relative;
+	right: -6%;
+	transform: rotate(0deg);
+	transition: .5s ease-in-out;
+	cursor: pointer;
+	margin-left: auto;
+	margin-bottom: 16px;
+}
+
+.closeButton span {
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: var(--font-light);
+	border-radius: 8px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+
+.closeButton span:nth-child(1) {
+	top: 0px;
+	transform-origin: left center;
+	transform: rotate(45deg);
+	top: 0px;
+	left: 4px;
+}
+
+.closeButton span:nth-child(2) {
+	top: 0px;
+	transform-origin: left center;
+	transform: rotate(-45deg);
+	top: 21px;
+	left: 4px;
 }

@@ -40,10 +40,41 @@
 	}
 }
 
-// Entry header
+// Entry header and title group
 
 .entry-header {
 	text-align: center;
+	padding: 0 3vw;
+
+	h1 {
+		color: var(--font-main);
+		font-family: 'EB Garamond', serif;
+		text-transform: capitalize;
+	}
+
+	.title-group {
+		text-align: center;
+
+		.title-secondary {
+			text-transform: uppercase;
+			color: var(--font-light);
+			font-family: Marcellus SC;
+			font-size: 1.2em;
+			margin-bottom: 1em;
+			margin-top: 1.2em;
+		}
+
+		hr {
+			width: 20%;
+			background-color: var(--border-hr);
+		}
+
+		.title-primary {
+			color: var(--font-main);
+			font-family: 'EB Garamond', serif;
+			text-transform: capitalize;
+		}
+	}
 }
 
 .entry-header--left {
@@ -59,35 +90,5 @@
 
 	.entry-header {
 		padding: 0 2vw;
-
-		h1 {
-			color: var(--font-main);
-			font-family: 'EB Garamond', serif;
-			text-transform: capitalize;
-		}
-
-		.title-group {
-			text-align: center;
-
-			.title-secondary {
-				text-transform: uppercase;
-				color: var(--font-light);
-				font-family: Marcellus SC;
-				font-size: 1.2em;
-				margin-bottom: 1em;
-				margin-top: 1.2em;
-			}
-
-			hr {
-				width: 20%;
-				background-color: var(--border-hr);
-			}
-
-			.title-primary {
-				color: var(--font-main);
-				font-family: 'EB Garamond', serif;
-				text-transform: capitalize;
-			}
-		}
 	}
 }

@@ -234,6 +234,37 @@
 // Wine list
 
 .entry-content {
+	
+	.wine-icons {
+		display: inline-block;
+	}
+
+	.wine-icons::after {
+		display: inline-block;
+		content: '';
+		background-image: url(https://emaidalat.com/wp-content/uploads/2019/07/wine_bottle.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 26px;
+		width: 20px;
+		position: absolute;
+		right: 5vw;
+	}
+
+	.wine-icons::before {
+		display: inline-block;
+		content: '';
+		background-image: url(https://emaidalat.com/wp-content/uploads/2019/07/wine_glass.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left;
+		height: 26px;
+		width: 20px;
+		position: absolute;
+		right: 12vw;
+	}
+
 	.wp-block-table {
 		text-align: left;
 		table-layout: fixed;
@@ -261,9 +292,34 @@
 	}
 }
 
+@media screen and (min-width: 768px) {
+
+	.entry-content {
+
+		.wine-icons::after {
+			right: 5.5vw;
+		}
+
+		.wine-icons::before {
+			right: 15vw;
+		}
+	}
+}
+
 @media screen and (min-width: 1280px) {
 
 	.entry-content {
+
+		.wine-icons::after {
+			right: 2.5vw;
+			height: 30px;
+		}
+
+		.wine-icons::before {
+			right: 4.5vw;
+			height: 30px;
+		}
+
 		.wp-block-table {
 			padding: 0;
 
@@ -306,6 +362,16 @@
 	.page-id-164 {
 		.wp-block-image:last-of-type {
 			display: none;
+		}
+	}
+
+// Restaurant page background image
+
+	.page-template-page-restaurant,
+	.page-template-page-restaurant-viet {
+		.fixed-image img {
+			width: auto;
+			height: 100%;
 		}
 	}
 }

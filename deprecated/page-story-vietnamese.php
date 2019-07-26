@@ -48,7 +48,7 @@
 				</div>
 			</section>
 <!--
-			<section class="pageSection scrollSection" id="story-dalat">
+			<section class="scrollSection" id="story-dalat">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1025px)">
@@ -78,7 +78,7 @@
 
 			</section>
 
-			<section class="pageSection scrollSection" id="story-team">
+			<section class="scrollSection" id="story-team">
 				<figure id="" class="fixed-image mobile-image gradient-down">
 					<picture>
 						<source srcset="<?php bloginfo( 'stylesheet_directory' ); ?>/images/photos/hd/duck_1920.jpg" media="(min-width: 1025px)">

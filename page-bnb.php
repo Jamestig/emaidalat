@@ -20,7 +20,7 @@ get_header(); ?>
 			</button>
 		</div>
 
-		<section class="fp-section pageSection" data-anchor="bnb-intro">
+		<section class="fp-section" data-anchor="bnb-intro">
 			<div class="fixed-image gradient-down">
 				<figure>
 					<picture>
@@ -50,7 +50,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="fp-section pageSection section-room rooms-ivy" data-anchor="rooms-ivy">
+		<section class="fp-sectionsection-room rooms-ivy" data-anchor="rooms-ivy">
 			<div class="fp-slides">
 				<div class="fp-slidesContainer">
 
@@ -105,7 +105,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="fp-section pageSection section-room rooms-clara" data-anchor="rooms-clara">
+		<section class="fp-sectionsection-room rooms-clara" data-anchor="rooms-clara">
 			<div class="fp-slides">
 				<div class="fp-slidesContainer">
 
@@ -145,7 +145,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="fp-section pageSection section-room rooms-may" data-anchor="rooms-may">
+		<section class="fp-sectionsection-room rooms-may" data-anchor="rooms-may">
 			<div class="fp-slides">
 				<div class="fp-slidesContainer">
 
@@ -186,7 +186,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="fp-section pageSection section-room rooms-lila" data-anchor="rooms-lila">
+		<section class="fp-sectionsection-room rooms-lila" data-anchor="rooms-lila">
 			<div class="fp-slides">
 				<div class="fp-slidesContainer">
 
@@ -241,7 +241,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="fp-section pageSection section-room rooms-jasmine" data-anchor="rooms-jasmine">
+		<section class="fp-sectionsection-room rooms-jasmine" data-anchor="rooms-jasmine">
 			<div class="fp-slides">
 				<div class="fp-slidesContainer">
 

@@ -2,7 +2,7 @@
 /**
  * Template Name: Menus Template
  *
- * @package emaidalat
+ * @package emai
  */
 
 get_header(); ?>

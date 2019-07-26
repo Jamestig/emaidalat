@@ -118,7 +118,7 @@
 	height: 75%;
 }
 
-/*// ACCORDION //*/
+// ACCORDION
 
 .accordion {
 	display: flex;
@@ -170,7 +170,7 @@
 	padding: .2em;
 }
 
-/*// HEADER FOOTER //*/
+// HEADER FOOTER
 
 .sm-list {
 	text-align: center;
@@ -208,7 +208,7 @@
 	color: var(--font-light);
 }
 
-/*// HEADER NAV TOGGLE CLASSES //*/
+// HEADER NAV TOGGLE CLASSES
 
 .activeSection {
 	font-weight: bold;
@@ -218,7 +218,7 @@
 	font-weight: bold;
 }
 
-/* Header nav landscape response */
+// Header nav landscape response
 
 @media screen and (max-height: 450px) and (orientation: landscape) {
 	.nav-overlay {
@@ -418,5 +418,117 @@
 	.side-footer address a {
 		display: block;
 		letter-spacing: .01em;
+	}
+}
+
+// Side header new styling
+
+.side-header {
+	.header-nav {
+		.accordion {
+
+			.current-menu-item:not(.current-menu-parent),
+			.current_page_item:not(.current-menu-parent) {
+				font-weight: bold;
+			}
+
+			.menu-item {
+				a {
+					font-size: 16px;
+				}
+
+				.sub-menu {
+					font-weight: normal;
+					display: none;
+				}
+			}
+
+			.current-menu-ancestor {
+				.sub-menu {
+					display: block;
+				}
+			}
+
+			.menu-item-439,
+			.page_item {
+				padding-left: .5em;
+
+				>a {
+					padding: 0;
+				}
+
+				.title-group {
+					.title-secondary {
+						display: none;
+					}
+
+					hr {
+						display: none;
+					}
+
+					.title-primary {
+						margin: 0;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+
+	.side-footer {
+		li,
+		a {
+			text-transform: none;
+			line-height: 1.2rem;
+		}
+	}
+
+	.hours-overlay {
+		display: none;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		z-index: 100;
+		width: 100%;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.5);
+
+		.hours-box {
+			margin: auto;
+			display: inline-block;
+			position: relative;
+			top: 25vh;
+			background-color: var(--background-light);
+			padding: 3vh 3vw;
+			padding-bottom: 5vh;
+
+			ul {
+				li {
+					line-height: 36px;
+					text-transform: none;
+
+					span {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1280px) {
+
+	.link-home .sub-menu {
+		display: none;
+	}
+
+	.nav-overlay {
+		.header-nav {
+			height: 65%;
+		}
+
+		.side-footer {
+			height: 35%;
+		}
 	}
 }

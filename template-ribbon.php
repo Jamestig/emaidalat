@@ -2,7 +2,7 @@
 /**
  * Template Name: Ribbon Template
  *
- * @package emaidalat
+ * @package emai
  */
 
 get_header(); ?>

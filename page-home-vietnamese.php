@@ -8,7 +8,7 @@
 
 <main id="fullpage" class="main-home">
 
-	<section class="fp-section pageSection home-cuisine" data-anchor="home-cuisine">
+	<section class="fp-sectionhome-cuisine" data-anchor="home-cuisine">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
@@ -42,7 +42,7 @@
 		</div>
 	</section>
 
-	<section class="fp-section pageSection home-cafe" data-anchor="home-cafe">
+	<section class="fp-sectionhome-cafe" data-anchor="home-cafe">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
@@ -76,7 +76,7 @@
 		</div>
 	</section>
 
-	<section class="fp-section pageSection home-bnb" data-anchor="home-bnb">
+	<section class="fp-sectionhome-bnb" data-anchor="home-bnb">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
@@ -110,7 +110,7 @@
 		</div>
 	</section>
 
-	<section class="fp-section pageSection home-atmosphere" data-anchor="home-atmosphere">
+	<section class="fp-sectionhome-atmosphere" data-anchor="home-atmosphere">
 		<div class="fixed-image gradient-down">
 			<figure>
 				<picture>
@@ -139,7 +139,7 @@
 		</div>
 	</section>
 
-	<section class="fp-section pageSection home-booking" data-anchor="home-booking">
+	<section class="fp-sectionhome-booking" data-anchor="home-booking">
 		<div class="ribbon-container">
 				<div class="content-white vertical--center content">
 					<div>
