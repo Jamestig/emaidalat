@@ -326,7 +326,7 @@ get_header();
 				</li>
 
 				<li class="menu__dish-item">Lamb Chops
-					<span class="dish-price">340</span>
+					<span class="dish-price">450</span>
 					<p class="menu__dish-ingredients">With a Pistachio Crust, served with Pea Purée</p>
 				</li>
 
@@ -419,13 +419,6 @@ get_header();
 					<p class="menu__dish-ingredients">Butterscotch Crème Caramel</p>
 				</li>
 
-				<li class="menu__dish-item">Waffle
-					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
-							alt="Vegetarian"></span>
-					<span class="dish-price">95</span>
-					<p class="menu__dish-ingredients">with Lime Custard, Dalat-Berries Marmalade and Ice Cream</p>
-				</li>
-
 				<li class="menu__dish-item">Carrot Cake Creation
 					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
@@ -443,7 +436,7 @@ get_header();
 				<li class="menu__dish-item">Gelato &amp; Sorbet
 					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
-					<span class="dish-price">70</span><span> PER SCOOP</span>
+					<span class="dish-price">70</span><span> PER GLASS</span>
 					<p class="menu__dish-ingredients">
 						Artichoke
 						<span><img class="icon-seasonal" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/seasonal.png"

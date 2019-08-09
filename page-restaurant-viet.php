@@ -287,13 +287,6 @@ get_header(); ?>
 					<p class="menu__dish-ingredients">Nấm nướng và phô mai camembert</p>
 				</li>
 
-				<li class="menu__dish-item">Cá ngừ
-					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
-							alt="Vegetarian"></span>
-					<span class="dish-price">160</span>
-					<p class="menu__dish-ingredients">Cá ngừ, hành tây, trái ô liu đen</p>
-				</li>
-
 				<li class="menu__dish-item">Vườn rau Đà lạt (chay
 					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
@@ -330,7 +323,7 @@ get_header(); ?>
 				</li>
 
 				<li class="menu__dish-item">Sườn cừu
-					<span class="dish-price">340</span>
+					<span class="dish-price">450</span>
 					<p class="menu__dish-ingredients">Sườn cừu áo hạt dẻ pistachio, đậu Hà lan tươi xay</p>
 				</li>
 
@@ -423,13 +416,6 @@ get_header(); ?>
 					<p class="menu__dish-ingredients">Kem caramel kiểu Ý với rượu whiskey</p>
 				</li>
 
-				<li class="menu__dish-item">Bánh Waffle
-					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
-							alt="Vegetarian"></span>
-					<span class="dish-price">95</span>
-					<p class="menu__dish-ingredients">Bánh kẹp nướng với sốt kem chanh, mứt và kem dâu Đà lạt</p>
-				</li>
-
 				<li class="menu__dish-item">Bánh cà rốt nhà émai
 					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
@@ -447,7 +433,7 @@ get_header(); ?>
 				<li class="menu__dish-item">Kem gelato Ý và kem trái cây:
 					<span><img class="icon-vegetarian" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/vegetarian.png"
 							alt="Vegetarian"></span>
-					<span class="dish-price">70</span><span> viên</span>
+					<span class="dish-price">70</span><span> ly</span>
 					<p class="menu__dish-ingredients">
 						Ạ ti sô
 						<span><img class="icon-seasonal" src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/icon/seasonal.png"
